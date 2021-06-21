@@ -51,9 +51,10 @@ import LandingPageSingleCard from "./LandingPageSingleCard";
 
 
 
-function ViewProperty(props) {
-  return (
-    <div className="view_property">
+function TemplateTest() {
+    return (
+        <div>
+            <div className="view_property">
       <div className="property_hero">
         <div className="property_hero_flex">
           <div className="property_hero_content">
@@ -79,7 +80,7 @@ function ViewProperty(props) {
             </div>
             </div>
             <hr className="pspl_hr" />
-            <HomeInteriorSlider/>
+            <HomeInteriorSlider  />
 
             <div className="pspl_description">
               <h3>Overview</h3>
@@ -256,7 +257,8 @@ function ViewProperty(props) {
         </div>
       </div>
     </div>
-  );
+        </div>
+    )
 }
 
-export default ViewProperty;
+export default TemplateTest
