@@ -1,0 +1,100 @@
+.agent_profile {
+    padding: 2vw 3vw;
+}
+.agent_profile_flex {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.ap_primary_left {
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+    background-color: #fff;
+    margin: 0 10px auto 0;
+}
+
+.ap_primary_right {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+    padding: 20px;
+    margin: 0 0 0 10px;
+
+}
+
+.appl_top {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.agent_info_top {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+}
+
+.agent_info_top p {
+    margin: 0;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    color: #1a1a1a;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.agent_icons_top {
+    display: flex;
+    flex-flow: column;
+}
+
+.agent_icons_top {
+    margin-top: 2rem;
+}
+
+.agent_icons_top a {
+    color: #1a1a1a;
+    margin-top: 10px;
+}
+
+.agent_icons_top .MuiSvgIcon-root {
+    color: #2196f3;
+    margin-right: 10px;
+}
+
+.appl_top img {
+    width: 62%;
+    object-fit: cover;
+}
+
+.appl_buttons {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem 0 1rem 0;
+}
+
+.appl_buttons a {
+    background-color: #2196f3;
+    color: white;
+    padding: 12.36px 20px;
+    text-align: center;
+    margin: 0 1rem 0 0;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    border: 1px solid #2196f3;
+}
+
+.appl_buttons a:hover {
+    background-color: #fff;
+    color: #2196f3;
+}
+

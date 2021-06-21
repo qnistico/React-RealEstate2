@@ -1,0 +1,30 @@
+.multi_car_flex {
+    max-width: 1280px;
+    margin: auto;
+    box-shadow: none !important;
+    overflow-x: hidden;
+    padding: 3rem 0;
+}
+
+
+
+.lp_single_card {
+    width: 95%;
+    margin: auto !important;
+    padding-bottom: 10px;
+}
+
+.react-multi-carousel-dot--active  {
+}
+
+.react-multiple-carousel__arrow {
+    font-weight: 700;
+}
+
+.react-multiple-carousel__arrow--right {
+
+}
+
+.react-multi-carousel-dot-list {}
+
+

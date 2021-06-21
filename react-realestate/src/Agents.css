@@ -1,0 +1,119 @@
+.agent_reviews_content {
+    position: relative;
+}
+
+.agent_reviews {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.agent_reviews h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #2196f3;
+}
+
+.agent_reviews_flex {
+  max-width: 1280px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.agent_reviews_content {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+  margin: 0 12px;
+}
+
+.agent_reviews h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.agent_reviews p {
+  margin-bottom: 8px;
+}
+
+.agent_reviews img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.agent_reviews img:hover {
+  filter: brightness(85%);
+}
+
+.agent_reviews_content .MuiSvgIcon-root {
+  color: #ff9529;
+}
+
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #2196f3;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 14px 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* top left*/
+  .ribbon-top-left {
+    top: -10px;
+    left: -10px;
+  }
+  .ribbon-top-left::before,
+  .ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon-top-left::before {
+    top: 0;
+    right: 0;
+  }
+  .ribbon-top-left::after {
+    bottom: 0;
+    left: 0;
+  }
+  .ribbon-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+
+  .stars {
+    margin-bottom: 20px;
+  }
