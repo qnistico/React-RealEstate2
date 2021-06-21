@@ -28,7 +28,7 @@ function HomeInteriorSlider(props) {
             <MDBCarousel showIndicators showControls fade interval={5000} className="wtf">
       <MDBCarouselInner>
         <MDBCarouselItem itemId={0}>
-          <MDBCarouselElement src={props.exeriorImg} alt='...' />
+          <MDBCarouselElement src={props.exteriorImg} alt='...' />
           
         </MDBCarouselItem>
 

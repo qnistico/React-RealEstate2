@@ -48,6 +48,7 @@ import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
 import SidebarCards from "./SidebarCards";
 import LandingPageSingleCard from "./LandingPageSingleCard";
+import TestCarousel from "./TestCarousel";
 
 
 
@@ -79,7 +80,7 @@ function ViewProperty(props) {
             </div>
             </div>
             <hr className="pspl_hr" />
-            <HomeInteriorSlider/>
+            <TestCarousel />
 
             <div className="pspl_description">
               <h3>Overview</h3>

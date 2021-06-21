@@ -1,0 +1,8 @@
+.test_carousel {
+    margin: 2rem auto 1rem auto;
+    max-width: 900px;
+}
+
+.test_carousel img {
+    max-height: 80vh;
+}

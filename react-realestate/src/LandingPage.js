@@ -7,12 +7,11 @@ import SortByContent from "./SortByContent";
 import LandingPageCards from "./LandingPageCards";
 import LandingPageCards1 from "./LandingPageCards1";
 import LandingPageCards2 from "./LandingPageCards2";
-import CardSlider from "./CardSlider";
 import ImgOverlay from "./ImgOverlay";
 import Agents from "./Agents";
 import PhiOverlay from "./PhiOverlay";
-import { SliderData } from "./SliderData";
 import MultiCarousel from "./MultiCarousel";
+import Footer from "./Footer";
 function LandingPage() {
   return (
     <div className="landing_page">
@@ -23,6 +22,7 @@ function LandingPage() {
       <ImgOverlay />
       <Agents />
       <MultiCarousel />
+      <Footer />
     </div>
   );
 }
