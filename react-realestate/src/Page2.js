@@ -26,11 +26,28 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import house1LR from "./img/house1LR.jpg";
+import house1MBR from "./img/house1MBR.jpg";
+import house1BR from "./img/house1BR.jpg";
+import agent1 from "./img/agent1.jpg";
 
 function Page2(props) {
+    const templateImg = {
+        houseImg: house1,
+        houseLR: house1LR,
+        houseMBR: house1MBR,
+        houseBR: house1BR,
+      }
+      const psprAgent = {
+          agentImg: agent1,
+          agentName: "John Ryan"
+      }
+     
     return (
+        
+        
         <div className="page_2">
-            <ViewProperty headerTitle="Mansion on Lorem Ave" homeTitle="Mansion on Lorem Ave" homeAddress="123 Lorem Ave" homePrice="5,200,000" bedrooms="4" bathrooms="5" sqft="6500 SqFt" yearBuilt="2007" />
+            <ViewProperty headerTitle="Mansion on Lorem Ave" homeTitle="Mansion on Lorem Ave" homeAddress="123 Lorem Ave" homePrice="$5,200,000" bedrooms="4" bathrooms="5" sqft="6500 SqFt" yearBuilt="2007" templateImg={templateImg} psprAgent={psprAgent} />
         </div>
     )
 }

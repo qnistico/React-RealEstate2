@@ -32,12 +32,12 @@ import house15 from "./img/house15.jpg";
 import LRinterior1 from "./img/LRinterior1.jpg";
 
 function TestPage3(props) {
-    const templateImg = {
-        exteriorImg: "./img/house14.jpg",
-        livingroomImg: "./img/house1.jpg",
-        bedroomImg: "./img/house2.jpg",
-        bathroomImg: "./img/house13.jpg"
-      }
+  const templateImg = {
+    houseImg: house14,
+    houseLR: house1,
+    houseMBR: house2,
+    houseBR: house13,
+  }
     return (
         <div className="page_3">
             <ViewProperty headerTitle="Mansion on Lorem Ave" homeTitle="Mansion on Lorem Ave" homeAddress="123 Lorem Ave" homePrice="5,200,000" bedrooms="4" bathrooms="5" sqft="6500 SqFt" yearBuilt="2007" templateImg={templateImg}/>

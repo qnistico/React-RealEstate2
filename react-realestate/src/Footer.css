@@ -14,8 +14,40 @@ footer {
 
 .footer_description {
     width: 25%;
+    font-size: 14px;
+}
+
+.footer_description img {
+    width: 62%;
+    margin-bottom: 20px;
 }
 
 .footer_item {
-    color: #cecece;
+    color: white;
+    max-width: 25%;
 }
+
+.footer_item li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.footer_item ul {
+    padding: 0;
+}
+
+.footer_item .MuiSvgIcon-root {
+    margin-right: 8px;
+}
+
+.footer_item a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer_item h4 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+

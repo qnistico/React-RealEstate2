@@ -80,7 +80,7 @@ function ViewProperty(props) {
             </div>
             </div>
             <hr className="pspl_hr" />
-            <TestCarousel />
+            <HomeInteriorSlider {...props.templateImg} />
 
             <div className="pspl_description">
               <h3>Overview</h3>
@@ -236,16 +236,16 @@ function ViewProperty(props) {
             <div className="pspl_similar_properties">
               <h3>Similar Properties</h3>
             <div className="pspl_similar_flex">
-            <CardSingle cardImg={house1} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$5,200,000" sqft="6,500 SqFt" />
-            <CardSingle cardImg={house2} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$1,800,000" sqft="4500 SqFt" />
-            <CardSingle cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
-            <CardSingle cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
-              <CardSingle cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
+            <CardSingle  cardImg={house1} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$5,200,000" sqft="6,500 SqFt" />
+            <CardSingle  cardImg={house2} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$1,800,000" sqft="4500 SqFt" />
+            <CardSingle  cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
+            <CardSingle  cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
+              <CardSingle  cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
               </div>
             </div>
           </div>
           <div className="ps_primary_right">
-            <PropertyViewAgent agentImg={agent1} agentName="John Johnson"/>
+            <PropertyViewAgent {...props.psprAgent}/>
             <hr />
             <h3>Contact</h3>
             <VPForm title="Request Viewing" />

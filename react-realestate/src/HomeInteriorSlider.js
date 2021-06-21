@@ -28,21 +28,21 @@ function HomeInteriorSlider(props) {
             <MDBCarousel showIndicators showControls fade interval={5000} className="wtf">
       <MDBCarouselInner>
         <MDBCarouselItem itemId={0}>
-          <MDBCarouselElement src={props.exteriorImg} alt='...' />
+          <MDBCarouselElement src={props.houseImg} alt='...' />
           
         </MDBCarouselItem>
 
         <MDBCarouselItem itemId={1}>
-          <MDBCarouselElement src={props.livingroomImg} alt='...' />
+          <MDBCarouselElement src={props.houseLR} alt='...' />
           
         </MDBCarouselItem>
 
         <MDBCarouselItem itemId={2}>
-          <MDBCarouselElement src={props.bedroomImg} alt='...' />
+          <MDBCarouselElement src={props.houseMBR} alt='...' />
           
         </MDBCarouselItem>
         <MDBCarouselItem itemId={3}>
-          <MDBCarouselElement src={props.bathroomImg} alt='...' />
+          <MDBCarouselElement src={props.houseBR} alt='...' />
           
         </MDBCarouselItem>
       </MDBCarouselInner>
