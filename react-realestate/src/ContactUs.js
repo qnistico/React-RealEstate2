@@ -17,7 +17,7 @@ function ContactUs() {
       <PagesHero />
       <div className="contact_us">
         <div className="contact_us_flex">
-          <form id="contact-form" className="contact_form">
+          <form id="contact-form" className="contact_form_primary">
             <h3>Contact Us</h3>
 
             <div className="form-group">

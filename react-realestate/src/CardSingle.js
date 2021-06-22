@@ -16,7 +16,7 @@ function CardSingle(props) {
     return (
         <div>
           <div className="single_cards">
-            <div className="single_cards_body">
+            <div className="single_cards_body vp_single_cards">
             <div className="sc_img_container">
               <a href="/Page2"><img src={props.cardImg} alt="" /></a>
               <a href="/Page2" className="card_img_agent">

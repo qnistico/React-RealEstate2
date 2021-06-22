@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 html,
 body {
   font-family: "Lato", sans-serif;
@@ -72,7 +70,10 @@ body p {
   position: absolute !important;
   top: 0;
   left: 0;
+  object-fit: cover;
 }
+
+
 
 .carousel-control-next-icon::after,
 .carousel-control-prev-icon::after {
@@ -176,7 +177,34 @@ input:active {
   background-color: #fff;
   display: flex;
   flex-flow: column;
-  margin: 0 1rem 0 1rem;
+  margin: 0 15px 0 15px;
+  position: relative;
+  top: 0;
+  transition: 0.3s ease-out;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;}
+
+.lp_cards img {
+  width: 100%;
+  transition: all 0.7s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.card_img_container {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.lp_cards_body:hover img {
+  transform: scale(1.1);
+  filter: brightness(85%);
+}
+
+.lp_cards_body:hover {
+  top: -12px;
 }
 
 .lp_cards_content {
@@ -302,19 +330,6 @@ input:active {
   margin-bottom: 0;
 }
 
-.lp_cards img {
-  width: 100%;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  object-fit: cover;
-}
-
-.card_img_container {
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-}
-
 .card_img_agent {
   position: absolute;
   padding: 10px;
@@ -322,10 +337,6 @@ input:active {
 
 .MuiAvatar-circle {
   border: 2px solid white;
-}
-
-.lp_cards img:hover {
-  transform: scale(1.1);
 }
 
 /* ----- ImgOverlay ----- */
@@ -481,19 +492,17 @@ input:active {
   display: flex;
   width: 100%;
   flex-flow: column;
-  box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   padding: 30px;
-  margin: 0 10px auto 0;
+  margin: 0 15px auto 0;
   background-color: #fff;
 }
 
 .ps_primary_right {
   width: 38%;
   height: 100%;
-  box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
-  margin: 0 0 0 10px;
-  padding: 20px;
-  background-color: #fff;
+  background-color: transparent;
+  margin: 0 0 0 15px;
 }
 
 .ps_primary_left p {
@@ -504,6 +513,10 @@ input:active {
   font-size: 20px !important;
   color: #1a1a1a;
   margin: 20px 0;
+}
+
+.ps_primary_right h3 {
+  margin: 0 0 20px 0;
 }
 
 .pspl_hr {
@@ -577,7 +590,6 @@ input:active {
   font-size: 20px;
   color: #1a1a1a;
   font-weight: 700;
-  margin: 1.5rem 0;
 }
 
 .pspl_features p {
@@ -637,8 +649,16 @@ iframe {
   background-color: #fff;
   display: flex;
   flex-flow: row;
-  margin-bottom: 20px;
 }
+
+.pspl_similar_properties:last-child {
+}
+
+.vp_single_cards {
+  margin-bottom: 30px !important;
+}
+
+
 
 .single_cards_content {
   padding: 20px;
@@ -767,16 +787,26 @@ iframe {
   width: 100%;
   max-width: 400px;
   min-width: 350px;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   cursor: pointer;
   object-fit: cover;
 }
+
+
+.single_cards:hover img {
+  transform: scale(1.1);
+  filter: brightness(85%);
+}
+
+
 
 .sc_img_container {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
 }
+
+
 
 .card_img_agent {
   position: absolute;
@@ -789,10 +819,6 @@ iframe {
 
 .MuiAvatar-img {
   min-width: unset !important;
-}
-
-.single_cards img:hover {
-  transform: scale(1.1);
 }
 
 .card_price {
@@ -814,14 +840,18 @@ iframe {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: #f1f2f5;
-  padding: 20px 0 0 0;
-
-  margin-bottom: 1rem;
 }
 
 .pspr_top_agent h3 {
-  font-size: 20px;
+  margin: 20px 0;
+}
+
+.pspr_item {
+  margin: 0 0 30px 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+  padding: 30px;
+  width: 100%;
 }
 
 .pspr_top_agent a {
@@ -840,7 +870,7 @@ iframe {
   text-align: center;
   transition: all 0.2s ease-in;
   font-weight: 700;
-
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
   border: 2px solid #2196f3;
   margin-top: 1rem;
 }
@@ -850,8 +880,8 @@ iframe {
   color: #2196f3 !important;
 }
 
-.pspr_cards {
-  margin: 1.5rem 0;
+.pspr_card {
+  margin-bottom: 20px;
 }
 
 /* VPForm */
@@ -955,23 +985,59 @@ iframe {
   z-index: 99;
   height: 75px;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   transition: all 0.5s ease;
 }
 
-.navbar-nav {
-  justify-content: flex-end;
-  flex: 1;
+.login_flex {
+  display: flex;
+  align-items: center;
 }
-.navbar a {
+
+.login_button {
+  width: 100px;
+  padding: 12.36px 20px;
+  border: 1px solid #2196f3;
+  text-align: center;
+}
+
+.signup_button {
+  width: 100px;
+  padding: 12.36px 20px;
+  background-color: #2196f3;
+  text-align: center;
+  max-height: 37.6px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease;
+  border: 1px solid #2196f3;
+}
+
+.signup_button:hover {
+  color: #1a1a1a;
+  background-color: white;
+}
+
+.navbar-nav {
+  justify-content: center;
+}
+
+.nav-link,
+.nav-link a {
   padding: 5px 20px !important;
   color: #1a1a1a !important;
   transition: all 0.2s ease;
+  margin-right: 16px;
+  color: #1a1a1a !important;
+  cursor: pointer;
 }
 
-.navbar .nav-link:hover {
+.nav-link:hover {
   background-color: #2196f3 !important;
   color: white !important;
 }
@@ -981,24 +1047,6 @@ iframe {
   position: absolute;
 }
 
-.nav_search {
-  border: 1px solid #2196f3;
-  transition: all 0.2s ease-in;
-}
-
-.nav_search:hover,
-.nav_search:active,
-.nav_search:focus {
-  background-color: #fff;
-  color: #2196f3;
-  border-color: #2196f3;
-}
-.nav-link {
-  margin-right: 16px;
-  border: 1px solid #2196f3 !important;
-
-  cursor: pointer;
-}
 .navbar-toggler {
   font-size: 2rem;
 }
@@ -1015,6 +1063,13 @@ iframe {
 }
 
 @media screen and (max-width: 1150px) {
+  .ps_primary_left {
+    margin: 0 0 30px 0;
+  }
+
+  .ps_primary_right {
+    margin-left: 0;
+  }
   .property_showcase_flex {
     flex-flow: column;
   }
@@ -1027,8 +1082,6 @@ iframe {
   .single_cards img {
     max-width: unset;
     min-width: unset;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
   }
   .single_cards_bottom {
     flex-flow: row;

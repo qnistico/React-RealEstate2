@@ -10,25 +10,36 @@
 .ap_primary_left {
     width: 100%;
     padding: 30px;
-    box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
     background-color: #fff;
-    margin: 0 10px auto 0;
+    margin: 0 15px auto 0;
 }
 
 .ap_primary_right {
-    width: 45%;
+    width: 38%;
     height: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
-    padding: 20px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
 
+}
+
+.ap_primary_left h3 {
+    margin: 20px 0;
 }
 
 .appl_top {
     display: flex;
     flex-flow: row wrap;
     margin: auto;
+}
+
+.appr_item {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+}
+
+.appr_item h3 {
+    margin: 0 0 20px 0 !important;
 }
 
 .agent_info_top {
@@ -50,7 +61,6 @@ h3 {
     font-size: 20px;
     color: #1a1a1a;
     font-weight: 700;
-    margin: 1.5rem 0;
 }
 
 .agent_icons_top {

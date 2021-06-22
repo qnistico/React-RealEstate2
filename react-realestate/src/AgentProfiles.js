@@ -84,8 +84,10 @@ function AgentJohnRyan(props) {
             </div>
           </div>
           <div className="ap_primary_right">
+            <div className="appr_item">
             <h3>Featured Listings</h3>
             <FeaturedListings />
+            </div>
           </div>
         </div>
       </div>

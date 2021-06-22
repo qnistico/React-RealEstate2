@@ -27,7 +27,7 @@ function agentReviews(props) {
           <StarIcon />
           <StarHalfIcon />
           </div>
-          <a href="/Page2" className="hero_button">View Listings</a>
+          <a href="/AgentJohnProfile" className="hero_button">View Listings</a>
       </div>
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#2 Agent</span></div>

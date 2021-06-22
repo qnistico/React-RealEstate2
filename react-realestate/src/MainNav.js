@@ -95,17 +95,16 @@ function MainNav() {
             <MDBNavbarItem>
               <MDBNavbarLink href="/ContactUs">Contact Us</MDBNavbarLink>
             </MDBNavbarItem>
+            <MDBNavbarItem>
+            <div className="nav_blog nav-item">
+  <a href="/BlogList" className="nav-link">Blog</a>
+</div>
+            </MDBNavbarItem>
           </MDBNavbarNav>
-
-          <form className="d-flex input-group w-auto ">
-            <input
-              type="search"
-              className="form-control"
-              placeholder="Type query"
-              aria-label="Search"
-            />
-            <MDBBtn className="nav_search">Search</MDBBtn>
-          </form>
+<div className="login_flex">
+  <a href="#!" className="nav-link login_button">Login</a>
+  <a href="#!" className=" signup_button">Sign Up</a>
+</div>
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

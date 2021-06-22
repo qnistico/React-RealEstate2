@@ -18,54 +18,54 @@ import agent2 from "./img/agent2.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import { CheckBoxOutlineBlankOutlined, Hotel } from "@material-ui/icons";
-import "./LandingPageSingleCard.css";
+import "./CarouselCards.css";
 
 function CarouselCards(props) {
     return (
-      <div className="lpsc">
-      <div className="lp_single_card">
+      <div className="ccsc">
+      <div className="cc_single_card carousel_single_card">
       <div className="card_img_container">
         <a href="/Page2"><img src={props.cardImage} alt="" /></a>
         <a href="/Page2" className="card_img_agent">
           <Avatar src={agent1} />
         </a>
       </div>
-      <div className="lp_cards_content">
-        <div className="lp_cards_top">
-          <a href="#!" className="lp_cards_title">
+      <div className="cc_cards_content">
+        <div className="cc_cards_top">
+          <a href="#!" className="cc_cards_title">
             {props.cardTitle}
           </a>
-          <a href="#!" className="lp_cards_location">
+          <a href="#!" className="cc_cards_location">
             {props.address}
           </a>
           <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/Page2" className="more_button">[more]</a></p>
         </div>
-        <div className="lp_cards_center">
-          <div className="lp_icon_info_flex">
-            <div className="lp_icon_flex">
+        <div className="cc_cards_center">
+          <div className="cc_icon_info_flex">
+            <div className="cc_icon_flex">
               <Hotel className="card_icon" />
               <p>{props.bedrooms}</p>
             </div>
           </div>
-          <div className="lp_icon_info_flex ml-1">
-            <div className="lp_icon_flex">
+          <div className="cc_icon_info_flex ml-1">
+            <div className="cc_icon_flex">
               <BathtubOutlinedIcon className="card_icon" />
               <p>{props.bathrooms}</p>
             </div>
           </div>
-          <div className="lp_icon_info_flex ml-1">
-            <div className="lp_icon_flex">
+          <div className="cc_icon_info_flex ml-1">
+            <div className="cc_icon_flex">
               <CheckBoxOutlineBlankOutlined className="card_icon" />
               <p>{props.sqft}</p>
             </div>
           </div>
         </div>
-        <div className="lp_cards_bottom">
+        <div className="cc_cards_bottom">
           <div>
             <p>For Sale</p>
             <p className="card_price">{props.price}</p>
           </div>
-          <a href="/Page2" className="lp_cards_button">
+          <a href="/Page2" className="cc_cards_button">
             View
           </a>
         </div>

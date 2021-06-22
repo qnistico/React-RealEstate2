@@ -15,6 +15,7 @@ import PhiOverlay from "./PhiOverlay";
 import AgentJohnProfile from "./AgentJohnProfile";
 import TestPage3 from "./TestPage3";
 import ContactUs from "./ContactUs";
+import BlogList from "./BlogList";
 function App() {
   return (
     <Router>
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route exact path="/ContactUs">
               <ContactUs />
+            </Route>
+            <Route exact path="/BlogList">
+              <BlogList />
             </Route>
           </Switch>
         </div>

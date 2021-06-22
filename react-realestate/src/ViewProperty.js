@@ -242,21 +242,26 @@ function ViewProperty(props) {
             <CardSingle  cardImg={house2} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$1,800,000" sqft="4500 SqFt" />
             <CardSingle  cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
             <CardSingle  cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
-              <CardSingle  cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
+              <CardSingle cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
               </div>  
             </div>
           </div>
           <div className="ps_primary_right">
+            <div className="pspr_item">
             <PropertyViewAgent {...props.psprAgent}/>
-            <hr />
-            <div>
+            </div>
+            <div className="pspr_featured pspr_item">
               <h3>Featured Listings</h3>
             <FeaturedListings />
             </div>
+            <div className="pspr_item">
             <h3>Contact</h3>
             <VPForm title="Request Viewing" />
-            <div className="pspr_cards">  
+            </div>
+            <div className="pspr_cards pspr_item">  
+            <div className="pspr_card">
               <LandingPageSingleCard cardImage={house1}/>
+              </div>
               <LandingPageSingleCard cardImage={house5}/>
             </div>
           </div>
