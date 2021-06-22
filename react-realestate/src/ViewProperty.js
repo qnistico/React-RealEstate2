@@ -50,6 +50,7 @@ import SidebarCards from "./SidebarCards";
 import LandingPageSingleCard from "./LandingPageSingleCard";
 import TestCarousel from "./TestCarousel";
 import FeaturedListings from "./FeaturedListings";
+import Footer from "./Footer";
 
 
 
@@ -261,6 +262,7 @@ function ViewProperty(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

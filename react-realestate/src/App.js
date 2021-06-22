@@ -14,6 +14,7 @@ import Page2 from "./Page2";
 import PhiOverlay from "./PhiOverlay";
 import AgentJohnProfile from "./AgentJohnProfile";
 import TestPage3 from "./TestPage3";
+import ContactUs from "./ContactUs";
 function App() {
   return (
     <Router>
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route exact path="/TestPage3">
               <TestPage3 />
+            </Route>
+            <Route exact path="/ContactUs">
+              <ContactUs />
             </Route>
           </Switch>
         </div>

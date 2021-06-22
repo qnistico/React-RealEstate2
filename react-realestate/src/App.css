@@ -443,7 +443,7 @@ input:active {
 .property_price {
   color: #20b759 !important;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .property_showcase {
@@ -859,6 +859,7 @@ iframe {
 .contact_form input,
 .contact_form textarea {
   margin: 4px 0;
+  border-color: #d4d4d4;
 }
 
 .contact_form label {

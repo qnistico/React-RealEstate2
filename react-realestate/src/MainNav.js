@@ -93,7 +93,7 @@ function MainNav() {
               </MDBDropdown>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">Contact Us</MDBNavbarLink>
+              <MDBNavbarLink href="/ContactUs">Contact Us</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
 
