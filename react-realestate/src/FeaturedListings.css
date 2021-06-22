@@ -1,0 +1,44 @@
+.featured_listings {
+    width: 100%;
+}
+
+.featured_listings_flex {
+    display: flex;
+    flex-flow: column;
+}
+
+.featured_content {
+    margin: 0 0 0 12px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.featured_content a{
+color: #1a1a1a;
+font-weight: 700;
+}
+
+.featured_content p {
+    color: #20b759;
+}
+
+.featured_img {
+    overflow: hidden;
+}
+
+.featured_img img {
+    width: 100px;       
+    transition: 0.5s ease;
+
+}
+
+.featured_img img:hover {
+    transform: scale(1.1);
+    filter: brightness(75%);
+}
+
+.featured_item {
+    display: flex;
+    margin-bottom: 12px;
+}

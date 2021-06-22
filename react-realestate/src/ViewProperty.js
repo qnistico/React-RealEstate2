@@ -49,6 +49,7 @@ import house9 from "./img/house9.jpg";
 import SidebarCards from "./SidebarCards";
 import LandingPageSingleCard from "./LandingPageSingleCard";
 import TestCarousel from "./TestCarousel";
+import FeaturedListings from "./FeaturedListings";
 
 
 
@@ -241,12 +242,16 @@ function ViewProperty(props) {
             <CardSingle  cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
             <CardSingle  cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
               <CardSingle  cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
-              </div>
+              </div>  
             </div>
           </div>
           <div className="ps_primary_right">
             <PropertyViewAgent {...props.psprAgent}/>
             <hr />
+            <div>
+              <h3>Featured Listings</h3>
+            <FeaturedListings />
+            </div>
             <h3>Contact</h3>
             <VPForm title="Request Viewing" />
             <div className="pspr_cards">  

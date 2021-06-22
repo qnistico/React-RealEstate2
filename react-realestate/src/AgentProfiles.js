@@ -23,6 +23,7 @@ import house6 from "./img/house6.jpg";
 import house7 from "./img/house7.jpg";
 import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
+import FeaturedListings from "./FeaturedListings";
 
 function AgentJohnRyan(props) {
   return (
@@ -82,7 +83,10 @@ function AgentJohnRyan(props) {
               <CardSingle cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
             </div>
           </div>
-          <div className="ap_primary_right"></div>
+          <div className="ap_primary_right">
+            <h3>Featured Listings</h3>
+            <FeaturedListings />
+          </div>
         </div>
       </div>
     </div>
