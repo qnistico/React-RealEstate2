@@ -7,8 +7,51 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { ArrowForward } from "@material-ui/icons";
 
-function BlogList() {
+function BlogListPage2() {
+  window.addEventListener("scroll", parallax);
 
+  function parallax() {
+    function getPosition(item) {
+      let top = (
+        (item.getBoundingClientRect().top / window.innerHeight) *
+        100
+      ).toFixed(0);
+
+      return top;
+    }
+
+    let itemsToParallax = document.getElementsByClassName("parallaxify");
+
+    for (let item of itemsToParallax) {
+      if (!item.dataset.speedMultiplier) {
+        item.dataset.speedMultiplier = "0.7";
+      }
+      item.style.position = "relative";
+
+      item.style.top = getPosition(item) * item.dataset.speedMultiplier + "px";
+    }
+
+    let imagesToParallax = document.getElementsByClassName("parallaxifyBg");
+
+    for (let item of imagesToParallax) {
+      function getPosition(item) {
+        let top = (
+          (item.getBoundingClientRect().top / window.innerHeight) *
+          100
+        ).toFixed(0);
+
+        return top;
+      }
+
+      if (!item.dataset.speedMultiplier) {
+        item.dataset.speedMultiplier = "3";
+      }
+
+      item.style.backgroundAttachment = "fixed";
+      item.style.backgroundPositionY =
+        getPosition(item) * item.dataset.speedMultiplier + "px";
+    }
+  }
 
   return (
     <div>
@@ -112,10 +155,10 @@ function BlogList() {
               <a href="/BlogList" className="bp_arrow_back">
                 <ArrowBackIosIcon />
               </a>
-              <a href="/BlogList" className="bp_1">
+              <a href="/BlogList" className="bp_1 bp_1_p1">
                 1
               </a>
-              <a href="/BlogListPage2" className="bp_2">
+              <a href="/BlogListPage2" className="bp_2 bp_2_p2">
                 2
               </a>
               <a href="/BlogListPage2" className="bp_arrow_forward">
@@ -134,4 +177,4 @@ function BlogList() {
   );
 }
 
-export default BlogList;
+export default BlogListPage2;

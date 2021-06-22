@@ -9,7 +9,7 @@ function PhiOverlay() {
         <img src={PhiImage} alt="" />
         <div className="phi_overlay_content">
           <h3>Expert Real Estate Agents</h3>
-          <p>Our team of highly qualified real estate agents will help you find the property right for you.</p>
+          <p>Our team of highly qualified real estate agents will help find the property right for you.</p>
           <a href="#!" className="hero_button">Read More</a>
         </div>
       </div>
@@ -17,7 +17,7 @@ function PhiOverlay() {
         <img src={PhiImage2} alt="" />
         <div className="phi_overlay_content">
           <h3>Expert Real Estate Agents</h3>
-          <p>Our team of highly qualified real estate agents will help you find the property right for you.</p>
+          <p>Our team of highly qualified real estate agents will help find the property right for you.</p>
           <a href="#!" className="hero_button">Read More</a>
         </div>
       </div>

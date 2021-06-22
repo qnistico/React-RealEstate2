@@ -16,6 +16,7 @@ import AgentJohnProfile from "./AgentJohnProfile";
 import TestPage3 from "./TestPage3";
 import ContactUs from "./ContactUs";
 import BlogList from "./BlogList";
+import BlogListPage2 from "./BloglistPage2";
 function App() {
   return (
     <Router>
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route exact path="/BlogList">
               <BlogList />
+            </Route>
+            <Route exact path="/BloglistPage2">
+              <BlogListPage2 />
             </Route>
           </Switch>
         </div>
