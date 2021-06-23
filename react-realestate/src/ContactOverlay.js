@@ -1,6 +1,7 @@
 import React from 'react';
 import contactOverlayImg from "./img/contactoverlay.jpg";
 import "./ContactOverlay.css";
+import ImgOverlay from "./ImgOverlay";
 
 function ContactOverlay() {
     return (
