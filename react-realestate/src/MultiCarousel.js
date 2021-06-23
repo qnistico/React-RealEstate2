@@ -35,7 +35,7 @@ function MultiCarousel(props) {
         }
       };
     return (
-        <div>
+        <div className="multi_carousel">
             
 <div className="multi_car_flex">
 

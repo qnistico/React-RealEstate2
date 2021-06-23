@@ -17,6 +17,8 @@ h3 {
   font-family: "Josefin Sans", sans-serif !important;
 }
 
+
+
 body p {
   line-height: 1.618 !important;
 }
@@ -161,7 +163,18 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2vw;
+}
+
+.lp_cards h2 {
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 700;
+}
+
+.lp_header_p {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .lp_cards_flex {
@@ -351,7 +364,7 @@ input:active {
   min-height: 75vh;
   align-items: center;
   position: relative;
-  background: url(img/birds_eye.jpg);
+  background: linear-gradient(#2195f336, #262c6e4d), url(img/birds_eye.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -890,7 +903,7 @@ iframe {
 .contact_form input,
 .contact_form textarea {
   margin: 4px 0;
-  border-color: #d4d4d4;
+  border-color: #dad6d6;
 }
 
 .contact_form label {

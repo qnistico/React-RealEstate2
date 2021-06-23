@@ -48,7 +48,7 @@ function ImgOverlay() {
   }
   return (
     <div className="img_overlay">
-      <div className="img_overlay_content parallaxify" data-speed-multiplier="-0.75">
+      <div className="img_overlay_content parallaxify" data-speed-multiplier="-0.9">
         <p>Buy or Rent</p>
         <h2>Looking to buy or rent a property?</h2>
         <h3>Lorem Real Estate provides excellent pricing!</h3>
