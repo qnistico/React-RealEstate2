@@ -201,7 +201,7 @@ input:active {
 
 .lp_cards img {
   width: 100%;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease !important;
   cursor: pointer;
   object-fit: cover;
 }
@@ -801,7 +801,7 @@ iframe {
   width: 100%;
   max-width: 400px;
   min-width: 350px;
-  transition: all 0.7s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
   object-fit: cover;
 }

@@ -51,7 +51,7 @@ function MainNav() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#" className="home">
+              <MDBNavbarLink active aria-current="page" href="/" className="home">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -59,17 +59,17 @@ function MainNav() {
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link">
-                  Properties
+                  Property Types
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem>
-                    <MDBDropdownLink href="/Page2">Action</MDBDropdownLink>
+                    <MDBDropdownLink href="/Page2">Homes</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Another action</MDBDropdownLink>
+                    <MDBDropdownLink>Apartments</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Something else here</MDBDropdownLink>
+                    <MDBDropdownLink>Offices</MDBDropdownLink>
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
@@ -81,13 +81,13 @@ function MainNav() {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem>
-                    <MDBDropdownLink href="/AgentJohnProfile">Action</MDBDropdownLink>
+                    <MDBDropdownLink href="/AgentJohnProfile">Agent John Ryan</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Another action</MDBDropdownLink>
+                    <MDBDropdownLink>Agent Katie Adams</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Something else here</MDBDropdownLink>
+                    <MDBDropdownLink>Agent Mary Williams</MDBDropdownLink>
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>

@@ -50,7 +50,7 @@ function agentReviews(props) {
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#3 Agent</span></div>
           <a href="/Page2"><img src={agent4} alt="" /></a>
-          <h3>Meridith Williams</h3>
+          <h3>Mary Williams</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7891
           </a>

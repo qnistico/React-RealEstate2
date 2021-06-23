@@ -51,10 +51,16 @@ import LandingPageSingleCard from "./LandingPageSingleCard";
 import TestCarousel from "./TestCarousel";
 import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
+import MortgageCalculator from "@herilsaha/mortgage-calculator";
 
 
 
 function ViewProperty(props) {
+  const reactElement = (
+    <div>
+        <MortgageCalculator/>
+    </div>
+);
   return (
     <div className="view_property">
       <div className="property_hero">
@@ -257,6 +263,10 @@ function ViewProperty(props) {
             <div className="pspr_item">
             <h3>Contact</h3>
             <VPForm title="Request Viewing" />
+            </div>
+            <div className="pspr_item">
+              <h3>Mortgage Calculator</h3>
+<MortgageCalculator />
             </div>
             <div className="pspr_cards pspr_item">  
             <div className="pspr_card">
