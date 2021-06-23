@@ -149,9 +149,9 @@
 .blog_hero {
   width: 100%;
   min-height: 62vh;
-  background: url(img/propertybg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.377)), url(img/blogheroimg.jpg);
   background-size: cover;
-  background-position: center -120%;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;

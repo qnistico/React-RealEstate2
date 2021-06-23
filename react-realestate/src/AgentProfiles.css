@@ -36,6 +36,7 @@
     padding: 30px;
     background-color: #fff;
     box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    margin-bottom: 30px;
 }
 
 .appr_item h3 {
@@ -99,7 +100,6 @@ h3 {
     padding: 12.36px 20px;
     text-align: center;
     margin: 0 1rem 0 0;
-    border-radius: 4px;
     transition: all 0.2s ease-in;
     border: 1px solid #2196f3;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);

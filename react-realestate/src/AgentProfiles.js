@@ -24,6 +24,8 @@ import house7 from "./img/house7.jpg";
 import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
 import FeaturedListings from "./FeaturedListings";
+import MortgageCalculator from "@herilsaha/mortgage-calculator";
+import "./Calculator.css";
 
 function AgentJohnRyan(props) {
   return (
@@ -76,17 +78,65 @@ function AgentJohnRyan(props) {
             </div>
             <div className="agent_listings">
               <h3>My Listings</h3>
-              <CardSingle cardImg={house1} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$5,200,000" sqft="6,500 SqFt" />
-            <CardSingle cardImg={house2} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$1,800,000" sqft="4500 SqFt" />
-            <CardSingle cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
-            <CardSingle cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
-              <CardSingle cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
+                <CardSingle
+                  cardImg={house1}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$5,200,000"
+                  bedrooms="4"
+                  bathrooms="5"
+                  sqft="6,500 SqFt"
+                />
+                <CardSingle
+                  cardImg={house2}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$1,800,000"
+                  bedrooms="3"
+                  bathrooms="4"
+                  sqft="4500 SqFt"
+                />
+                <CardSingle
+                  cardImg={house3}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$2,300,000"
+                  bedrooms="4"
+                  bathrooms="5"
+                  sqft="5000 SqFt"
+                />
+                <CardSingle
+                  cardImg={house4}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$900,000"
+                  bedrooms="2"
+                  bathrooms="3"
+                  sqft="2750 SqFt"
+                />
+                <CardSingle
+                  cardImg={house5}
+                  agentImg={agent1}
+                  cardTitle="Villa on Lorem Street"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$650,000"
+                  bedrooms="2"
+                  bathrooms="3"
+                  sqft="2300 SqFt"
+                />
             </div>
           </div>
           <div className="ap_primary_right">
             <div className="appr_item">
             <h3>Featured Listings</h3>
             <FeaturedListings />
+            </div>
+            <div className="appr_item">
+<MortgageCalculator />
             </div>
           </div>
         </div>

@@ -55,7 +55,11 @@ function MainNav() {
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
-
+<MDBNavbarItem>
+  <MDBNavbarLink>
+  All Properties
+  </MDBNavbarLink>
+</MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link">

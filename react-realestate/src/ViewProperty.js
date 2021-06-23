@@ -35,7 +35,7 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import AccessibleForwardOutlinedIcon from "@material-ui/icons/AccessibleForwardOutlined";
 import PropertyViewAgent from "./PropertyViewAgent";
 import VPForm from "./VPForm";
-import agent1 from './img/agent1.jpg';
+import agent1 from "./img/agent1.jpg";
 import CardSingle from "./CardSingle";
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
@@ -52,15 +52,14 @@ import TestCarousel from "./TestCarousel";
 import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
-
-
+import "./Calculator.css";
 
 function ViewProperty(props) {
   const reactElement = (
     <div>
-        <MortgageCalculator/>
+      <MortgageCalculator />
     </div>
-);
+  );
   return (
     <div className="view_property">
       <div className="property_hero">
@@ -71,21 +70,19 @@ function ViewProperty(props) {
         </div>
       </div>
       <SortByContent />
-      
+
       <div className="property_showcase">
         <div className="property_showcase_flex">
           <div className="ps_primary_left">
             <div className="pspl_top">
               <div>
                 <h1 className="pspl_title">{props.homeTitle}</h1>
-                <p className="property_address">
-                  {props.homeAddress}
-                </p>
+                <p className="property_address">{props.homeAddress}</p>
               </div>
               <div>
-            <p>For Sale</p>
-            <p className="property_price">{props.homePrice}</p>
-            </div>
+                <p>For Sale</p>
+                <p className="property_price">{props.homePrice}</p>
+              </div>
             </div>
             <hr className="pspl_hr" />
             <HomeInteriorSlider {...props.templateImg} />
@@ -135,8 +132,7 @@ function ViewProperty(props) {
             </div>
             <div className="pspl_features">
               <div className="pspl_features_item">
-              <h3>Interior Details</h3>
-
+                <h3>Interior Details</h3>
                 <p>
                   <KitchenOutlined />
                   Modern Kitchen
@@ -144,7 +140,8 @@ function ViewProperty(props) {
                 <p>
                   <Fireplace />
                   Fireplace
-                </p>                <p>
+                </p>{" "}
+                <p>
                   <FitnessCenter />
                   Gym
                 </p>
@@ -161,7 +158,7 @@ function ViewProperty(props) {
                 </p>
               </div>
               <div className="pspl_features_item">
-              <h3>Exterior Details</h3>
+                <h3>Exterior Details</h3>
                 <p>
                   <PoolOutlined />
                   Large Pool
@@ -187,7 +184,7 @@ function ViewProperty(props) {
                 </p>
               </div>
               <div className="pspl_features_item">
-              <h3>Utilities</h3>
+                <h3>Utilities</h3>
                 <p>
                   <FlashOnOutlined />
                   Electricity
@@ -211,7 +208,7 @@ function ViewProperty(props) {
                 </p>
               </div>
               <div className="pspl_features_item">
-              <h3>Additional Features</h3>
+                <h3>Additional Features</h3>
                 <p>
                   <AlarmOutlined />
                   Smoke Detectors
@@ -238,41 +235,86 @@ function ViewProperty(props) {
               </div>
             </div>
             <div className="google_maps">
-            <h3>Property Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.289532358501!2d-80.21163895982946!3d25.765165481805656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1624050037325!5m2!1sen!2sus"></iframe>
+              <h3>Property Location</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.289532358501!2d-80.21163895982946!3d25.765165481805656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1624050037325!5m2!1sen!2sus"></iframe>
             </div>
             <div className="pspl_similar_properties">
               <h3>Similar Properties</h3>
-            <div className="pspl_similar_flex">
-            <CardSingle  cardImg={house1} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$5,200,000" sqft="6,500 SqFt" />
-            <CardSingle  cardImg={house2} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$1,800,000" sqft="4500 SqFt" />
-            <CardSingle  cardImg={house3} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$2,300,000" sqft="5000 SqFt" />
-            <CardSingle  cardImg={house4} agentImg={agent1} cardTitle="Mansion on Lorem Ave" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$900,000" sqft="2750 SqFt" />
-              <CardSingle cardImg={house5} agentImg={agent1} cardTitle="Villa on Lorem Street" address="555 Lorem Avenue, Miami, FL 12345, USA" cardPrice="$650,000" sqft="2300 SqFt" />
-              </div>  
+              <div className="pspl_similar_flex">
+                <CardSingle
+                  cardImg={house1}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$5,200,000"
+                  bedrooms="4"
+                  bathrooms="5"
+                  sqft="6,500 SqFt"
+                />
+                <CardSingle
+                  cardImg={house2}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$1,800,000"
+                  bedrooms="3"
+                  bathrooms="4"
+                  sqft="4500 SqFt"
+                />
+                <CardSingle
+                  cardImg={house3}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$2,300,000"
+                  bedrooms="4"
+                  bathrooms="5"
+                  sqft="5000 SqFt"
+                />
+                <CardSingle
+                  cardImg={house4}
+                  agentImg={agent1}
+                  cardTitle="Mansion on Lorem Ave"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$900,000"
+                  bedrooms="2"
+                  bathrooms="3"
+                  sqft="2750 SqFt"
+                />
+                <CardSingle
+                  cardImg={house5}
+                  agentImg={agent1}
+                  cardTitle="Villa on Lorem Street"
+                  address="555 Lorem Avenue, Miami, FL 12345, USA"
+                  cardPrice="$650,000"
+                  bedrooms="2"
+                  bathrooms="3"
+                  sqft="2300 SqFt"
+                />
+              </div>
             </div>
           </div>
           <div className="ps_primary_right">
             <div className="pspr_item">
-            <PropertyViewAgent {...props.psprAgent}/>
+              <PropertyViewAgent {...props.psprAgent} />
             </div>
             <div className="pspr_featured pspr_item">
               <h3>Featured Listings</h3>
-            <FeaturedListings />
+              <FeaturedListings />
             </div>
             <div className="pspr_item">
-            <h3>Contact</h3>
-            <VPForm title="Request Viewing" />
+              <h3>Contact</h3>
+              <VPForm title="Request Viewing" />
             </div>
             <div className="pspr_item">
               <h3>Mortgage Calculator</h3>
-<MortgageCalculator />
+              <MortgageCalculator />
             </div>
-            <div className="pspr_cards pspr_item">  
-            <div className="pspr_card">
-              <LandingPageSingleCard cardImage={house1}/>
+            <div className="pspr_cards pspr_item">
+              <div className="pspr_card">
+                <LandingPageSingleCard cardImage={house1} />
               </div>
-              <LandingPageSingleCard cardImage={house5}/>
+              <LandingPageSingleCard cardImage={house5} />
             </div>
           </div>
         </div>

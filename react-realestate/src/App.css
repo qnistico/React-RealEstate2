@@ -894,6 +894,13 @@ iframe {
   color: #2196f3 !important;
 }
 
+input.form-control.form_input {
+  padding: 5px 0 5px 0;
+  text-indent: 8px !important;
+}
+
+
+
 .pspr_card {
   margin-bottom: 20px;
 }
@@ -905,6 +912,8 @@ iframe {
   margin: 4px 0;
   border-color: #dad6d6;
 }
+
+
 
 .contact_form label {
   color: #1a1a1a;
