@@ -20,6 +20,8 @@ import BlogListPage2 from "./BloglistPage2";
 import BlogPostTemplate from "./BlogPostTemplate";
 import BuyingAHome from "./BuyingAHome";
 import AllProperties from "./AllProperties";
+import AgentKevinProfile from "./AgentKevinProfile";
+import AgentMaryProfile from "./AgentMaryProfile";
 function App() {
   return (
     <Router>
@@ -35,6 +37,12 @@ function App() {
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />
+            </Route>
+            <Route exact path="/AgentKevinProfile">
+              <AgentKevinProfile />
+            </Route>
+            <Route exact path="/AgentMaryProfile">
+              <AgentMaryProfile />
             </Route>
             <Route exact path="/TestPage3">
               <TestPage3 />

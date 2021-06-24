@@ -17,6 +17,7 @@ import {
   MDBDropdownLink,
   MDBCollapse,
 } from "mdb-react-ui-kit";
+import logo1 from "./img/logo1.png";
 
 function MainNav() {
   
@@ -41,7 +42,7 @@ function MainNav() {
   return (
     <MDBNavbar expand="lg" light bgColor="light" id="js-header">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="/"><img src="https://i.pinimg.com/originals/61/d4/2a/61d42a2baf3e18a03e5f50025b3d9a04.png" alt="" id="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand href="/"><img src={logo1} alt="" id="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"

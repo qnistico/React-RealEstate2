@@ -1,7 +1,7 @@
 import React from "react";
 import AgentProfiles from "./AgentProfiles";
-import CardSingle from "./CardSingle";
 import agent1 from "./img/agent1.jpg";
+import agent3 from "./img/agent3.jpg";
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
 import house3 from "./img/house3.jpg";
@@ -17,73 +17,76 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import house16 from "./img/house16.jpg";
 
-function AgentJohnProfile(props) {
+function AgentKevinProfile(props) {
   const card1template = {
-    cardImg: house1,
-    agentImg: agent1,
+    cardImg: house15,
+    agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$5,200,000",
+    cardPrice: "$5,700,000",
     bedrooms: "4",
     bathrooms: "5",
-    sqft: "6,500 SqFt",
+    sqft: "7,200 SqFt",
   };
 
   const card2template = {
-    cardImg: house2,
-    agentImg: agent1,
+    cardImg: house16,
+    agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$1,800,000",
+    cardPrice: "$4,300,000",
     bedrooms: "3",
     bathrooms: "4",
-    sqft: "4,500 SqFt",
+    sqft: "5,200 SqFt",
   };
 
   const card3template = {
-    cardImg: house3,
-    agentImg: agent1,
+    cardImg: house7,
+    agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$2,300,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "5,000 SqFt",
+    cardPrice: "$14,000,000",
+    bedrooms: "6",
+    bathrooms: "7",
+    sqft: "13,500 SqFt",
   };
   const card4template = {
-    cardImg: house4,
-    agentImg: agent1,
+    cardImg: house10,
+    agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$900,000",
-    bedrooms: "2",
-    bathrooms: "3",
-    sqft: "2,750 SqFt",
+    cardPrice: "$5,400,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
   };
   const card5template = {
-    cardImg: house5,
-    agentImg: agent1,
+    cardImg: house11,
+    agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$650,000",
-    bedrooms: "2",
-    bathrooms: "3",
-    sqft: "2,300 SqFt",
+    cardPrice: "$630,000",
+    bedrooms: "3",
+    bathrooms: "4",
+    sqft: "3,900 SqFt",
   };
   return (
-    <div className="agent_john_profile">
-      <AgentProfiles
-        agentImg={agent1}
-        agentName="John Ryan"
-        card1template={card1template}
-        card2template={card2template}
-        card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
-      />
+    <div>
+      <div className="agent_kevin_profile">
+        <AgentProfiles
+          agentImg={agent3}
+          agentName="Kevin Richmond"
+          card1template={card1template}
+          card2template={card2template}
+          card3template={card3template}
+          card4template={card4template}
+          card5template={card5template}
+        />
+      </div>
     </div>
   );
 }
 
-export default AgentJohnProfile;
+export default AgentKevinProfile;

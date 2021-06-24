@@ -452,7 +452,7 @@ input:active {
 }
 
 .property_hero_content h2 {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
   text-shadow: 1px 1px 1px black;
 }
@@ -1061,7 +1061,7 @@ input.form-control.form_input {
 }
 
 .navbar-brand img {
-  width: 47px;
+  width: 200px;
   position: absolute;
 }
 

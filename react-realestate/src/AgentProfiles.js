@@ -79,54 +79,19 @@ function AgentJohnRyan(props) {
             <div className="agent_listings">
               <h3>My Listings</h3>
                 <CardSingle
-                  cardImg={house1}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$5,200,000"
-                  bedrooms="4"
-                  bathrooms="5"
-                  sqft="6,500 SqFt"
+                  {...props.card1template}
                 />
                 <CardSingle
-                  cardImg={house2}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$1,800,000"
-                  bedrooms="3"
-                  bathrooms="4"
-                  sqft="4500 SqFt"
+                  {...props.card2template}
                 />
                 <CardSingle
-                  cardImg={house3}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$2,300,000"
-                  bedrooms="4"
-                  bathrooms="5"
-                  sqft="5000 SqFt"
+                  {...props.card3template}
                 />
                 <CardSingle
-                  cardImg={house4}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$900,000"
-                  bedrooms="2"
-                  bathrooms="3"
-                  sqft="2750 SqFt"
+                  {...props.card4template}
                 />
                 <CardSingle
-                  cardImg={house5}
-                  agentImg={agent1}
-                  cardTitle="Villa on Lorem Street"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$650,000"
-                  bedrooms="2"
-                  bathrooms="3"
-                  sqft="2300 SqFt"
+                  {...props.card5template}
                 />
             </div>
           </div>

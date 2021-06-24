@@ -31,7 +31,7 @@ function agentReviews(props) {
       </div>
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#2 Agent</span></div>
-          <a href="/Page2"><img src={agent3} alt="" /></a>
+          <a href="/AgentKevinProfile"><img src={agent3} alt="" /></a>
           <h3>Kevin Richmond</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7891
@@ -45,11 +45,11 @@ function agentReviews(props) {
           <StarIcon />
           <StarHalfIcon />
           </div>
-          <a href="/Page2" className="hero_button">View Listings</a>
+          <a href="/AgentKevinProfile" className="hero_button">View Listings</a>
       </div>
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#3 Agent</span></div>
-          <a href="/Page2"><img src={agent4} alt="" /></a>
+          <a href="/AgentMaryProfile"><img src={agent4} alt="" /></a>
           <h3>Mary Williams</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7891
@@ -63,7 +63,7 @@ function agentReviews(props) {
           <StarIcon />
           <StarHalfIcon />
           </div>
-          <a href="/Page2" className="hero_button">View Listings</a>
+          <a href="/AgentMaryProfile" className="hero_button">View Listings</a>
         </div>
       </div>
     </div>

@@ -277,7 +277,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house1} alt="" /></a>
+              <a href="/Page2"><img src={house6} alt="" /></a>
               <a href="/Page2" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
