@@ -163,7 +163,8 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 2vw;
+  padding: 30px 30px 60px 30px;
+
 }
 
 .lp_cards h2 {
@@ -953,7 +954,7 @@ input.form-control.form_input {
 .phi_overlay {
   width: 100%;
   background-color: #fff;
-  padding: 3rem 0;
+  padding: 60px 30px;
 }
 
 .phi_overlay_flex {
@@ -965,6 +966,7 @@ input.form-control.form_input {
 
 .phi_overlay_flex_reverse {
   flex-flow: row-reverse;
+  margin-top: 40px;
 }
 
 .phi_overlay_flex img {

@@ -6,7 +6,7 @@ function PhiOverlay() {
   return (
     <div className="phi_overlay">
       <div className="phi_overlay_flex">
-        <img src={PhiImage} alt="" />
+        <img src={PhiImage} alt="male real estate agent with skyscraper" />
         <div className="phi_overlay_content">
           <h3>Expert Real Estate Agents</h3>
           <p>Our team of highly qualified real estate agents will help find the property right for you.</p>
@@ -14,7 +14,7 @@ function PhiOverlay() {
         </div>
       </div>
       <div className="phi_overlay_flex phi_overlay_flex_reverse">
-        <img src={PhiImage2} alt="" />
+        <img src={PhiImage2} alt="female real estate agent with skyscraper" />
         <div className="phi_overlay_content">
           <h3>Expert Real Estate Agents</h3>
           <p>Our team of highly qualified real estate agents will help find the property right for you.</p>

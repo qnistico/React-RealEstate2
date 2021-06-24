@@ -20,16 +20,16 @@ function SortByContent() {
             <div className="property_sorting">
             <div className="property_list">
             <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Properties</MDBDropdownToggle>
+      <MDBDropdownToggle className="property_dropdown">Property Types</MDBDropdownToggle>
       <MDBDropdownMenu className="property_dropdown_2">
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Property 1</MDBDropdownLink>
+          <MDBDropdownLink href="#">Homes</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Property 2</MDBDropdownLink>
+          <MDBDropdownLink href="#">Apartments</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Property 3</MDBDropdownLink>
+          <MDBDropdownLink href="#">Offices</MDBDropdownLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
@@ -55,13 +55,13 @@ function SortByContent() {
       <MDBDropdownToggle className="property_dropdown">Price</MDBDropdownToggle>
       <MDBDropdownMenu className="property_dropdown_2">
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Price 1</MDBDropdownLink>
+          <MDBDropdownLink href="#">Lowest to Highest</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Price 2</MDBDropdownLink>
+          <MDBDropdownLink href="#">Highest to Lowest</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Price 3</MDBDropdownLink>
+          <MDBDropdownLink href="#">Any Price</MDBDropdownLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
@@ -71,19 +71,19 @@ function SortByContent() {
       <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
       <MDBDropdownMenu className="property_dropdown_2">
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent 1</MDBDropdownLink>
+          <MDBDropdownLink href="#">Agent John Ryan</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent 2</MDBDropdownLink>
+          <MDBDropdownLink href="#">Agent Katie Adams</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent 3</MDBDropdownLink>
+          <MDBDropdownLink href="#">Agent Mary Williams</MDBDropdownLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
     </div>
             </div>
-            <MDBBtn className="hero_button">Button</MDBBtn>
+            <MDBBtn className="hero_button">Search</MDBBtn>
             
         </div>
     )

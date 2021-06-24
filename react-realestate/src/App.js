@@ -17,6 +17,8 @@ import TestPage3 from "./TestPage3";
 import ContactUs from "./ContactUs";
 import BlogList from "./BlogList";
 import BlogListPage2 from "./BloglistPage2";
+import BlogPostTemplate from "./BlogPostTemplate";
+import BuyingAHome from "./BuyingAHome";
 function App() {
   return (
     <Router>
@@ -44,6 +46,12 @@ function App() {
             </Route>
             <Route exact path="/BloglistPage2">
               <BlogListPage2 />
+            </Route>
+            <Route exact path="/BlogPostTemplate">
+              <BlogPostTemplate />
+            </Route>
+            <Route exact path="/BuyingAHome">
+<BuyingAHome />
             </Route>
           </Switch>
         </div>
