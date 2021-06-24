@@ -32,10 +32,10 @@ function LandingPageCards() {
       <div className="lp_cards">
         <h2>Recent Properties</h2>
         <p className="lp_header_p">View some of our most recent listings.</p>
-        <div className="lp_cards_flex">
+        <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house1} alt="" /></a>
+              <a href="/Page2"><img src={house15} alt="" /></a>
               <a href="/Page2" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
@@ -83,7 +83,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/TestPage3"><img src={house2} alt="" /></a>
+              <a href="/TestPage3"><img src={house1} alt="" /></a>
               <a href="/TestPage3" className="card_img_agent">
                 <Avatar src={agent3} />
               </a>
@@ -131,7 +131,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house3} alt="" /></a>
+              <a href="/Page2"><img src={house2} alt="" /></a>
               <a href="/Page2" className="card_img_agent">
                 <Avatar src={agent4} />
               </a>
@@ -172,6 +172,152 @@ function LandingPageCards() {
                   <p className="card_price">$3,200,000</p>
                 </div>
                 <a href="#!" className="lp_cards_button">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lp_cards_flex">
+        <div className="lp_cards_body">
+            <div className="card_img_container">
+              <a href="/Page2"><img src={house7} alt="" /></a>
+              <a href="/Page2" className="card_img_agent">
+                <Avatar src={agent1} />
+              </a>
+            </div>
+            <div className="lp_cards_content">
+              <div className="lp_cards_top">
+                <a href="#!" className="lp_cards_title">
+                  Luxury Mansion
+                </a>
+                <a href="#!" className="lp_cards_location">
+                  555 Lorem Avenue, Miami, FL 12345, USA
+                </a>
+                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+              </div>
+              <div className="lp_cards_center">
+                <div className="lp_icon_info_flex">
+                  <div className="lp_icon_flex">
+                    <Hotel className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <BathtubOutlinedIcon className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <CheckBoxOutlineBlankOutlined className="card_icon" />
+                    <p>4,500 Sq Ft</p>
+                  </div>
+                </div>
+              </div>
+              <div className="lp_cards_bottom">
+                <div>
+                  <p>For Sale</p>
+                  <p className="card_price">$3,200,000</p>
+                </div>
+                <a href="/Page2" className="lp_cards_button">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="lp_cards_body">
+            <div className="card_img_container">
+              <a href="/Page2"><img src={house4} alt="" /></a>
+              <a href="/Page2" className="card_img_agent">
+                <Avatar src={agent1} />
+              </a>
+            </div>
+            <div className="lp_cards_content">
+              <div className="lp_cards_top">
+                <a href="#!" className="lp_cards_title">
+                  Luxury Mansion
+                </a>
+                <a href="#!" className="lp_cards_location">
+                  555 Lorem Avenue, Miami, FL 12345, USA
+                </a>
+                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+              </div>
+              <div className="lp_cards_center">
+                <div className="lp_icon_info_flex">
+                  <div className="lp_icon_flex">
+                    <Hotel className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <BathtubOutlinedIcon className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <CheckBoxOutlineBlankOutlined className="card_icon" />
+                    <p>4,500 Sq Ft</p>
+                  </div>
+                </div>
+              </div>
+              <div className="lp_cards_bottom">
+                <div>
+                  <p>For Sale</p>
+                  <p className="card_price">$3,200,000</p>
+                </div>
+                <a href="/Page2" className="lp_cards_button">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="lp_cards_body">
+            <div className="card_img_container">
+              <a href="/Page2"><img src={house1} alt="" /></a>
+              <a href="/Page2" className="card_img_agent">
+                <Avatar src={agent1} />
+              </a>
+            </div>
+            <div className="lp_cards_content">
+              <div className="lp_cards_top">
+                <a href="#!" className="lp_cards_title">
+                  Luxury Mansion
+                </a>
+                <a href="#!" className="lp_cards_location">
+                  555 Lorem Avenue, Miami, FL 12345, USA
+                </a>
+                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+              </div>
+              <div className="lp_cards_center">
+                <div className="lp_icon_info_flex">
+                  <div className="lp_icon_flex">
+                    <Hotel className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <BathtubOutlinedIcon className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <CheckBoxOutlineBlankOutlined className="card_icon" />
+                    <p>4,500 Sq Ft</p>
+                  </div>
+                </div>
+              </div>
+              <div className="lp_cards_bottom">
+                <div>
+                  <p>For Sale</p>
+                  <p className="card_price">$3,200,000</p>
+                </div>
+                <a href="/Page2" className="lp_cards_button">
                   View
                 </a>
               </div>

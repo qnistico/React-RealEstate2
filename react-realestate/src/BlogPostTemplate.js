@@ -28,7 +28,6 @@ function BlogPostTemplate(props) {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               
             </div>
-            <hr />
             <div className="blog_comments">
             <div className="blog_comments_flex">
             <form id="contact-form" className="contact_form">

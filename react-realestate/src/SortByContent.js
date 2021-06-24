@@ -74,7 +74,7 @@ function SortByContent() {
           <MDBDropdownLink href="#">Agent John Ryan</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent Katie Adams</MDBDropdownLink>
+          <MDBDropdownLink href="#">Agent Kevin Richmond</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
           <MDBDropdownLink href="#">Agent Mary Williams</MDBDropdownLink>

@@ -19,6 +19,7 @@ import {
 } from "mdb-react-ui-kit";
 
 function MainNav() {
+  
   const [showBasic, setShowBasic] = useState(false);
   function resizeHeaderOnScroll() {
     const distanceY = window.pageYOffset || 
@@ -34,6 +35,9 @@ function MainNav() {
     }
    
    window.addEventListener('scroll', resizeHeaderOnScroll);
+
+   
+   
   return (
     <MDBNavbar expand="lg" light bgColor="light" id="js-header">
       <MDBContainer fluid>
@@ -56,9 +60,9 @@ function MainNav() {
               </MDBNavbarLink>
             </MDBNavbarItem>
 <MDBNavbarItem>
-  <MDBNavbarLink>
+    <a href="/AllProperties" className="nav-link">
   All Properties
-  </MDBNavbarLink>
+  </a>
 </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
@@ -88,7 +92,7 @@ function MainNav() {
                     <MDBDropdownLink href="/AgentJohnProfile">Agent John Ryan</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Agent Katie Adams</MDBDropdownLink>
+                    <MDBDropdownLink>Agent Kevin Richmond</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
                     <MDBDropdownLink>Agent Mary Williams</MDBDropdownLink>

@@ -52,10 +52,11 @@
   object-fit: cover;
   margin-bottom: 0;
   transition: all 0.3s ease;
+  filter: brightness(90%);
 }
 
 .agent_reviews img:hover {
-  filter: brightness(85%);
+  filter: brightness(110%);
 }
 
 .agent_reviews_content .MuiSvgIcon-root {

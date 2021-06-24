@@ -24,7 +24,7 @@ function Footer() {
             <h4>Agent Listings</h4>
             <ul>
               <a href="/AgentJohnProfile"><img src={agent1} className="footer_avatar" alt="agent John Ryan" /><li>John Ryan's Listings</li></a>
-              <a href="!#"><img src={agent3} className="footer_avatar" alt="agent Katie Adams" /><li>Katie Adams' Listings</li></a>
+              <a href="!#"><img src={agent3} className="footer_avatar" alt="agent Kevin Richmond" /><li>Kevin Richmond' Listings</li></a>
               <a href="!#"><img src={agent4} className="footer_avatar" alt="agent Mary Williams" /><li>Meridith Williams' Listings</li></a>
             </ul>
           </div>
