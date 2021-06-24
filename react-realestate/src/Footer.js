@@ -5,6 +5,7 @@ import "./Footer.css";
 import agent1 from './img/agent1.jpg';
 import agent3 from './img/agent3.jpg';
 import agent4 from './img/agent4.jpg';
+import logo1 from "./img/logo1.png";
 
 function Footer() {
   return (
@@ -18,7 +19,7 @@ function Footer() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis.
             </p>
-            <img src="https://i.pinimg.com/originals/61/d4/2a/61d42a2baf3e18a03e5f50025b3d9a04.png" alt="" />
+            <a href="/"><img src={logo1} alt="" /></a>
           </div>
           <div className="footer_item footer_agents">
             <h4>Agent Listings</h4>
