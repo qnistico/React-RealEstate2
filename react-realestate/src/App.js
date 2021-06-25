@@ -20,6 +20,7 @@ import BlogListPage2 from "./BloglistPage2";
 import BlogPostTemplate from "./BlogPostTemplate";
 import BuyingAHome from "./BuyingAHome";
 import AllProperties from "./AllProperties";
+import AllPropertiesPage2 from "./AllPropertiesPage2";
 import AgentKevinProfile from "./AgentKevinProfile";
 import AgentMaryProfile from "./AgentMaryProfile";
 function App() {
@@ -65,6 +66,9 @@ function App() {
             <Route exact path="/AllProperties">
               <AllProperties />
             </Route>
+            <Route exact path="/AllPropertiesPage2">
+        <AllPropertiesPage2 />
+      </Route>
           </Switch>
         </div>
       </div>

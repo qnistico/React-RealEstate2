@@ -1094,45 +1094,8 @@ input.form-control.form_input {
   background-color: #2196f3;
 }
 
-/* ----- Blog ----- */
 
-.blog_pagination {
-  margin-top: 30px;
-}
 
-.bp_arrow_back,
-.bp_1,
-.bp_2,
-.bp_arrow_forward {
-  width: 40px;
-  height: 40px;
-  padding: 7px 14px;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-.bp_arrow_back:hover,
-.bp_1:hover,
-.bp_2:hover,
-.bp_arrow_forward:hover {
-  background-color: #2196f3;
-  color: white;
-}
-
-.bp_1 {
-  background-color: #2196f3;
-  color: white;
-}
-
-.bp_1_p1 {
-  background-color: white;
-  color: #2196f3;
-}
-
-.bp_2_p2 {
-  background-color: #2196f3;
-  color: white;
-}
 
 @media screen and (max-width: 576.98px) {
   .lp_cards_flex {

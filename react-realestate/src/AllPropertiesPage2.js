@@ -37,109 +37,94 @@ import AllAgentsSidebar from "./AllAgentsSidebar";
 import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
-import AllPropertiesPage2 from "./AllPropertiesPage2";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-function AllProperties(props) {
+function AllPropertiesPage2(props) {
   return (
     <div>
       <PagesHero pagesheroTitle="All Listings" />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
-            <CardSingle
-              cardImg={house1}
+          <CardSingle
+              cardImg={house3}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
               address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$5,200,000"
+              cardPrice="$2,300,000"
               bedrooms="4"
               bathrooms="5"
-              sqft="6,500 SqFt"
+              sqft="5000 SqFt"
             />
             <CardSingle
-              cardImg={house2}
+              cardImg={house4}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
               address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$1,800,000"
+              cardPrice="$900,000"
+              bedrooms="2"
+              bathrooms="3"
+              sqft="2750 SqFt"
+            />
+            <CardSingle
+              cardImg={house6}
+              agentImg={agent4}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              cardPrice="$425,000"
+              bedrooms="2"
+              bathrooms="2"
+              sqft="2,300 SqFt"
+            />
+            <CardSingle
+              cardImg={house5}
+              agentImg={agent1}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              cardPrice="$650,000"
+              bedrooms="2"
+              bathrooms="3"
+              sqft="2300 SqFt"
+            />
+            <CardSingle
+              cardImg={house16}
+              agentImg={agent3}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              cardPrice="$4,300,000"
               bedrooms="3"
               bathrooms="4"
-              sqft="4500 SqFt"
+              sqft="5,200 SqFt"
             />
             <CardSingle
-              cardImg={house8}
-              agentImg={agent4}
-              cardTitle="Mansion on Lorem Ave"
+              cardImg={house11}
+              agentImg={agent3}
+              cardTitle="Villa on Lorem Street"
               address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$1,100,000"
-              bedrooms="2"
+              cardPrice="$630,000"
+              bedrooms="3"
               bathrooms="4"
-              sqft="4,900 SqFt"
+              sqft="3,900 SqFt"
             />
             <CardSingle
-              cardImg={house15}
-              agentImg={agent3}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$5,700,000"
-              bedrooms="4"
-              bathrooms="5"
-              sqft="7,200 SqFt"
-            />
-            <CardSingle
-              cardImg={house10}
-              agentImg={agent3}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$5,400,000"
-              bedrooms="4"
-              bathrooms="5"
-              sqft="7,200 SqFt"
-            />
-            <CardSingle
-              cardImg={house7}
-              agentImg={agent3}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$14,000,000"
-              bedrooms="6"
-              bathrooms="7"
-              sqft="13,500 SqFt"
-            />
-            
-            <CardSingle
-              cardImg={house9}
+              cardImg={house12}
               agentImg={agent4}
               cardTitle="Villa on Lorem Street"
               address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$680,000"
+              cardPrice="$499,999"
               bedrooms="2"
-              bathrooms="4"
-              sqft="3,200 SqFt"
-            />
-
-
-
-            <CardSingle
-              cardImg={house14}
-              agentImg={agent4}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$4,100,000"
-              bedrooms="4"
-              bathrooms="5"
-              sqft="5,000 SqFt"
+              bathrooms="3"
+              sqft="2,850 SqFt"
             />
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">
                 <ArrowBackIosIcon />
               </a>
-              <a href="/AllProperties" className="ap_1">
+              <a href="/AllProperties" className="ap_1 ap_1_p1">
                 1
               </a>
-              <a href="/AllPropertiesPage2" className="ap_2">
+              <a href="/AllPropertiesPage2" className="ap_2 ap_2_p2">
                 2
               </a>
               <a href="/AllPropertiesPage2" className="ap_arrow_forward">
@@ -164,10 +149,10 @@ function AllProperties(props) {
             </div>
           </div>
         </div>
-    </div>
+      </div>
       <Footer />
     </div>
   );
 }
 
-export default AllProperties;
+export default AllPropertiesPage2;
