@@ -52,6 +52,8 @@ body p {
   border: 1px solid #2196f3 !important;
   min-width: 100px;
   transition: all 0.2s ease-in;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 .hero_button:hover,
@@ -238,6 +240,8 @@ input:active {
   top: -12px;
 }
 
+
+
 .lp_cards_content {
   padding: 20px;
 }
@@ -339,6 +343,8 @@ input:active {
   width: 125px;
   text-align: center;
   transition: all 0.2s ease-in;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .lp_cards_button:hover {
   background-color: #fff;
@@ -675,8 +681,6 @@ iframe {
   margin: 0;
 }
 
-
-
 .single_cards_body {
   width: 100%;
   box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
@@ -706,7 +710,7 @@ iframe {
 .single_cards_title {
   color: #1a1a1a;
   font-size: 20px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 900;
   margin-bottom: 8px;
 }
@@ -1089,6 +1093,47 @@ input.form-control.form_input {
 .btn-primary {
   background-color: #2196f3;
 }
+
+/* ----- Blog ----- */
+
+.blog_pagination {
+  margin-top: 30px;
+}
+
+.bp_arrow_back,
+.bp_1,
+.bp_2,
+.bp_arrow_forward {
+  width: 40px;
+  height: 40px;
+  padding: 7px 14px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.bp_arrow_back:hover,
+.bp_1:hover,
+.bp_2:hover,
+.bp_arrow_forward:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+.bp_1 {
+  background-color: #2196f3;
+  color: white;
+}
+
+.bp_1_p1 {
+  background-color: white;
+  color: #2196f3;
+}
+
+.bp_2_p2 {
+  background-color: #2196f3;
+  color: white;
+}
+
 @media screen and (max-width: 576.98px) {
   .lp_cards_flex {
     flex-flow: column;

@@ -36,12 +36,9 @@ function HeroSlider() {
         <div className="hero_content">
           <h1>Florida Realty</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
+            We sell premium real estate in Florida ranging from rural to bay area locations.  Mansions, homes, apartments and offices... We've got it all.  Consult one of our agents to schedule a tour.
           </p>
-          <MDBBtn className="hero_button">Read More</MDBBtn>
+          <MDBBtn href="/AllProperties" className="hero_button">View Listings</MDBBtn>
         </div>
       </div>
       <div className="hero_slider">

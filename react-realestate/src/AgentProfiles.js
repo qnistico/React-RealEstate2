@@ -26,7 +26,7 @@ import house9 from "./img/house9.jpg";
 import FeaturedListings from "./FeaturedListings";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
-
+import Footer from "./Footer";
 function AgentJohnRyan(props) {
   return (
     <div>
@@ -107,6 +107,7 @@ function AgentJohnRyan(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

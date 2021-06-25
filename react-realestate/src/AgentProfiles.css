@@ -115,3 +115,15 @@ h3 {
 
 
 
+@media screen and (max-width: 1150px) {
+    .agent_profile_flex {
+        flex-flow: column;
+    }
+    .ap_primary_left {
+        margin-bottom: 30px;
+    }
+    .ap_primary_right {
+        margin-left: 0;
+        width: 100%;
+    }
+}

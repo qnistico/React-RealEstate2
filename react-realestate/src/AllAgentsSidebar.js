@@ -5,7 +5,7 @@ import agent4 from "./img/agent4.jpg";
 
 function AllAgentsSidebar() {
   return (
-    <div>
+    <div className="all_agents_sidebar_flex">
       <div className="all_agents_sidebar">
         <div className="all_agents_item">
           <div className="aai_img_container">

@@ -113,6 +113,7 @@ function AllProperties(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

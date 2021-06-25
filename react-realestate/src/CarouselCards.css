@@ -155,6 +155,8 @@
     width: 125px;
     text-align: center;
     transition: all 0.2s ease-in;
+    text-transform: uppercase;
+    font-size: 13px;
   }
   .cc_cards_button:hover {
     background-color: #fff;

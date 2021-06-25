@@ -5,6 +5,7 @@ import BlogHero from "./BlogHero";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import "./Blogs.css";
+import Footer from "./Footer";
 
 function BlogPostTemplate(props) {
   return (
@@ -116,6 +117,7 @@ function BlogPostTemplate(props) {
       </div>
       </div>
     </div>
+    <Footer />
     </div>
   );
 }
