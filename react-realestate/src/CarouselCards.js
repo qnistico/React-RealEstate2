@@ -25,9 +25,9 @@ function CarouselCards(props) {
       <div className="ccsc">
       <div className="cc_single_card carousel_single_card">
       <div className="card_img_container">
-        <a href="/Page2"><img src={props.cardImage} alt="" /></a>
+        <a href="/Page2"><img src={props.cardImg} alt={props.cardimgalt} /></a>
         <a href="/Page2" className="card_img_agent">
-          <Avatar src={agent1} />
+          <Avatar src={props.agentImg} />
         </a>
       </div>
       <div className="cc_cards_content">
@@ -38,7 +38,7 @@ function CarouselCards(props) {
           <a href="#!" className="cc_cards_location">
             {props.address}
           </a>
-          <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/Page2" className="more_button">[more]</a></p>
+          <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
         </div>
         <div className="cc_cards_center">
           <div className="cc_icon_info_flex">
@@ -63,7 +63,7 @@ function CarouselCards(props) {
         <div className="cc_cards_bottom">
           <div>
             <p>For Sale</p>
-            <p className="card_price">{props.price}</p>
+            <p className="card_price">{props.cardPrice}</p>
           </div>
           <a href="/Page2" className="cc_cards_button">
             View

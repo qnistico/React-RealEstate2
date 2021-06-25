@@ -329,6 +329,11 @@ input:active {
   margin-top: 8px;
 }
 
+.lp_cards_bottom p:first-of-type {
+  color: #1a1a1a;
+  font-weight: 900 !important;
+}
+
 .color {
   color: #2196f3;
   font-weight: 700;

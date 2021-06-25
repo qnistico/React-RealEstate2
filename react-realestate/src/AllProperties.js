@@ -172,9 +172,11 @@ function AllProperties(props) {
               />
             </div>
             <div className="ap_sidebar_item">
+              <h3>Featured Listings</h3>
               <FeaturedListings />
             </div>
             <div className="ap_sidebar_item">
+              <h3>Mortgage Calculator</h3>
               <MortgageCalculator />
             </div>
           </div>

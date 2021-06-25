@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import LandingPageCards from './LandingPageCards';
-import LandingPageCards1 from './LandingPageCards1';
-import LandingPageCards2 from './LandingPageCards2';
-import CarouselCards from './CarouselCards';
+import LandingPageCards from "./LandingPageCards";
+import LandingPageCards1 from "./LandingPageCards1";
+import LandingPageCards2 from "./LandingPageCards2";
+import CarouselCards from "./CarouselCards";
+import agent1 from "./img/agent1.jpg";
+import agent3 from "./img/agent3.jpg";
+import agent4 from "./img/agent4.jpg";
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
 import house3 from "./img/house3.jpg";
@@ -24,64 +27,222 @@ import house16 from "./img/house16.jpg";
 import "./MultiCarousel.css";
 
 function MultiCarousel(props) {
-    const responsive = {
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3,
-          slidesToSlide: 1 // optional, default to 1.
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2,
-          slidesToSlide: 2 // optional, default to 1.
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1 // optional, default to 1.
-        }
-      };
-    return (
-        <div className="multi_carousel">
-            
-<div className="multi_car_flex">
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
+  return (
+    <div className="multi_carousel">
+      <div className="multi_car_flex">
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={4500}
+          keyBoardControl={true}
+          customTransition="all 0.5s"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div><CarouselCards
+            cardImg={house1}
+            agentImg={agent1}
+            cardTitle="Mansion on Lorem Ave"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$5,200,000"
+            bedrooms="4"
+            bathrooms="5"
+            sqft="6,500 SqFt"
+            cardimgalt="mansion"
+          /></div>
+         <div> <CarouselCards
+            cardImg={house2}
+            agentImg={agent1}
+            cardTitle="Mansion on Lorem Ave"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$1,800,000"
+            bedrooms="3"
+            bathrooms="4"
+            sqft="4500 SqFt"
+            cardimgalt="mansion"
+          /></div>
+          <div><CarouselCards
+            cardImg={house16}
+            agentImg={agent3}
+            cardTitle="Mansion on Lorem Ave"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$4,300,000"
+            bedrooms="3"
+            bathrooms="4"
+            sqft="5,200 SqFt"
+            cardimgalt="mansion"
+          /></div>
+          <div><CarouselCards
+            cardImg={house15}
+            agentImg={agent3}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$5,700,000"
+            bedrooms="4"
+            bathrooms="5"
+            sqft="7,200 SqFt"
+            cardimgalt="mansion"
+          /></div>
+          <div><CarouselCards
+            cardImg={house10}
+            agentImg={agent3}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$5,400,000"
+            bedrooms="4"
+            bathrooms="5"
+            sqft="7,200 SqFt"
+            cardimgalt="mansion"
+          /></div>
+          <div><CarouselCards
+            cardImg={house7}
+            agentImg={agent3}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$14,000,000"
+            bedrooms="6"
+            bathrooms="7"
+            sqft="13,500 SqFt"
+            cardimgalt="mansion"
+          /></div>
 
-<Carousel
-  swipeable={true}
-  draggable={true}
-  showDots={true}
-  responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
-  infinite={true}
-  autoPlay={true}
-  autoPlaySpeed={4500}
-  keyBoardControl={true}
-  customTransition="all 0.5s"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
->
-  <div><CarouselCards cardImage={house1}/></div>
-  <div><CarouselCards cardImage={house2}/></div>
-  <div><CarouselCards cardImage={house3}/></div>
-  <div><CarouselCards cardImage={house4}/></div>
-  <div><CarouselCards cardImage={house5}/></div>
-  <div><CarouselCards cardImage={house6}/></div>
-  <div><CarouselCards cardImage={house7}/></div>
-  <div><CarouselCards cardImage={house8}/></div>
-  <div><CarouselCards cardImage={house9}/></div>
-  <div><CarouselCards cardImage={house10}/></div>
-  <div><CarouselCards cardImage={house11}/></div>
-  <div><CarouselCards cardImage={house12}/></div>
-  <div><CarouselCards cardImage={house13}/></div>
-  <div><CarouselCards cardImage={house14}/></div>
-  <div><CarouselCards cardImage={house16}/></div>
-</Carousel>
-</div>
-        </div>
-    )
+          <div><CarouselCards
+            cardImg={house11}
+            agentImg={agent3}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$630,000"
+            bedrooms="3"
+            bathrooms="4"
+            sqft="3,900 SqFt"
+            cardimgalt="house"
+          /></div>
+
+          <div><CarouselCards
+            cardImg={house14}
+            agentImg={agent4}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$4,100,000"
+            bedrooms="4"
+            bathrooms="5"
+            sqft="5,000 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house8}
+            agentImg={agent4}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$1,100,000"
+            bedrooms="2"
+            bathrooms="4"
+            sqft="4,900 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house9}
+            agentImg={agent4}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$680,000"
+            bedrooms="2"
+            bathrooms="4"
+            sqft="3,200 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house6}
+            agentImg={agent4}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$425,000"
+            bedrooms="2"
+            bathrooms="2"
+            sqft="2,300 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house12}
+            agentImg={agent4}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$499,999"
+            bedrooms="2"
+            bathrooms="3"
+            sqft="2,850 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house3}
+            agentImg={agent1}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$2,300,000"
+            bedrooms="4"
+            bathrooms="5"
+            sqft="5,000 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house4}
+            agentImg={agent1}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$900,000"
+            bedrooms="2"
+            bathrooms="3"
+            sqft="2,759 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+          <div><CarouselCards
+            cardImg={house5}
+            agentImg={agent1}
+            cardTitle="Villa on Lorem Street"
+            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            cardPrice="$650,000"
+            bedrooms="2"
+            bathrooms="3"
+            sqft="2,300 SqFt"
+            cardimgalt="mansion"
+          />
+          </div>
+        </Carousel>
+      </div>
+    </div>
+  );
 }
 
-export default MultiCarousel
+export default MultiCarousel;
