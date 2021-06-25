@@ -25,7 +25,7 @@ import house15 from "./img/house15.jpg";
 function HomeInteriorSlider(props) {
     return (
         <div className="home_interior_slider">
-            <MDBCarousel showIndicators showControls fade interval={5000} className="wtf">
+            <MDBCarousel showIndicators showControls slide interval={5000} className="wtf">
       <MDBCarouselInner>
         <MDBCarouselItem itemId={0}>
           <MDBCarouselElement src={props.houseImg} alt='...' />

@@ -35,7 +35,7 @@ function agentReviews(props) {
           <a href="/AgentKevinProfile"><img src={agent3} alt="" /></a>
           <h3>Kevin Richmond</h3>
           <a href="#!" tel="123-456-7891">
-            (123)-456-7891
+            (123)-456-7892
           </a>
           <a href="#!" mailto="example@gmail.com"></a>
           <p>Rating</p>
@@ -53,7 +53,7 @@ function agentReviews(props) {
           <a href="/AgentMaryProfile"><img src={agent4} alt="" /></a>
           <h3>Mary Williams</h3>
           <a href="#!" tel="123-456-7891">
-            (123)-456-7891
+            (123)-456-7893
           </a>
           <a href="#!" mailto="example@gmail.com"></a>
           <p>Rating</p>

@@ -194,6 +194,7 @@ input:active {
 .lp_cards_flex {
   max-width: 1280px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -209,7 +210,8 @@ input:active {
   background-color: #fff;
   display: flex;
   flex-flow: column;
-  margin: 0 15px 0 15px;
+  flex: 1 30%;
+  margin: 0 15px 30px 15px;
   position: relative;
   top: 0;
   transition: 0.3s ease-out;
@@ -229,6 +231,32 @@ input:active {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+}
+
+.featured_badge {
+  font-size: 13px;
+  background-color: #E7841E;
+  color: white !important;
+  font-weight: 500;
+  padding: 1px 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.for_sale_badge {
+  font-size: 13px;
+  background-color: #2196f3;
+  color: white !important;
+  font-weight: 500;
+  padding: 1px 8px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.featured_badge:hover {
+  cursor: default;
 }
 
 .lp_cards_body:hover img {
@@ -374,11 +402,20 @@ input:active {
 
 .card_img_agent {
   position: absolute;
-  padding: 10px;
+  padding: 12px;
+  display: flex;
+}
+
+.cia_name,
+.card_img_agent p{
+  color: white;
+  margin: 0 0 0 12px;
 }
 
 .MuiAvatar-circle {
   border: 2px solid white;
+  width: 55px !important;
+  height: 55px !important;
 }
 
 /* ----- ImgOverlay ----- */
@@ -843,7 +880,9 @@ iframe {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
+
 
 .card_img_agent {
   position: absolute;
@@ -1021,18 +1060,22 @@ input.form-control.form_input {
 }
 
 .navbar {
+    width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   z-index: 99;
   height: 75px;
-  width: 100%;
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
   transition: all 0.5s ease;
   background-color: white !important;
+}
+
+.container-fluid {
+  max-width: 1280px;
 }
 
 .login_flex {
@@ -1145,6 +1188,7 @@ input.form-control.form_input {
   .container-fluid {
     background-color: #fff;
     padding: 10px auto;
+    max-height: unset;
   }
   .login_button {
     margin-top: 0;
@@ -1202,5 +1246,8 @@ input.form-control.form_input {
 @media screen and (max-width: 1075px) {
   .property_showcase_flex {
     flex-flow: column;
+  }
+  .lp_cards_body {
+    flex: 1 45%;
   }
 }

@@ -42,7 +42,7 @@ function HeroSlider() {
         </div>
       </div>
       <div className="hero_slider">
-        <MDBCarousel showIndicators showControls fade interval={5000}>
+        <MDBCarousel showIndicators showControls slide interval={5000}>
           <MDBCarouselInner>
             <MDBCarouselItem itemId={0}>
               <MDBCarouselElement src={house15} alt="..." />

@@ -24,8 +24,10 @@ function CarouselCards(props) {
     return (
       <div className="ccsc">
       <div className="cc_single_card carousel_single_card">
-      <div className="card_img_container">
+      <div className="card_img_container cccic">
         <a href="/Page2"><img src={props.cardImg} alt={props.cardimgalt} /></a>
+        <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
         <a href="/Page2" className="card_img_agent">
           <Avatar src={props.agentImg} />
         </a>

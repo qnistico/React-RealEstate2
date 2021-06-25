@@ -35,10 +35,18 @@ function LandingPageCards() {
         <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house15} alt="" /></a>
-              <a href="/AgentJohnProfile" className="card_img_agent">
-                <Avatar src={agent1} />
+              <a href="/Page2">
+                <img src={house15} alt="" />
               </a>
+              <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
+
+              <div className="card_img_agent">
+                <a href="/AgentJohnProfile">
+                  <Avatar src={agent1} />
+                </a>
+                
+              </div>
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
@@ -48,7 +56,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -83,7 +97,12 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/TestPage3"><img src={house7} alt="" /></a>
+              <a href="/TestPage3">
+                <img src={house7} alt="" />
+              </a>
+              <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
+
               <a href="/AgentKevinProfile" className="card_img_agent">
                 <Avatar src={agent3} />
               </a>
@@ -96,7 +115,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -131,7 +156,12 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house9} alt="" /></a>
+              <a href="/Page2">
+                <img src={house9} alt="" />
+              </a>
+              <p className="featured_badge">Recent</p>
+              <p className="for_sale_badge">For Sale</p>
+
               <a href="/AgentMaryProfile" className="card_img_agent">
                 <Avatar src={agent4} />
               </a>
@@ -144,7 +174,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -177,11 +213,14 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="lp_cards_flex">
-        <div className="lp_cards_body">
+          <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house1} alt="" /></a>
+              <a href="/Page2">
+                <img src={house1} alt="" />
+              </a>
+              <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
+
               <a href="/AgentJohnProfile" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
@@ -194,7 +233,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -229,7 +274,12 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house10} alt="" /></a>
+              <a href="/Page2">
+                <img src={house10} alt="" />
+              </a>
+              <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
+
               <a href="/AgentKevinProfile" className="card_img_agent">
                 <Avatar src={agent3} />
               </a>
@@ -242,7 +292,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -277,7 +333,12 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house14} alt="" /></a>
+              <a href="/Page2">
+                <img src={house14} alt="" />
+              </a>
+              <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
+
               <a href="/AgentMaryProfile" className="card_img_agent">
                 <Avatar src={agent4} />
               </a>
@@ -290,7 +351,13 @@ function LandingPageCards() {
                 <a href="#!" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/Page2" className="more_button">[more]</a></p>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">

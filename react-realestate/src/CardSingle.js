@@ -19,6 +19,9 @@ function CardSingle(props) {
             <div className="single_cards_body vp_single_cards">
             <div className="sc_img_container">
               <a href="/Page2"><img src={props.cardImg} alt={props.cardimgalt} /></a>
+              <p className="featured_badge">{props.featured}</p>
+              <p className="for_sale_badge">{props.forsale}</p>
+
               <a href="/Page2" className="card_img_agent">
                 <Avatar src={props.agentImg} />
               </a>

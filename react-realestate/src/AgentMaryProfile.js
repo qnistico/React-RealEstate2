@@ -31,6 +31,8 @@ function AgentMaryProfile(props) {
         bedrooms: "2",
         bathrooms: "4",
         sqft: "4,900 SqFt",
+        featured: "Featured",
+        forsale: "For Sale"
       };
     
       const card2template = {
@@ -42,6 +44,8 @@ function AgentMaryProfile(props) {
         bedrooms: "2",
         bathrooms: "4",
         sqft: "3,200 SqFt",
+        featured: "Featured",
+        forsale: "For Sale"
       };
     
       const card3template = {
@@ -53,6 +57,8 @@ function AgentMaryProfile(props) {
         bedrooms: "2",
         bathrooms: "2",
         sqft: "2,300 SqFt",
+        featured: "Featured",
+        forsale: "For Sale"
       };
       const card4template = {
         cardImg: house12,
@@ -63,6 +69,8 @@ function AgentMaryProfile(props) {
         bedrooms: "2",
         bathrooms: "3",
         sqft: "2,850 SqFt",
+        featured: "Featured",
+        forsale: "For Sale"
       };
       const card5template = {
         cardImg: house14,
@@ -73,6 +81,8 @@ function AgentMaryProfile(props) {
         bedrooms: "4",
         bathrooms: "5",
         sqft: "5,000 SqFt",
+        featured: "Featured",
+        forsale: "For Sale"
       };
     return (
         <div className="agent_mary_profile">

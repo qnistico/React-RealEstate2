@@ -29,6 +29,8 @@ function AgentKevinProfile(props) {
     bedrooms: "4",
     bathrooms: "5",
     sqft: "7,200 SqFt",
+    featured: "Featured",
+        forsale: "For Sale"
   };
 
   const card2template = {
@@ -40,6 +42,8 @@ function AgentKevinProfile(props) {
     bedrooms: "4",
     bathrooms: "5",
     sqft: "7,200 SqFt",
+    featured: "Featured",
+        forsale: "For Sale"
   };
 
   const card3template = {
@@ -51,6 +55,8 @@ function AgentKevinProfile(props) {
     bedrooms: "6",
     bathrooms: "7",
     sqft: "13,500 SqFt",
+    featured: "Featured",
+        forsale: "For Sale"
   };
   const card4template = {
     
@@ -63,6 +69,8 @@ function AgentKevinProfile(props) {
     bedrooms: "3",
     bathrooms: "4",
     sqft: "5,200 SqFt",
+    featured: "Featured",
+        forsale: "For Sale"
   };
   const card5template = {
     cardImg: house11,
@@ -73,6 +81,8 @@ function AgentKevinProfile(props) {
     bedrooms: "3",
     bathrooms: "4",
     sqft: "3,900 SqFt",
+    featured: "Featured",
+        forsale: "For Sale"
   };
   return (
     <div>

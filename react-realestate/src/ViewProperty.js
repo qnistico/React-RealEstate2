@@ -52,6 +52,7 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import house16 from "./img/house16.jpg";
 import SidebarCards from "./SidebarCards";
 import LandingPageSingleCard from "./LandingPageSingleCard";
 import TestCarousel from "./TestCarousel";
@@ -245,57 +246,23 @@ function ViewProperty(props) {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.289532358501!2d-80.21163895982946!3d25.765165481805656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1624050037325!5m2!1sen!2sus"></iframe>
             </div>
             <div className="pspl_similar_properties">
-              <h3>Similar Properties</h3>
+              <h3>{props.morelistings}</h3>
               <div className="pspl_similar_flex">
                 <CardSingle
-                  cardImg={house1}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$5,200,000"
-                  bedrooms="4"
-                  bathrooms="5"
-                  sqft="6,500 SqFt"
+                  {...props.card1template}
+
                 />
                 <CardSingle
-                  cardImg={house2}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$1,800,000"
-                  bedrooms="3"
-                  bathrooms="4"
-                  sqft="4500 SqFt"
+                  {...props.card2template}
                 />
                 <CardSingle
-                  cardImg={house3}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$2,300,000"
-                  bedrooms="4"
-                  bathrooms="5"
-                  sqft="5000 SqFt"
+                  {...props.card3template}
                 />
                 <CardSingle
-                  cardImg={house4}
-                  agentImg={agent1}
-                  cardTitle="Mansion on Lorem Ave"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$900,000"
-                  bedrooms="2"
-                  bathrooms="3"
-                  sqft="2750 SqFt"
+                  {...props.card4template}
                 />
                 <CardSingle
-                  cardImg={house5}
-                  agentImg={agent1}
-                  cardTitle="Villa on Lorem Street"
-                  address="555 Lorem Avenue, Miami, FL 12345, USA"
-                  cardPrice="$650,000"
-                  bedrooms="2"
-                  bathrooms="3"
-                  sqft="2300 SqFt"
+                  {...props.card5template}
                 />
               </div>
             </div>

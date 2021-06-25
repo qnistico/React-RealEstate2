@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
-    MDBCarousel,
-    MDBCarouselInner,
-    MDBCarouselItem,
-    MDBCarouselElement,
-    MDBCarouselCaption,
-  } from 'mdb-react-ui-kit';
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBCarouselElement,
+  MDBCarouselCaption,
+} from "mdb-react-ui-kit";
 import MainNav from "./MainNav";
 import SortByContent from "./SortByContent";
 import LandingPageCards from "./LandingPageCards";
-import ViewProperty from './ViewProperty';
+import ViewProperty from "./ViewProperty";
 import HomeInteriorSlider from "./HomeInteriorSlider";
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
@@ -33,24 +33,100 @@ import house1BR from "./img/house1BR.jpg";
 import agent1 from "./img/agent1.jpg";
 
 function Page2(props) {
-    const templateImg = {
-        houseImg: house15,
-        houseLR: house1LR,
-        houseMBR: house1MBR,
-        houseBR: house1BR,
-      }
-      const psprAgent = {
-          agentImg: agent1,
-          agentName: "John Ryan"
-      }
-     
-    return (
-        
-        
-        <div className="page_2">
-            <ViewProperty headerTitle="Mansion on Lorem Ave" homeTitle="Mansion on Lorem Ave" homeAddress="123 Lorem Ave" homePrice="$5,200,000" bedrooms="4" bathrooms="5" sqft="6500 SqFt" yearBuilt="2007" templateImg={templateImg} psprAgent={psprAgent} />
-        </div>
-    )
+  const templateImg = {
+    houseImg: house1,
+    houseLR: house1LR,
+    houseMBR: house1MBR,
+    houseBR: house1BR,
+  };
+  const psprAgent = {
+    agentImg: agent1,
+    agentName: "John Ryan",
+  };
+  const card1template = {
+    cardImg: house1,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Miami, FL 12345, USA",
+    cardPrice: "$5,200,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "6,500 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+  };
+
+  const card2template = {
+    cardImg: house2,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Miami, FL 12345, USA",
+    cardPrice: "$1,800,000",
+    bedrooms: "3",
+    bathrooms: "4",
+    sqft: "4,500 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+  };
+
+  const card3template = {
+    cardImg: house3,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Miami, FL 12345, USA",
+    cardPrice: "$2,300,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "5,000 SqFt",
+    featured: "Recent",
+    forsale: "For Sale",
+  };
+  const card4template = {
+    cardImg: house4,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Miami, FL 12345, USA",
+    cardPrice: "$900,000",
+    bedrooms: "2",
+    bathrooms: "3",
+    sqft: "2,750 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+  };
+  const card5template = {
+    cardImg: house5,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Miami, FL 12345, USA",
+    cardPrice: "$650,000",
+    bedrooms: "2",
+    bathrooms: "3",
+    sqft: "2,300 SqFt",
+    featured: "Recent",
+    forsale: "For Sale",
+  };
+  return (
+    <div className="page_2">
+      <ViewProperty
+        headerTitle="Mansion on Lorem Ave"
+        homeTitle="Mansion on Lorem Ave"
+        homeAddress="123 Lorem Ave"
+        homePrice="$5,200,000"
+        bedrooms="4"
+        bathrooms="5"
+        sqft="6500 SqFt"
+        yearBuilt="2007"
+        templateImg={templateImg}
+        psprAgent={psprAgent}
+        morelistings="More Listings from John Ryan"
+        card1template={card1template}
+        card2template={card2template}
+        card3template={card3template}
+        card4template={card4template}
+        card5template={card5template}
+      />
+    </div>
+  );
 }
 
-export default Page2
+export default Page2;

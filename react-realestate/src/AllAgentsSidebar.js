@@ -23,28 +23,28 @@ function AllAgentsSidebar() {
       <div className="all_agents_sidebar">
         <div className="all_agents_item">
           <div className="aai_img_container">
-            <a href="/AgentJohnProfile">
+            <a href="/AgentKevinProfile">
               <img src={agent3} alt="" />
             </a>
           </div>
           <div className="aai_content">
-              <a href="/AgentJohnProfile" className="aai_name">Kevin Richmond</a>
+              <a href="/AgentKevinProfile" className="aai_name">Kevin Richmond</a>
             <a href="tel:1234561235" className="aai_phone">(123)-456-1235</a>
-            <a href="/AgentJohnProfile" className="aai_button">View Profile</a>
+            <a href="/AgentKevinProfile" className="aai_button">View Profile</a>
           </div>
         </div>
       </div>
       <div className="all_agents_sidebar">
         <div className="all_agents_item aai_last">
           <div className="aai_img_container">
-            <a href="/AgentJohnProfile">
+            <a href="/AgentMaryProfile">
               <img src={agent4} alt="" />
             </a>
           </div>
           <div className="aai_content">
-              <a href="/AgentJohnProfile" className="aai_name">Mary Williams</a>
+              <a href="/AgentMaryProfile" className="aai_name">Mary Williams</a>
             <a href="tel:1234561235" className="aai_phone">(123)-456-1235</a>
-            <a href="/AgentJohnProfile" className="aai_button">View Profile</a>
+            <a href="/AgentMaryProfile" className="aai_button">View Profile</a>
           </div>
         </div>
       </div>
