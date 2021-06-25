@@ -84,7 +84,9 @@ h3 {
 }
 
 .appl_top img {
-    width: 62%;
+    width: 55%;
+    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+
     object-fit: cover;
 }
 

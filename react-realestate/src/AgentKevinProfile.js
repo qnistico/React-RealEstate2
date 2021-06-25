@@ -32,14 +32,14 @@ function AgentKevinProfile(props) {
   };
 
   const card2template = {
-    cardImg: house16,
+    cardImg: house10,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$4,300,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "5,200 SqFt",
+    cardPrice: "$5,400,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
   };
 
   const card3template = {
@@ -53,14 +53,16 @@ function AgentKevinProfile(props) {
     sqft: "13,500 SqFt",
   };
   const card4template = {
-    cardImg: house10,
+    
+
+    cardImg: house16,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$5,400,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "7,200 SqFt",
+    cardPrice: "$4,300,000",
+    bedrooms: "3",
+    bathrooms: "4",
+    sqft: "5,200 SqFt",
   };
   const card5template = {
     cardImg: house11,

@@ -65,24 +65,7 @@ function MainNav() {
   All Properties
   </a>
 </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag="a" className="nav-link">
-                  Property Types
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink href="/Page2">Homes</MDBDropdownLink>
-                  </MDBDropdownItem>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink>Apartments</MDBDropdownLink>
-                  </MDBDropdownItem>
-                  <MDBDropdownItem>
-                    <MDBDropdownLink>Offices</MDBDropdownLink>
-                  </MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavbarItem>
+            
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link">
@@ -93,10 +76,10 @@ function MainNav() {
                     <MDBDropdownLink href="/AgentJohnProfile">Agent John Ryan</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Agent Kevin Richmond</MDBDropdownLink>
+                    <MDBDropdownLink href="/AgentKevinProfile">Agent Kevin Richmond</MDBDropdownLink>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <MDBDropdownLink>Agent Mary Williams</MDBDropdownLink>
+                    <MDBDropdownLink href="/AgentMaryProfile">Agent Mary Williams</MDBDropdownLink>
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>

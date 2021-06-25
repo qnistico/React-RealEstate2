@@ -14,6 +14,13 @@ import house6 from "./img/house6.jpg";
 import house7 from "./img/house7.jpg";
 import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
+import house10 from "./img/house10.jpg";
+import house11 from "./img/house11.jpg";
+import house12 from "./img/house12.jpg";
+import house13 from "./img/house13.jpg";
+import house14 from "./img/house14.jpg";
+import house15 from "./img/house15.jpg";
+import house16 from "./img/house16.jpg";
 import "./MultiCarousel.css";
 
 function MultiCarousel(props) {
@@ -65,6 +72,12 @@ function MultiCarousel(props) {
   <div><CarouselCards cardImage={house7}/></div>
   <div><CarouselCards cardImage={house8}/></div>
   <div><CarouselCards cardImage={house9}/></div>
+  <div><CarouselCards cardImage={house10}/></div>
+  <div><CarouselCards cardImage={house11}/></div>
+  <div><CarouselCards cardImage={house12}/></div>
+  <div><CarouselCards cardImage={house13}/></div>
+  <div><CarouselCards cardImage={house14}/></div>
+  <div><CarouselCards cardImage={house16}/></div>
 </Carousel>
 </div>
         </div>

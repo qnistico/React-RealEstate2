@@ -19,9 +19,9 @@ function LandingPage() {
       <HeroSlider />
       <SortByContent />
       <LandingPageCards />
-      <PhiOverlay />
-      <ImgOverlay />
       <Agents />
+      <ImgOverlay />
+      <PhiOverlay />
       <ContactOverlay />
       <MultiCarousel />
       <Footer />

@@ -4,7 +4,8 @@
 
 .agent_reviews {
   width: 100%;
-  padding: 60px 30px;
+  padding: 0 0 100px 0;
+  background-color: #fff;
 }
 
 .agent_reviews h2 {
@@ -31,7 +32,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   margin: 0 15px 0 15px;
 }
 

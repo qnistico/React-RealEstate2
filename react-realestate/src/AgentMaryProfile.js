@@ -23,56 +23,56 @@ import CardSingle from './CardSingle';
 
 function AgentMaryProfile(props) {
     const card1template = {
-        cardImg: house15,
-        agentImg: agent3,
+        cardImg: house8,
+        agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$5,700,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
+        cardPrice: "$1,100,000",
+        bedrooms: "2",
+        bathrooms: "4",
+        sqft: "4,900 SqFt",
       };
     
       const card2template = {
-        cardImg: house16,
-        agentImg: agent3,
+        cardImg: house9,
+        agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$4,300,000",
-        bedrooms: "3",
+        cardPrice: "$680,000",
+        bedrooms: "2",
         bathrooms: "4",
-        sqft: "5,200 SqFt",
+        sqft: "3,200 SqFt",
       };
     
       const card3template = {
-        cardImg: house7,
-        agentImg: agent3,
+        cardImg: house6,
+        agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$14,000,000",
-        bedrooms: "6",
-        bathrooms: "7",
-        sqft: "13,500 SqFt",
+        cardPrice: "$425,000",
+        bedrooms: "2",
+        bathrooms: "2",
+        sqft: "2,300 SqFt",
       };
       const card4template = {
-        cardImg: house10,
-        agentImg: agent3,
+        cardImg: house12,
+        agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$5,400,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
+        cardPrice: "$499,999",
+        bedrooms: "2",
+        bathrooms: "3",
+        sqft: "2,850 SqFt",
       };
       const card5template = {
-        cardImg: house11,
-        agentImg: agent3,
+        cardImg: house14,
+        agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$630,000",
-        bedrooms: "3",
-        bathrooms: "4",
-        sqft: "3,900 SqFt",
+        cardPrice: "$4,100,000",
+        bedrooms: "4",
+        bathrooms: "5",
+        sqft: "5,000 SqFt",
       };
     return (
         <div className="agent_mary_profile">

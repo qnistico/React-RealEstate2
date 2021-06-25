@@ -36,7 +36,7 @@ function LandingPageCards() {
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/Page2"><img src={house15} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
+              <a href="/AgentJohnProfile" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
             </div>
@@ -83,8 +83,8 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/TestPage3"><img src={house1} alt="" /></a>
-              <a href="/TestPage3" className="card_img_agent">
+              <a href="/TestPage3"><img src={house7} alt="" /></a>
+              <a href="/AgentKevinProfile" className="card_img_agent">
                 <Avatar src={agent3} />
               </a>
             </div>
@@ -131,8 +131,8 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house2} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
+              <a href="/Page2"><img src={house9} alt="" /></a>
+              <a href="/AgentMaryProfile" className="card_img_agent">
                 <Avatar src={agent4} />
               </a>
             </div>
@@ -181,8 +181,8 @@ function LandingPageCards() {
         <div className="lp_cards_flex">
         <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house7} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
+              <a href="/Page2"><img src={house1} alt="" /></a>
+              <a href="/AgentJohnProfile" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
             </div>
@@ -229,9 +229,9 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house4} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
-                <Avatar src={agent1} />
+              <a href="/Page2"><img src={house10} alt="" /></a>
+              <a href="/AgentKevinProfile" className="card_img_agent">
+                <Avatar src={agent3} />
               </a>
             </div>
             <div className="lp_cards_content">
@@ -277,9 +277,9 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={house6} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
-                <Avatar src={agent1} />
+              <a href="/Page2"><img src={house14} alt="" /></a>
+              <a href="/AgentMaryProfile" className="card_img_agent">
+                <Avatar src={agent4} />
               </a>
             </div>
             <div className="lp_cards_content">
