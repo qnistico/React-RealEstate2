@@ -26,6 +26,7 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import house16 from "./img/house16.jpg";
 import house1LR from "./img/house1LR.jpg";
 import house1MBR from "./img/house1MBR.jpg";
 import house1BR from "./img/house1BR.jpg";
@@ -33,7 +34,7 @@ import agent1 from "./img/agent1.jpg";
 
 function Page2(props) {
     const templateImg = {
-        houseImg: house1,
+        houseImg: house15,
         houseLR: house1LR,
         houseMBR: house1MBR,
         houseBR: house1BR,

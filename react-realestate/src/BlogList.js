@@ -28,7 +28,7 @@ function BlogList() {
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -37,20 +37,20 @@ function BlogList() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="/BlogPostTemplate" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <a href="#!"><img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Selling Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -59,7 +59,7 @@ function BlogList() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -68,13 +68,13 @@ function BlogList() {
             <div className="blog_list">
               <div className="blog_item">
                 <div className="blog_img">
-                  <a href="#!"><img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -83,20 +83,20 @@ function BlogList() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <a href="#!"><img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -105,7 +105,7 @@ function BlogList() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -139,7 +139,7 @@ function BlogList() {
             <div className="related_posts">
   <div className="related_posts_item">
     <div className="rp_img">
-  <a href=""><img src={blogheroimg} alt="" /></a>
+  <a href="/"><img src={blogheroimg} alt="" /></a>
   </div>
   <div className="rpi_content">
   <h4>Author: John Johnson</h4>

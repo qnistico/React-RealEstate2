@@ -68,7 +68,7 @@ function BlogListPage2() {
                   />
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -77,7 +77,7 @@ function BlogListPage2() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -90,7 +90,7 @@ function BlogListPage2() {
                   />
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -99,7 +99,7 @@ function BlogListPage2() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -114,7 +114,7 @@ function BlogListPage2() {
                   />
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -123,7 +123,7 @@ function BlogListPage2() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -136,7 +136,7 @@ function BlogListPage2() {
                   />
                 </div>
                 <div className="blog_item_content">
-                  <a href="#!" className="blog_title">
+                  <a href="/BuyingAHome" className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -145,7 +145,7 @@ function BlogListPage2() {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="#!" className="blog_button ">
+                  <a href="/BuyingAHome" className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
