@@ -119,3 +119,14 @@
   .stars {
     margin-bottom: 20px;
   }
+  
+  @media screen and (max-width: 576.98px) {
+    .agent_reviews_flex {
+      flex-flow: column;
+    }
+    .agent_reviews_content {
+      padding: 20px;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }

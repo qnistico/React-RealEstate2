@@ -34,3 +34,14 @@
 .react-multi-carousel-dot-list {
   
 }
+
+
+@media screen and (max-width: 576.98px) {
+  .multi_carousel {
+    padding: 20px;
+  }
+  
+  .ccsc {
+    
+  }
+}

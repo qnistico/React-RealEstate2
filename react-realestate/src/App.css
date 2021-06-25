@@ -166,6 +166,7 @@ input:active {
 .slope1 {
   width: 100%;
   z-index: 2;
+  margin-bottom: -5vw;
   position: relative;
 }
 
@@ -399,6 +400,7 @@ input:active {
   color: white;
   padding: 20px;
   text-shadow: 1px 1px 1px black;
+  width: 100%;
 }
 
 .img_overlay_content p {
@@ -1058,6 +1060,7 @@ input.form-control.form_input {
 
 .navbar-nav {
   justify-content: center;
+  margin-left: 15%;
 }
 
 .nav-link,
@@ -1086,12 +1089,55 @@ input.form-control.form_input {
 .btn-primary {
   background-color: #2196f3;
 }
+@media screen and (max-width: 576.98px) {
+  .lp_cards_flex {
+    flex-flow: column;
+    margin-bottom: 0;
+  }
+  .lp_cards {
+    padding: 20px;
+  }
+  .lp_cards_body {
+    margin-bottom: 20px;
+  }
+  .img_overlay {
+    background-attachment: unset;
+  }
+  .button_flex {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_overlay_button {
+    margin: 8px 0;
+  }
+  .phi_overlay {
+    padding: 20px;
+  }
+  .phi_overlay_flex {
+    flex-flow: column;
+  }
+  .phi_overlay img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .nav-link {
     margin-left: 0;
     border-radius: 0;
     width: 50%;
     margin-top: 8px;
+  }
+  .container-fluid {
+    background-color: #fff;
+    padding: 10px auto;
+  }
+  .login_button {
+    margin-top: 0;
+  }
+  .navbar-nav {
+    margin: 0;
   }
 }
 
