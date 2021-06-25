@@ -60,7 +60,6 @@ body p {
 .hero_button:active,
 .hero_button:focus {
   background-color: #fff;
-  box-shadow: none !important;
   color: #2196f3 !important;
 }
 
@@ -205,7 +204,6 @@ input:active {
 }
 
 .lp_cards_body {
-  width: 100%;
   box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   background-color: #fff;
   display: flex;

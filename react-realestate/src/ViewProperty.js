@@ -248,22 +248,11 @@ function ViewProperty(props) {
             <div className="pspl_similar_properties">
               <h3>{props.morelistings}</h3>
               <div className="pspl_similar_flex">
-                <CardSingle
-                  {...props.card1template}
-
-                />
-                <CardSingle
-                  {...props.card2template}
-                />
-                <CardSingle
-                  {...props.card3template}
-                />
-                <CardSingle
-                  {...props.card4template}
-                />
-                <CardSingle
-                  {...props.card5template}
-                />
+                <CardSingle {...props.card1template} />
+                <CardSingle {...props.card2template} />
+                <CardSingle {...props.card3template} />
+                <CardSingle {...props.card4template} />
+                <CardSingle {...props.card5template} />
               </div>
             </div>
           </div>

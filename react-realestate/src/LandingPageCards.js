@@ -43,7 +43,7 @@ function LandingPageCards() {
 
               <div className="card_img_agent">
                 <a href="/AgentJohnProfile">
-                  <Avatar src={agent1} />
+                  <Avatar src={agent3} />
                 </a>
                 
               </div>

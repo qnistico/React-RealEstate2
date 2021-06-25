@@ -13,6 +13,7 @@ import PhiOverlay from "./PhiOverlay";
 import MultiCarousel from "./MultiCarousel";
 import Footer from "./Footer";
 import ContactOverlay from "./ContactOverlay";
+import LPBlog from "./LPBlog";
 function LandingPage() {
   return (
     <div className="landing_page">
@@ -23,6 +24,7 @@ function LandingPage() {
       <ImgOverlay />
       <PhiOverlay />
       <ContactOverlay />
+      <LPBlog />
       <MultiCarousel />
       <Footer />
     </div>
