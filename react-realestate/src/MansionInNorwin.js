@@ -73,6 +73,10 @@ function MansionInNorwin(props) {
     houseLR: house15LR,
     houseMBR: house15MBR,
     houseBR: house15BR,
+    althouse: "Mansion",
+            altlr: "living room",
+            altmbr: "bedroom",
+            altbr: "bathroom"
   };
   const psprAgent = {
     agentImg: agent3,
