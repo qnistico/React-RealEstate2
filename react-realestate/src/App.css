@@ -39,7 +39,7 @@ body p {
   align-items: flex-end;
   justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin: auto !important;
 }
 .hero_content {

@@ -46,15 +46,15 @@ function HeroSlider() {
         <MDBCarousel showIndicators showControls slide interval={5000}>
           <MDBCarouselInner>
             <MDBCarouselItem itemId={0}>
-              <MDBCarouselElement src={lphouse15} alt="mansion" />
+              <MDBCarouselElement src={lphouse15} alt="mansion" className="parallaxify" data-speed-multiplier="-1"/>
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={1}>
-              <MDBCarouselElement src={lphouse1} alt="mansion" />
+              <MDBCarouselElement src={lphouse1} alt="mansion" className="parallaxify" data-speed-multiplier="-1"/>
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={2}>
-              <MDBCarouselElement src={lphouse2} alt="mansion" />
+              <MDBCarouselElement src={lphouse2} alt="mansion" className="parallaxify" data-speed-multiplier="-1"/>
             </MDBCarouselItem>
           </MDBCarouselInner>
         </MDBCarousel>

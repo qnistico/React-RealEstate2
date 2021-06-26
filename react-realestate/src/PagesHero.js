@@ -2,8 +2,9 @@ import React from 'react';
 import SortByContent from './SortByContent';
 
 function PagesHero(props) {
+  
     return (
-            <div className="view_property">
+            <div className="view_property parallaxify" data-speed-multiplier="1">
       <div className="property_hero">
         <div className="property_hero_flex">
           <div className="property_hero_content">
