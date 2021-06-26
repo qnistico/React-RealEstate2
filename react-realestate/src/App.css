@@ -167,7 +167,6 @@ input:active {
 .slope1 {
   width: 100%;
   z-index: 2;
-  margin-bottom: -5vw;
   position: relative;
 }
 
@@ -187,7 +186,8 @@ input:active {
 
 .lp_header_p {
   text-align: center;
-  margin-bottom: 40px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
 }
 
 .lp_cards_flex {
@@ -233,7 +233,7 @@ input:active {
 
 .featured_badge {
   font-size: 13px;
-  background-color: #E7841E;
+  background-color: #e7841e;
   color: white !important;
   font-weight: 500;
   padding: 1px 8px;
@@ -266,14 +266,12 @@ input:active {
   top: -12px;
 }
 
-
-
 .lp_cards_content {
   padding: 20px;
 }
 
 .lp_cards_content p {
-  font-size: 14px;
+  font-size: 14px; 
 }
 
 .lp_cards_top {
@@ -405,7 +403,7 @@ input:active {
 }
 
 .cia_name,
-.card_img_agent p{
+.card_img_agent p {
   color: white;
   margin: 0 0 0 12px;
 }
@@ -881,7 +879,6 @@ iframe {
   position: relative;
 }
 
-
 .card_img_agent {
   position: absolute;
   padding: 10px;
@@ -1009,7 +1006,7 @@ input.form-control.form_input {
 .phi_overlay {
   width: 100%;
   background-color: #fff;
-  padding: 60px 30px;
+  padding: 0 0 60px 0;
 }
 
 .phi_overlay_flex {
@@ -1058,7 +1055,7 @@ input.form-control.form_input {
 }
 
 .navbar {
-    width: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,9 +1136,6 @@ input.form-control.form_input {
 .btn-primary {
   background-color: #2196f3;
 }
-
-
-
 
 @media screen and (max-width: 576.98px) {
   .lp_cards_flex {

@@ -10,7 +10,7 @@ import logo1 from "./img/logo1.png";
 function Footer() {
   return (
     <div>
-      <svg className="slope2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#091f33" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg className="slope2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#091f33" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
       <footer>
         <div className="footer_flex">
           <div className="footer_item footer_description">

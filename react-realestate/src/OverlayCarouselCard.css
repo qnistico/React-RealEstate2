@@ -1,0 +1,127 @@
+.oc_card {
+    width: 100%;
+}
+
+.oc_card_flex {
+    display: flex;
+    flex-flow: column;
+    max-width: 1280px;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.oc_card_content {
+    width: 46%;
+    background-color: #fff;
+    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    padding: 20px;
+    z-index: 45 !important;
+    margin-top: -91px;
+
+}
+
+.oc_card_img img {
+    width: 62%;
+    margin: auto;
+    max-height: 62vh;
+}
+
+.oc_card_img {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.oc_cards_center {
+    display: flex;
+}
+
+
+.oc_card_description {
+    font-size: 14px;
+}
+
+.oc_card_title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1a1a1a;
+}
+
+.oc_card_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.oc_card_bottom p:first-of-type {
+    margin: 20px 0 0 0;
+}
+
+.oc_card_bottom .card_price {
+    margin-bottom: 0;
+}
+
+.oc_card_button {
+    padding: 12.36px 20px !important;
+  background-color: #2196f3;
+  color: white;
+  font-weight: 700;
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
+  border: 1px solid #2196f3 !important;
+  min-width: 100px;
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.oc_card_button:hover,
+.oc_card_button:active {
+    color: #2196f3;
+    background-color: white;
+    border-color: #2196f3;
+}
+
+.oc_card_bottom_2 {
+    display: flex;
+    align-items: center;
+}
+
+.oc_card_bottom_2_info {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.oc_cards_center {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .oc_cards_center .MuiSvgIcon-root {
+    font-size: 20px !important;
+    margin: 0;
+    color: #5c687d;
+  }
+  
+  .oc_cards_center p {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin: 0 12px 0 10px;
+  }
+
+  .oc_icon_info_flex {
+    display: flex;
+    flex-flow: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .occ_flex {
+      display: flex;
+  }

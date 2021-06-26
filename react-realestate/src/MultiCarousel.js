@@ -46,7 +46,7 @@ function MultiCarousel(props) {
   };
   return (
     <div className="multi_carousel">
-      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f2f5" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
       <div className="multi_car_flex">
         <Carousel
           swipeable={true}
@@ -156,90 +156,7 @@ function MultiCarousel(props) {
             cardimgalt="mansion"
           />
           </div>
-          <div><CarouselCards
-            cardImg={house8}
-            agentImg={agent4}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$1,100,000"
-            bedrooms="2"
-            bathrooms="4"
-            sqft="4,900 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house9}
-            agentImg={agent4}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$680,000"
-            bedrooms="2"
-            bathrooms="4"
-            sqft="3,200 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house6}
-            agentImg={agent4}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$425,000"
-            bedrooms="2"
-            bathrooms="2"
-            sqft="2,300 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house12}
-            agentImg={agent4}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$499,999"
-            bedrooms="2"
-            bathrooms="3"
-            sqft="2,850 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house3}
-            agentImg={agent1}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$2,300,000"
-            bedrooms="4"
-            bathrooms="5"
-            sqft="5,000 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house4}
-            agentImg={agent1}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$900,000"
-            bedrooms="2"
-            bathrooms="3"
-            sqft="2,759 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
-          <div><CarouselCards
-            cardImg={house5}
-            agentImg={agent1}
-            cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
-            cardPrice="$650,000"
-            bedrooms="2"
-            bathrooms="3"
-            sqft="2,300 SqFt"
-            cardimgalt="mansion"
-          />
-          </div>
+          
         </Carousel>
       </div>
     </div>

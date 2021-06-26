@@ -19,6 +19,7 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import house16 from "./img/house16.jpg";
 import { Avatar } from "@material-ui/core";
 import agent1 from "./img/agent1.jpg";
 import agent2 from "./img/agent2.jpg";

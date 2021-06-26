@@ -9,9 +9,11 @@
     color: #1a1a1a;
 }
 
-.lp_header_p {
+.lp_blog .lp_header_p {
     text-align: center;
     color: #1a1a1a;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 .lpb_item {
@@ -29,6 +31,7 @@
 
 .lpb_item img{
     transition: all 0.5s ease;
+    width: 100%;
 }
 
 .lpb_item:hover img {
@@ -47,6 +50,9 @@
 
 .blog_img {
     overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+
 }
 
 .blog_img img {

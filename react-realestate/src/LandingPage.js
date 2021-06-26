@@ -14,17 +14,20 @@ import MultiCarousel from "./MultiCarousel";
 import Footer from "./Footer";
 import ContactOverlay from "./ContactOverlay";
 import LPBlog from "./LPBlog";
+import CustomerReviews from "./CustomerReviews";
+import OverlayCarousel from "./OverlayCarousel";
 function LandingPage() {
   return (
     <div className="landing_page">
       <HeroSlider />
       <SortByContent />
       <LandingPageCards />
+      <OverlayCarousel />
       <Agents />
-      <ImgOverlay />
       <PhiOverlay />
       <ContactOverlay />
       <LPBlog />
+      <CustomerReviews />
       <MultiCarousel />
       <Footer />
     </div>
