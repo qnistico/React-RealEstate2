@@ -36,7 +36,7 @@ function LandingPageCards() {
         <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2">
+              <a href="/MansionInNorwin">
                 <img src={house15} alt="" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -46,21 +46,20 @@ function LandingPageCards() {
                 <a href="/AgentJohnProfile">
                   <Avatar src={agent3} />
                 </a>
-                
               </div>
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
                 <a href="#!" className="lp_cards_title">
-                  Luxury Mansion
+                  Norwin Mansion
                 </a>
                 <a href="#!" className="lp_cards_location">
-                  555 Lorem Avenue, Miami, FL 12345, USA
+                  555 Lorem Avenue, Norwin, PA 12345, USA
                 </a>
                 <p>
-                  A fabulous villa in Miami located conveniently near a train
-                  station, beach and...
-                  <a href="/Page2" className="more_button">
+                  A fabulous villa in Norwin, Pennsylvania located conveniently
+                  near a train station and...
+                  <a href="/MansionInNorwin" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -90,7 +89,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="/Page2" className="lp_cards_button">
+                <a href="/MansionInNorwin" className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -98,7 +97,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/TestPage3">
+              <a href="/MansionInGladwyne">
                 <img src={house7} alt="" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -110,7 +109,7 @@ function LandingPageCards() {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="#!" className="lp_cards_title">
+                <a href="/MansionInGladwyne" className="lp_cards_title">
                   Luxury Mansion
                 </a>
                 <a href="#!" className="lp_cards_location">
@@ -119,7 +118,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/Page2" className="more_button">
+                  <a href="/MansionInGladwyne" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -149,7 +148,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="#!" className="lp_cards_button">
+                <a href="/MansionInGladwyne" className="lp_cards_button">
                   View
                 </a>
               </div>

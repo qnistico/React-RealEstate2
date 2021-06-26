@@ -23,6 +23,8 @@ import AllProperties from "./AllProperties";
 import AllPropertiesPage2 from "./AllPropertiesPage2";
 import AgentKevinProfile from "./AgentKevinProfile";
 import AgentMaryProfile from "./AgentMaryProfile";
+import MansionInNorwin from "./MansionInNorwin";
+import MansionInGladwyne from "./MansionInGladwyne";
 function App() {
   return (
     <Router>
@@ -35,6 +37,12 @@ function App() {
             </Route>
             <Route exact path="/Page2">
               <Page2 />
+            </Route>
+            <Route exact path="/MansionInNorwin">
+              <MansionInNorwin />
+            </Route>
+            <Route exact path="/MansionInGladwyne">
+              <MansionInGladwyne />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />
