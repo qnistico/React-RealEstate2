@@ -21,8 +21,18 @@ body p {
   line-height: 1.618 !important;
 }
 
+.dark_gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), black);
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .hero_container {
-  width: 75%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
@@ -37,6 +47,7 @@ body p {
   color: #1a1a1a;
   background-color: #fff;
   padding: 20px;
+  margin-right: 100px;
 }
 
 .hero_content h1 {
@@ -250,7 +261,6 @@ input:active {
   /*
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   */
-
 }
 
 .for_sale_badge {
@@ -282,7 +292,7 @@ input:active {
 }
 
 .lp_cards_content p {
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .lp_cards_top {

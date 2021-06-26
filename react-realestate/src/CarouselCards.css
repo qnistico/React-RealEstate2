@@ -16,7 +16,7 @@
 
 .carousel_single_card {
   width: auto;
-  box-shadow: 0 0 5px 2px rgb(0 0 0 / 7.5%);
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   background-color: #fff;
   display: flex;
   flex-flow: column;

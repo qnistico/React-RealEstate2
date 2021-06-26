@@ -66,7 +66,7 @@ import "./Calculator.css";
 import house7lr from "./img/house7lr.jpg";
 import house7mbr from "./img/house7mbr.jpg";
 import house7br from "./img/house7br.jpg";
-function MansionInGladwyne() {
+function MansionInGladwyne(props) {
     const templateImg = {
         houseImg: house7,
         houseLR: house7lr,

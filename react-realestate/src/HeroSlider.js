@@ -25,6 +25,9 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import lphouse15 from "./img/lphouse15.jpg";
+import lphouse1 from "./img/lphouse1.jpg";
+import lphouse2 from "./img/lphouse2.jpg";
 
 
 function HeroSlider() {
@@ -43,15 +46,15 @@ function HeroSlider() {
         <MDBCarousel showIndicators showControls slide interval={5000}>
           <MDBCarouselInner>
             <MDBCarouselItem itemId={0}>
-              <MDBCarouselElement src={house15} alt="mansion" />
+              <MDBCarouselElement src={lphouse15} alt="mansion" />
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={1}>
-              <MDBCarouselElement src={house1} alt="mansion" />
+              <MDBCarouselElement src={lphouse1} alt="mansion" />
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={2}>
-              <MDBCarouselElement src={house2} alt="mansion" />
+              <MDBCarouselElement src={lphouse2} alt="mansion" />
             </MDBCarouselItem>
           </MDBCarouselInner>
         </MDBCarousel>
