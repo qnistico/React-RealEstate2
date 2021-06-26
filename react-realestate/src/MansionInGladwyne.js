@@ -72,6 +72,10 @@ function MansionInGladwyne() {
         houseLR: house7lr,
         houseMBR: house7mbr,
         houseBR: house7br,
+        althouse: "Mansion",
+            altlr: "living room",
+            altmbr: "bedroom",
+            altbr: "bathroom"
       };
       const psprAgent = {
         agentImg: agent3,
@@ -88,7 +92,7 @@ function MansionInGladwyne() {
         bathrooms: "5",
         sqft: "7,200 SqFt",
         featured: "Featured",
-            forsale: "For Sale"
+            forsale: "For Sale",
       };
     
       const card2template = {

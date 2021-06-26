@@ -16,6 +16,7 @@ import ContactOverlay from "./ContactOverlay";
 import LPBlog from "./LPBlog";
 import CustomerReviews from "./CustomerReviews";
 import OverlayCarousel from "./OverlayCarousel";
+import PhiOverlay2 from "./PhiOverlay2";
 function LandingPage() {
   return (
     <div className="landing_page">
@@ -25,6 +26,7 @@ function LandingPage() {
       <OverlayCarousel />
       <Agents />
       <PhiOverlay />
+      <PhiOverlay2 />
       <ContactOverlay />
       <LPBlog />
       <CustomerReviews />

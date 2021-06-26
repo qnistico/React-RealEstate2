@@ -170,12 +170,19 @@ input:active {
   position: relative;
 }
 
+.slope_reverse {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  transform: scaleX(-1);
+}
+
 .slope2 {
   width: 100%;
   z-index: 2;
   position: relative;
-  transform: rotate(180deg);
   margin-bottom: -5px;
+  transform: scaleX(-1) rotate(180deg);
 }
 
 .lp_cards h2 {
@@ -555,7 +562,7 @@ input:active {
 }
 
 .home_interior_slider img {
-  max-height: 585px;
+  max-height: 525px;
 }
 
 .property_showcase_flex {
@@ -1018,7 +1025,6 @@ input.form-control.form_input {
 
 .phi_overlay_flex_reverse {
   flex-flow: row-reverse;
-  margin-top: 40px;
 }
 
 .phi_overlay_flex img {
@@ -1137,13 +1143,19 @@ input.form-control.form_input {
   background-color: #2196f3;
 }
 
+.react-multiple-carousel__arrow {
+  border-radius: 100% !important;
+  width: 45px;
+  height: 45px;
+}
+
 @media screen and (max-width: 576.98px) {
   .lp_cards_flex {
     flex-flow: column;
     margin-bottom: 0;
   }
   .lp_cards {
-    padding: 20px;
+    padding: 0;
   }
   .lp_cards_body {
     margin-bottom: 20px;
@@ -1160,14 +1172,34 @@ input.form-control.form_input {
     margin: 8px 0;
   }
   .phi_overlay {
-    padding: 20px;
+    padding: 0;
   }
   .phi_overlay_flex {
     flex-flow: column;
+    width: 90%;
+    padding-bottom: 40px;
   }
   .phi_overlay img {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .lp_blog_flex {
+    flex-flow: column !important;
+  }
+  .customer_reviews_flex {
+    flex-flow: column;
+  }
+  .multi_carousel {
+    padding: 0 !important;
+  }
+  .multi_car_flex {
+    padding: 60px 0 60px 0 !important;
+  }
+  .ps_primary_left {
+    padding: 20px;
+  }
+  .pspr_item {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 768px) {

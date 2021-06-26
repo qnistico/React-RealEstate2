@@ -9,7 +9,7 @@ import "./Agents.css";
 function agentReviews(props) {
   return (
     <div className="agent_reviews">
-      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg className="slope_reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
       <h2>Our Top Agents</h2>
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">

@@ -7,6 +7,7 @@
 .customer_reviews h2 {
     text-align: center;
     color: #1a1a1a;
+    font-weight: 700;
 }
 
 .customer_reviews_flex {
@@ -58,7 +59,32 @@
     
 }
 
+.cr_icons a {
+    color: #808080;
+}
+
+.fb,
+.ig {
+    transition: all 0.2s ease-in !important;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.ig:hover {
+    color: #4c68d7;
+}
+
 .customer_stars {
     color: #ff9529;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
 }
+
+
+
+
+
 

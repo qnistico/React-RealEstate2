@@ -4,6 +4,20 @@
     padding: 0 0 0 0;
 }
 
+.overlay_carousel h2,
+.overlay_carousel p {
+    text-align: center;
+}
+
+.overlay_carousel h2 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.overlay_carousel p {
+    margin-bottom: 0;
+}
+
 .overlay_carousel_container {
     max-width: 1280px;
     margin: 60px auto 0 auto;

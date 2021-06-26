@@ -154,65 +154,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          <div className="lp_cards_body">
-            <div className="card_img_container">
-              <a href="/Page2">
-                <img src={house9} alt="" />
-              </a>
-              <p className="featured_badge">Recent</p>
-              <p className="for_sale_badge">For Sale</p>
-
-              <a href="/AgentMaryProfile" className="card_img_agent">
-                <Avatar src={agent4} />
-              </a>
-            </div>
-            <div className="lp_cards_content">
-              <div className="lp_cards_top">
-                <a href="#!" className="lp_cards_title">
-                  Luxury Mansion
-                </a>
-                <a href="#!" className="lp_cards_location">
-                  555 Lorem Avenue, Miami, FL 12345, USA
-                </a>
-                <p>
-                  A fabulous villa in Miami located conveniently near a train
-                  station, beach and...
-                  <a href="/Page2" className="more_button">
-                    [more]
-                  </a>
-                </p>
-              </div>
-              <div className="lp_cards_center">
-                <div className="lp_icon_info_flex">
-                  <div className="lp_icon_flex">
-                    <Hotel className="card_icon" />
-                    <p>3</p>
-                  </div>
-                </div>
-                <div className="lp_icon_info_flex ml-1">
-                  <div className="lp_icon_flex">
-                    <BathtubOutlinedIcon className="card_icon" />
-                    <p>3</p>
-                  </div>
-                </div>
-                <div className="lp_icon_info_flex ml-1">
-                  <div className="lp_icon_flex">
-                    <CheckBoxOutlineBlankOutlined className="card_icon" />
-                    <p>5000 Sq Ft</p>
-                  </div>
-                </div>
-              </div>
-              <div className="lp_cards_bottom">
-                <div>
-                  <p>For Sale</p>
-                  <p className="card_price">$3,200,000</p>
-                </div>
-                <a href="#!" className="lp_cards_button">
-                  View
-                </a>
-              </div>
-            </div>
-          </div>
+          
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/Page2">
@@ -267,6 +209,65 @@ function LandingPageCards() {
                   <p className="card_price">$3,200,000</p>
                 </div>
                 <a href="/Page2" className="lp_cards_button">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="lp_cards_body">
+            <div className="card_img_container">
+              <a href="/Page2">
+                <img src={house9} alt="" />
+              </a>
+              <p className="featured_badge">Recent</p>
+              <p className="for_sale_badge">For Sale</p>
+
+              <a href="/AgentMaryProfile" className="card_img_agent">
+                <Avatar src={agent4} />
+              </a>
+            </div>
+            <div className="lp_cards_content">
+              <div className="lp_cards_top">
+                <a href="#!" className="lp_cards_title">
+                  Luxury Mansion
+                </a>
+                <a href="#!" className="lp_cards_location">
+                  555 Lorem Avenue, Miami, FL 12345, USA
+                </a>
+                <p>
+                  A fabulous villa in Miami located conveniently near a train
+                  station, beach and...
+                  <a href="/Page2" className="more_button">
+                    [more]
+                  </a>
+                </p>
+              </div>
+              <div className="lp_cards_center">
+                <div className="lp_icon_info_flex">
+                  <div className="lp_icon_flex">
+                    <Hotel className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <BathtubOutlinedIcon className="card_icon" />
+                    <p>3</p>
+                  </div>
+                </div>
+                <div className="lp_icon_info_flex ml-1">
+                  <div className="lp_icon_flex">
+                    <CheckBoxOutlineBlankOutlined className="card_icon" />
+                    <p>5000 Sq Ft</p>
+                  </div>
+                </div>
+              </div>
+              <div className="lp_cards_bottom">
+                <div>
+                  <p>For Sale</p>
+                  <p className="card_price">$3,200,000</p>
+                </div>
+                <a href="#!" className="lp_cards_button">
                   View
                 </a>
               </div>

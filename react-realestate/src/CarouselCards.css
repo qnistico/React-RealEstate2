@@ -43,6 +43,10 @@
   top: 0 !important;
 }
 
+.ccsc {
+  padding-bottom: 40px;
+}
+
 .card_img_container {
   overflow: hidden;
   display: flex;

@@ -3,7 +3,7 @@ import PhiImage2 from "./img/phioverlay2.jpg";
 
 function PhiOverlay2() {
     return (
-        <div>
+        <div className="phi_overlay">
             <div className="phi_overlay_flex phi_overlay_flex_reverse">
         <img src={PhiImage2} alt="female real estate agent with skyscraper" />
         <div className="phi_overlay_content">
