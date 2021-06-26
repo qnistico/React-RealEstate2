@@ -5,7 +5,7 @@ import PhiImage2 from "./img/phioverlay2.jpg";
 function PhiOverlay() {
   return (
     <div className="phi_overlay">
-      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fff" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f1f2f5" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
       <div className="phi_overlay_flex">
         <img src={PhiImage} alt="male real estate agent with skyscraper" />
         <div className="phi_overlay_content">

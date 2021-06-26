@@ -10,6 +10,7 @@ function CustomerReviews() {
   return (
     <div className="customer_reviews">
         <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f1f2f5" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+        <div className="customer_reviews_content">
       <h2>Customer Reviews</h2>
       <p className="lp_header_p">Read what our customers are saying about FL Premium Realty and our agents.</p>
       <div className="customer_reviews_flex">
@@ -18,7 +19,7 @@ function CustomerReviews() {
             <img src={customerimg1} alt="" />
             <div>
             <p className="cr_name">Kaitlin McKinney</p>
-            <p className="cr_profession">Profession</p>
+            <p className="cr_profession">Attorney</p>
             </div>
             </div>
             <p className="cr_review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
@@ -34,8 +35,8 @@ function CustomerReviews() {
             <div className="cr_img_flex">
             <img src={customerimg2} alt="" />
             <div>
-            <p className="cr_name">Kaitlin McKinney</p>
-            <p className="cr_profession">Profession</p>
+            <p className="cr_name">Ashley Parks</p>
+            <p className="cr_profession">Fashion Designer</p>
             </div>
             </div>
             <p className="cr_review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
@@ -52,8 +53,8 @@ function CustomerReviews() {
             <div className="cr_img_flex">
             <img src={customerimg3} alt="" />
             <div>
-            <p className="cr_name">Kaitlin McKinney</p>
-            <p className="cr_profession">Profession</p>
+            <p className="cr_name">Joseph Sigmund</p>
+            <p className="cr_profession">Physical Therapist</p>
             </div>
             </div>
             <p className="cr_review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
@@ -65,6 +66,7 @@ function CustomerReviews() {
           <StarIcon />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

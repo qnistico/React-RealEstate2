@@ -1,15 +1,16 @@
 .overlay_carousel {
     margin: auto;
-    background-color: #fff;
-    padding: 60px 0;
+    background-color: #fafafa;
+    padding: 0 0 0 0;
 }
 
 .overlay_carousel_container {
     max-width: 1280px;
-    margin: auto;
+    margin: 60px auto 0 auto;
 }
 
+.overlay_carousel .react-multi-carousel-dot-list {
 
-
+}
 
 

@@ -15,6 +15,10 @@
     margin: auto;
 }
 
+.customer_reviews_content {
+    padding: 60px 0 0 0;
+}
+
 .cr_item {
     margin: 15px;
     box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
@@ -40,12 +44,13 @@
 .cr_name {
     color: #1a1a1a;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .cr_profession {
     color: #808080;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .cr_review {
