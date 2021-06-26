@@ -25,6 +25,7 @@ import AgentKevinProfile from "./AgentKevinProfile";
 import AgentMaryProfile from "./AgentMaryProfile";
 import MansionInNorwin from "./MansionInNorwin";
 import MansionInGladwyne from "./MansionInGladwyne";
+import HouseInEdgeworth from "./HouseInEdgeworth";
 function App() {
   return (
     <Router>
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route exact path="/MansionInGladwyne">
               <MansionInGladwyne />
+            </Route>
+            <Route exact path="/HouseInEdgeworth">
+              <HouseInEdgeworth />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />

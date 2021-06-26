@@ -258,7 +258,7 @@ function ViewProperty(props) {
           </div>
           <div className="ps_primary_right">
             <div className="pspr_item">
-              <PropertyViewAgent {...props.psprAgent} />
+              <PropertyViewAgent {...props.psprAgent}  />
             </div>
             <div className="pspr_featured pspr_item">
               <h3>Featured Listings</h3>

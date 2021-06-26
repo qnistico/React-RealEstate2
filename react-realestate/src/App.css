@@ -245,8 +245,12 @@ input:active {
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0px;
+  /*
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+  */
+
 }
 
 .for_sale_badge {

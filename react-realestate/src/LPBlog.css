@@ -74,6 +74,9 @@
   font-size: 13px;
 }
 
+.lp_blog .MuiSvgIcon-root {
+    font-size: 18px;
+}
 
 
 .lp_blog_button:hover,

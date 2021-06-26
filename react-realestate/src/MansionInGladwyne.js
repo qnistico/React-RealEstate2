@@ -148,13 +148,13 @@ function MansionInGladwyne() {
         <div className="mansion_in_gladwyne">
             <ViewProperty
         headerTitle="Mansion on 555 Lorem Ave"
-        homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
+        homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
         homeAddress="555 Lorem Ave"
-        homePrice="$5,200,000"
-        bedrooms="4"
-        bathrooms="5"
-        sqft="6500 SqFt"
-        yearBuilt="2007"
+        homePrice="$14,000,000"
+        bedrooms="6"
+        bathrooms="7"
+        sqft="13,500 SqFt"
+        yearBuilt="2003"
         templateImg={templateImg}
         psprAgent={psprAgent}
         morelistings="More Listings from Kevin Richmond"

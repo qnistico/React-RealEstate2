@@ -216,8 +216,8 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/MansionInFoxchapel">
-                <img src={house9} alt="" />
+              <a href="/HouseInEdgeworth">
+                <img src={house9} alt="house" />
               </a>
               <p className="featured_badge">Recent</p>
               <p className="for_sale_badge">For Sale</p>
@@ -228,16 +228,16 @@ function LandingPageCards() {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="#!" className="lp_cards_title">
-                  Luxury Mansion
+                <a href="/HouseInEdgeworth" className="lp_cards_title">
+                 House In Edgeworth
                 </a>
-                <a href="#!" className="lp_cards_location">
+                <a href="/HouseInEdgeworth" className="lp_cards_location">
                   555 Lorem Avenue, Miami, FL 12345, USA
                 </a>
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/MansionInFoxchapel" className="more_button">
+                  <a href="/HouseInEdgeworth" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -267,7 +267,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="#!" className="lp_cards_button">
+                <a href="/HouseInEdgeworth" className="lp_cards_button">
                   View
                 </a>
               </div>

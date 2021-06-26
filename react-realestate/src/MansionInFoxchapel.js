@@ -42,6 +42,7 @@ function MansionInFoxchapel(props) {
   const psprAgent = {
     agentImg: agent1,
     agentName: "John Ryan",
+    aplink: "/AgentJohnProfile",
   };
   const card1template = {
     cardImg: house1,

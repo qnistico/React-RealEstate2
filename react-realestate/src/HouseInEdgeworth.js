@@ -63,107 +63,106 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
-import house15LR from "./img/house15LR.jpg";
-import house15MBR from "./img/house15MBR.jpg";
-import house15BR from "./img/house15BR.jpg";
-
-function MansionInNorwin(props) {
-  const templateImg = {
-    houseImg: house15,
-    houseLR: house15LR,
-    houseMBR: house15MBR,
-    houseBR: house15BR,
-  };
-  const psprAgent = {
-    agentImg: agent3,
-    agentName: "Kevin Richmond",
-    aplink: "/AgentKevinProfile"
-  };
-  const card1template = {
-    cardImg: house10,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$5,400,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "7,200 SqFt",
-    featured: "Featured",
+import house9lr from "./img/house9lr.jpg";
+import house9mbr from "./img/house9mbr.jpg";
+import house9br from "./img/house9br.jpg";
+function HouseInEdgeworth(props) {
+    const templateImg = {
+        houseImg: house9,
+        houseLR: house9lr,
+        houseMBR: house9mbr,
+        houseBR: house9br,
+      };
+      const psprAgent = {
+        agentImg: agent4,
+        agentName: "Mary Williams",
+        aplink: "/AgentMaryProfile"
+      };
+      const card1template = {
+        cardImg: house8,
+        agentImg: agent4,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Miami, FL 12345, USA",
+        cardPrice: "$1,100,000",
+        bedrooms: "2",
+        bathrooms: "4",
+        sqft: "4,900 SqFt",
+        featured: "Featured",
         forsale: "For Sale"
-  };
-
-  const card2template = {
-    cardImg: house7,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$14,000,000",
-    bedrooms: "6",
-    bathrooms: "7",
-    sqft: "13,500 SqFt",
-    featured: "Featured",
+      };
+    
+      const card2template = {
+        cardImg: house6,
+        agentImg: agent4,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Miami, FL 12345, USA",
+        cardPrice: "$425,000",
+        bedrooms: "2",
+        bathrooms: "2",
+        sqft: "2,300 SqFt",
+        featured: "Featured",
         forsale: "For Sale"
-  };
-
-  const card3template = {
-    cardImg: house16,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$4,300,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "5,200 SqFt",
-    featured: "Featured",
+      };
+    
+      const card3template = {
+        cardImg: house12,
+        agentImg: agent4,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Miami, FL 12345, USA",
+        cardPrice: "$499,999",
+        bedrooms: "2",
+        bathrooms: "3",
+        sqft: "2,850 SqFt",
+        featured: "Featured",
         forsale: "For Sale"
-  };
-  const card4template = {
-    cardImg: house11,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$630,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "3,900 SqFt",
-    featured: "Featured",
+      };
+      const card4template = {
+        cardImg: house14,
+        agentImg: agent4,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Miami, FL 12345, USA",
+        cardPrice: "$4,100,000",
+        bedrooms: "4",
+        bathrooms: "5",
+        sqft: "5,000 SqFt",
+        featured: "Featured",
         forsale: "For Sale"
-  };
-  const card5template = {
-    cardImg: house15,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Miami, FL 12345, USA",
-    cardPrice: "$5,700,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "7,200 SqFt",
-    featured: "Featured",
+      };
+      const card5template = {
+        cardImg: house9,
+        agentImg: agent4,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Miami, FL 12345, USA",
+        cardPrice: "$680,000",
+        bedrooms: "2",
+        bathrooms: "4",
+        sqft: "3,200 SqFt",
+        featured: "Featured",
         forsale: "For Sale"
-  };
-  return (
-    <div className="norwin_mansion">
-      <ViewProperty
+      };
+    return (
+        <div className="house_in_edgeworth">
+            <ViewProperty
         headerTitle="Mansion on 555 Lorem Ave"
-        homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
+        homeTitle="Mansion on 555 Lorem Ave, EdgeWorth, PA"
         homeAddress="555 Lorem Ave"
-        homePrice="$5,700,000"
-        bedrooms="4"
-        bathrooms="5"
-        sqft="7,200 SqFt"
-        yearBuilt="2015"
+        homePrice="$680,000"
+        bedrooms="2"
+        bathrooms="4"
+        sqft="3,200 SqFt"
+        yearBuilt="2003"
         templateImg={templateImg}
         psprAgent={psprAgent}
-        morelistings="More Listings from Kevin Richmond"
+        morelistings="More Listings from Mary Williams"
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
         card4template={card4template}
         card5template={card5template}
-        aplink="/AgentKevinProfile"
+        aplink="/AgentMaryProfile"
       />
-    </div>
-  );
+        </div>
+    )
 }
 
-export default MansionInNorwin;
+export default HouseInEdgeworth

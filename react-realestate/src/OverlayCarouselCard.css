@@ -44,6 +44,7 @@
 
 .oc_card_description {
     font-size: 14px;
+    text-align: left !important;
 }
 
 .oc_card_title {
@@ -102,6 +103,7 @@
 .oc_cards_center {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
   
   .oc_cards_center .MuiSvgIcon-root {
