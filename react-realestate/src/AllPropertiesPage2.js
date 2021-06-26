@@ -40,7 +40,7 @@ import agent4 from "./img/agent4.jpg";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-function AllPropertiesPage2(props) {
+function AllPropertiesMansionInFoxchapel(props) {
   return (
     <div>
       <PagesHero pagesheroTitle="All Listings" />
@@ -138,10 +138,10 @@ function AllPropertiesPage2(props) {
               <a href="/AllProperties" className="ap_1 ap_1_p1">
                 1
               </a>
-              <a href="/AllPropertiesPage2" className="ap_2 ap_2_p2">
+              <a href="/AllPropertiesMansionInFoxchapel" className="ap_2 ap_2_p2">
                 2
               </a>
-              <a href="/AllPropertiesPage2" className="ap_arrow_forward">
+              <a href="/AllPropertiesMansionInFoxchapel" className="ap_arrow_forward">
                 <ArrowForwardIosIcon />
               </a>
             </div>
@@ -171,4 +171,4 @@ function AllPropertiesPage2(props) {
   );
 }
 
-export default AllPropertiesPage2;
+export default AllPropertiesMansionInFoxchapel;

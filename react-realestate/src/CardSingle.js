@@ -18,11 +18,11 @@ function CardSingle(props) {
           <div className="single_cards">
             <div className="single_cards_body vp_single_cards">
             <div className="sc_img_container">
-              <a href="/Page2"><img src={props.cardImg} alt={props.cardimgalt} /></a>
+              <a href="/MansionInFoxchapel"><img src={props.cardImg} alt={props.cardimgalt} /></a>
               <p className="featured_badge">{props.featured}</p>
               <p className="for_sale_badge">{props.forsale}</p>
 
-              <a href="/Page2" className="card_img_agent">
+              <a href="/MansionInFoxchapel" className="card_img_agent">
                 <Avatar src={props.agentImg} />
               </a>
             </div>
@@ -35,7 +35,7 @@ function CardSingle(props) {
               <a href="#!" className="single_cards_location">
                 {props.address}
               </a>
-              <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/Page2" className="more_button">[more]</a></p>
+              <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
             </div>
             <div className="single_cards_center">
                 <div className="icon_info_flex">
@@ -63,7 +63,7 @@ function CardSingle(props) {
                   <p>For Sale</p>
                   <p className="card_price">{props.cardPrice}</p>
                 </div>
-                <a href="/Page2" className="single_cards_button hero_button">
+                <a href="/MansionInFoxchapel" className="single_cards_button hero_button">
                   View
                 </a>
               </div>

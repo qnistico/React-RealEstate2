@@ -25,8 +25,8 @@ function LandingPageSingleCard(props) {
         <div className="lpsc">
             <div className="lp_single_card">
             <div className="card_img_container">
-              <a href="/Page2"><img src={props.cardImage} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
+              <a href="/MansionInFoxchapel"><img src={props.cardImage} alt="" /></a>
+              <a href="/MansionInFoxchapel" className="card_img_agent">
                 <Avatar src={agent1} />
               </a>
             </div>
@@ -38,7 +38,7 @@ function LandingPageSingleCard(props) {
                 <a href="#!" className="lp_cards_location">
                   {props.address}
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/Page2" className="more_button">[more]</a></p>
+                <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">
@@ -65,7 +65,7 @@ function LandingPageSingleCard(props) {
                   <p>For Sale</p>
                   <p className="card_price">{props.price}</p>
                 </div>
-                <a href="/Page2" className="lp_cards_button">
+                <a href="/MansionInFoxchapel" className="lp_cards_button">
                   View
                 </a>
               </div>

@@ -7,7 +7,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { ArrowForward } from "@material-ui/icons";
 
-function BlogListPage2() {
+function BlogListMansionInFoxchapel() {
   window.addEventListener("scroll", parallax);
 
   function parallax() {
@@ -158,10 +158,10 @@ function BlogListPage2() {
               <a href="/BlogList" className="bp_1 bp_1_p1">
                 1
               </a>
-              <a href="/BlogListPage2" className="bp_2 bp_2_p2">
+              <a href="/BlogListMansionInFoxchapel" className="bp_2 bp_2_p2">
                 2
               </a>
-              <a href="/BlogListPage2" className="bp_arrow_forward">
+              <a href="/BlogListMansionInFoxchapel" className="bp_arrow_forward">
                 <ArrowForwardIosIcon />
               </a>
             </div>
@@ -177,4 +177,4 @@ function BlogListPage2() {
   );
 }
 
-export default BlogListPage2;
+export default BlogListMansionInFoxchapel;

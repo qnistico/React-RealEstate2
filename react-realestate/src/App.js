@@ -10,7 +10,7 @@ import LandingPageCards2 from "./LandingPageCards2";
 import ImgOverlay from "./ImgOverlay";
 import Agents from "./Agents";
 import LandingPage from "./LandingPage";
-import Page2 from "./Page2";
+import MansionInFoxchapel from "./MansionInFoxchapel";
 import PhiOverlay from "./PhiOverlay";
 import AgentJohnProfile from "./AgentJohnProfile";
 import TestPage3 from "./TestPage3";
@@ -35,8 +35,8 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
-            <Route exact path="/Page2">
-              <Page2 />
+            <Route exact path="/MansionInFoxchapel">
+              <MansionInFoxchapel />
             </Route>
             <Route exact path="/MansionInNorwin">
               <MansionInNorwin />

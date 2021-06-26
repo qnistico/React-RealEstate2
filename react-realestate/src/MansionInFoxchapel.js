@@ -32,7 +32,7 @@ import house1MBR from "./img/house1MBR.jpg";
 import house1BR from "./img/house1BR.jpg";
 import agent1 from "./img/agent1.jpg";
 
-function Page2(props) {
+function MansionInFoxchapel(props) {
   const templateImg = {
     houseImg: house1,
     houseLR: house1LR,
@@ -129,4 +129,4 @@ function Page2(props) {
   );
 }
 
-export default Page2;
+export default MansionInFoxchapel;

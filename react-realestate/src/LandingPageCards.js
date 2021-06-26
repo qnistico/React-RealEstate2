@@ -157,7 +157,7 @@ function LandingPageCards() {
           
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2">
+              <a href="/MansionInFoxchapel">
                 <img src={house1} alt="" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -178,7 +178,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/Page2" className="more_button">
+                  <a href="/MansionInFoxchapel" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -208,7 +208,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="/Page2" className="lp_cards_button">
+                <a href="/MansionInFoxchapel" className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -216,7 +216,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2">
+              <a href="/MansionInFoxchapel">
                 <img src={house9} alt="" />
               </a>
               <p className="featured_badge">Recent</p>
@@ -237,7 +237,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/Page2" className="more_button">
+                  <a href="/MansionInFoxchapel" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -275,7 +275,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2">
+              <a href="/MansionInFoxchapel">
                 <img src={house10} alt="" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -296,7 +296,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/Page2" className="more_button">
+                  <a href="/MansionInFoxchapel" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -326,7 +326,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="/Page2" className="lp_cards_button">
+                <a href="/MansionInFoxchapel" className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -334,7 +334,7 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/Page2">
+              <a href="/MansionInFoxchapel">
                 <img src={house14} alt="" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -355,7 +355,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Miami located conveniently near a train
                   station, beach and...
-                  <a href="/Page2" className="more_button">
+                  <a href="/MansionInFoxchapel" className="more_button">
                     [more]
                   </a>
                 </p>
@@ -385,7 +385,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$3,200,000</p>
                 </div>
-                <a href="/Page2" className="lp_cards_button">
+                <a href="/MansionInFoxchapel" className="lp_cards_button">
                   View
                 </a>
               </div>

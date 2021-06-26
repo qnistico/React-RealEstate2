@@ -69,7 +69,6 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="4500 SqFt"
               cardimgalt="mansion"
-
             />
             <CardSingle
               cardImg={house8}
@@ -81,7 +80,6 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="4,900 SqFt"
               cardimgalt="mansion"
-
             />
             <CardSingle
               cardImg={house15}
@@ -93,7 +91,6 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-
             />
             <CardSingle
               cardImg={house10}
@@ -105,7 +102,6 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-
             />
             <CardSingle
               cardImg={house7}
@@ -117,9 +113,8 @@ function AllProperties(props) {
               bathrooms="7"
               sqft="13,500 SqFt"
               cardimgalt="mansion"
-
             />
-            
+
             <CardSingle
               cardImg={house9}
               agentImg={agent4}
@@ -130,10 +125,7 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="3,200 SqFt"
               cardimgalt="house"
-
             />
-
-
 
             <CardSingle
               cardImg={house14}
@@ -145,7 +137,6 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="5,000 SqFt"
               cardimgalt="mansion"
-
             />
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">
@@ -181,7 +172,7 @@ function AllProperties(props) {
             </div>
           </div>
         </div>
-    </div>
+      </div>
       <Footer />
     </div>
   );

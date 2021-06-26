@@ -147,7 +147,7 @@
 }
 
 .blog_post_img img {
-  width: 100%;
+  width: 100% !important;
   object-fit: cover;
 }
 

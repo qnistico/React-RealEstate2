@@ -18,8 +18,8 @@ function SidebarCards(props) {
           <div className="sidebar_cards">
             <div className="sidebar_cards_body">
             <div className="card_img_container">
-              <a href="/Page2"><img src={props.cardImg} alt="" /></a>
-              <a href="/Page2" className="card_img_agent">
+              <a href="/MansionInFoxchapel"><img src={props.cardImg} alt="" /></a>
+              <a href="/MansionInFoxchapel" className="card_img_agent">
                 <Avatar src={props.agentImg} />
               </a>
             </div>
@@ -60,7 +60,7 @@ function SidebarCards(props) {
                   <p>For Sale</p>
                   <p className="card_price">{props.cardPrice}</p>
                 </div>
-                <a href="/Page2" className="sidebar_cards_button">
+                <a href="/MansionInFoxchapel" className="sidebar_cards_button">
                   View
                 </a>
               </div>
