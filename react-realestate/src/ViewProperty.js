@@ -70,6 +70,12 @@ function ViewProperty(props) {
   return (
     <div className="view_property">
       <div className="property_hero">
+        <img
+          src={props.pagesheroimg}
+          alt=""
+          className="parallaxify"
+          data-speed-multiplier="-1"
+        />
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>
@@ -258,7 +264,7 @@ function ViewProperty(props) {
           </div>
           <div className="ps_primary_right">
             <div className="pspr_item">
-              <PropertyViewAgent {...props.psprAgent}  />
+              <PropertyViewAgent {...props.psprAgent} />
             </div>
             <div className="pspr_featured pspr_item">
               <h3>Featured Listings</h3>

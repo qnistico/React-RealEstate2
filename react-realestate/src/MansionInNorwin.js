@@ -66,6 +66,9 @@ import "./Calculator.css";
 import house15LR from "./img/house15LR.jpg";
 import house15MBR from "./img/house15MBR.jpg";
 import house15BR from "./img/house15BR.jpg";
+import lphouse15 from "./img/lphouse15.jpg";
+import lphouse1 from "./img/lphouse1.jpg";
+import lphouse2 from "./img/lphouse2.jpg";
 
 function MansionInNorwin(props) {
   const templateImg = {
@@ -156,6 +159,7 @@ function MansionInNorwin(props) {
         bathrooms="5"
         sqft="7,200 SqFt"
         yearBuilt="2015"
+        pagesheroimg={lphouse15}
         templateImg={templateImg}
         psprAgent={psprAgent}
         morelistings="More Listings from Kevin Richmond"

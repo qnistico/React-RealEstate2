@@ -520,16 +520,27 @@ input:active {
 .property_hero {
   width: 100%;
   min-height: 62vh;
-  background: url(img/propertybg.jpg);
-  background-size: cover;
-  background-position: center -120%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.property_hero img {
+  width: 100%;
+  height: 62vh;
+  filter: brightness(90%);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1 !important;
 }
 
 .property_hero_content {
   color: white;
+  position: relative;
+  z-index: 5 !important;
 }
 
 .property_hero_content h2 {
