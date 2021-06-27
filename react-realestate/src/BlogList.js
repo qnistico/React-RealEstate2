@@ -15,6 +15,7 @@ function BlogList() {
 
   return (
     <div>
+          <div className="dark_gradient"></div>
       <BlogHero />
       <div className="all_blogs">
         <div className="blog_flex">

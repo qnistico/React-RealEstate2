@@ -24,7 +24,7 @@ body p {
 .dark_gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.001));
   width: 100vw;
-  height: 75px;
+  height: 100px;
   position: absolute;
   top: 0;
   left: 0;

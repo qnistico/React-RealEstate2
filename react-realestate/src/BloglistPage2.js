@@ -7,7 +7,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { ArrowForward } from "@material-ui/icons";
 
-function BlogListMansionInFoxchapel() {
+function BlogListPage2() {
   window.addEventListener("scroll", parallax);
 
   function parallax() {
@@ -55,6 +55,7 @@ function BlogListMansionInFoxchapel() {
 
   return (
     <div>
+          <div className="dark_gradient"></div>
       <BlogHero />
       <div className="all_blogs">
         <div className="blog_flex">
@@ -177,4 +178,4 @@ function BlogListMansionInFoxchapel() {
   );
 }
 
-export default BlogListMansionInFoxchapel;
+export default BlogListPage2;

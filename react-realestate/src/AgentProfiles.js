@@ -30,6 +30,8 @@ import Footer from "./Footer";
 function AgentJohnRyan(props) {
   return (
     <div>
+          <div className="dark_gradient"></div>
+
       <PagesHero />
       <div className="agent_profile">
         <div className="agent_profile_flex">

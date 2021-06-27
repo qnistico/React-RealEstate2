@@ -14,6 +14,7 @@ import Footer from "./Footer";
 function ContactUs() {
   return (
     <div>
+          <div className="dark_gradient"></div>
       <PagesHero />
       <div className="contact_us">
         <div className="contact_us_flex">

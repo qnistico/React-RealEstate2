@@ -44,6 +44,8 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 function AllProperties(props) {
   return (
     <div>
+          <div className="dark_gradient"></div>
+
       <PagesHero pagesheroTitle="All Listings" />
       <div className="all_properties">
         <div className="all_properties_flex">
