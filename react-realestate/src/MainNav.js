@@ -22,25 +22,29 @@ import logo1 from "./img/logo1.png";
 function MainNav() {
   
   const [showBasic, setShowBasic] = useState(false);
-  function resizeHeaderOnScroll() {
+
+   function fixHeaderOnScoll() {
+
     const distanceY = window.pageYOffset || 
     document.documentElement.scrollTop,
-    shrinkOn = 5,
-    headerEl = document.getElementById('js-header');
+    fixOn = 500,
+    headerEl = document.getElementById('navbar');
    
-   if (distanceY > shrinkOn) {
-      headerEl.classList.add("smaller");
+   if (distanceY > fixOn) {
+      headerEl.classList.add("fix_nav");
       } else {
-       headerEl.classList.remove("smaller");
+       headerEl.classList.remove("fix_nav");
       }
     }
    
-   window.addEventListener('scroll', resizeHeaderOnScroll);
-
+   window.addEventListener('scroll', fixHeaderOnScoll);
+   
+   
+   
    
    
   return (
-    <MDBNavbar expand="lg" light bgColor="light" id="js-header">
+    <MDBNavbar expand="lg" light bgColor="light" id="navbar" className="navbar">
       <MDBContainer fluid>
         <MDBNavbarBrand href="/"><img src={logo1} alt="" id="logo" /></MDBNavbarBrand>
 

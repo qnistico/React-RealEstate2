@@ -1,5 +1,4 @@
 import React from "react";
-import img_overlay from "./img/birds_eye.jpg";
 
 function ImgOverlay() {
 

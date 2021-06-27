@@ -60,6 +60,7 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
+import PagesHero from "./PagesHero";
 
 function ViewProperty(props) {
   const reactElement = (
@@ -68,14 +69,10 @@ function ViewProperty(props) {
     </div>
   );
   return (
+    <div>
+    <div className="dark_gradient"></div>
     <div className="view_property">
-      <div className="property_hero">
-        <img
-          src={props.pagesheroimg}
-          alt=""
-          className="parallaxify"
-          data-speed-multiplier="-1"
-        />
+<div className="property_hero parallaxifyBg" data-speed-multiplier="-1.5">
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>
@@ -83,7 +80,6 @@ function ViewProperty(props) {
         </div>
       </div>
       <SortByContent />
-
       <div className="property_showcase">
         <div className="property_showcase_flex">
           <div className="ps_primary_left">
@@ -264,7 +260,7 @@ function ViewProperty(props) {
           </div>
           <div className="ps_primary_right">
             <div className="pspr_item">
-              <PropertyViewAgent {...props.psprAgent} />
+              <PropertyViewAgent {...props.psprAgent}  />
             </div>
             <div className="pspr_featured pspr_item">
               <h3>Featured Listings</h3>
@@ -288,6 +284,7 @@ function ViewProperty(props) {
         </div>
       </div>
       <Footer />
+    </div>
     </div>
   );
 }

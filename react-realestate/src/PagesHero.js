@@ -21,11 +21,10 @@ function PagesHero(props) {
   
     return (
             <div className="view_property">
-      <div className="property_hero parallaxify" data-speed-multiplier="1">
-        <img src={props.pagesheroimg} alt="" className="parallaxify" data-speed-multiplier="-1"/>
+      <div className="property_hero parallaxifyBg" data-speed-multiplier="-1">
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>{props.pagesheroTitle}</h2>
+            <h2>{props.headerTitle}</h2>
           </div>
         </div>
       </div>

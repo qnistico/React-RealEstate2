@@ -33,8 +33,9 @@ import lphouse2 from "./img/lphouse2.jpg";
 function HeroSlider() {
   return (
     <div>
+      <div className="dark_gradient"></div>
       <div className="hero_container">
-        <div className="hero_content">
+        <div className="hero_content" >
           <h1>Pennsylvania Realty</h1>
           <p>
             We sell premium real estate in Pennsylvania ranging from rural to bay area locations.  Mansions, homes, apartments and offices... We've got it all.  Consult one of our agents to schedule a tour.
