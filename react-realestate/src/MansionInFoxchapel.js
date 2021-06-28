@@ -107,9 +107,16 @@ function MansionInFoxchapel(props) {
     forsale: "For Sale",
   };
   return (
-    <div className="page_2">
+    <div className="mansion_in_foxchapel">
+      <div className="property_hero parallaxifyBg house_1_bg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Mansion In Foxchapel</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
       <ViewProperty
-        headerTitle="Mansion on Lorem Ave"
         homeTitle="Mansion on Lorem Ave"
         homeAddress="123 Lorem Ave"
         homePrice="$5,200,000"

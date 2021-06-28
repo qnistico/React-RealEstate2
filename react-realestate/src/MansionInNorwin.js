@@ -149,8 +149,15 @@ function MansionInNorwin(props) {
   };
   return (
     <div className="norwin_mansion">
+      <div className="property_hero parallaxifyBg house_15_bg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Mansion In Norwin</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
       <ViewProperty
-        headerTitle="Mansion In Norwin, PA"
         homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,700,000"

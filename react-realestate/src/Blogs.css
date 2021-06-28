@@ -6,6 +6,7 @@
 .blog_hero h1 {
   color: white;
   font-size: 60px;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
 }
 
 .blog_flex {

@@ -146,8 +146,15 @@ function MansionInGladwyne(props) {
       };
     return (
         <div className="mansion_in_gladwyne">
+          <div className="property_hero parallaxifyBg house_7_bg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Mansion In Gladwyne</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
             <ViewProperty
-        headerTitle="Mansion on 555 Lorem Ave"
         homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$14,000,000"

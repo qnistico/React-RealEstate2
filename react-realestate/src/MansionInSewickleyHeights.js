@@ -146,8 +146,15 @@ function MansionInSewickleyHeights(props) {
       };
     return (
         <div className="house_in_sewickley_heights">
+          <div className="property_hero parallaxifyBg house_10_bg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Mansion In Sewickley Heights</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
             <ViewProperty
-        headerTitle="Mansion on 555 Lorem Ave"
         homeTitle="Mansion on 555 Lorem Ave, Sewickley Heights, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,400,000"

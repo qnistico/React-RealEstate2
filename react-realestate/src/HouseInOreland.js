@@ -148,8 +148,15 @@ function HouseInOreland(props) {
       };
     return (
         <div className="house_in_oreland">
+          <div className="property_hero parallaxifyBg house_8_bg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>House In Oreland</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
             <ViewProperty
-        headerTitle="Mansion on 555 Lorem Ave"
         homeTitle="Mansion on 555 Lorem Ave, Oreland, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,700,000"
