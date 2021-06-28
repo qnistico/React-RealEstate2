@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import MainNav from "./MainNav";
@@ -17,7 +17,23 @@ import LPBlog from "./LPBlog";
 import CustomerReviews from "./CustomerReviews";
 import OverlayCarousel from "./OverlayCarousel";
 import PhiOverlay2 from "./PhiOverlay2";
+import {
+  Widget,
+  addResponseMessage,
+  addLinkSnippet,
+  addUserMessage,
+} from "react-chat-widget";
+import "./ChatWidget.css";
+
 function LandingPage() {
+  useEffect(() => {
+    addResponseMessage("Welcome to PA Premium Realty. How can we help you?");
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
   return (
     <div className="landing_page">
       <HeroSlider />
@@ -26,11 +42,18 @@ function LandingPage() {
       <OverlayCarousel />
       <Agents />
       <PhiOverlay />
-      <PhiOverlay2 />
       <ContactOverlay />
       <LPBlog />
       <CustomerReviews />
       <MultiCarousel />
+      <Widget
+        handleNewUserMessage={handleNewUserMessage}
+        title="Hello!"
+        subtitle="How can we help you?"
+        senderPlaceHolder="Your message..."
+        profileAvatar="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
+        addResponseMessage={addResponseMessage}
+      />
       <Footer />
     </div>
   );
