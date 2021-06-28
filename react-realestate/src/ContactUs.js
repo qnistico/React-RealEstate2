@@ -15,7 +15,7 @@ function ContactUs() {
   return (
     <div>
           <div className="dark_gradient"></div>
-      <PagesHero />
+      <PagesHero headerTitle="Contact Us" />
       <div className="contact_us">
         <div className="contact_us_flex">
           <form id="contact-form" className="contact_form_primary">

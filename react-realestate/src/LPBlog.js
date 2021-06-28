@@ -17,7 +17,7 @@ function LPBlog() {
             <a href="/BuyingAHome">
               <img
                 src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                alt=""
+                alt="living room"
               />
             </a>
           </div>
@@ -41,7 +41,7 @@ function LPBlog() {
             <a href="/BuyingAHome">
               <img
                 src={blogimg1}
-                alt=""
+                alt="town houses"
               />
             </a>
           </div>
@@ -65,7 +65,7 @@ function LPBlog() {
             <a href="/BuyingAHome">
               <img
                 src={blogimg3}
-                alt=""
+                alt="house porch"
               />
             </a>
           </div>

@@ -23,7 +23,7 @@ function CardSingle(props) {
               <p className="for_sale_badge">{props.forsale}</p>
 
               <a href="/MansionInFoxchapel" className="card_img_agent">
-                <Avatar src={props.agentImg} />
+                <Avatar src={props.agentImg} alt="real estate agent" />
               </a>
             </div>
           <div className="single_cards_content">

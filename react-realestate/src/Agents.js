@@ -14,12 +14,12 @@ function agentReviews(props) {
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#1 Agent</span></div>
-          <a href="/AgentJohnProfile"><img src={agent1} alt="" /></a>
+          <a href="/AgentJohnProfile"><img src={agent1} alt="real estate agent" /></a>
           <h3>John Ryan</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7891
           </a>
-          <a href="#!" mailto="example@gmail.com"></a>
+          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />
@@ -32,12 +32,12 @@ function agentReviews(props) {
       </div>
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#2 Agent</span></div>
-          <a href="/AgentKevinProfile"><img src={agent3} alt="" /></a>
+          <a href="/AgentKevinProfile"><img src={agent3} alt="real estate agent" /></a>
           <h3>Kevin Richmond</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7892
           </a>
-          <a href="#!" mailto="example@gmail.com"></a>
+          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />
@@ -50,12 +50,12 @@ function agentReviews(props) {
       </div>
         <div className="agent_reviews_content">
         <div class="ribbon ribbon-top-left"><span>#3 Agent</span></div>
-          <a href="/AgentMaryProfile"><img src={agent4} alt="" /></a>
+          <a href="/AgentMaryProfile"><img src={agent4} alt="real estate agent" /></a>
           <h3>Mary Williams</h3>
           <a href="#!" tel="123-456-7891">
             (123)-456-7893
           </a>
-          <a href="#!" mailto="example@gmail.com"></a>
+          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />

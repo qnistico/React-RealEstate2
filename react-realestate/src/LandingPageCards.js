@@ -37,14 +37,14 @@ function LandingPageCards() {
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/MansionInNorwin">
-                <img src={house15} alt="" />
+                <img src={house15} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
               <div className="card_img_agent">
                 <a href="/AgentJohnProfile">
-                  <Avatar src={agent3} />
+                  <Avatar src={agent3} alt="real estate agent" />
                 </a>
               </div>
             </div>
@@ -98,13 +98,13 @@ function LandingPageCards() {
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/MansionInGladwyne">
-                <img src={house7} alt="" />
+                <img src={house7} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
               <a href="/AgentKevinProfile" className="card_img_agent">
-                <Avatar src={agent3} />
+                <Avatar src={agent3} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
@@ -157,13 +157,13 @@ function LandingPageCards() {
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/MansionInFoxchapel">
-                <img src={house1} alt="" />
+                <img src={house1} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
               <a href="/AgentJohnProfile" className="card_img_agent">
-                <Avatar src={agent1} />
+                <Avatar src={agent1} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
@@ -221,7 +221,7 @@ function LandingPageCards() {
               <p className="for_sale_badge">For Sale</p>
 
               <a href="/AgentMaryProfile" className="card_img_agent">
-                <Avatar src={agent4} />
+                <Avatar src={agent4} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
@@ -273,13 +273,13 @@ function LandingPageCards() {
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/MansionInSewickleyHeights">
-                <img src={house10} alt="" />
+                <img src={house10} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
               <a href="/AgentKevinProfile" className="card_img_agent">
-                <Avatar src={agent3} />
+                <Avatar src={agent3} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
@@ -338,7 +338,7 @@ function LandingPageCards() {
               <p className="for_sale_badge">For Sale</p>
 
               <a href="/AgentMaryProfile" className="card_img_agent">
-                <Avatar src={agent4} />
+                <Avatar src={agent4} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">

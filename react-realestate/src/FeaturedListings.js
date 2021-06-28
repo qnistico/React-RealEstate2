@@ -22,7 +22,7 @@ function FeaturedListings() {
       <div className="featured_listings_flex">
           <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house7} alt="" /></a>
+          <a href=""><img src={house7} alt="house" /></a>
         </div>
         <div className="featured_content">
           <a href="#!">Villa on Lorem Circle</a>
@@ -31,7 +31,7 @@ function FeaturedListings() {
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house5} alt="" /></a>
+          <a href=""><img src={house5} alt="house" /></a>
         </div>
         <div className="featured_content">
           <a href="#!">Villa on Lorem Circle</a>
@@ -40,7 +40,7 @@ function FeaturedListings() {
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house2} alt="" /></a>
+          <a href=""><img src={house2} alt="house" /></a>
         </div>
         <div className="featured_content">
           <a href="#!">Villa on Lorem Circle</a>
@@ -49,7 +49,7 @@ function FeaturedListings() {
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house9} alt="" /></a>
+          <a href=""><img src={house9} alt="house" /></a>
         </div>
         <div className="featured_content">
           <a href="#!">Villa on Lorem Circle</a>

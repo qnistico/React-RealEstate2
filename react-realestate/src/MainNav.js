@@ -46,7 +46,7 @@ function MainNav() {
   return (
     <MDBNavbar expand="lg" light bgColor="light" id="navbar" className="navbar">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="/"><img src={logo1} alt="" id="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand href="/"><img src={logo1} alt="logo" id="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"

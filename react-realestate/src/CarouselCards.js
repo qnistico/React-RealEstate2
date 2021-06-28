@@ -29,7 +29,7 @@ function CarouselCards(props) {
         <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
         <a href="/MansionInFoxchapel" className="card_img_agent">
-          <Avatar src={props.agentImg} />
+          <Avatar src={props.agentImg} alt="real estate agent" />
         </a>
       </div>
       <div className="cc_cards_content">

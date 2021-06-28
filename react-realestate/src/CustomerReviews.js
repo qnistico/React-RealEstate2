@@ -30,7 +30,7 @@ function CustomerReviews() {
         <div className="customer_reviews_flex">
           <div className="cr_item">
             <div className="cr_img_flex">
-              <img src={customerimg1} alt="" />
+              <img src={customerimg1} alt="female customer" />
               <div>
                 <p className="cr_name">Kaitlin McKinney</p>
                 <p className="cr_profession">Attorney</p>
@@ -61,7 +61,7 @@ function CustomerReviews() {
           </div>
           <div className="cr_item">
             <div className="cr_img_flex">
-              <img src={customerimg2} alt="" />
+              <img src={customerimg2} alt="female customer" />
               <div>
                 <p className="cr_name">Ashley Parks</p>
                 <p className="cr_profession">Fashion Designer</p>
@@ -93,7 +93,7 @@ function CustomerReviews() {
 
           <div className="cr_item">
             <div className="cr_img_flex">
-              <img src={customerimg3} alt="" />
+              <img src={customerimg3} alt="male customer" />
               <div>
                 <p className="cr_name">Joseph Sigmund</p>
                 <p className="cr_profession">Physical Therapist</p>
