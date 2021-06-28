@@ -27,12 +27,20 @@ import FeaturedListings from "./FeaturedListings";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import Footer from "./Footer";
+import SortByContent from "./SortByContent";
 function AgentJohnRyan(props) {
   return (
     <div>
       <div className="dark_gradient"></div>
 
-      <PagesHero />
+      <div className="property_hero parallaxifyBg" data-speed-multiplier="-2">
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>{props.headerTitle}</h2>
+          </div>
+        </div>
+      </div>
+      <SortByContent />
       <div className="agent_profile">
         <div className="agent_profile_flex">
           <div className="ap_primary_left">

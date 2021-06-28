@@ -63,18 +63,16 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
-import house15LR from "./img/house15LR.jpg";
-import house15MBR from "./img/house15MBR.jpg";
-import house15BR from "./img/house15BR.jpg";
-import lphouse15 from "./img/lphouse15.jpg";
-import lphouse1 from "./img/lphouse1.jpg";
-import lphouse2 from "./img/lphouse2.jpg";
+import house8lr from "./img/house8lr.jpg";
+import house8mbr from "./img/house8mbr.jpg";
+import house8br from "./img/house8br.jpg";
+
 function HouseInOreland(props) {
     const templateImg = {
-        houseImg: house15,
-        houseLR: house15LR,
-        houseMBR: house15MBR,
-        houseBR: house15BR,
+        houseImg: house8,
+        houseLR: house8lr,
+        houseMBR: house8mbr,
+        houseBR: house8br   ,
         althouse: "Mansion",
                 altlr: "living room",
                 altmbr: "bedroom",
@@ -82,8 +80,8 @@ function HouseInOreland(props) {
       };
       const psprAgent = {
         agentImg: agent4,
-        agentName: "Kevin Richmond",
-        aplink: "/AgentKevinProfile"
+        agentName: "Mary Williams",
+        aplink: "/AgentMaryProfile"
       };
       const card1template = {
         cardImg: house14,
@@ -108,7 +106,8 @@ function HouseInOreland(props) {
         bathrooms: "4",
         sqft: "3,200 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        plink: "/HouseInEdgeworth"
       };
     
       const card3template = {
@@ -151,23 +150,22 @@ function HouseInOreland(props) {
         <div className="house_in_oreland">
             <ViewProperty
         headerTitle="Mansion on 555 Lorem Ave"
-        homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
+        homeTitle="Mansion on 555 Lorem Ave, Oreland, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,700,000"
         bedrooms="4"
         bathrooms="5"
         sqft="7,200 SqFt"
         yearBuilt="2015"
-        pagesheroimg={lphouse15}
         templateImg={templateImg}
         psprAgent={psprAgent}
-        morelistings="More Listings from Kevin Richmond"
+        morelistings="More Listings from Mary Williams"
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
         card4template={card4template}
         card5template={card5template}
-        aplink="/AgentKevinProfile"
+        aplink="/AgentMaryProfile"
       />
         </div>
     )

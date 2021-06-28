@@ -60,7 +60,7 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="6,500 SqFt"
               cardimgalt="mansion"
-              propertylink="/MansionInFoxchapel"
+              plink="/MansionInFoxchapel"
             />
             <CardSingle
               cardImg={house2}
@@ -83,6 +83,7 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="4,900 SqFt"
               cardimgalt="mansion"
+              plink="/HouseInOreland"
             />
             <CardSingle
               cardImg={house15}
@@ -94,7 +95,7 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-              propertylink="/MansionInNorwin"
+              plink="/MansionInNorwin"
             />
             <CardSingle
               cardImg={house10}
@@ -106,7 +107,7 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-              propertylink="/MansionInSewickleyHeights"
+              plink="/MansionInSewickleyHeights"
             />
             <CardSingle
               cardImg={house7}
@@ -118,7 +119,7 @@ function AllProperties(props) {
               bathrooms="7"
               sqft="13,500 SqFt"
               cardimgalt="mansion"
-              propertylink="/MansionInGladwyne"
+              plink="/MansionInGladwyne"
             />
 
             <CardSingle
@@ -131,7 +132,7 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="3,200 SqFt"
               cardimgalt="house"
-              propertylink="/HouseInEdgeworth"
+              plink="/HouseInEdgeworth"
             />
 
             <CardSingle

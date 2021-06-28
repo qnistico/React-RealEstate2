@@ -150,7 +150,7 @@ function MansionInNorwin(props) {
   return (
     <div className="norwin_mansion">
       <ViewProperty
-        headerTitle="Mansion on 555 Lorem Ave"
+        headerTitle="Mansion In Norwin, PA"
         homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,700,000"

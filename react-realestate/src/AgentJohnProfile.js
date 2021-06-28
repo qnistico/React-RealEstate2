@@ -104,6 +104,7 @@ function AgentJohnProfile(props) {
   return (
     <div className="agent_john_profile">
       <AgentProfiles
+        headerTitle="John Ryan"
         agentImg={agent1}
         agentName="John Ryan"
         card1template={card1template}

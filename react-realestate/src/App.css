@@ -522,7 +522,7 @@ input:active {
   min-height: 62vh;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(img/birdseye.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/birdseye.jpg);
   background-repeat: repeat;
   display: flex;
   justify-content: center;
@@ -1267,6 +1267,10 @@ input.form-control.form_input {
   .navbar-nav {
     margin: 0;
   }
+  .hero_content {
+    width: 90vw;
+    margin: -250px auto 0 auto;
+  }
 
 }
 
@@ -1297,6 +1301,12 @@ input.form-control.form_input {
   }
   .login_button {
     margin-top: 0 !important;
+  }
+  .customer_reviews_flex {
+    flex-flow: row wrap;
+  }
+  .lp_blog_flex {
+    flex-flow: column !important;
   }
 }
 
