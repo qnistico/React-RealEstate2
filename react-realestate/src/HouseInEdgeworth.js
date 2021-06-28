@@ -92,7 +92,9 @@ function HouseInEdgeworth(props) {
         bathrooms: "4",
         sqft: "4,900 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+                cardimgalt: "house"
+
       };
     
       const card2template = {
@@ -105,7 +107,9 @@ function HouseInEdgeworth(props) {
         bathrooms: "2",
         sqft: "2,300 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+                cardimgalt: "house"
+
       };
     
       const card3template = {
@@ -118,7 +122,9 @@ function HouseInEdgeworth(props) {
         bathrooms: "3",
         sqft: "2,850 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+                cardimgalt: "house"
+
       };
       const card4template = {
         cardImg: house14,
@@ -130,7 +136,9 @@ function HouseInEdgeworth(props) {
         bathrooms: "5",
         sqft: "5,000 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+                cardimgalt: "house"
+
       };
       const card5template = {
         cardImg: house9,
@@ -142,7 +150,9 @@ function HouseInEdgeworth(props) {
         bathrooms: "4",
         sqft: "3,200 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+                cardimgalt: "house"
+
       };
     return (
         <div className="house_in_edgeworth">

@@ -30,7 +30,7 @@ import Footer from "./Footer";
 function AgentJohnRyan(props) {
   return (
     <div>
-          <div className="dark_gradient"></div>
+      <div className="dark_gradient"></div>
 
       <PagesHero />
       <div className="agent_profile">
@@ -41,7 +41,9 @@ function AgentJohnRyan(props) {
               <div className="agent_info_top">
                 <h1>{props.agentName}</h1>
                 <p className="agent_position">Real Estate Agent</p>
-                <p><span className="color">5</span> Listed Properties</p>
+                <p>
+                  <span className="color">5</span> Listed Properties
+                </p>
                 <div className="agent_icons_top">
                   <a href="tel:1234561234">
                     <PhoneInTalk />
@@ -63,16 +65,39 @@ function AgentJohnRyan(props) {
               </div>
             </div>
             <div className="appl_buttons">
-              <a href="tel: 1234561234"><Phone /> Call (123)-456-1234</a>
-              <a href="mailto: example@gmail.com"><EmailOutlined /> example@gmail.com</a>
-              <a href="#!"><Laptop /> Website</a>
+              <a href="tel: 1234561234">
+                <Phone /> Call (123)-456-1234
+              </a>
+              <a href="mailto: example@gmail.com">
+                <EmailOutlined /> example@gmail.com
+              </a>
+              <a href="#!">
+                <Laptop /> Website
+              </a>
             </div>
             <hr />
             <div className="about_agent">
               <h3>About Me</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p>
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
             <div className="agent_contact">
               <h3>Contact Me</h3>
@@ -80,31 +105,21 @@ function AgentJohnRyan(props) {
             </div>
             <div className="agent_listings">
               <h3>My Listings</h3>
-                <CardSingle
-                  {...props.card1template}
-                />
-                <CardSingle
-                  {...props.card2template}
-                />
-                <CardSingle
-                  {...props.card3template}
-                />
-                <CardSingle
-                  {...props.card4template}
-                />
-                <CardSingle
-                  {...props.card5template}
-                />
+              <CardSingle {...props.card1template} {...props.p1link} />
+              <CardSingle {...props.card2template} {...props.p2link} />
+              <CardSingle {...props.card3template} {...props.p3link} />
+              <CardSingle {...props.card4template} {...props.p4link} />
+              <CardSingle {...props.card5template} {...props.p5link} />
             </div>
           </div>
           <div className="ap_primary_right">
             <div className="appr_item">
-            <h3>Featured Listings</h3>
-            <FeaturedListings />
+              <h3>Featured Listings</h3>
+              <FeaturedListings />
             </div>
             <div className="appr_item">
               <h3>Mortgage Calculator</h3>
-<MortgageCalculator />
+              <MortgageCalculator />
             </div>
           </div>
         </div>

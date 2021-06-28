@@ -30,7 +30,8 @@ function AgentKevinProfile(props) {
     bathrooms: "5",
     sqft: "7,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+    forsale: "For Sale",
+    cardimgalt: "house",
   };
 
   const card2template = {
@@ -43,7 +44,8 @@ function AgentKevinProfile(props) {
     bathrooms: "5",
     sqft: "7,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+    forsale: "For Sale",
+    cardimgalt: "house",
   };
 
   const card3template = {
@@ -56,11 +58,10 @@ function AgentKevinProfile(props) {
     bathrooms: "7",
     sqft: "13,500 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+    forsale: "For Sale",
+    cardimgalt: "house",
   };
   const card4template = {
-    
-
     cardImg: house16,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
@@ -70,7 +71,8 @@ function AgentKevinProfile(props) {
     bathrooms: "4",
     sqft: "5,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+    forsale: "For Sale",
+    cardimgalt: "house",
   };
   const card5template = {
     cardImg: house11,
@@ -82,7 +84,23 @@ function AgentKevinProfile(props) {
     bathrooms: "4",
     sqft: "3,900 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+    forsale: "For Sale",
+    cardimgalt: "house",
+  };
+  const p1link = {
+    plink: "/MansionInNorwin",
+  };
+  const p2link = {
+    plink: "/MansionInSewickleyHeights",
+  };
+  const p3link = {
+    plink: "/MansionInGladwyne",
+  };
+  const p4link = {
+    plink: "/MansionInFoxchapel",
+  };
+  const p5link = {
+    plink: "/MansionInFoxchapel",
   };
   return (
     <div>
@@ -95,6 +113,11 @@ function AgentKevinProfile(props) {
           card3template={card3template}
           card4template={card4template}
           card5template={card5template}
+          p1link={p1link}
+          p2link={p2link}
+          p3link={p3link}
+          p4link={p4link}
+          p5link={p5link}
         />
       </div>
     </div>

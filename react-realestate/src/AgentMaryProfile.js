@@ -32,7 +32,9 @@ function AgentMaryProfile(props) {
         bathrooms: "4",
         sqft: "4,900 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        cardimgalt: "house"
+
       };
     
       const card2template = {
@@ -45,7 +47,9 @@ function AgentMaryProfile(props) {
         bathrooms: "4",
         sqft: "3,200 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        cardimgalt: "house"
+
       };
     
       const card3template = {
@@ -58,7 +62,9 @@ function AgentMaryProfile(props) {
         bathrooms: "2",
         sqft: "2,300 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        cardimgalt: "house"
+
       };
       const card4template = {
         cardImg: house12,
@@ -70,7 +76,9 @@ function AgentMaryProfile(props) {
         bathrooms: "3",
         sqft: "2,850 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        cardimgalt: "house"
+
       };
       const card5template = {
         cardImg: house14,
@@ -82,7 +90,24 @@ function AgentMaryProfile(props) {
         bathrooms: "5",
         sqft: "5,000 SqFt",
         featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        cardimgalt: "house"
+
+      };
+      const p1link = {
+        plink: "/HouseInOreland",
+      };
+      const p2link = {
+        plink: "/HouseInEdgeworth",
+      };
+      const p3link = {
+        plink: "/MansionInFoxchapel",
+      };
+      const p4link = {
+        plink: "/MansionInFoxchapel",
+      };
+      const p5link = {
+        plink: "/MansionInFoxchapel",
       };
     return (
         <div className="agent_mary_profile">
@@ -94,6 +119,11 @@ function AgentMaryProfile(props) {
         card3template={card3template}
         card4template={card4template}
         card5template={card5template}
+        p1link={p1link}
+        p2link={p2link}
+        p3link={p3link}
+        p4link={p4link}
+        p5link={p5link}
       />
         </div>
     )
