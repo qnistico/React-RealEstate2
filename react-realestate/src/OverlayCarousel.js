@@ -75,7 +75,7 @@ function OverlayCarousel(props) {
                 occsqft="7,200 SqFt"
                 occprice="$5,700,000"
                 occbottomagent={agent3}
-                occbottomname="Kevin Richmond"
+              occbottomname="Kevin Richmond"
               />
             </div>
             <div>

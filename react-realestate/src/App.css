@@ -248,6 +248,7 @@ input:active {
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .featured_badge {
@@ -257,8 +258,8 @@ input:active {
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
-  top: 0;
-  left: 0px;
+  top: 12px;
+  left: 12px;
   /*
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   */
@@ -271,8 +272,8 @@ input:active {
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 12px;
+  right: 12px;
 }
 
 .featured_badge:hover {

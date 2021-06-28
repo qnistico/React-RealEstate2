@@ -13,11 +13,15 @@ function OverlayCarouselCard(props) {
     <div className="oc_card">
       <div className="oc_card_flex">
         <div className="oc_card_img">
+          <a href="#!">
           <img src={props.occimg} alt="house" />
+          </a>
+          <p className="featured_badge">Featured</p>
+              <p className="for_sale_badge">For Sale</p>
         </div>
         <div className="oc_card_content">
           <div className="oc_card_top">
-            <a href="" className="oc_card_title">
+            <a href={props.plink} className="oc_card_title">
               {props.occtitle}
             </a>
             <p className="oc_card_description">
@@ -61,7 +65,7 @@ function OverlayCarouselCard(props) {
               <p>For Sale</p>
               <p className="card_price">{props.occprice}</p>
             </div>
-            <a href="" className="oc_card_button">
+            <a href={props.plink} className="oc_card_button">
               View Property
             </a>
           </div>

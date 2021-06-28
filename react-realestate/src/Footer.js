@@ -105,9 +105,9 @@ function Footer() {
           </div>
           <div className="footer_item footer_properties">
             <h3>Featured Listings</h3>
-            <ul>
+            <div>
               <FeaturedListings />
-            </ul>
+            </div>
           </div>
         </div>
       </footer>

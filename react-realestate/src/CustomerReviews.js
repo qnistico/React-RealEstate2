@@ -51,10 +51,10 @@ function CustomerReviews() {
               </div>
               <div className="cr_icons">
                 <a href="https://www.facebook.com/" target="_blank">
-                  <FacebookIcon className="fb" />
+                  <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                  <InstagramIcon className="ig" />
+                  <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>
             </div>
@@ -82,10 +82,10 @@ function CustomerReviews() {
               </div>
               <div className="cr_icons">
                 <a href="https://www.facebook.com/" target="_blank">
-                  <FacebookIcon className="fb" />
+                  <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                  <InstagramIcon className="ig" />
+                  <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>
             </div>
@@ -114,10 +114,10 @@ function CustomerReviews() {
               </div>
               <div className="cr_icons">
                 <a href="https://www.facebook.com/" target="_blank">
-                  <FacebookIcon className="fb" />
+                  <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                  <InstagramIcon className="ig" />
+                  <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>
             </div>

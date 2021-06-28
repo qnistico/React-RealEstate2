@@ -6,6 +6,7 @@ import ImgOverlay from "./ImgOverlay";
 function ContactOverlay() {
     return (
         <div className="contact_overlay">
+            <div className="contact_overlay_img parallaxifyBg" data-speed-multiplier="-2"></div>
             <div className="contact_overlay_flex">
                 <div className="co_content_flex">
                     <div className="co_content_text">
