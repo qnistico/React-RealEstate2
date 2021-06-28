@@ -11,6 +11,11 @@ import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import logo1 from "./img/logo1.png";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from '@material-ui/icons/Twitter';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function Footer() {
   return (
@@ -21,7 +26,7 @@ function Footer() {
         viewBox="0 0 1440 200"
       >
         <path
-          fill="#091f33"
+          fill="#2c2c2c"
           fill-opacity="1"
           d="M0,96L1440,192L1440,0L0,0Z"
         ></path>
@@ -108,6 +113,26 @@ function Footer() {
             <div>
               <FeaturedListings />
             </div>
+          </div>
+        </div>
+        <div className="footer_newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Email</label>
+        <input type="email" className="form-control form_input" aria-describedby="emailHelp" placeholder="Email" />
+    </div>
+    <a href="#!" className="footer_newsletter_button">Subscribe</a>
+        </div>
+        <div className="footer_copyright">
+          <div className="footer_copyright_flex">
+          <p>&copy; 2021 | PA Premium Realty | All Rights Reserved</p>
+          <div>
+<a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+<a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><InstagramIcon /></a>
+<a href="https://twitter.com/" target="_blank" rel="noreferrer"><TwitterIcon /></a>
+<a href="https://www.pinterest.com/" target="_blank" rel="noreferrer"><PinterestIcon /></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+          </div>
           </div>
         </div>
       </footer>

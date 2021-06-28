@@ -258,8 +258,8 @@ input:active {
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 10px;
+  left: 10px;
   /*
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   */
@@ -272,8 +272,8 @@ input:active {
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
 }
 
 .featured_badge:hover {
@@ -934,7 +934,7 @@ iframe {
 .card_price {
   font-size: 18px !important;
   font-weight: 900;
-  color: #2196f3 !important;
+  color: #04a755 !important;
 }
 
 /* Top Agent Right */
@@ -1143,6 +1143,7 @@ input.form-control.form_input {
   width: 100px;
   padding: 12.36px 20px;
   border: 1px solid #2196f3;
+  transition: all 0.2s ease-in !important;
   text-align: center;
 }
 
@@ -1157,7 +1158,7 @@ input.form-control.form_input {
   justify-content: center;
   align-items: center;
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in;
   border: 1px solid #2196f3;
 }
 
