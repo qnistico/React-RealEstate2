@@ -48,6 +48,7 @@ body p {
   background-color: #fff;
   padding: 20px;
   margin-right: 100px;
+  box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
 }
 
 .hero_content h1 {
@@ -1118,7 +1119,9 @@ input.form-control.form_input {
   height: 55px;
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, .158);
   transition: height 0.5s ease, color 0s, background-color 0s !important;
+}
 
+.nav-link {
 }
 .fix_nav .nav-link {
   color: #1a1a1a !important;

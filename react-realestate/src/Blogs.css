@@ -119,6 +119,7 @@
   background-size: cover;
   background-position: center center;
   display: flex;
+  background-attachment: initial !important;
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;

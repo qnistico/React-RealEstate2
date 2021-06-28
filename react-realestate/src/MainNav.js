@@ -27,7 +27,7 @@ function MainNav() {
 
     const distanceY = window.pageYOffset || 
     document.documentElement.scrollTop,
-    fixOn = 450,
+    fixOn = 400,
     headerEl = document.getElementById('navbar');
    
    if (distanceY > fixOn) {

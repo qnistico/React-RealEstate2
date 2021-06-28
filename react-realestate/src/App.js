@@ -27,6 +27,7 @@ import MansionInNorwin from "./MansionInNorwin";
 import MansionInGladwyne from "./MansionInGladwyne";
 import HouseInEdgeworth from "./HouseInEdgeworth";
 import MansionInSewickleyHeights from "./MansionInSewickleyHeights";
+import HouseInOreland from "./HouseInOreland";
 function App() {
   window.addEventListener("load", parallax)
 window.addEventListener("scroll", parallax)
@@ -95,6 +96,9 @@ function parallax() {
             </Route>
             <Route exact path="/MansionInSewickleyHeights">
               <MansionInSewickleyHeights />
+            </Route>
+            <Route exact path="/HouseInOreland">
+              <HouseInOreland />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />

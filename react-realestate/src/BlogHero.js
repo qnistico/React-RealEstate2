@@ -5,7 +5,7 @@ function BlogHero() {
     return (
         <div>
             <div>
-      <div className="blog_hero">
+      <div className="blog_hero parallaxifyBg" data-speed-multiplier="-2.5">
         <div className="blog_hero_flex">
           <div className="blog_hero_content">
             <h1>Real Estate Blog</h1>
