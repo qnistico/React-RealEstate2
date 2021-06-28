@@ -72,7 +72,7 @@ function ViewProperty(props) {
     <div>
     <div className="dark_gradient"></div>
     <div className="view_property">
-<div className="property_hero parallaxifyBg" data-speed-multiplier="-1.5">
+<div className="property_hero parallaxifyBg" data-speed-multiplier="-2.5">
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>

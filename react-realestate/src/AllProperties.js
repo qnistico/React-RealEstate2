@@ -46,7 +46,7 @@ function AllProperties(props) {
     <div>
           <div className="dark_gradient"></div>
 
-      <PagesHero pagesheroTitle="All Listings" />
+      <PagesHero headerTitle="All Listings" />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">

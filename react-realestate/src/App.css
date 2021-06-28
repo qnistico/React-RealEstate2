@@ -518,7 +518,7 @@ input:active {
 
 .property_hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 62vh;
   background-size: cover;
   background-position: center center;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(img/birdseye.jpg);
@@ -1107,7 +1107,6 @@ input.form-control.form_input {
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between;
-  transition: height 0.5s ease !important;
   background-color: transparent !important;
   box-shadow: none;
   position: absolute;
@@ -1118,6 +1117,7 @@ input.form-control.form_input {
   background-color: white !important;
   height: 55px;
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, .158);
+  transition: height 0.5s ease, color 0s, background-color 0s !important;
 
 }
 .fix_nav .nav-link {
