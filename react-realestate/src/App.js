@@ -92,6 +92,7 @@ function App() {
         <AllPropertiesPage2 />
       </Route>
       <Route exact path="/LoginAuth">
+        
         <LoginAuth />
       </Route>
           </Switch>

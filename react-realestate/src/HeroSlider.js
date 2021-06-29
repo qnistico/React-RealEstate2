@@ -28,6 +28,7 @@ import house15 from "./img/house15.jpg";
 import lphouse15 from "./img/lphouse15.jpg";
 import lphouse1 from "./img/lphouse1.jpg";
 import lphouse2 from "./img/lphouse2.jpg";
+import lphouse7 from "./img/lphouse7.jpg";
 
 
 function HeroSlider() {
@@ -91,15 +92,15 @@ function parallax() {
         <MDBCarousel showIndicators showControls fade interval={5000}>
           <MDBCarouselInner>
             <MDBCarouselItem itemId={0}>
-              <MDBCarouselElement src={lphouse15} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
+              <MDBCarouselElement src={lphouse15} alt="mansion" className="parallaxify" data-speed-multiplier="-1.618"/>
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={1}>
-              <MDBCarouselElement src={lphouse1} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
+              <MDBCarouselElement src={lphouse7} alt="mansion" className="parallaxify" data-speed-multiplier="-1.618"/>
             </MDBCarouselItem>
 
             <MDBCarouselItem itemId={2}>
-              <MDBCarouselElement src={lphouse2} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
+              <MDBCarouselElement src={lphouse2} alt="mansion" className="parallaxify" data-speed-multiplier="-1.618"/>
             </MDBCarouselItem>
           </MDBCarouselInner>
         </MDBCarousel>
