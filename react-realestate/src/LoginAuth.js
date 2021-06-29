@@ -21,7 +21,6 @@ export default function LoginAuth(props) {
                 className="form-control form_input"
                 aria-describedby="emailHelp"
                 placeholder="Email"
-                required
               />
             </div>
             <div className="form-group">
@@ -31,7 +30,6 @@ export default function LoginAuth(props) {
                 className="form-control form_input"
                 aria-describedby="passwordHelp"
                 placeholder="Password"
-                required
               />
             </div>
             <div className="form-group" id="password-confirm">
@@ -41,7 +39,6 @@ export default function LoginAuth(props) {
                 className="form-control form_input"
                 aria-describedby="passwordConfirmHelp"
                 placeholder="Confirm Password"
-                required
               />
             </div>
             <button className="send_button" type="submit">
