@@ -6,13 +6,53 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxOverlay from './ParallaxOverlay';
 
 function ContactOverlay() {
+    window.addEventListener("load", parallax)
+    window.addEventListener("scroll", parallax)
+    
+    function parallax() {
+    
+        function getPosition(item) {
+    
+            let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(0)
+    
+            return top
+        }
+    
+        let itemsToParallax = document.getElementsByClassName("parallaxify")
+    
+        for (let item of itemsToParallax) {
+    
+            if (!item.dataset.speedMultiplier) {
+    
+                item.dataset.speedMultiplier = "0.7"
+            }
+    
+            item.style.transform = "translateY(" + getPosition(item) * item.dataset.speedMultiplier + "px)"
+        }
+    
+        let imagesToParallax = document.getElementsByClassName("parallaxifyBg")
+    
+        for (let item of imagesToParallax) {
+    
+            function getPosition(item) {
+    
+                let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(0)
+    
+                return top
+            }
+    
+            if (!item.dataset.speedMultiplier) {
+    
+                item.dataset.speedMultiplier = "3"
+            }
+    
+            item.style.backgroundAttachment = "fixed"
+            item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "px"
+        }
+    }
     return (
         <div className="contact_overlay">
-          <ParallaxProvider>
-        <ParallaxOverlay  imgsrc={contactOverlayImg}>
-        
-        </ParallaxOverlay>
-      </ParallaxProvider>  
+          <div className="contact_overlay_img parallaxifyBg" data-speed-multiplier="-1.2"></div>
                 <div className="co_content_flex">
                     <div className="co_content_text">
                     <h2>We sell premium properties to turn your dream house into your dream <span className="coct_color">Home</span></h2>
