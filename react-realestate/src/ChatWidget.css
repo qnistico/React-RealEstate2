@@ -283,7 +283,7 @@
 }
 .rcw-conversation-container {
   border-radius: 10px;
-  box-shadow: 0 2px 5px 1px #b5b5b5;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.200);
 }
 .rcw-conversation-container.active {
   opacity: 1;
@@ -343,7 +343,7 @@
   background-color: #e7841e;
   border: 0;
   border-radius: 50%;
-  box-shadow: 0 1px 9px 1px #b5b5b5;
+  box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.618);
   height: 60px;
   margin-top: 10px;
   cursor: pointer;

@@ -1242,6 +1242,7 @@ input.form-control.form_input {
   background-color: #fff;
   padding: 30px;
   box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
+  margin: 160px auto 100px auto;
 }
 
 .login_signup_auth .send_button {
