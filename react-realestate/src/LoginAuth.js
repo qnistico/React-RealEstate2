@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import { facebookProvider, googleProvider } from "./config/AuthMethods";
 import socialMediaAuth from "./service/auth";
+import google from "./img/google.svg";
+import FacebookIcon from '@material-ui/icons/Facebook';
+
+
 export default function LoginAuth(props) {
   const handleOnClick = async (provider) => {
     const res = await socialMediaAuth(provider);
@@ -10,10 +14,10 @@ export default function LoginAuth(props) {
     <div className="login_signup_auth">
       <div className="dark_gradient"></div>
       <div className="login_auth_flex">
-        <div className="signup_body">
+        <div className="login_body">
           <h1>Sign Up</h1>
           
-          <form id="login_form" className="contact_form">
+          <form id="login" className="contact_form">
             <div className="form-group">
               <label>Email</label>
               <input
@@ -49,14 +53,14 @@ export default function LoginAuth(props) {
           </form>
           <div className="login_button_flex">
             <button className="google_login" onClick={() => handleOnClick(googleProvider)}>
-              Login with Google
+              <span className="login_icon_flex">Login with Google <img src={google} alt="" /></span>
             </button>
             <button className="facebook_login" onClick={() => handleOnClick(facebookProvider)}>
-              Login with Facebook
+              <span className="login_icon_flex">Login with Facebook <FacebookIcon /></span>
             </button>
             </div>
           <hr />
-          <div className="login_body">Already have an account? Log In</div>
+          <div className="">Already have an account? Log In</div>
         </div>
       </div>
     </div>

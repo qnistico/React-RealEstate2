@@ -61,6 +61,8 @@ import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import PagesHero from "./PagesHero";
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+
 
 function ViewProperty(props) {
   const reactElement = (
@@ -93,6 +95,11 @@ function ViewProperty(props) {
               <h3>Overview</h3>
               <div className="pspl_description_top">
                 <div className="pspl_icon_flex">
+                  <HomeOutlinedIcon />
+                <h4>Property Type</h4>
+                  <h5>{props.ptype}</h5>
+                </div>
+                <div className="pspl_icon_flex">
                   <KingBedOutlined />
                   <p>Bedrooms</p>
                   <p>{props.bedrooms}</p>
@@ -106,6 +113,11 @@ function ViewProperty(props) {
                   <CheckBoxOutlineBlankOutlined />
                   <p>Area</p>
                   <p>{props.sqft}</p>
+                </div>
+                <div className="pspl_icon_flex">
+                  <DirectionsCar />
+                  <p>Garages</p>
+                  <p>{props.garages}</p>
                 </div>
                 <div className="pspl_icon_flex">
                   <EventNoteIcon />

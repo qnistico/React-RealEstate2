@@ -169,6 +169,8 @@ function MansionInNorwin(props) {
       <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
         homeAddress="555 Lorem Ave"
+        garages="2"
+        ptype="Mansion"
         homePrice="$5,700,000"
         bedrooms="4"
         bathrooms="5"
