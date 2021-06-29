@@ -7,10 +7,11 @@ import "./Calculator.css";
 import "./Blogs.css";
 import Footer from "./Footer";
 
+
 function BlogPostTemplate(props) {
   return (
     <div>
-    <BlogHero />
+    <BlogHero parallaximg1={blogheroimg} />
     <div className="blog_post">
       <div className="blog_flex">
         <div className="blog_post_left">

@@ -11,7 +11,7 @@
   
   width: 100%;
   min-height: 100vh;
-  position: relative;
+  position: absolute !important;
   z-index: 1;
   filter: brightness(55%);
 }
@@ -27,7 +27,7 @@
   align-items: center;
   max-width: 1280px;
   margin: auto;
-  position: absolute;
+  position: relative;
   z-index: 2;
 }
 

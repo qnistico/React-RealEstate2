@@ -1,4 +1,6 @@
 import React from 'react';
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import SortByContent from './SortByContent';
 import house1 from "./img/house1.jpg";
 import house2 from "./img/house2.jpg";
@@ -21,13 +23,19 @@ function PagesHero(props) {
   
     return (
             <div className="view_property">
-      <div className="property_hero parallaxifyBg" data-speed-multiplier="-2">
+      <div className="property_hero" >
+        <ParallaxProvider>
+        <ParallaxImg  imgsrc={props.parallaximg1} height="75vh">
+        
+        </ParallaxImg>
+      </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>
           </div>
         </div>
       </div>
+      
       <SortByContent />
         </div>
     )

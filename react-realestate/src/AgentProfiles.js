@@ -7,6 +7,8 @@ import {
   PhoneInTalk,
 } from "@material-ui/icons";
 import React, { useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
@@ -28,18 +30,25 @@ import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import Footer from "./Footer";
 import SortByContent from "./SortByContent";
+
 function AgentJohnRyan(props) {
   return (
     <div>
       <div className="dark_gradient"></div>
 
-      <div className="property_hero parallaxifyBg" data-speed-multiplier="-2">
+      <div className="property_hero" >
+        <ParallaxProvider>
+        <ParallaxImg  imgsrc={props.parallaximg1} height="75vh">
+        
+        </ParallaxImg>
+      </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>
           </div>
         </div>
       </div>
+      
       <SortByContent />
       <div className="agent_profile">
         <div className="agent_profile_flex">

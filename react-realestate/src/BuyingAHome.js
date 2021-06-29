@@ -1,6 +1,8 @@
 import React from "react";
 import BlogPostTemplate from "./BlogPostTemplate";
 import blogheroimg from "./img/blogheroimg.jpg";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 
 function BuyingAHome() {
   return (

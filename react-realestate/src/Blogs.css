@@ -3,10 +3,12 @@
   padding: 0 30px 60px 30px;
 }
 
-.blog_hero h1 {
+.blog_header {
   color: white;
   font-size: 60px;
   text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
+  position: relative;
+  z-index: 2;
 }
 
 .blog_flex {
@@ -114,13 +116,8 @@
 
 .blog_hero {
   width: 100%;
-  min-height: 62vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.377)),
-    url(img/blogheroimg.jpg);
-  background-size: cover;
-  background-position: center center;
+  min-height: 75vh;
   display: flex;
-  background-attachment: initial !important;
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;

@@ -10,12 +10,15 @@ import VPForm from "./VPForm";
 import "./ContactUs.css";
 import PagesHero from "./PagesHero";
 import Footer from "./Footer";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
+import contactbg from "./img/contactbg.jpg";
 
 function ContactUs() {
   return (
     <div>
           <div className="dark_gradient"></div>
-      <PagesHero headerTitle="Contact Us" />
+      <PagesHero headerTitle="Contact Us" parallaximg1={contactbg} />
       <div className="contact_us">
         <div className="contact_us_flex">
           <form id="contact-form" className="contact_form_primary">

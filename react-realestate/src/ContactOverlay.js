@@ -9,7 +9,7 @@ function ContactOverlay() {
     return (
         <div className="contact_overlay">
           <ParallaxProvider>
-        <ParallaxOverlay  imgsrc={contactOverlayImg} height="75vh">
+        <ParallaxOverlay  imgsrc={contactOverlayImg}>
         
         </ParallaxOverlay>
       </ParallaxProvider>  

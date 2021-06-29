@@ -18,6 +18,9 @@ import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
 import house16 from "./img/house16.jpg";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
+import agentbg from "./img/agentbg.jpg";
 
 function AgentKevinProfile(props) {
   const card1template = {
@@ -107,6 +110,7 @@ function AgentKevinProfile(props) {
       <div className="agent_kevin_profile">
         <AgentProfiles
         headerTitle="Kevin Richmond"
+        parallaximg1={agentbg}
           agentImg={agent3}
           agentName="Kevin Richmond"
           card1template={card1template}

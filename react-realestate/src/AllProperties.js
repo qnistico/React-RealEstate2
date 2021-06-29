@@ -1,4 +1,6 @@
 import React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import HomeInteriorSlider from "./HomeInteriorSlider";
 import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
@@ -40,13 +42,14 @@ import agent4 from "./img/agent4.jpg";
 import AllPropertiesPage2 from "./AllPropertiesPage2";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import birdseye from "./img/birdseye.jpg";
 
 function AllProperties(props) {
   return (
     <div>
           <div className="dark_gradient"></div>
 
-      <PagesHero headerTitle="All Listings" />
+      <PagesHero headerTitle="All Listings" parallaximg1={birdseye}/>
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">

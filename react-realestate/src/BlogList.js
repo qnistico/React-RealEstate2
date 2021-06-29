@@ -9,14 +9,16 @@ import { ArrowForward } from "@material-ui/icons";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import blogheroimg from "./img/blogheroimg.jpg";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 
-function BlogList() {
+function BlogList(props) {
 
 
   return (
     <div>
           <div className="dark_gradient"></div>
-      <BlogHero />
+      <BlogHero parallaximg1={blogheroimg} />
       <div className="all_blogs">
         <div className="blog_flex">
           <div className="blog_box">
