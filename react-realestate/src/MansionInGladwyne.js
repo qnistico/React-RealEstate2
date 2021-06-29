@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import ViewProperty from "./ViewProperty";
 import SortByContent from "./SortByContent";
 import {
@@ -66,6 +68,7 @@ import "./Calculator.css";
 import house7lr from "./img/house7lr.jpg";
 import house7mbr from "./img/house7mbr.jpg";
 import house7br from "./img/house7br.jpg";
+
 function MansionInGladwyne(props) {
     const templateImg = {
         houseImg: house7,
@@ -145,15 +148,21 @@ function MansionInGladwyne(props) {
             forsale: "For Sale"
       };
     return (
-        <div className="mansion_in_gladwyne">
-          <div className="property_hero parallaxifyBg house_7_bg" data-speed-multiplier="-2">
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h2>Mansion In Gladwyne</h2>
-          </div>
+      <div className="mansion_in_gladwyne">
+      <div className="property_hero" >
+      <ParallaxProvider>
+      <ParallaxImg  imgsrc={house7} height="75vh">
+      
+      </ParallaxImg>
+    </ParallaxProvider>
+      <div className="property_hero_flex">
+        <div className="property_hero_content">
+          <h2>Mansion In Gladwyne</h2>
         </div>
       </div>
-      <SortByContent />
+    </div>
+    
+    <SortByContent />
             <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
         homeAddress="555 Lorem Ave"

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import ViewProperty from "./ViewProperty";
 import SortByContent from "./SortByContent";
 import {
@@ -156,13 +158,19 @@ function HouseInEdgeworth(props) {
       };
     return (
         <div className="house_in_edgeworth">
-          <div className="property_hero parallaxifyBg house_9_bg" data-speed-multiplier="-2">
+          <div className="property_hero" >
+        <ParallaxProvider>
+        <ParallaxImg  imgsrc={house9} height="75vh">
+        
+        </ParallaxImg>
+      </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>Mansion In Edgeworth</h2>
           </div>
         </div>
       </div>
+      
       <SortByContent />
             <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, EdgeWorth, PA"

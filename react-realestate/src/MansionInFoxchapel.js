@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -31,6 +33,7 @@ import house1LR from "./img/house1LR.jpg";
 import house1MBR from "./img/house1MBR.jpg";
 import house1BR from "./img/house1BR.jpg";
 import agent1 from "./img/agent1.jpg";
+import lphouse1 from "./img/lphouse1.jpg";
 
 function MansionInFoxchapel(props) {
   const templateImg = {
@@ -108,13 +111,20 @@ function MansionInFoxchapel(props) {
   };
   return (
     <div className="mansion_in_foxchapel">
-      <div className="property_hero parallaxifyBg house_1_bg" data-speed-multiplier="-2">
+      
+      <div className="property_hero" >
+        <ParallaxProvider>
+        <ParallaxImg  imgsrc={house1} height="75vh">
+        
+        </ParallaxImg>
+      </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>Mansion In Foxchapel</h2>
+            <h2>Mansion In FoxChapel</h2>
           </div>
         </div>
       </div>
+      
       <SortByContent />
       <ViewProperty
         homeTitle="Mansion on Lorem Ave"

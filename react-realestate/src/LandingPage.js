@@ -33,6 +33,7 @@ function LandingPage() {
   const handleNewUserMessage = (newMessage) => {
     console.log(`New message incoming! ${newMessage}`);
     // Now send the message throught the backend API
+    addResponseMessage('Thank you for your interest in our services.  A representative will be with you shortly.');
   };
   return (
     <div className="landing_page">
