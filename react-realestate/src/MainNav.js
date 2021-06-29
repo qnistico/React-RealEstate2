@@ -18,6 +18,7 @@ import {
   MDBCollapse,
 } from "mdb-react-ui-kit";
 import logo1 from "./img/logo1.png";
+import logoprata from "./img/logoprata.png";
 
 function MainNav() {
   
@@ -46,7 +47,7 @@ function MainNav() {
   return (
     <MDBNavbar expand="lg" light bgColor="light" id="navbar" className="navbar">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="/"><img src={logo1} alt="logo" id="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand href="/"><img src={logoprata} alt="logo" id="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"

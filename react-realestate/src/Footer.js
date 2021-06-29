@@ -16,6 +16,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from '@material-ui/icons/Twitter';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import logoprata from "./img/logoprata.png";
+
 
 function Footer() {
   return (
@@ -41,7 +43,7 @@ function Footer() {
               enim ad minim veniam, quis.
             </p>
             <a href="/">
-              <img src={logo1} alt="logo" />
+              <img src={logoprata} alt="logo" />
             </a>
           </div>
           <div className="footer_item footer_agents">
