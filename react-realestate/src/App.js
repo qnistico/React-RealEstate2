@@ -28,6 +28,7 @@ import MansionInGladwyne from "./MansionInGladwyne";
 import HouseInEdgeworth from "./HouseInEdgeworth";
 import MansionInSewickleyHeights from "./MansionInSewickleyHeights";
 import HouseInOreland from "./HouseInOreland";
+import LoginAuth from "./LoginAuth";
 function App() {
   
   return (
@@ -89,6 +90,9 @@ function App() {
             </Route>
             <Route exact path="/AllPropertiesPage2">
         <AllPropertiesPage2 />
+      </Route>
+      <Route exact path="/LoginAuth">
+        <LoginAuth />
       </Route>
           </Switch>
         </div>

@@ -526,21 +526,10 @@ input:active {
 .property_hero {
   width: 100%;
   min-height: 75vh;
-  background-size: cover;
-  background-position: center center;
-  /*
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
-    ),
-    url(img/birdseye.jpg);
-    */
-  background-repeat: repeat;
+  
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background-attachment: initial !important;
   align-items: center;
   position: relative;
   margin: auto;
@@ -1222,8 +1211,19 @@ input.form-control.form_input {
   height: 45px;
 }
 
-/* Pages Hero BG */
+/* ----- LoginAuth ----- */
 
+.login_auth {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
 
 
 @media screen and (max-width: 576.98px) {
