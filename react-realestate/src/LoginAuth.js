@@ -45,7 +45,9 @@ export default function LoginAuth(props) {
               Submit
             </button>
             <p className="or">or</p>
-            <div className="login_button_flex">
+            
+          </form>
+          <div className="login_button_flex">
             <button className="google_login" onClick={() => handleOnClick(googleProvider)}>
               Login with Google
             </button>
@@ -53,7 +55,6 @@ export default function LoginAuth(props) {
               Login with Facebook
             </button>
             </div>
-          </form>
           <hr />
           <div className="login_body">Already have an account? Log In</div>
         </div>
