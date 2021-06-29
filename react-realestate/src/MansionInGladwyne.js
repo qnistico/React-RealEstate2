@@ -68,7 +68,7 @@ import "./Calculator.css";
 import house7lr from "./img/house7lr.jpg";
 import house7mbr from "./img/house7mbr.jpg";
 import house7br from "./img/house7br.jpg";
-
+import lphouse7 from "./img/lphouse7.jpg";
 function MansionInGladwyne(props) {
     const templateImg = {
         houseImg: house7,
@@ -151,7 +151,7 @@ function MansionInGladwyne(props) {
       <div className="mansion_in_gladwyne">
       <div className="property_hero" >
       <ParallaxProvider>
-      <ParallaxImg  imgsrc={house7} height="75vh">
+      <ParallaxImg  imgsrc={lphouse7} height="75vh">
       
       </ParallaxImg>
     </ParallaxProvider>

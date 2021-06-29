@@ -4,17 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 }
 
 .contact_overlay_img {
-  background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.705)),
-    url(img/contactoverlay.jpg);
-  background-size: cover;
-  background-attachment: initial !important;
+  
   width: 100%;
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   z-index: 1;
+  filter: brightness(55%);
 }
 
 .coct_color {
@@ -28,7 +27,7 @@
   align-items: center;
   max-width: 1280px;
   margin: auto;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -41,6 +40,9 @@
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
+  line-height: 70px;
+
 }
 
 .co_content_text p {

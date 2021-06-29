@@ -2,12 +2,17 @@ import React from 'react';
 import contactOverlayImg from "./img/contactoverlay.jpg";
 import "./ContactOverlay.css";
 import ImgOverlay from "./ImgOverlay";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxOverlay from './ParallaxOverlay';
 
 function ContactOverlay() {
     return (
         <div className="contact_overlay">
-            <div className="contact_overlay_img parallaxifyBg" data-speed-multiplier="-2"></div>
-            <div className="contact_overlay_flex">
+          <ParallaxProvider>
+        <ParallaxOverlay  imgsrc={contactOverlayImg} height="75vh">
+        
+        </ParallaxOverlay>
+      </ParallaxProvider>  
                 <div className="co_content_flex">
                     <div className="co_content_text">
                     <h2>We sell premium properties to turn your dream house into your dream <span className="coct_color">Home</span></h2>
@@ -35,7 +40,6 @@ function ContactOverlay() {
     </div>
     <button className="send_button">Submit</button>
 </form>
-                    </div>
                 </div>
             </div>
         </div>

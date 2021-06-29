@@ -93,3 +93,6 @@ justify-content: center;
 min-width: 200px;
     margin: 20px auto 0 auto;
 }
+.blog_title {
+    font-family: 'Prata', sans-serif;
+}
