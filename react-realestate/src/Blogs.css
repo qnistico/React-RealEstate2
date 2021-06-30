@@ -102,7 +102,7 @@
 }
 
 .blog_button {
-  color: #0073e1;
+  color: #2196f3;
   font-weight: 700;
 }
 
@@ -187,22 +187,22 @@
 .bp_1:hover,
 .bp_2:hover,
 .bp_arrow_forward:hover {
-  background-color: #0073e1;
+  background-color: #2196f3;
   color: white;
 }
 
 .bp_1 {
-  background-color: #0073e1;
+  background-color: #2196f3;
   color: white;
 }
 
 .bp_1_p1 {
   background-color: white;
-  color: #0073e1;
+  color: #2196f3;
 }
 
 .bp_2_p2 {
-  background-color: #0073e1;
+  background-color: #2196f3;
   color: white;
 }
 
