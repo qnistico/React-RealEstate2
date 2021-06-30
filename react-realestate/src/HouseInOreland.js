@@ -171,6 +171,8 @@ function HouseInOreland(props) {
         bedrooms="4"
         bathrooms="5"
         sqft="7,200 SqFt"
+        garages="1"
+        ptype="Mansion"
         yearBuilt="2015"
         templateImg={templateImg}
         psprAgent={psprAgent}

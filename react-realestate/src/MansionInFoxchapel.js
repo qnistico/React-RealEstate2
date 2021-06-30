@@ -133,6 +133,8 @@ function MansionInFoxchapel(props) {
         bedrooms="4"
         bathrooms="5"
         sqft="6500 SqFt"
+        garages="2"
+        ptype="Mansion"
         yearBuilt="2007"
         templateImg={templateImg}
         psprAgent={psprAgent}

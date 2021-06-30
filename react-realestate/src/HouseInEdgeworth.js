@@ -179,6 +179,8 @@ function HouseInEdgeworth(props) {
         bedrooms="2"
         bathrooms="4"
         sqft="3,200 SqFt"
+        garages="1"
+        ptype="House"
         yearBuilt="2003"
         templateImg={templateImg}
         psprAgent={psprAgent}

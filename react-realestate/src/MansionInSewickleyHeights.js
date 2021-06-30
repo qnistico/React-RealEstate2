@@ -156,7 +156,7 @@ function MansionInSewickleyHeights(props) {
       </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>Mansion In Sewickley Heights</h2>
+            <h2>Villa In Sewickley Heights</h2>
           </div>
         </div>
       </div>
@@ -169,6 +169,8 @@ function MansionInSewickleyHeights(props) {
         bedrooms="4"
         bathrooms="5"
         sqft="7,200 SqFt"
+        garages="2"
+        ptype="Villa"
         yearBuilt="2007"
         templateImg={templateImg}
         psprAgent={psprAgent}

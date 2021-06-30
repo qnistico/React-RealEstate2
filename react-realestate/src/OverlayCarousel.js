@@ -68,7 +68,7 @@ function OverlayCarousel(props) {
           >
             <div>
               <OverlayCarouselCard
-                occimg={house15}
+                occimg={house7}
                 occtitle="Mansion on Lorem Ave"
                 occbedrooms="4"
                 occbathrooms="5"
@@ -80,7 +80,7 @@ function OverlayCarousel(props) {
             </div>
             <div>
               <OverlayCarouselCard
-                occimg={house15}
+                occimg={house10}
                 occtitle="Mansion on Lorem Ave"
                 occbedrooms="4"
                 occbathrooms="5"
@@ -92,7 +92,7 @@ function OverlayCarousel(props) {
             </div>
             <div>
               <OverlayCarouselCard
-                occimg={house15}
+                occimg={house1}
                 occtitle="Mansion on Lorem Ave"
                 occbedrooms="4"
                 occbathrooms="5"

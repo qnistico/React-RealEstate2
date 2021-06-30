@@ -170,6 +170,8 @@ function MansionInGladwyne(props) {
         bedrooms="6"
         bathrooms="7"
         sqft="13,500 SqFt"
+        garages="3"
+        ptype="Mansion"
         yearBuilt="2003"
         templateImg={templateImg}
         psprAgent={psprAgent}

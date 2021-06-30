@@ -8,6 +8,7 @@
   font-size: 60px;
   text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
   position: relative;
+  letter-spacing: 3px;
   z-index: 2;
 }
 
@@ -101,7 +102,7 @@
 }
 
 .blog_button {
-  color: #2196f3;
+  color: #0073e1;
   font-weight: 700;
 }
 
@@ -164,6 +165,7 @@
   color: #1a1a1a;
   font-weight: 700;
   margin: 20px 0;
+  
 }
 
 .blog_pagination {
@@ -185,22 +187,22 @@
 .bp_1:hover,
 .bp_2:hover,
 .bp_arrow_forward:hover {
-  background-color: #2196f3;
+  background-color: #0073e1;
   color: white;
 }
 
 .bp_1 {
-  background-color: #2196f3;
+  background-color: #0073e1;
   color: white;
 }
 
 .bp_1_p1 {
   background-color: white;
-  color: #2196f3;
+  color: #0073e1;
 }
 
 .bp_2_p2 {
-  background-color: #2196f3;
+  background-color: #0073e1;
   color: white;
 }
 
