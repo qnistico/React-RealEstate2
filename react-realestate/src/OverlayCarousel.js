@@ -68,6 +68,7 @@ function OverlayCarousel(props) {
           >
             <div>
               <OverlayCarouselCard
+              plink="/MansionInGladwyne"
                 occimg={house7}
                 occtitle="Mansion on Lorem Ave"
                 occbedrooms="4"

@@ -1,4 +1,6 @@
 import React from 'react'
+import { MDBBtn } from "mdb-react-ui-kit";
+
 
 function VPForm(props) {
     return (
@@ -23,7 +25,7 @@ function VPForm(props) {
         <label htmlFor="message">Message</label>
         <textarea className="form-control form_input" rows="3" placeholder="Message"></textarea>
     </div>
-    <button className="send_button">Submit</button>
+    <MDBBtn className="send_button">Submit</MDBBtn>
 </form>
         </div>
     )

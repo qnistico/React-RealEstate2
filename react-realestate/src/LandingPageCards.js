@@ -153,7 +153,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          
+
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a href="/MansionInFoxchapel">
@@ -175,7 +175,8 @@ function LandingPageCards() {
                   555 Lorem Avenue, Foxchapel, PA 12345, USA
                 </a>
                 <p>
-                  A fabulous villa in Foxchapel complete with a spectacular view of the...
+                  A fabulous villa in Foxchapel complete with a spectacular view
+                  of the...
                   <a href="/MansionInFoxchapel" className="more_button">
                     [more]
                   </a>
@@ -227,7 +228,7 @@ function LandingPageCards() {
             <div className="lp_cards_content">
               <div className="lp_cards_top">
                 <a href="/HouseInEdgeworth" className="lp_cards_title">
-                 House In Edgeworth
+                  House In Edgeworth
                 </a>
                 <a href="/HouseInEdgeworth" className="lp_cards_location">
                   555 Lorem Avenue, Edgeworth, PA 12345, USA
@@ -287,7 +288,10 @@ function LandingPageCards() {
                 <a href="/MansionInSewickleyHeights" className="lp_cards_title">
                   Villa in Sewickley Heights
                 </a>
-                <a href="/MansionInSewickleyHeights" className="lp_cards_location">
+                <a
+                  href="/MansionInSewickleyHeights"
+                  className="lp_cards_location"
+                >
                   555 Lorem Avenue, Sewickley Heights, PA 12345, USA
                 </a>
                 <p>
@@ -323,7 +327,10 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$5,400,000</p>
                 </div>
-                <a href="/MansionInSewickleyHeights" className="lp_cards_button">
+                <a
+                  href="/MansionInSewickleyHeights"
+                  className="lp_cards_button"
+                >
                   View
                 </a>
               </div>
@@ -350,7 +357,8 @@ function LandingPageCards() {
                   555 Lorem Avenue, Oreland, PA 12345, USA
                 </a>
                 <p>
-                  Large home in Oreland, PA complete with 45 acres of land with...
+                  Large home in Oreland, PA complete with 45 acres of land
+                  with...
                   <a href="/HouseInOreland" className="more_button">
                     [more]
                   </a>

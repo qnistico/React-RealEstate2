@@ -65,7 +65,7 @@ function OverlayCarouselCard(props) {
               <p>For Sale</p>
               <p className="card_price">{props.occprice}</p>
             </div>
-            <a href={props.plink} className="oc_card_button">
+            <a href={props.plink} className="hero_button oc_card_button">
               View Property
             </a>
           </div>

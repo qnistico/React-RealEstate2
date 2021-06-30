@@ -67,7 +67,7 @@ function CarouselCards(props) {
             <p>For Sale</p>
             <p className="card_price">{props.cardPrice}</p>
           </div>
-          <a href="/MansionInFoxchapel" className="cc_cards_button">
+          <a href="/MansionInFoxchapel" className="lp_cards_button">
             View
           </a>
         </div>
