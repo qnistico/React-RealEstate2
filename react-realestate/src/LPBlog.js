@@ -8,9 +8,22 @@ import blogimg3 from "./img/blogimg3.jpg";
 
 function LPBlog() {
   return (
+    <div>
+    <svg
+        className="slope_reverse"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 200"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L1440,192L1440,0L0,0Z"
+        ></path>
+      </svg>
     <div className="lp_blog">
+      
       <h2>FL Realty Blog</h2>
-      <p className="lp_header_p">Looking for informational strategies on buying real estate? Read our blog to learn more.</p>
+      <p className="lp_header_p">Looking for informational strategies on buying real estate? Read our blog to learn more</p>
       <div className="lp_blog_flex">
         <div className="lpb_item">
           <div className="blog_img">
@@ -88,6 +101,7 @@ function LPBlog() {
       <div className="lpbb">
       <a href="/BlogList" className="lp_blog_button">All Blogs</a>
       </div>
+    </div>
     </div>
   );
 }

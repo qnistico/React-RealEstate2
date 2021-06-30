@@ -1,6 +1,5 @@
 .contact_overlay {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +9,7 @@
 .contact_overlay_img {
   
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   z-index: 1;
   filter: brightness(55%);

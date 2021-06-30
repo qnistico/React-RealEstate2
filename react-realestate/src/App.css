@@ -200,7 +200,7 @@ input:active {
   z-index: 2;
   position: relative;
   margin-bottom: -5px;
-  transform: scaleX(-1) rotate(180deg);
+  transform: scaleX(1) rotate(180deg);
 }
 
 .lp_cards_title {
@@ -212,6 +212,7 @@ input:active {
   text-align: center;
   max-width: 500px;
   margin: 0 auto 30px auto;
+  color: #7a7a7a;
 }
 
 .lp_cards_flex {
@@ -629,7 +630,7 @@ input:active {
 }
 
 .ps_primary_left p {
-  color: #808080;
+  color: #7a7a7a;
 }
 
 .ps_primary_left h3 {
@@ -715,12 +716,12 @@ input:active {
 }
 
 .pspl_icon_flex p:last-of-type {
-  color: #808080;
+  color: #7a7a7a;
   font-weight: 600;
 }
 
 .pspl_summary p {
-  color: #808080;
+  color: #7a7a7a;
 }
 
 .pspl_features h3 {
@@ -730,7 +731,7 @@ input:active {
 }
 
 .pspl_features p {
-  color: #808080;
+  color: #7a7a7a;
   margin-bottom: 8px;
 }
 
@@ -993,7 +994,7 @@ iframe {
 }
 
 .pspr_top_agent a {
-  color: #808080;
+  color: #7a7a7a;
   font-weight: 400;
 }
 
@@ -1170,6 +1171,7 @@ input.form-control.form_input {
   border: 1px solid #2196f3;
   transition: all 0.2s ease-in !important;
   text-align: center;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
 }
 
 .signup_button {
@@ -1185,6 +1187,7 @@ input.form-control.form_input {
   color: white;
   transition: all 0.2s ease-in;
   border: 1px solid #2196f3;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
 }
 
 .signup_button:hover {
@@ -1278,7 +1281,7 @@ input.form-control.form_input {
 }
 
 .login_signup_auth hr {
-  color: #808080;
+  color: #7a7a7a;
 }
 
 .google_login {

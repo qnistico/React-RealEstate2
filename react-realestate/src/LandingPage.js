@@ -24,6 +24,7 @@ import {
   addUserMessage,
 } from "react-chat-widget";
 import "./ChatWidget.css";
+import MobileIcons from "./MobileIcons";
 
 function LandingPage() {
   useEffect(() => {
@@ -44,6 +45,7 @@ function LandingPage() {
       <Agents />
       <PhiOverlay />
       <ContactOverlay />
+      <MobileIcons />
       <LPBlog />
       <CustomerReviews />
       <MultiCarousel />

@@ -12,7 +12,7 @@
 
 .lp_blog .lp_header_p {
     text-align: center;
-    color: #4f4f4f;
+    color: #7a7a7a;
     max-width: 500px;
     margin: 20px auto;
 }
@@ -53,6 +53,10 @@
     overflow: hidden;
     width: 100%;
 
+}
+
+.blog_description {
+    color: #7a7a7a;
 }
 
 .blog_img img {

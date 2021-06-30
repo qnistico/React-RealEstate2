@@ -56,11 +56,11 @@ function ContactOverlay() {
                 <div className="co_content_flex">
                     <div className="co_content_text">
                     <h2>We sell premium properties to turn your dream house into your dream <span className="coct_color">Home</span></h2>
-                    <p>Contact our expert real estate agents to inquire about property details or purchases.</p>
+                    <p>Contact our expert real estate agents to inquire about property details or purchases</p>
                     </div>
                     <div className="co_contact_form">
                         <h3>Speak with us</h3>
-                        <p>Use this form to content one of our agents.</p>
+                        <p>Use this form to contact one of our agents.</p>
                         <form id="contact-form" className="contact_form">
     <div className="form-group">
         <label htmlFor="name">Name</label>

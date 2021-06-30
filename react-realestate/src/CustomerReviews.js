@@ -11,7 +11,7 @@ function CustomerReviews() {
   return (
     <div className="customer_reviews">
       <svg
-        className="slope_reverse"
+        className="slope1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 200"
       >
@@ -25,7 +25,7 @@ function CustomerReviews() {
         <h2>Customer Reviews</h2>
         <p className="lp_header_p">
           Read what our customers are saying about PA Premium Realty and our
-          agents.
+          agents
         </p>
         <div className="customer_reviews_flex">
           <div className="cr_item">

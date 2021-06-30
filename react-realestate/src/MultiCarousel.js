@@ -46,7 +46,7 @@ function MultiCarousel(props) {
   };
   return (
     <div className="multi_carousel">
-      <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg className="slope_reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
       <div className="multi_car_flex">
         <Carousel
           swipeable={true}
