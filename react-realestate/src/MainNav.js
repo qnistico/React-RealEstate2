@@ -19,6 +19,8 @@ import {
 } from "mdb-react-ui-kit";
 import logo1 from "./img/logo1.png";
 import logoprata from "./img/logoprata.png";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 
 function MainNav() {
   
@@ -99,7 +101,7 @@ function MainNav() {
             </MDBNavbarItem>
           </MDBNavbarNav>
 <div className="login_flex">
-  <a href="/LoginAuth" className=" signup_button">Login / Sign Up</a>
+  <a href="/LoginAuth" className=" signup_button"><AccountCircleIcon />Login / Sign Up</a>
 </div>
         </MDBCollapse>
       </MDBContainer>

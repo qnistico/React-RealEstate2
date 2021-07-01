@@ -153,6 +153,6 @@
       flex-wrap: wrap;
     }
     .agent_reviews_content {
-      flex: 1 200px;
+      flex: 1 50%;
     }
   }

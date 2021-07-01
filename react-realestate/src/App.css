@@ -11,6 +11,8 @@ body {
   scroll-behavior: smooth;
 }
 
+
+
 h1,
 h2,
 h3 {
@@ -1226,6 +1228,10 @@ input.form-control.form_input {
   align-items: center;
 }
 
+.login_flex .MuiSvgIcon-root {
+  margin-right: 8px;
+}
+
 
 
 .signup_button {
@@ -1431,9 +1437,7 @@ input.form-control.form_input {
   .pspl_description_top {
     flex-flow: row wrap;
   }
-  .pspl_icon_flex:first-of-type {
-    margin: 0 30px;
-  }
+  
 }
 
 @media screen and (max-width: 991.98px) {

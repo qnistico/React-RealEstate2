@@ -113,3 +113,19 @@
   .occ_flex {
       display: flex;
   }
+
+  @media screen and (max-width: 768px) {
+      .oc_card_img {
+          width: 90vw;
+      }
+      .oc_card_content {
+          width: 75%;
+          min-width: unset;
+      }
+  }
+
+  @media screen and (max-width: 576px) {
+      .oc_card_content {
+          width: 90vw;
+      }
+  }

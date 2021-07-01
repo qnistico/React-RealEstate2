@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import HomeInteriorSlider from "./HomeInteriorSlider";
@@ -44,17 +44,22 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import birdseye from "./img/birdseye.jpg";
 import propertybg from "./img/propertybg.jpg";
+import Categories from "./components/Categories";
+import SortByContent from "./SortByContent";
 
 function AllProperties(props) {
+  
+  
   return (
     <div>
           <div className="dark_gradient"></div>
 
       <PagesHero headerTitle="All Listings" parallaximg1={propertybg}/>
+      <SortByContent />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
-            <CardSingle
+            <CardSingle className="filterItem"
               cardImg={house1}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
@@ -65,6 +70,8 @@ function AllProperties(props) {
               sqft="6,500 SqFt"
               cardimgalt="mansion"
               plink="/MansionInFoxchapel"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house2}
@@ -76,6 +83,8 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="4500 SqFt"
               cardimgalt="mansion"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house8}
@@ -88,6 +97,8 @@ function AllProperties(props) {
               sqft="4,900 SqFt"
               cardimgalt="mansion"
               plink="/HouseInOreland"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house15}
@@ -100,6 +111,8 @@ function AllProperties(props) {
               sqft="7,200 SqFt"
               cardimgalt="mansion"
               plink="/MansionInNorwin"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house10}
@@ -112,6 +125,8 @@ function AllProperties(props) {
               sqft="7,200 SqFt"
               cardimgalt="mansion"
               plink="/MansionInSewickleyHeights"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house7}
@@ -124,6 +139,8 @@ function AllProperties(props) {
               sqft="13,500 SqFt"
               cardimgalt="mansion"
               plink="/MansionInGladwyne"
+              featured="Featured"
+              forsale="For Sale"
             />
 
             <CardSingle
@@ -137,6 +154,8 @@ function AllProperties(props) {
               sqft="3,200 SqFt"
               cardimgalt="house"
               plink="/HouseInEdgeworth"
+              featured="Featured"
+              forsale="For Sale"
             />
 
             <CardSingle
@@ -149,6 +168,8 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="5,000 SqFt"
               cardimgalt="mansion"
+              featured="Featured"
+              forsale="For Sale"
             />
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">

@@ -13,12 +13,14 @@ import Footer from "./Footer";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import contactbg from "./img/contactbg.jpg";
+import SortByContent from "./SortByContent";
 
 function ContactUs() {
   return (
     <div>
           <div className="dark_gradient"></div>
       <PagesHero headerTitle="Contact Us" parallaximg1={contactbg} />
+<SortByContent />
       <div className="contact_us">
         <div className="contact_us_flex">
           <form id="contact-form" className="contact_form_primary">

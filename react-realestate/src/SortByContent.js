@@ -11,6 +11,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 
 function SortByContent() {
+  
     return (
         <div className="sort_table">
             <div className="search_property">
@@ -20,7 +21,7 @@ function SortByContent() {
             <div className="property_sorting">
             <div className="property_list">
             <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Property Types</MDBDropdownToggle>
+      <MDBDropdownToggle className="property_dropdown">Property Type</MDBDropdownToggle>
       <MDBDropdownMenu className="property_dropdown_2">
         <MDBDropdownItem>
           <MDBDropdownLink href="#">Homes</MDBDropdownLink>
@@ -34,22 +35,7 @@ function SortByContent() {
       </MDBDropdownMenu>
     </MDBDropdown>
             </div>
-            <div className="rooms_list">
-            <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Rooms</MDBDropdownToggle>
-      <MDBDropdownMenu className="property_dropdown_2">
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">1 Room</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">2 Rooms</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">3 Rooms</MDBDropdownLink>
-        </MDBDropdownItem>
-      </MDBDropdownMenu>
-    </MDBDropdown>
-            </div>
+            
             <div className="property_price">
             <MDBDropdown>
       <MDBDropdownToggle className="property_dropdown">Price</MDBDropdownToggle>
@@ -59,9 +45,6 @@ function SortByContent() {
         </MDBDropdownItem>
         <MDBDropdownItem>
           <MDBDropdownLink href="#">Highest to Lowest</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">Any Price</MDBDropdownLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
@@ -83,7 +66,7 @@ function SortByContent() {
     </MDBDropdown>
     </div>
             </div>
-            <MDBBtn className="hero_button">Search</MDBBtn>
+            <MDBBtn className="hero_button" href="/AllProperties">Search</MDBBtn>
             
         </div>
     )

@@ -36,7 +36,6 @@ function PagesHero(props) {
         </div>
       </div>
       
-      <SortByContent />
         </div>
     )
 }
