@@ -97,7 +97,8 @@ function MansionInNorwin(props) {
     bathrooms: "5",
     sqft: "7,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        plink: "/MansionInSewickleyHeights"
   };
 
   const card2template = {
@@ -110,7 +111,8 @@ function MansionInNorwin(props) {
     bathrooms: "7",
     sqft: "13,500 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Sale",
+        plink: "/MansionInGladwyne"
   };
 
   const card3template = {

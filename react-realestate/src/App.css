@@ -57,7 +57,8 @@ body p {
 
 .hero_button,
 .lp_cards_button,
-.pspr_top_button {
+.pspr_top_button,
+.signup_button {
   padding: 11.12px 18px !important;
   background-color: #0073e5 !important;
   color: white !important;
@@ -75,7 +76,8 @@ body p {
 }
 .hero_button::before,
 .lp_cards_button::before,
-.pspr_top_button::before {
+.pspr_top_button::before,
+.signup_button::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -99,14 +101,20 @@ body p {
 .lp_cards_button:active:before,
 .pspr_top_button:hover:before,
 .pspr_top_button:focus:before,
-.pspr_top_button:active:before {
+.pspr_top_button:active:before,
+.signup_button:hover:before,
+.signup_button:focus:before,
+.signup_button:active:before {
   transform: scaleX(1);
   color: white !important;
 }
 
 .hero_button:hover,
 .hero_button:focus,
-.hero_button:active {
+.hero_button:active,
+.signup_button:hover,
+.signup_button:focus,
+.signup_button:active {
   color: #0073e5 !important;
 }
 
@@ -121,6 +129,7 @@ body p {
   left: 0;
   object-fit: cover;
 }
+
 
 .carousel-control-next-icon::after,
 .carousel-control-prev-icon::after {
@@ -1151,6 +1160,8 @@ input.form-control.form_input {
   margin: 0 30px;
 }
 
+
+
 .phi_overlay_content h3 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -1215,34 +1226,10 @@ input.form-control.form_input {
   align-items: center;
 }
 
-.login_button {
-  width: 100px;
-  padding: 12.36px 20px;
-  border: 1px solid #0073e5;
-  transition: all 0.2s ease-in !important;
-  text-align: center;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
-}
+
 
 .signup_button {
-  width: 100px;
-  padding: 12.36px 20px;
-  background-color: #0073e5;
-  text-align: center;
-  max-height: 37.6px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.2s ease-in;
-  border: 1px solid #0073e5;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
-}
-
-.signup_button:hover {
-  color: #1a1a1a;
-  background-color: white;
+  min-width: 200px;
 }
 
 .navbar-nav {
@@ -1362,6 +1349,7 @@ input.form-control.form_input {
   margin: 4px 0 8px 0;
 }
 
+
 .login_button_flex {
   display: flex;
   flex-flow: column;
@@ -1479,12 +1467,13 @@ input.form-control.form_input {
   .customer_reviews_flex {
     flex-flow: row wrap;
   }
-  .lp_blog_flex {
-    flex-flow: column !important;
-  }
+  
 }
 
 @media screen and (max-width: 1150px) {
+  .hero_content {
+    margin: auto;
+  }
   .ps_primary_left {
     margin: 0 0 30px 0;
   }
@@ -1526,6 +1515,18 @@ input.form-control.form_input {
 @media screen and (max-width: 900px) {
   .single_cards_body {
     flex-flow: column;
+  }
+  .phi_overlay_flex {
+    flex-flow: column;
+  }
+  .phi_overlay_flex img {
+    width: 90vw;
+    margin-top: 30px;
+  }
+
+  .phi_overlay_content {
+    width: 90vw;
+    margin-top: 30px;
   }
 }
 

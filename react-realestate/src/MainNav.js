@@ -99,8 +99,7 @@ function MainNav() {
             </MDBNavbarItem>
           </MDBNavbarNav>
 <div className="login_flex">
-  <a href="/LoginAuth" className="nav-link login_button">Login</a>
-  <a href="/LoginAuth" className=" signup_button">Sign Up</a>
+  <a href="/LoginAuth" className=" signup_button">Login / Sign Up</a>
 </div>
         </MDBCollapse>
       </MDBContainer>

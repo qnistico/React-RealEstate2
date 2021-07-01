@@ -66,13 +66,7 @@
 }
 
 @media screen and (max-width: 576.98px) {
-    .contact_overlay {
-        background-attachment: unset;
-        padding: 20px;
-    }
-    .co_content_flex {
-        flex-flow: column;
-    }
+    
     .co_content_flex h2 {
         width: 90vw;
     }
@@ -85,3 +79,20 @@
         width: 90vw;
     }
 }
+
+@media screen and (max-width: 991px) {
+  .contact_overlay h2 {
+    font-size: 32px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_overlay_img {
+    min-height: 140vh;
+  }
+  .co_content_flex {
+    flex-flow: column;
+  }
+}
+

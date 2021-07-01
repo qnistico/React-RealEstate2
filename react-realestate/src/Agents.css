@@ -38,32 +38,9 @@
   margin-bottom: 12px;
 }
 
-.agent_reviews_content::before {
-  content: "";
-  position:absolute;
-  margin:-20px;
-  width:45px;
-  height:45px;
-  background-color:#0073e5; /* to see where it is */
-  top: 20px;
-  left: 20px;
-  clip-path: polygon(100% 0, 1% 0, 0 100%);
 
-}
 
-.agent_reviews_content::after {
-  content: "";
-  position:absolute;
-  margin:-20px;
-  width:45px;
-  height:45px;
-  background-color:#0073e5; /* to see where it is */
-  bottom: 20px;
-  right: 20px;
-  clip-path: polygon(100% 0, 1% 0, 0 100%);
-  transform: rotate(180deg);
 
-}
 
 .agent_reviews h3 {
   font-size: 20px;
@@ -90,7 +67,14 @@
 }
 
 .stars .MuiSvgIcon-root {
-  color: #ff9529;
+  color: #ff9529 !important;
+  right: 0 !important;
+}
+
+.agent_reviews_content .MuiSvgIcon-root {
+  color: #0073e5;
+  position: relative;
+  right: 8px;
 }
 
 .agent_reviews_content a:first-of-type,
@@ -156,11 +140,19 @@
   
   @media screen and (max-width: 576.98px) {
     .agent_reviews_flex {
-      flex-flow: column;
     }
     .agent_reviews_content {
       padding: 20px;
       width: 90%;
       margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .agent_reviews_flex {
+      flex-wrap: wrap;
+    }
+    .agent_reviews_content {
+      flex: 1 200px;
     }
   }

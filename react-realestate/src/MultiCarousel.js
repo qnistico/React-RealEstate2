@@ -34,12 +34,12 @@ function MultiCarousel(props) {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 577 },
       items: 2,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 576, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },

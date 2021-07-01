@@ -10,6 +10,7 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     margin: auto;
+    padding: 0 30px !important;
 }
 
 .footer_avatar {
@@ -42,7 +43,7 @@ footer {
 .footer_item {
     color: white;
     max-width: 25%;
-    padding-top: 5px;
+    padding: 5px 15px 0 15px;
 }
 
 .footer_item li {
@@ -131,10 +132,16 @@ footer {
 
 @media screen and (max-width: 576.98px) {
     footer {
-        padding: 20px;
+        padding: 0;
+    }
+
+    .footer_newsletter {
+        margin: 20px 0 40px 0;
+        padding: 15px;
     }
     .footer_flex {
         flex-flow: column;
+        padding: 0 !important;
     }
     .footer_item {
         max-width: unset;

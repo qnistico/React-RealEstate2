@@ -1,5 +1,5 @@
 .rcw-conversation-container .rcw-header {
-  background-color: #0073e5;
+  background-color: #0d6efd;
   border-radius: 10px 10px 0 0;
   color: #fff;
   display: -ms-flexbox;
@@ -35,7 +35,7 @@
   padding: 0 0 15px;
 }
 .rcw-full-screen .rcw-close-button {
-  background-color: #0073e5;
+  background-color: #0d6efd;
   border: 0;
   display: block;
   position: absolute;
@@ -58,7 +58,7 @@
     padding: 0 0 15px;
   }
   .rcw-conversation-container .rcw-close-button {
-    background-color: #0073e5;
+    background-color: #0d6efd;
     border: 0;
     display: block;
     position: absolute;
@@ -149,14 +149,14 @@
 .quick-button {
   background: none;
   border-radius: 15px;
-  border: 2px solid #0073e5;
+  border: 2px solid #0d6efd;
   font-weight: 700;
   padding: 5px 10px;
   cursor: pointer;
   outline: 0;
 }
 .quick-button:active {
-  background: #0073e5;
+  background: #0d6efd;
   color: #fff;
 }
 .loader {
@@ -491,7 +491,7 @@
   position: fixed;
   right: 0;
   width: 90vw;
-  z-index: 9999;
+  z-index: 45;
 }
 .rcw-full-screen {
   height: 100vh;
@@ -510,4 +510,10 @@
 }
 .rcw-previewer .rcw-message-img {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .rcw-widget-container {
+    display: none !important;
+  }
 }

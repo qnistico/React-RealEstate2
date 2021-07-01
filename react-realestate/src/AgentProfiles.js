@@ -82,13 +82,13 @@ function AgentJohnRyan(props) {
               </div>
             </div>
             <div className="appl_buttons">
-              <a href="tel: 1234561234">
+              <a href="tel: 1234561234" className="appl_button">
                 <Phone /> Call (123)-456-1234
               </a>
-              <a href="mailto: example@gmail.com">
+              <a href="mailto: example@gmail.com" className="appl_button">
                 <EmailOutlined /> example@gmail.com
               </a>
-              <a href="#!">
+              <a href="#!" className="appl_button">
                 <Laptop /> Website
               </a>
             </div>

@@ -182,6 +182,7 @@ function MansionInGladwyne(props) {
         card4template={card4template}
         card5template={card5template}
         aplink="/AgentKevinProfile"
+        plink="/MansionInGladwyne"
       />
         </div>
     )

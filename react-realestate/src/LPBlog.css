@@ -133,3 +133,13 @@ min-width: 200px;
 .blog_title {
     font-family: 'Prata', sans-serif;
 }
+
+@media screen and (max-width: 900px) {
+    .lp_blog_flex {
+        flex-flow: row wrap;
+    }
+    .lpb_item {
+        flex: 1 200px;
+    }
+    
+}
