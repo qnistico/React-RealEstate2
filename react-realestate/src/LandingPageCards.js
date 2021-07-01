@@ -387,7 +387,7 @@ function LandingPageCards() {
               <div className="lp_cards_bottom">
                 <div>
                   <p>For Sale</p>
-                  <p className="card_price">$1,100,000</p>
+                  <p className="card_price">$2,300,000</p>
                 </div>
                 <a href="/HouseInOreland" className="lp_cards_button">
                   View

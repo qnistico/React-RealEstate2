@@ -71,24 +71,12 @@ function OverlayCarousel(props) {
               plink="/MansionInGladwyne"
                 occimg={house7}
                 occtitle="Mansion on Lorem Ave"
-                occbedrooms="4"
-                occbathrooms="5"
-                occsqft="7,200 SqFt"
-                occprice="$5,700,000"
+                occbedrooms="6"
+                occbathrooms="7"
+                occsqft="13,500 Sq Ft"
+                occprice="$14,000,000"
                 occbottomagent={agent3}
               occbottomname="Kevin Richmond"
-              />
-            </div>
-            <div>
-              <OverlayCarouselCard
-                occimg={house10}
-                occtitle="Mansion on Lorem Ave"
-                occbedrooms="4"
-                occbathrooms="5"
-                occsqft="7,200 SqFt"
-                occprice="$5,700,000"
-                occbottomagent={agent3}
-                occbottomname="Kevin Richmond"
               />
             </div>
             <div>
@@ -99,8 +87,21 @@ function OverlayCarousel(props) {
                 occbathrooms="5"
                 occsqft="7,200 SqFt"
                 occprice="$5,700,000"
-                occbottomagent={agent3}
-                occbottomname="Kevin Richmond"
+                occbottomagent={agent1}
+                occbottomname="John Ryan"
+                plink="/MansionInFoxchapel"
+              />
+            </div>
+            <div>
+              <OverlayCarouselCard
+                occimg={house8}
+                occtitle="Mansion on Lorem Ave"
+                occbedrooms="2"
+                occbathrooms="4"
+                occsqft="4,900 SqFt"
+                occprice="$2,300,000"
+                occbottomagent={agent4}
+                occbottomname="Mary Williams"
               />
             </div>
           </Carousel>

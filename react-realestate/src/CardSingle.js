@@ -35,7 +35,7 @@ function CardSingle(props) {
               <a href={props.plink} className="single_cards_location">
                 {props.address}
               </a>
-              <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href={props.plink} className="more_button">[more]</a></p>
+              <p>A fabulous villa in Pennsylvania located conveniently near a train station, beach and...{props.description}<a href={props.plink} className="more_button">[more]</a></p>
             </div>
             <div className="single_cards_center">
                 <div className="icon_info_flex">

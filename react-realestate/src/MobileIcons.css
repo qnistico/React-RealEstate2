@@ -1,7 +1,7 @@
 .mobile_icons {
   width: 100%;
-  padding: 60px 0;
-  background-color: #fff;
+  padding: 100px 0 0 0;
+  background-color: #fafafa;
 }
 
 .mobile_icons h2 {
@@ -24,11 +24,12 @@
   padding: 20px 60px;
   position: relative;
   justify-content: space-evenly;
+  
 }
 
 .mobile_icons_flex .MuiSvgIcon-root {
   font-size: 40px;
-  color: #2196f3;
+  color: #0073e5;
   margin-bottom: 20px;
 }
 
@@ -39,12 +40,19 @@
   text-align: right;
 }
 
+.fa-handshake {
+  font-size: 40px;
+  color: #0073e5;
+  margin-bottom: 20px;
+}
+
 .icon_list_left_item,
 .icon_list_right_item {
   margin-bottom: 40px;
-  background-color: #f1f2f5;
+  background-color: #fff;
   padding: 20px;
-  box-shadow: 0px 2px 8px rgba(100, 100, 100, 0.350   );
+  box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.250   );
+  min-height: 186px;
 
 
 }

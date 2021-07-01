@@ -3,6 +3,10 @@ import mobileoverlay from "./img/mobileoverlay.png";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import "./MobileIcons.css";
 import mobileoverlayedit from "./img/mobileoverlayedit.png";
+import HouseOutlinedIcon from "@material-ui/icons/HouseOutlined";
+import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
+import EventNoteIcon from "@material-ui/icons/EventNote";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 
 function MobileIcons() {
   return (
@@ -13,30 +17,44 @@ function MobileIcons() {
       </p>
       <div className="mobile_icons_flex">
         <div className="icon_list_left">
-          
           <div className="icon_list_left_item">
-            <PhoneAndroidIcon />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <HouseOutlinedIcon />
+            <h3>Nearby Properties</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
           <div className="icon_list_left_item">
-            <PhoneAndroidIcon />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <i class="far fa-handshake"></i>
+            <h3>Trusted Agents</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </div>
-          <img src={mobileoverlayedit} alt="mobile phone" className="mobile_phone" />
+        <img
+          src={mobileoverlayedit}
+          alt="mobile phone"
+          className="mobile_phone"
+        />
         <div className="icon_list_right">
-          
           <div className="icon_list_right_item">
-            <PhoneAndroidIcon />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <EventNoteIcon />
+            <h3>Choose Date</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
           <div className="icon_list_right_item">
-            <PhoneAndroidIcon />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <QueryBuilderIcon />
+            <h3>Fast Booking</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </div>
       </div>

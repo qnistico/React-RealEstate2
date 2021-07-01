@@ -26,7 +26,6 @@ function CarouselCards(props) {
       <div className="cc_single_card carousel_single_card">
       <div className="card_img_container cccic">
         <a href="/MansionInFoxchapel"><img src={props.cardImg} alt={props.cardimgalt} /></a>
-        <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
         <a href="/MansionInFoxchapel" className="card_img_agent">
           <Avatar src={props.agentImg} alt="real estate agent" />
@@ -40,7 +39,7 @@ function CarouselCards(props) {
           <a href="#!" className="cc_cards_location">
             {props.address}
           </a>
-          <p>A fabulous villa in Miami located conveniently near a train station, beach and...<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
+          <p>A fabulous villa in Pennsylvania located conveniently near a train station, beach and...<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
         </div>
         <div className="cc_cards_center">
           <div className="cc_icon_info_flex">

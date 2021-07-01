@@ -5,6 +5,9 @@ import agent1 from './img/agent1.jpg';
 import agent3 from './img/agent3.jpg';
 import agent4 from './img/agent4.jpg';
 import "./Agents.css";
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+
 
 function agentReviews(props) {
   return (
@@ -13,13 +16,16 @@ function agentReviews(props) {
       <h2>Our Top Agents</h2>
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
-        <div class="ribbon ribbon-top-left"><span>#1 Agent</span></div>
           <a href="/AgentJohnProfile"><img src={agent1} alt="real estate agent" /></a>
           <h3>John Ryan</h3>
-          <a href="#!" tel="123-456-7891">
+          <div>
+          <PhoneIcon /><a href="#!" tel="123-456-7891">
             (123)-456-7891
           </a>
-          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
+          <div>
+          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />
@@ -31,13 +37,16 @@ function agentReviews(props) {
           <a href="/AgentJohnProfile" className="hero_button">View Listings</a>
       </div>
         <div className="agent_reviews_content">
-        <div class="ribbon ribbon-top-left"><span>#2 Agent</span></div>
           <a href="/AgentKevinProfile"><img src={agent3} alt="real estate agent" /></a>
           <h3>Kevin Richmond</h3>
-          <a href="#!" tel="123-456-7891">
+          <div>
+          <PhoneIcon /><a href="#!" tel="123-456-7891">
             (123)-456-7892
           </a>
-          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
+          <div>
+          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />
@@ -49,13 +58,16 @@ function agentReviews(props) {
           <a href="/AgentKevinProfile" className="hero_button">View Listings</a>
       </div>
         <div className="agent_reviews_content">
-        <div class="ribbon ribbon-top-left"><span>#3 Agent</span></div>
           <a href="/AgentMaryProfile"><img src={agent4} alt="real estate agent" /></a>
           <h3>Mary Williams</h3>
-          <a href="#!" tel="123-456-7891">
+          <div>
+          <PhoneIcon /><a href="#!" tel="123-456-7891">
             (123)-456-7893
           </a>
-          <a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
+          <div>
+          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+          </div>
           <p>Rating</p>
           <div className="stars">
           <StarIcon />

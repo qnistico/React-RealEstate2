@@ -15,7 +15,7 @@ export default function LoginAuth(props) {
       <div className="dark_gradient"></div>
       <div className="login_auth_flex">
         <div className="login_body">
-          <h1>Sign Up</h1>
+          <h1>Log In</h1>
           
           <form id="login" className="contact_form">
             <div className="form-group">
@@ -60,7 +60,7 @@ export default function LoginAuth(props) {
             </button>
             </div>
           <hr />
-          <div className="">Already have an account? Log In</div>
+          <div className="">Don't have an account? <a href="#!">Sign Up</a></div>
         </div>
       </div>
     </div>

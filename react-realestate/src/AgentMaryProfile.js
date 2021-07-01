@@ -30,7 +30,7 @@ function AgentMaryProfile(props) {
         agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$1,100,000",
+        cardPrice: "$2,300,000",
         bedrooms: "2",
         bathrooms: "4",
         sqft: "4,900 SqFt",

@@ -39,12 +39,13 @@ import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import propertybg from "./img/propertybg.jpg";
 
 function AllPropertiesMansionInFoxchapel(props) {
   return (
     <div>
       <div className="dark_gradient"></div>
-      <PagesHero pagesheroTitle="All Listings" headerTitle="All Listings" />
+      <PagesHero  headerTitle="All Listings" parallaximg1={propertybg} />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">

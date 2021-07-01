@@ -69,7 +69,7 @@ function MultiCarousel(props) {
             cardImg={house1}
             agentImg={agent1}
             cardTitle="Mansion on Lorem Ave"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$5,200,000"
             bedrooms="4"
             bathrooms="5"
@@ -80,7 +80,7 @@ function MultiCarousel(props) {
             cardImg={house2}
             agentImg={agent1}
             cardTitle="Mansion on Lorem Ave"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$1,800,000"
             bedrooms="3"
             bathrooms="4"
@@ -91,7 +91,7 @@ function MultiCarousel(props) {
             cardImg={house16}
             agentImg={agent3}
             cardTitle="Mansion on Lorem Ave"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$4,300,000"
             bedrooms="3"
             bathrooms="4"
@@ -102,7 +102,7 @@ function MultiCarousel(props) {
             cardImg={house15}
             agentImg={agent3}
             cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$5,700,000"
             bedrooms="4"
             bathrooms="5"
@@ -113,7 +113,7 @@ function MultiCarousel(props) {
             cardImg={house10}
             agentImg={agent3}
             cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$5,400,000"
             bedrooms="4"
             bathrooms="5"
@@ -124,7 +124,7 @@ function MultiCarousel(props) {
             cardImg={house7}
             agentImg={agent3}
             cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$14,000,000"
             bedrooms="6"
             bathrooms="7"
@@ -136,7 +136,7 @@ function MultiCarousel(props) {
             cardImg={house11}
             agentImg={agent3}
             cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$630,000"
             bedrooms="3"
             bathrooms="4"
@@ -148,7 +148,7 @@ function MultiCarousel(props) {
             cardImg={house14}
             agentImg={agent4}
             cardTitle="Villa on Lorem Street"
-            address="555 Lorem Avenue, Miami, FL 12345, USA"
+            address="555 Lorem Avenue, Foxchapel, PA 12345, USA"
             cardPrice="$4,100,000"
             bedrooms="4"
             bathrooms="5"

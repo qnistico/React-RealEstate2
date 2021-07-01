@@ -43,13 +43,14 @@ import AllPropertiesPage2 from "./AllPropertiesPage2";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import birdseye from "./img/birdseye.jpg";
+import propertybg from "./img/propertybg.jpg";
 
 function AllProperties(props) {
   return (
     <div>
           <div className="dark_gradient"></div>
 
-      <PagesHero headerTitle="All Listings" parallaximg1={birdseye}/>
+      <PagesHero headerTitle="All Listings" parallaximg1={propertybg}/>
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
@@ -81,7 +82,7 @@ function AllProperties(props) {
               agentImg={agent4}
               cardTitle="Mansion on Lorem Ave"
               address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$1,100,000"
+              cardPrice="$2,300,000"
               bedrooms="2"
               bathrooms="4"
               sqft="4,900 SqFt"

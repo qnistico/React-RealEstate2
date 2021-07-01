@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { ArrowForward } from "@material-ui/icons";
+import blogheroimg from "./img/blogheroimg.jpg";
 
 function BlogListPage2() {
   window.addEventListener("scroll", parallax);
@@ -56,7 +57,7 @@ function BlogListPage2() {
   return (
     <div>
           <div className="dark_gradient"></div>
-      <BlogHero />
+      <BlogHero parallaximg1={blogheroimg} />
       <div className="all_blogs">
         <div className="blog_flex">
           <div className="blog_box">

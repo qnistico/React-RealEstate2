@@ -15,14 +15,14 @@ function LPBlog() {
         viewBox="0 0 1440 200"
       >
         <path
-          fill="#fff"
+          fill="#fafafa"
           fill-opacity="1"
           d="M0,96L1440,192L1440,0L0,0Z"
         ></path>
       </svg>
     <div className="lp_blog">
       
-      <h2>FL Realty Blog</h2>
+      <h2>PA Realty Blog</h2>
       <p className="lp_header_p">Looking for informational strategies on buying real estate? Read our blog to learn more</p>
       <div className="lp_blog_flex">
         <div className="lpb_item">

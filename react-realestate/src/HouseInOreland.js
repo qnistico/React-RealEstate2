@@ -141,7 +141,7 @@ function HouseInOreland(props) {
         agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
         address: "555 Lorem Avenue, Miami, FL 12345, USA",
-        cardPrice: "$1,100,000",
+        cardPrice: "$2,300,000",
         bedrooms: "2",
         bathrooms: "4",
         sqft: "4,900 SqFt",
@@ -167,10 +167,10 @@ function HouseInOreland(props) {
             <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Oreland, PA"
         homeAddress="555 Lorem Ave"
-        homePrice="$5,700,000"
-        bedrooms="4"
-        bathrooms="5"
-        sqft="7,200 SqFt"
+        homePrice="$2,300,000"
+        bedrooms="2"
+        bathrooms="4"
+        sqft="4,900 Sq Ft"
         garages="1"
         ptype="Mansion"
         yearBuilt="2015"

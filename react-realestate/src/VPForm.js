@@ -25,7 +25,7 @@ function VPForm(props) {
         <label htmlFor="message">Message</label>
         <textarea className="form-control form_input" rows="3" placeholder="Message"></textarea>
     </div>
-    <MDBBtn className="send_button">Submit</MDBBtn>
+    <MDBBtn className="send_button hero_button">Submit</MDBBtn>
 </form>
         </div>
     )

@@ -61,13 +61,13 @@
 .aai_phone {
     font-size: 14px;
     font-weight: 600;
-    color: #7a7a7a;
+    color: #222222;
 }
 
 .aai_button {
     font-size: 14px;
     font-weight: 600;
-    color: #7a7a7a;
+    color: #222222;
 }
 
 .aai_img_container img {
@@ -102,22 +102,22 @@
 .ap_1:hover,
 .ap_2:hover,
 .ap_arrow_forward:hover {
-  background-color: #2196f3;
+  background-color: #0073e5;
   color: white;
 }
 
 .ap_1 {
-  background-color: #2196f3;
+  background-color: #0073e5;
   color: white;
 }
 
 .ap_1_p1 {
   background-color: white;
-  color: #2196f3;
+  color: #0073e5;
 }
 
 .ap_2_p2 {
-  background-color: #2196f3;
+  background-color: #0073e5;
   color: white;
 }
 

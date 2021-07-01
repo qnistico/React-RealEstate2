@@ -30,6 +30,10 @@
   transition-delay: 0s;
 }
 
+.carousel_single_card:hover {
+  box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
+}
+
 .card_img_container img {
   width: 100%;
   transition: all 0.5s ease;
@@ -56,10 +60,6 @@
 .carousel_single_card:hover img {
   transform: scale(1.1);
   filter: brightness(85%);
-}
-
-.cc_cards_body:hover {
-  top: -5px;
 }
 
 .cc_cards_content {
@@ -107,7 +107,7 @@
 
 .card_icon {
   font-size: 1.618rem !important;
-  color: #2196f3;
+  color: #0073e5;
   margin-bottom: 8px;
   margin-right: 8px;
 }
@@ -115,7 +115,7 @@
 .cc_cards_location {
   font-size: 14px !important;
   font-weight: 700 !important;
-  color: #2196f3 !important;
+  color: #0073e5 !important;
 }
 
 .cc_icon_info_flex {
@@ -150,7 +150,7 @@
 }
 
 .color {
-  color: #2196f3;
+  color: #0073e5;
   font-weight: 700;
 }
 
