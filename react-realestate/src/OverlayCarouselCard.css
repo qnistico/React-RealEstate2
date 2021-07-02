@@ -126,6 +126,30 @@
 
   @media screen and (max-width: 576px) {
       .oc_card_content {
-          width: 90vw;
+          width: 75vw;
+      }
+      .oc_cards_center {
+          flex-flow: column;
+          align-items: flex-start;
+      }
+      .oc_card_bottom_2 {
+          margin-top: 20px;
+      }
+      .oc_card_bottom_2_info {
+          align-items: flex-start;
+      }
+  }
+
+  @media screen and (max-width: 390px) {
+      .oc_card_bottom {
+          flex-flow: column;
+          justify-content: start;
+          align-items: flex-start;
+      }
+      .oc_card_bottom p {
+          text-align: left !important;
+      }
+      .card_price {
+          margin-bottom: 12px !important;
       }
   }

@@ -51,6 +51,8 @@
     margin-left: 20px;
 }
 
+
+
 .aai_name {
     font-size: 19px;
     font-weight: 700;
@@ -61,13 +63,13 @@
 .aai_phone {
     font-size: 14px;
     font-weight: 600;
-    color: #222222;
+    color: #6a6a6a;
 }
 
 .aai_button {
     font-size: 14px;
     font-weight: 600;
-    color: #222222;
+    color: #4a4a4a;
 }
 
 .aai_img_container img {

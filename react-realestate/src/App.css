@@ -11,7 +11,13 @@ body {
   scroll-behavior: smooth;
 }
 
+.filterDiv {
+  display: none;
+}
 
+.show {
+  display: block;
+}
 
 h1,
 h2,
@@ -1028,6 +1034,7 @@ iframe {
 .pspr_top_agent a {
   color: #222222;
   font-weight: 400;
+  display: none;
 }
 
 .pspr_top_agent p {
@@ -1035,6 +1042,7 @@ iframe {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 
 .pspr_top_button {
   width: 100%;

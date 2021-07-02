@@ -34,7 +34,7 @@ function OverlayCarousel(props) {
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -77,6 +77,8 @@ function OverlayCarousel(props) {
                 occprice="$14,000,000"
                 occbottomagent={agent3}
               occbottomname="Kevin Richmond"
+              aplink="/AgentKevinProfile"
+              
               />
             </div>
             <div>
@@ -90,6 +92,7 @@ function OverlayCarousel(props) {
                 occbottomagent={agent1}
                 occbottomname="John Ryan"
                 plink="/MansionInFoxchapel"
+                aplink="AgentJohnProfile"
               />
             </div>
             <div>
@@ -102,6 +105,8 @@ function OverlayCarousel(props) {
                 occprice="$2,300,000"
                 occbottomagent={agent4}
                 occbottomname="Mary Williams"
+                plink="/MansionInOreland"
+                aplink="/AgentMaryProfile"
               />
             </div>
           </Carousel>

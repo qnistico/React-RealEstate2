@@ -34,7 +34,8 @@ font-weight: 700;
 }
 
 .featured_img img {
-    width: 100px;       
+    width: 100px;      
+    min-width: 100px !important; 
     transition: 0.5s ease;
 
 }

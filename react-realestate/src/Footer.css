@@ -13,6 +13,14 @@ footer {
     padding: 0 30px !important;
 }
 
+.footer_item {
+    color: white;
+    padding: 5px 15px 0 15px;
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
+}
+
 .footer_avatar {
     width: 45px;
     height: 45px;
@@ -40,11 +48,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer_item {
-    color: white;
-    max-width: 25%;
-    padding: 5px 15px 0 15px;
-}
+
 
 .footer_item li {
     list-style-type: none;
@@ -146,8 +150,23 @@ footer {
     .footer_item {
         max-width: unset;
         width: 100%;
+        align-items: flex-start !important;
+        text-align: left !important;
     }
     .footer_flex h3 {
         margin: 20px 0;
     }
+}
+
+@media screen and (max-width: 991.98px) {
+    .footer_flex {
+        flex-wrap: wrap;
+    }
+    .footer_item {
+        width: 100%;
+        flex: 1 50%;
+        max-width: unset;
+        align-items: flex-start;
+    }
+    
 }

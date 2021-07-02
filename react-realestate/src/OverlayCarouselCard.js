@@ -13,7 +13,7 @@ function OverlayCarouselCard(props) {
     <div className="oc_card">
       <div className="oc_card_flex">
         <div className="oc_card_img">
-          <a href="#!">
+          <a href={props.plink}>
           <img src={props.occimg} alt="house" />
           </a>
           <p className="featured_badge">Featured</p>
@@ -53,7 +53,9 @@ function OverlayCarouselCard(props) {
             </div>
             </div>
             <div className="oc_card_bottom_2">
+              <a href={props.aplink}>
           <Avatar src={props.occbottomagent} alt="real estate agent" />
+          </a>
 <div className="oc_card_bottom_2_info">
     <p>Sold By</p>
     <p>{props.occbottomname}</p>

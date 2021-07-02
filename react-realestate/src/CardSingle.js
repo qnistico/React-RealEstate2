@@ -16,7 +16,7 @@ function CardSingle(props) {
     return (
         <div>
           <div className="single_cards">
-            <div className={props.filterItem}>
+            <div className={props.filteritem}>
             <div className="single_cards_body vp_single_cards">
             <div className="sc_img_container">
               <a href={props.plink}><img src={props.cardImg} alt={props.cardimgalt} /></a>

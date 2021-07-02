@@ -1,91 +1,86 @@
 .customer_reviews {
-    width: 100%;
-    background-color: #fafafa;
-    padding: 0;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 0;
 }
 
 .customer_reviews h2 {
-    text-align: center;
-    color: #1a1a1a;
-    font-weight: 700;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 700;
 }
 
 .customer_reviews_flex {
-    display: flex;
-    max-width: 1280px;
-    margin: auto;
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
 }
 
 .customer_reviews_content {
-    padding: 60px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 .cr_item {
-    margin: 15px;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-flow: column;
+  margin: 15px;
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
 }
 
+
+
 .cr_img_flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .cr_item img {
-    width: 125px;
-    height: 125px;
-    border-radius: 100%;
-    object-fit: cover;
-    margin: 0 20px 20px 0;
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 20px 20px 0;
 }
 
 .cr_name {
-    color: #1a1a1a;
-    font-weight: 700;
-    margin-bottom: 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .cr_profession {
-    color: #6f6f6f;
-    font-weight: 700;
-    margin-bottom: 0;
+  color: #6f6f6f;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .cr_review {
-    color: #222222;
-    font-size: 14px;
-    
+  color: #222222;
+  font-size: 14px;
 }
 
 .cr_icons a {
-    color: #222222;
+  color: #222222;
 }
 
 .fb,
 .ig {
-    transition: all 0.2s ease-in !important;
+  transition: all 0.2s ease-in !important;
 }
 
 .fb:hover {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 .ig:hover {
-    color: #4c68d7;
+  color: #4c68d7;
 }
 
 .customer_stars {
-    color: #ff9529;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+  color: #ff9529;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
-
-
-
-
-
-
