@@ -69,6 +69,11 @@
   margin-bottom: 20px;
 }
 
+.icon_list_left_item p,
+.icon_list_right_item p {
+  color: #5c687f;
+}
+
 .icon_list_left_item,
 .icon_list_right_item {
   margin-bottom: 40px;

@@ -88,7 +88,7 @@ function ContactUs() {
             <LocationOn />
             <div className="contact_us_icon_flex">
             <p>Address</p>
-            <p>2030 Lorem Ave, Lorem Circle, FL 12345</p>
+            <p className="pb">2030 Lorem Ave, Lorem Circle, FL 12345</p>
             </div>
             </div>
           </div>

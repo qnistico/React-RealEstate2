@@ -26,6 +26,10 @@
     margin: 20px 0;
 }
 
+.about_agent p {
+    color: #5c687f;
+}
+
 .appl_top {
     display: flex;
     flex-flow: row nowrap;

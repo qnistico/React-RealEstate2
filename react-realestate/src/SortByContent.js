@@ -118,16 +118,16 @@ function showAll() {
 <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
 <MDBDropdownMenu className="property_dropdown_2">
 <MDBDropdownItem>
-    <MDBDropdownLink onClick={showAllAgents}>All Agents</MDBDropdownLink>
+    <MDBDropdownLink className="filter_btn" onClick={showAllAgents}>All Agents</MDBDropdownLink>
   </MDBDropdownItem>
   <MDBDropdownItem>
-    <MDBDropdownLink onClick={showAgent1}>Agent John Ryan</MDBDropdownLink>
+    <MDBDropdownLink className="filter_btn" onClick={showAgent1}>Agent John Ryan</MDBDropdownLink>
   </MDBDropdownItem>
   <MDBDropdownItem>
-    <MDBDropdownLink onClick={showAgent3}>Agent Kevin Richmond</MDBDropdownLink>
+    <MDBDropdownLink className="filter_btn" onClick={showAgent3}>Agent Kevin Richmond</MDBDropdownLink>
   </MDBDropdownItem>
   <MDBDropdownItem>
-    <MDBDropdownLink onClick={showAgent4}>Agent Mary Williams</MDBDropdownLink>
+    <MDBDropdownLink className="filter_btn" onClick={showAgent4}>Agent Mary Williams</MDBDropdownLink>
   </MDBDropdownItem>
 </MDBDropdownMenu>
 </MDBDropdown>

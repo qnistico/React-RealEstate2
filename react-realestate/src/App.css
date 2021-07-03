@@ -53,7 +53,7 @@ body p {
 }
 .hero_content {
   width: 500px;
-  color: #1a1a1a;
+  color: #555555;
   background-color: #fff;
   padding: 20px;
   margin-right: 100px;
@@ -365,6 +365,7 @@ input:active {
 
 .lp_cards_content p {
   font-size: 14px;
+  color: #5c687f;
 }
 
 .lp_cards_top {
@@ -773,12 +774,12 @@ input:active {
 }
 
 .pspl_icon_flex p:last-of-type {
-  color: #222222;
+  color: #5c687f;
   font-weight: 600;
 }
 
 .pspl_summary p {
-  color: #5d6475;
+  color: #5c687f;
 }
 
 .pspl_features h3 {
@@ -788,7 +789,7 @@ input:active {
 }
 
 .pspl_features p {
-  color: #222222;
+  color: #5c687f;
   margin-bottom: 8px;
 }
 
@@ -864,6 +865,8 @@ iframe {
   flex-flow: column;
 }
 
+
+
 .single_cards_title {
   color: #1a1a1a;
   font-size: 20px;
@@ -879,7 +882,7 @@ iframe {
 }
 
 .single_cards_top p {
-  color: #1a1a1a;
+  color: #5c687f;
   font-size: 14px;
 }
 
@@ -1000,7 +1003,7 @@ iframe {
 .card_price {
   font-size: 18px !important;
   font-weight: 900;
-  color: #04a755 !important;
+  color: #0073e5 !important;
 }
 
 /* Top Agent Right */
@@ -1037,7 +1040,7 @@ iframe {
 }
 
 .pspr_top_agent a {
-  color: #222222;
+  color: #5c687f;
   font-weight: 400;
 }
 
@@ -1167,6 +1170,7 @@ input.form-control.form_input {
 
 .phi_button {
   margin: 0;
+  min-width: 125px;
 }
 
 .phi_overlay_content {
@@ -1235,12 +1239,9 @@ input.form-control.form_input {
   max-width: 1280px;
 }
 
-.login_flex {
-  display: flex;
-  align-items: center;
-}
 
-.login_flex .MuiSvgIcon-root {
+
+.signup_button .MuiSvgIcon-root {
   margin-right: 8px;
 }
 
@@ -1248,6 +1249,9 @@ input.form-control.form_input {
 
 .signup_button {
   min-width: 200px;
+  display: flex;
+  justify-content: center;
+align-items: center;
 }
 
 .navbar-nav {
@@ -1433,7 +1437,7 @@ input.form-control.form_input {
     width: 50%;
     margin-top: 8px;
   }
-  .login_button {
+.signup_button {
     margin-top: 0;
   }
   .navbar-nav {
@@ -1463,22 +1467,33 @@ input.form-control.form_input {
     border-radius: 0;
     width: 50%;
     margin-top: 8px !important;
+    padding-left: 8px !important;
   }
   .container-fluid {
     background-color: #fff;
     padding: 10px auto;
     max-height: unset;
   }
+
+  .navbar-collapse {
+    height: 100%;
+    display: flex;
+    flex-flow: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
   .navbar-nav {
     margin: 0;
   }
-  .login_flex {
+  .signup_flex {
     padding: 0 0 20px 0;
     background-color: #fff;
-    width: 100vw;
   }
-  .login_button {
-    margin-top: 0 !important;
+  .signup_button {
+    margin: 0 0 0 8px !important;
+  }
+  .home {
+    margin-top: 20px !important;
   }
   .customer_reviews_flex {
     flex-flow: row wrap;

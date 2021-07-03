@@ -75,6 +75,10 @@
   flex-flow: column;
 }
 
+.cc_cards_top p {
+  color: #5c687f;
+}
+
 .cc_cards_top a:first-of-type {
   color: #1a1a1a;
   font-size: 19px;

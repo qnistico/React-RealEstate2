@@ -69,7 +69,7 @@ function AllProperties(props) {
               cardImg={house1}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$5,200,000"
               bedrooms="4"
               bathrooms="5"
@@ -79,6 +79,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent1"
+              propertyprice="p1"
             />
             <CardSingle
               cardImg={apt2}
@@ -93,6 +94,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Rent"
               filteritem="apartment agent4"
+              propertyprice="p2"
 
             />
             
@@ -100,7 +102,7 @@ function AllProperties(props) {
               cardImg={house8}
               agentImg={agent4}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$2,300,000"
               bedrooms="2"
               bathrooms="4"
@@ -110,13 +112,15 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent4"
+              propertyprice="p3"
+
 
             />
             <CardSingle
               cardImg={house15}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$5,700,000"
               bedrooms="4"
               bathrooms="5"
@@ -126,13 +130,15 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
+              propertyprice="p4"
+
 
             />
             <CardSingle
               cardImg={house10}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$5,400,000"
               bedrooms="4"
               bathrooms="5"
@@ -142,13 +148,15 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
+              propertyprice="p5"
+
 
             />
             <CardSingle
               cardImg={house7}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$14,000,000"
               bedrooms="6"
               bathrooms="7"
@@ -225,7 +233,7 @@ function AllProperties(props) {
               cardImg={house2}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$1,800,000"
               bedrooms="3"
               bathrooms="4"
@@ -256,7 +264,7 @@ function AllProperties(props) {
               cardImg={house9}
               agentImg={agent4}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$680,000"
               bedrooms="2"
               bathrooms="4"

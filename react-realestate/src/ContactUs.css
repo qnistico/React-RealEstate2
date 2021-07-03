@@ -1,52 +1,66 @@
 .contact_us {
-    background-color: #fff;
-    padding: 30px;
-    max-width: 1280px;
-    margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
+
 }
 
+
+
 .contact_us_flex {
-    max-width: 1280px;
-    display: flex;
-    margin: auto;
-    align-items: center;
+  max-width: 1280px;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
 
 .contact_us_info {
-    display: flex;
-    flex-flow: column;
-    margin-left: 3rem;
+  display: flex;
+  flex-flow: column;
+  margin-left: 3rem;
 }
 
 .contact_form_primary {
-    width: 62%;
+  width: 62%;
 }
 
 .contact_us_icon_info_flex {
-    display: flex;
-    margin-bottom: 12px;
+  display: flex;
+  margin-bottom: 12px;
 }
 
 .contact_us_icon_flex {
-    display: flex;
-    flex-flow: column;
+  display: flex;
+  flex-flow: column;
 }
 
 .contact_us_icon_info_flex p {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.pb {
+  color: #5c687f !important;
+  font-weight: 400 !important;
 }
 
 .contact_us_icon_info_flex a {
-    color: #222222;
+  color: #5c687f;
+}
+
+.contact_us_icon_info_flex p:last-of-type {
 }
 
 .contact_us_icon_info_flex .MuiSvgIcon-root {
-    color: #0073e5;
-    margin-right: 12px;
+  color: #0073e5;
+  margin-right: 12px;
 }
 
 .contact_map {
-    max-width: 1280px;
-    margin: 3rem auto 0 auto;
-
+  max-width: 1280px;
+  margin: 3rem auto 0 auto;
 }
