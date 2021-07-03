@@ -64,6 +64,9 @@ function AllPropertiesMansionInFoxchapel(props) {
               bathrooms="5"
               sqft="5000 SqFt"
               cardimgalt="mansion"
+              filteritem="house agent1"
+              featured="Featured"
+              forsale="For Sale"
 
             />
             <CardSingle
@@ -76,6 +79,9 @@ function AllPropertiesMansionInFoxchapel(props) {
               bathrooms="3"
               sqft="2750 SqFt"
               cardimgalt="house"
+              filteritem="house agent1"
+              featured="Featured"
+              forsale="For Sale"
 
             />
             <CardSingle
@@ -90,7 +96,7 @@ function AllPropertiesMansionInFoxchapel(props) {
               cardimgalt="mansion"
               featured="Featured"
               forsale="For Sale"
-              filteritem="apartment"
+              filteritem="house agent1"
             />
             
             <CardSingle
@@ -103,6 +109,10 @@ function AllPropertiesMansionInFoxchapel(props) {
               bathrooms="4"
               sqft="5,200 SqFt"
               cardimgalt="mansion"
+              filteritem="house agent3"
+              featured="Featured"
+              forsale="For Sale"
+
 
             />
             <CardSingle
@@ -118,6 +128,8 @@ function AllPropertiesMansionInFoxchapel(props) {
               plink="/HouseInEdgeworth"
               featured="Featured"
               forsale="For Sale"
+              filteritem="house agent4"
+
             />
             <CardSingle
               cardImg={house12}
@@ -129,6 +141,10 @@ function AllPropertiesMansionInFoxchapel(props) {
               bathrooms="3"
               sqft="2,850 SqFt"
               cardimgalt="house"
+              filteritem="house agent4"
+              featured="Featured"
+              forsale="For Sale"
+
 
             />
             <div className="ap_pagination">

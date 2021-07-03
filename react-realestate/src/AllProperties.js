@@ -54,7 +54,39 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 
 function AllProperties(props) {
+
+  function showAllAgents() {
+    var showAgents = document.querySelectorAll('div.agent1, div.agent3, div.agent4');
+    showAgents.forEach((el) => el.classList.add('show'));
+    showAgents.forEach((el) => el.classList.remove('hide'));
+  }
   
+function showAgent1() {
+  var filteragent1 = document.querySelectorAll( 'div.agent3, div.agent4');
+  var showa1 = document.querySelectorAll('div.agent1');
+  filteragent1.forEach((el) => el.classList.add('hide'));
+  filteragent1.forEach((el) => el.classList.remove('show'));
+  showa1.forEach((el) => el.classList.add('show'));
+  showa1.forEach((el) => el.classList.remove('hide'));
+}
+function showAgent3() {
+  var filteragent3 = document.querySelectorAll( 'div.agent1, div.agent4');
+  var showa3 = document.querySelectorAll('div.agent3');
+
+  filteragent3.forEach((el) => el.classList.add('hide'));
+  filteragent3.forEach((el) => el.classList.remove('show'));
+  showa3.forEach((el) => el.classList.add('show'));
+  showa3.forEach((el) => el.classList.remove('hide'));
+}
+function showAgent4() {
+  var filteragent4 = document.querySelectorAll( 'div.agent1, div.agent3');
+  var showa4 = document.querySelectorAll('div.agent4');
+
+  filteragent4.forEach((el) => el.classList.add('hide'));
+  filteragent4.forEach((el) => el.classList.remove('show'));
+  showa4.forEach((el) => el.classList.add('show'));
+  showa4.forEach((el) => el.classList.remove('hide'));
+}
   function hideApartments() {
     var apartments = document.querySelectorAll(".apartment");
     apartments.forEach((el) => el.classList.add("hide"));
@@ -106,9 +138,6 @@ function AllProperties(props) {
         <MDBDropdownItem>
           <MDBDropdownLink className="filter_btn" onClick={hideHouses}>Apartments</MDBDropdownLink>
         </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink className="filter_btn">Offices</MDBDropdownLink>
-        </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
             </div>
@@ -130,14 +159,17 @@ function AllProperties(props) {
             <MDBDropdown>
       <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
       <MDBDropdownMenu className="property_dropdown_2">
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent John Ryan</MDBDropdownLink>
+      <MDBDropdownItem>
+          <MDBDropdownLink onClick={showAllAgents}>All Agents</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent Kevin Richmond</MDBDropdownLink>
+          <MDBDropdownLink onClick={showAgent1}>Agent John Ryan</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="#">Agent Mary Williams</MDBDropdownLink>
+          <MDBDropdownLink onClick={showAgent3}>Agent Kevin Richmond</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink onClick={showAgent4}>Agent Mary Williams</MDBDropdownLink>
         </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
@@ -162,7 +194,7 @@ function AllProperties(props) {
               plink="/MansionInFoxchapel"
               featured="Featured"
               forsale="For Sale"
-              filteritem="house"
+              filteritem="house agent1"
             />
             <CardSingle
               cardImg={apt2}
@@ -176,7 +208,7 @@ function AllProperties(props) {
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"
-              filteritem="apartment"
+              filteritem="apartment agent4"
 
             />
             
@@ -193,7 +225,7 @@ function AllProperties(props) {
               plink="/HouseInOreland"
               featured="Featured"
               forsale="For Sale"
-              filteritem="house"
+              filteritem="house agent4"
 
             />
             <CardSingle
@@ -209,7 +241,7 @@ function AllProperties(props) {
               plink="/MansionInNorwin"
               featured="Featured"
               forsale="For Sale"
-              filteritem="house"
+              filteritem="house agent3"
 
             />
             <CardSingle
@@ -225,7 +257,7 @@ function AllProperties(props) {
               plink="/MansionInSewickleyHeights"
               featured="Featured"
               forsale="For Sale"
-              filteritem="house"
+              filteritem="house agent3"
 
             />
             <CardSingle
@@ -241,7 +273,7 @@ function AllProperties(props) {
               plink="/MansionInGladwyne"
               featured="Featured"
               forsale="For Sale"
-              filteritem="house"
+              filteritem="house agent3"
 
             />
 <CardSingle
@@ -256,7 +288,7 @@ function AllProperties(props) {
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"
-              filteritem="apartment"
+              filteritem="apartment agent3"
 
             />
             
@@ -272,10 +304,102 @@ function AllProperties(props) {
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"
-              filteritem="apartment"
+              filteritem="apartment agent1"
 
             />
+            <CardSingle
+              cardImg={house3}
+              agentImg={agent1}
+              cardTitle="Mansion on Lorem Ave"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$2,300,000"
+              bedrooms="4"
+              bathrooms="5"
+              sqft="5000 SqFt"
+              cardimgalt="mansion"
+              filteritem="house agent1"
+              featured="Featured"
+              forsale="For Sale"
+
+            />
+            <CardSingle
+              cardImg={house4}
+              agentImg={agent1}
+              cardTitle="Mansion on Lorem Ave"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$900,000"
+              bedrooms="2"
+              bathrooms="3"
+              sqft="2750 SqFt"
+              cardimgalt="house"
+              filteritem="house agent1"
+              featured="Featured"
+              forsale="For Sale"
+
+            />
+            <CardSingle
+              cardImg={house2}
+              agentImg={agent1}
+              cardTitle="Mansion on Lorem Ave"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              cardPrice="$1,800,000"
+              bedrooms="3"
+              bathrooms="4"
+              sqft="4500 SqFt"
+              cardimgalt="mansion"
+              featured="Featured"
+              forsale="For Sale"
+              filteritem="house agent1"
+            />
             
+            <CardSingle
+              cardImg={house16}
+              agentImg={agent3}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$4,300,000"
+              bedrooms="3"
+              bathrooms="4"
+              sqft="5,200 SqFt"
+              cardimgalt="mansion"
+              filteritem="house agent3"
+              featured="Featured"
+              forsale="For Sale"
+
+
+            />
+            <CardSingle
+              cardImg={house9}
+              agentImg={agent4}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              cardPrice="$680,000"
+              bedrooms="2"
+              bathrooms="4"
+              sqft="3,200 SqFt"
+              cardimgalt="house"
+              plink="/HouseInEdgeworth"
+              featured="Featured"
+              forsale="For Sale"
+              filteritem="house agent4"
+
+            />
+            <CardSingle
+              cardImg={house12}
+              agentImg={agent4}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$499,999"
+              bedrooms="2"
+              bathrooms="3"
+              sqft="2,850 SqFt"
+              cardimgalt="house"
+              filteritem="house agent4"
+              featured="Featured"
+              forsale="For Sale"
+
+
+            />
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">
                 <ArrowBackIosIcon />

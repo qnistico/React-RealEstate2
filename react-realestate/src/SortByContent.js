@@ -29,9 +29,6 @@ function SortByContent() {
         <MDBDropdownItem>
           <MDBDropdownLink href="#">Apartments</MDBDropdownLink>
         </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">Offices</MDBDropdownLink>
-        </MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
             </div>
