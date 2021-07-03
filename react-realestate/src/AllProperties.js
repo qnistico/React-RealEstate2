@@ -55,129 +55,13 @@ import apt3 from "./img/apartment3.jpg";
 
 function AllProperties(props) {
 
-  function showAllAgents() {
-    var showAgents = document.querySelectorAll('div.agent1, div.agent3, div.agent4');
-    showAgents.forEach((el) => el.classList.add('show'));
-    showAgents.forEach((el) => el.classList.remove('hide'));
-  }
   
-function showAgent1() {
-  var filteragent1 = document.querySelectorAll( 'div.agent3, div.agent4');
-  var showa1 = document.querySelectorAll('div.agent1');
-  filteragent1.forEach((el) => el.classList.add('hide'));
-  filteragent1.forEach((el) => el.classList.remove('show'));
-  showa1.forEach((el) => el.classList.add('show'));
-  showa1.forEach((el) => el.classList.remove('hide'));
-}
-function showAgent3() {
-  var filteragent3 = document.querySelectorAll( 'div.agent1, div.agent4');
-  var showa3 = document.querySelectorAll('div.agent3');
-
-  filteragent3.forEach((el) => el.classList.add('hide'));
-  filteragent3.forEach((el) => el.classList.remove('show'));
-  showa3.forEach((el) => el.classList.add('show'));
-  showa3.forEach((el) => el.classList.remove('hide'));
-}
-function showAgent4() {
-  var filteragent4 = document.querySelectorAll( 'div.agent1, div.agent3');
-  var showa4 = document.querySelectorAll('div.agent4');
-
-  filteragent4.forEach((el) => el.classList.add('hide'));
-  filteragent4.forEach((el) => el.classList.remove('show'));
-  showa4.forEach((el) => el.classList.add('show'));
-  showa4.forEach((el) => el.classList.remove('hide'));
-}
-  function hideApartments() {
-    var apartments = document.querySelectorAll(".apartment");
-    apartments.forEach((el) => el.classList.add("hide"));
-    apartments.forEach((el) => el.classList.remove('show'));
-  
-    var houses = document.querySelectorAll(".house");
-    houses.forEach((el) => el.classList.add("show"));
-    houses.forEach((el) => el.classList.remove('hide'));
-  
-  }
-  
-  function hideHouses() {
-    var houses = document.querySelectorAll(".house");
-    houses.forEach((el) => el.classList.add("hide"));
-    houses.forEach((el) => el.classList.remove("show"));
-  
-    var apartments = document.querySelectorAll('.apartment');
-    apartments.forEach((el) => el.classList.add('show'));
-    apartments.forEach((el) => el.classList.remove('hide'));
-    console.log(apartments);
-  }
-  
-  function showAll() {
-      var showAllProperties = document.querySelectorAll('.house, .apartment');
-      showAllProperties.forEach((el) => el.classList.add('show'));
-      showAllProperties.forEach((el) => el.classList.remove('hide'));
-  }
   return (
     <div>
           <div className="dark_gradient"></div>
 
       <PagesHero headerTitle="All Listings" parallaximg1={propertybg}/>
-      <div className="sort_table">
-            <div className="search_property">
-                <div className="icon_flex">
-            </div>
-            </div>
-            <div className="property_sorting">
-            <div className="property_list">
-            <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Property Type</MDBDropdownToggle>
-      <MDBDropdownMenu className="property_dropdown_2">
-        <MDBDropdownItem>
-          <MDBDropdownLink className="filter_btn" onClick={showAll} >All</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink className="filter_btn" onClick={hideApartments} >Homes</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink className="filter_btn" onClick={hideHouses}>Apartments</MDBDropdownLink>
-        </MDBDropdownItem>
-      </MDBDropdownMenu>
-    </MDBDropdown>
-            </div>
-            
-            <div className="property_price">
-            <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Price</MDBDropdownToggle>
-      <MDBDropdownMenu className="property_dropdown_2">
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">Lowest to Highest</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink href="#">Highest to Lowest</MDBDropdownLink>
-        </MDBDropdownItem>
-      </MDBDropdownMenu>
-    </MDBDropdown>
-    </div>
-            <div className="agent_list">
-            <MDBDropdown>
-      <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
-      <MDBDropdownMenu className="property_dropdown_2">
-      <MDBDropdownItem>
-          <MDBDropdownLink onClick={showAllAgents}>All Agents</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink onClick={showAgent1}>Agent John Ryan</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink onClick={showAgent3}>Agent Kevin Richmond</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
-          <MDBDropdownLink onClick={showAgent4}>Agent Mary Williams</MDBDropdownLink>
-        </MDBDropdownItem>
-      </MDBDropdownMenu>
-    </MDBDropdown>
-    </div>
-            </div>
-            <MDBBtn className="hero_button" href="/AllProperties">Search</MDBBtn>
-            
-        </div>
+      <SortByContent />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
