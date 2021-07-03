@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
+import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink } from 'mdb-react-ui-kit';
+import { MDBBtn } from 'mdb-react-ui-kit';
+
 import HomeInteriorSlider from "./HomeInteriorSlider";
 import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 import DirectionsCarIcon from "@material-ui/icons/DirectionsCar";
@@ -46,16 +49,103 @@ import birdseye from "./img/birdseye.jpg";
 import propertybg from "./img/propertybg.jpg";
 import Categories from "./components/Categories";
 import SortByContent from "./SortByContent";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 
 function AllProperties(props) {
   
+  function hideApartments() {
+    var apartments = document.querySelectorAll(".apartment");
+    apartments.forEach((el) => el.classList.add("hide"));
+    apartments.forEach((el) => el.classList.remove('show'));
   
+    var houses = document.querySelectorAll(".house");
+    houses.forEach((el) => el.classList.add("show"));
+    houses.forEach((el) => el.classList.remove('hide'));
+  
+  }
+  
+  function hideHouses() {
+    var houses = document.querySelectorAll(".house");
+    houses.forEach((el) => el.classList.add("hide"));
+    houses.forEach((el) => el.classList.remove("show"));
+  
+    var apartments = document.querySelectorAll('.apartment');
+    apartments.forEach((el) => el.classList.add('show'));
+    apartments.forEach((el) => el.classList.remove('hide'));
+    console.log(apartments);
+  }
+  
+  function showAll() {
+      var showAllProperties = document.querySelectorAll('.house, .apartment');
+      showAllProperties.forEach((el) => el.classList.add('show'));
+      showAllProperties.forEach((el) => el.classList.remove('hide'));
+  }
   return (
     <div>
           <div className="dark_gradient"></div>
 
       <PagesHero headerTitle="All Listings" parallaximg1={propertybg}/>
-      <SortByContent />
+      <div className="sort_table">
+            <div className="search_property">
+                <div className="icon_flex">
+            </div>
+            </div>
+            <div className="property_sorting">
+            <div className="property_list">
+            <MDBDropdown>
+      <MDBDropdownToggle className="property_dropdown">Property Type</MDBDropdownToggle>
+      <MDBDropdownMenu className="property_dropdown_2">
+        <MDBDropdownItem>
+          <MDBDropdownLink className="filter_btn" onClick={showAll} >All</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink className="filter_btn" onClick={hideApartments} >Homes</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink className="filter_btn" onClick={hideHouses}>Apartments</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink className="filter_btn">Offices</MDBDropdownLink>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+            </div>
+            
+            <div className="property_price">
+            <MDBDropdown>
+      <MDBDropdownToggle className="property_dropdown">Price</MDBDropdownToggle>
+      <MDBDropdownMenu className="property_dropdown_2">
+        <MDBDropdownItem>
+          <MDBDropdownLink href="#">Lowest to Highest</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink href="#">Highest to Lowest</MDBDropdownLink>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+    </div>
+            <div className="agent_list">
+            <MDBDropdown>
+      <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
+      <MDBDropdownMenu className="property_dropdown_2">
+        <MDBDropdownItem>
+          <MDBDropdownLink href="#">Agent John Ryan</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink href="#">Agent Kevin Richmond</MDBDropdownLink>
+        </MDBDropdownItem>
+        <MDBDropdownItem>
+          <MDBDropdownLink href="#">Agent Mary Williams</MDBDropdownLink>
+        </MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+    </div>
+            </div>
+            <MDBBtn className="hero_button" href="/AllProperties">Search</MDBBtn>
+            
+        </div>
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
@@ -63,7 +153,7 @@ function AllProperties(props) {
               cardImg={house1}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
               cardPrice="$5,200,000"
               bedrooms="4"
               bathrooms="5"
@@ -72,25 +162,29 @@ function AllProperties(props) {
               plink="/MansionInFoxchapel"
               featured="Featured"
               forsale="For Sale"
+              filteritem="house"
             />
             <CardSingle
-              cardImg={house2}
-              agentImg={agent1}
-              cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$1,800,000"
-              bedrooms="3"
-              bathrooms="4"
-              sqft="4500 SqFt"
-              cardimgalt="mansion"
+              cardImg={apt2}
+              agentImg={agent4}
+              cardTitle="Villa on Lorem Street"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$1450 / mo"
+              bedrooms="2"
+              bathrooms="2"
+              sqft="1650 Sq Ft"
+              cardimgalt="apartment"
               featured="Featured"
-              forsale="For Sale"
+              forsale="For Rent"
+              filteritem="apartment"
+
             />
+            
             <CardSingle
               cardImg={house8}
               agentImg={agent4}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
               cardPrice="$2,300,000"
               bedrooms="2"
               bathrooms="4"
@@ -99,12 +193,14 @@ function AllProperties(props) {
               plink="/HouseInOreland"
               featured="Featured"
               forsale="For Sale"
+              filteritem="house"
+
             />
             <CardSingle
               cardImg={house15}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
               cardPrice="$5,700,000"
               bedrooms="4"
               bathrooms="5"
@@ -113,12 +209,14 @@ function AllProperties(props) {
               plink="/MansionInNorwin"
               featured="Featured"
               forsale="For Sale"
+              filteritem="house"
+
             />
             <CardSingle
               cardImg={house10}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
               cardPrice="$5,400,000"
               bedrooms="4"
               bathrooms="5"
@@ -127,12 +225,14 @@ function AllProperties(props) {
               plink="/MansionInSewickleyHeights"
               featured="Featured"
               forsale="For Sale"
+              filteritem="house"
+
             />
             <CardSingle
               cardImg={house7}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
               cardPrice="$14,000,000"
               bedrooms="6"
               bathrooms="7"
@@ -141,36 +241,41 @@ function AllProperties(props) {
               plink="/MansionInGladwyne"
               featured="Featured"
               forsale="For Sale"
-            />
+              filteritem="house"
 
-            <CardSingle
-              cardImg={house9}
-              agentImg={agent4}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$680,000"
+            />
+<CardSingle
+              cardImg={apt3}
+              agentImg={agent3}
+              cardTitle=""
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$1200 / mo"
+              bedrooms="1"
+              bathrooms="1"
+              sqft="1200 Sq Ft"
+              cardimgalt="apartment"
+              featured="Featured"
+              forsale="For Rent"
+              filteritem="apartment"
+
+            />
+            
+<CardSingle
+              cardImg={apt1}
+              agentImg={agent1}
+              cardTitle="Apartment on Lorem Ave"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
+              cardPrice="$1400 / mo"
               bedrooms="2"
-              bathrooms="4"
-              sqft="3,200 SqFt"
-              cardimgalt="house"
-              plink="/HouseInEdgeworth"
+              bathrooms="1"
+              sqft="1400 Sq Ft"
+              cardimgalt="apartment"
               featured="Featured"
-              forsale="For Sale"
-            />
+              forsale="For Rent"
+              filteritem="apartment"
 
-            <CardSingle
-              cardImg={house14}
-              agentImg={agent4}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$4,100,000"
-              bedrooms="4"
-              bathrooms="5"
-              sqft="5,000 SqFt"
-              cardimgalt="mansion"
-              featured="Featured"
-              forsale="For Sale"
             />
+            
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">
                 <ArrowBackIosIcon />

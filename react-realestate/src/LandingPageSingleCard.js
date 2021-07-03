@@ -38,7 +38,7 @@ function LandingPageSingleCard(props) {
                 <a href="#!" className="lp_cards_location">
                   {props.address}
                 </a>
-                <p>A fabulous villa in Miami located conveniently near a train station, beach and...{props.description}<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
+                <p>A fabulous villa in Lorem located conveniently near a train station, beach and...{props.description}<a href="/MansionInFoxchapel" className="more_button">[more]</a></p>
               </div>
               <div className="lp_cards_center">
                 <div className="lp_icon_info_flex">

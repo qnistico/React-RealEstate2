@@ -40,12 +40,17 @@ import agent4 from "./img/agent4.jpg";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import propertybg from "./img/propertybg.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
+import SortByContent from "./SortByContent";
 
 function AllPropertiesMansionInFoxchapel(props) {
   return (
     <div>
       <div className="dark_gradient"></div>
       <PagesHero  headerTitle="All Listings" parallaximg1={propertybg} />
+      <SortByContent />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
@@ -53,7 +58,7 @@ function AllPropertiesMansionInFoxchapel(props) {
               cardImg={house3}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$2,300,000"
               bedrooms="4"
               bathrooms="5"
@@ -65,7 +70,7 @@ function AllPropertiesMansionInFoxchapel(props) {
               cardImg={house4}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$900,000"
               bedrooms="2"
               bathrooms="3"
@@ -74,34 +79,25 @@ function AllPropertiesMansionInFoxchapel(props) {
 
             />
             <CardSingle
-              cardImg={house6}
-              agentImg={agent4}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$425,000"
-              bedrooms="2"
-              bathrooms="2"
-              sqft="2,300 SqFt"
-              cardimgalt="house"
-
-            />
-            <CardSingle
-              cardImg={house5}
+              cardImg={house2}
               agentImg={agent1}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$650,000"
-              bedrooms="2"
-              bathrooms="3"
-              sqft="2300 SqFt"
-              cardimgalt="house"
-
+              cardTitle="Mansion on Lorem Ave"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              cardPrice="$1,800,000"
+              bedrooms="3"
+              bathrooms="4"
+              sqft="4500 SqFt"
+              cardimgalt="mansion"
+              featured="Featured"
+              forsale="For Sale"
+              filteritem="apartment"
             />
+            
             <CardSingle
               cardImg={house16}
               agentImg={agent3}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$4,300,000"
               bedrooms="3"
               bathrooms="4"
@@ -110,22 +106,24 @@ function AllPropertiesMansionInFoxchapel(props) {
 
             />
             <CardSingle
-              cardImg={house11}
-              agentImg={agent3}
+              cardImg={house9}
+              agentImg={agent4}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
-              cardPrice="$630,000"
-              bedrooms="3"
+              address="555 Lorem Avenue, Lorem, FL 12345, USA"
+              cardPrice="$680,000"
+              bedrooms="2"
               bathrooms="4"
-              sqft="3,900 SqFt"
+              sqft="3,200 SqFt"
               cardimgalt="house"
-
+              plink="/HouseInEdgeworth"
+              featured="Featured"
+              forsale="For Sale"
             />
             <CardSingle
               cardImg={house12}
               agentImg={agent4}
               cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Miami, FL 12345, USA"
+              address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$499,999"
               bedrooms="2"
               bathrooms="3"

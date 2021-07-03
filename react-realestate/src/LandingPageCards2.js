@@ -31,7 +31,7 @@ function LandingPageCards2() {
                 Luxury Mansion
               </a>
               <a href="#!" className="lp_cards_location">
-                555 Lorem Avenue, Miami, FL 12345, USA
+                555 Lorem Avenue, Lorem, FL 12345, USA
               </a>
             </div>
             <div className="lp_cards_center">
@@ -75,7 +75,7 @@ function LandingPageCards2() {
                 Luxury Mansion
               </a>
               <a href="#!" className="lp_cards_location">
-                555 Lorem Avenue, Miami, FL 12345, USA
+                555 Lorem Avenue, Lorem, FL 12345, USA
               </a>
             </div>
             <div className="lp_cards_center">
@@ -119,7 +119,7 @@ function LandingPageCards2() {
                 Luxury Mansion
               </a>
               <a href="#!" className="lp_cards_location">
-                555 Lorem Avenue, Miami, FL 12345, USA
+                555 Lorem Avenue, Lorem, FL 12345, USA
               </a>
             </div>
             <div className="lp_cards_center">
