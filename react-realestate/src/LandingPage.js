@@ -25,8 +25,7 @@ import {
 } from "react-chat-widget";
 import "./ChatWidget.css";
 import MobileIcons from "./MobileIcons";
-import Fade from 'react-reveal/Fade';
-
+import Fade from "react-reveal/Fade";
 
 function LandingPage() {
   useEffect(() => {
@@ -35,22 +34,35 @@ function LandingPage() {
 
   const handleNewUserMessage = (newMessage) => {
     console.log(`New message incoming! ${newMessage}`);
-    addResponseMessage('Thank you for your interest in our services.  A representative will be with you shortly.');
+    addResponseMessage(
+      "Thank you for your interest in our services.  A representative will be with you shortly."
+    );
   };
   return (
     <div className="landing_page">
-      <Fade duration="1200">
-      <HeroSlider />
+      <Fade duration="1618">
+        <HeroSlider />
       </Fade>
       <SortByContent />
       <LandingPageCards />
+      <Fade duration="1618" delay="300">
+
       <OverlayCarousel />
-      <Agents />
-      <PhiOverlay />
+      </Fade>
+      <Fade duration="1618" delay="300">
+        <Agents />
+      </Fade>
+      <Fade duration="1618" delay="300">
+        <PhiOverlay />
+      </Fade>
       <ContactOverlay />
-      <MobileIcons />
+      <Fade duration="1618" delay="300">
+        <MobileIcons />
+      </Fade>
       <LPBlog />
-      <CustomerReviews />
+      <Fade duration="1618" delay="300">
+        <CustomerReviews />
+      </Fade>
       <MultiCarousel />
       <Widget
         handleNewUserMessage={handleNewUserMessage}

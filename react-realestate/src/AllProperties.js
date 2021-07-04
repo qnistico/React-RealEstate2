@@ -270,6 +270,19 @@ function AllProperties(props) {
 
             />
 
+            <CardSingle cardImg= {house14}
+        agentImg= {agent4}
+        cardTitle= "Mansion on Lorem Ave"
+        address= "555 Lorem Avenue Lorem FL 12345 USA"
+        cardPrice= "$4,100,000"
+        bedrooms= "4"
+        bathrooms= "5"
+        sqft= "5000 SqFt"
+        featured= "Featured"
+        forsale= "For Sale"
+        cardimgalt= "house"
+        salerent= "For Sale"/>
+
             
             <CardSingle
               cardImg={house9}
