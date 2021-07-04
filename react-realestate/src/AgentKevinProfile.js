@@ -80,7 +80,8 @@ function AgentKevinProfile(props) {
         featured: "Featured",
             forsale: "For Rent",
             salerent: "For Rent",
-            cardimgalt: "apartment"
+            cardimgalt: "apartment",
+            plink: "/AptInAllentown"
   };
   
   const p1link = {

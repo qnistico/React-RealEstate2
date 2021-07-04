@@ -47,7 +47,7 @@ function LandingPageCards() {
               <p className="for_sale_badge">For Sale</p>
 
               <div className="card_img_agent">
-                <a href="/AgentJohnProfile">
+                <a href="/AgentKevinProfile">
                   <Avatar src={agent3} alt="real estate agent" />
                 </a>
               </div>

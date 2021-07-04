@@ -80,10 +80,10 @@ function AgentMaryProfile(props) {
     agentImg: agent4,
     cardTitle: "Apartment on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, PA 12345, USA",
-    cardPrice: "$1450/mo",
+    cardPrice: "$1,450/mo",
     bedrooms: "2",
     bathrooms: "2",
-    sqft: "1650 Sq Ft",
+    sqft: "1,650 Sq Ft",
     featured: "Featured",
     forsale: "For Rent",
     salerent: "For Rent",
@@ -102,11 +102,9 @@ function AgentMaryProfile(props) {
         plink: "/MansionInFoxchapel",
       };
       const p4link = {
-        plink: "/MansionInFoxchapel",
+        plink: "/AptInWilliamsport"
       };
-      const p5link = {
-        plink: "/MansionInFoxchapel",
-      };
+      
     return (
         <div className="agent_mary_profile">
       <AgentProfiles
@@ -122,7 +120,6 @@ function AgentMaryProfile(props) {
         p2link={p2link}
         p3link={p3link}
         p4link={p4link}
-        p5link={p5link}
       />
         </div>
     )

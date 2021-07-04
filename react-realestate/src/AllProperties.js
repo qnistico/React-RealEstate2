@@ -214,10 +214,10 @@ function AllProperties(props) {
               agentImg={agent3}
               cardTitle=""
               address="555 Lorem Avenue, Lorem, PA 12345, USA"
-              cardPrice="$1200 / mo"
+              cardPrice="$1,200 / mo"
               bedrooms="1"
               bathrooms="1"
-              sqft="1200 Sq Ft"
+              sqft="1,200 Sq Ft"
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"
@@ -233,12 +233,12 @@ function AllProperties(props) {
             <CardSingle
               cardImg={apt1}
               agentImg={agent1}
-              cardTitle="Apartment on Lorem Ave"
-              address="555 Lorem Avenue, Lorem, PA 12345, USA"
-              cardPrice="$1400 / mo"
+              cardTitle="Apartment In Philadelphia"
+              address="555 Lorem Avenue, Philadelphia, PA 12345, USA"
+              cardPrice="$1,400 / mo"
               bedrooms="2"
               bathrooms="1"
-              sqft="1400 Sq Ft"
+              sqft="1,400 Sq Ft"
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"

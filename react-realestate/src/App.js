@@ -30,6 +30,7 @@ import HouseInOreland from "./HouseInOreland";
 import LoginAuth from "./LoginAuth";
 import AptInPhiladelphia from "./AptInPhiladelphia";
 import AptInAllentown from "./AptInAllentown";
+import AptInWilliamsport from "./AptInWilliamsport";
 function App() {
   
   return (
@@ -64,6 +65,9 @@ function App() {
             </Route>
             <Route exact path="/AptInAllentown">
               <AptInAllentown />
+            </Route>
+            <Route exact path="/AptInWilliamsport">
+              <AptInWilliamsport />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />

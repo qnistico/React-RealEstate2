@@ -1,9 +1,13 @@
 import React from 'react';
 import PhiImage2 from "./img/phioverlay2.jpg";
+import Fade from "react-reveal/Fade";
+
 
 function PhiOverlay2() {
     return (
         <div className="phi_overlay">
+                <Fade duration="1618" delay="100">
+
             <div className="phi_overlay_flex phi_overlay_flex_reverse">
         <img src={PhiImage2} alt="female real estate agent with skyscraper" />
         <div className="phi_overlay_content">
@@ -12,6 +16,7 @@ function PhiOverlay2() {
           <a href="#!" className="hero_button">Read More</a>
         </div>
       </div>
+      </Fade>
         </div>
     )
 }

@@ -141,7 +141,8 @@ function MansionInNorwin(props) {
         forsale: "For Rent",
         salerent: "For Rent",
         cardimgalt: "apartment",
-        aplink: "/AgentKevinProfile"
+        aplink: "/AgentKevinProfile",
+        plink: "/AptInAllentown"
 
 
   };

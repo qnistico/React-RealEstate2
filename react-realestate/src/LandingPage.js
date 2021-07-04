@@ -26,6 +26,7 @@ import {
 import "./ChatWidget.css";
 import MobileIcons from "./MobileIcons";
 import Fade from "react-reveal/Fade";
+import LandingPageApts from "./LandingPageApts";
 
 function LandingPage() {
   useEffect(() => {
@@ -45,14 +46,15 @@ function LandingPage() {
       </Fade>
       <SortByContent />
       <LandingPageCards />
-
       <OverlayCarousel />
-        <Agents />
-        <PhiOverlay />
+      <LandingPageApts />
+      <PhiOverlay2 />
+      <Agents />
+      <PhiOverlay />
       <ContactOverlay />
-        <MobileIcons />
+      <MobileIcons />
       <LPBlog />
-        <CustomerReviews />
+      <CustomerReviews />
       <MultiCarousel />
       <Widget
         handleNewUserMessage={handleNewUserMessage}

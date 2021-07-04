@@ -100,7 +100,8 @@ function MansionInSewickleyHeights(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile"
+    aplink: "/AgentKevinProfile",
+    plink: "/MansionInNorwin"
 
   };
 
@@ -117,7 +118,8 @@ function MansionInSewickleyHeights(props) {
             forsale: "For Rent",
             salerent: "For Rent",
             cardimgalt: "apartment",
-            aplink: "/AgentKevinProfile"
+            aplink: "/AgentKevinProfile",
+            plink: "/AptInAllentown"
 
             
   };
@@ -135,7 +137,8 @@ function MansionInSewickleyHeights(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile"
+    aplink: "/AgentKevinProfile",
+    plink: "/MansionInGladwyne"
 
 
   };
