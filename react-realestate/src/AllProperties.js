@@ -108,6 +108,7 @@ function AllProperties(props) {
               filteritem="house agent1"
               propertyprice="p14"
               salerent="For Sale"
+              aplink="/AgentJohnProfile"
             />
             <CardSingle
               cardImg={apt2}
@@ -124,6 +125,8 @@ function AllProperties(props) {
               filteritem="apartment agent4"
               propertyprice="p13"
               salerent="For Rent"
+              aplink="/AgentMaryProfile"
+
 
             />
 
@@ -143,6 +146,8 @@ function AllProperties(props) {
               filteritem="house agent4"
               propertyprice="p12"
               salerent="For Sale"
+              aplink="/AgentMaryProfile"
+
 
             />
             <CardSingle
@@ -161,6 +166,8 @@ function AllProperties(props) {
               filteritem="house agent3"
               propertyprice="p11"
               salerent="For Sale"
+              aplink="/AgentKevinProfile"
+
 
             />
             <CardSingle
@@ -179,6 +186,8 @@ function AllProperties(props) {
               filteritem="house agent3"
               propertyprice="p10"
               salerent="For Sale"
+              aplink="/AgentKevinProfile"
+
 
             />
             <CardSingle
@@ -197,6 +206,8 @@ function AllProperties(props) {
               filteritem="house agent3"
               propertyprice="p9"
               salerent="For Sale"
+              aplink="/AgentKevinProfile"
+
 
             />
             <CardSingle
@@ -214,6 +225,8 @@ function AllProperties(props) {
               filteritem="apartment agent3"
               propertyprice="p8"
               salerent="For Rent"
+              aplink="/AgentKevinProfile"
+
 
             />
 
@@ -232,6 +245,8 @@ function AllProperties(props) {
               filteritem="apartment agent1"
               propertyprice="p7"
               salerent="For Rent"
+              aplink="/AgentJohnProfile"
+
 
             />
             
@@ -250,6 +265,8 @@ function AllProperties(props) {
               forsale="For Sale"
               propertyprice="p5"
               salerent="For Sale"
+              aplink="/AgentJohnProfile"
+
 
             />
             <CardSingle
@@ -267,6 +284,8 @@ function AllProperties(props) {
               filteritem="house agent1"
               propertyprice="p4"
               salerent="For Sale"
+              aplink="/AgentJohnProfile"
+
 
             />
 
@@ -281,7 +300,13 @@ function AllProperties(props) {
         featured= "Featured"
         forsale= "For Sale"
         cardimgalt= "house"
-        salerent= "For Sale"/>
+        salerent= "For Sale"
+        filteritem="house agent4"
+        aplink="/AgentMaryProfile"
+
+        />
+        
+        
 
             
             <CardSingle

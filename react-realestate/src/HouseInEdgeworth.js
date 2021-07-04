@@ -100,6 +100,8 @@ function HouseInEdgeworth(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
+    aplink: "/AgentMaryProfile"
+
   };
 
   const card2template = {
@@ -114,7 +116,9 @@ function HouseInEdgeworth(props) {
     featured: "Featured",
     forsale: "For Rent",
     salerent: "For Rent",
-    cardimgalt: "apartment"
+    cardimgalt: "apartment",
+    aplink: "/AgentMaryProfile"
+
   };
 
   const card3template = {
@@ -130,6 +134,8 @@ function HouseInEdgeworth(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
+    aplink: "/AgentMaryProfile"
+
   };
 
   return (

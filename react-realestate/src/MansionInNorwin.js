@@ -103,7 +103,8 @@ function MansionInNorwin(props) {
         forsale: "For Sale",
         plink: "/MansionInSewickleyHeights",
         salerent: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        aplink: "/AgentKevinProfile"
         
   };
 
@@ -120,7 +121,9 @@ function MansionInNorwin(props) {
         forsale: "For Sale",
         plink: "/MansionInGladwyne",
         salerent: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        aplink: "/AgentKevinProfile"
+
 
   };
 
@@ -137,7 +140,9 @@ function MansionInNorwin(props) {
     featured: "Featured",
         forsale: "For Rent",
         salerent: "For Rent",
-        cardimgalt: "apartment"
+        cardimgalt: "apartment",
+        aplink: "/AgentKevinProfile"
+
 
   };
   

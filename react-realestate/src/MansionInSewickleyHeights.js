@@ -99,7 +99,9 @@ function MansionInSewickleyHeights(props) {
     featured: "Featured",
     forsale: "For Sale",
     salerent: "For Sale",
-    cardimgalt: "house"
+    cardimgalt: "house",
+    aplink: "/AgentKevinProfile"
+
   };
 
   const card2template = {
@@ -115,6 +117,8 @@ function MansionInSewickleyHeights(props) {
             forsale: "For Rent",
             salerent: "For Rent",
             cardimgalt: "apartment",
+            aplink: "/AgentKevinProfile"
+
             
   };
 
@@ -130,7 +134,9 @@ function MansionInSewickleyHeights(props) {
     featured: "Featured",
     forsale: "For Sale",
     salerent: "For Sale",
-    cardimgalt: "house"
+    cardimgalt: "house",
+    aplink: "/AgentKevinProfile"
+
 
   };
   

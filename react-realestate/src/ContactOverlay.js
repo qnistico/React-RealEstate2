@@ -4,6 +4,8 @@ import "./ContactOverlay.css";
 import ImgOverlay from "./ImgOverlay";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxOverlay from './ParallaxOverlay';
+import Fade from "react-reveal/Fade";
+
 
 function ContactOverlay() {
     window.addEventListener("load", parallax)
@@ -53,6 +55,8 @@ function ContactOverlay() {
     return (
         <div className="contact_overlay">
           <div className="contact_overlay_img parallaxifyBg" data-speed-multiplier="1.618"></div>
+          <Fade duration="1200">
+
                 <div className="co_content_flex">
                     <div className="co_content_text">
                     <h2>We sell premium properties to turn your dream house into your dream <span className="coct_color">Home</span></h2>
@@ -81,7 +85,9 @@ function ContactOverlay() {
     <button className="send_button">Submit</button>
 </form>
                 </div>
+                
             </div>
+            </Fade>
         </div>
     )
 }

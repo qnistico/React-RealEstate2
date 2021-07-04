@@ -100,7 +100,9 @@ function MansionInGladwyne(props) {
         featured: "Featured",
             forsale: "For Sale",
             salerent: "For Sale",
-            cardimgalt: "house"
+            cardimgalt: "house",
+                    aplink: "/AgentKevinProfile"
+
       };
     
       const card2template = {
@@ -115,7 +117,9 @@ function MansionInGladwyne(props) {
         featured: "Featured",
             forsale: "For Sale",
             salerent: "For Sale",
-            cardimgalt: "house"
+            cardimgalt: "house",
+                    aplink: "/AgentKevinProfile"
+
 
       };
     
@@ -132,7 +136,9 @@ function MansionInGladwyne(props) {
         featured: "Featured",
             forsale: "For Rent",
             salerent: "For Rent",
-            cardimgalt: "apartment"
+            cardimgalt: "apartment",
+                    aplink: "/AgentKevinProfile"
+
 
       };
       const card5template = {

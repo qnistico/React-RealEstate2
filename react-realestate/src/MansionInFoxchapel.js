@@ -62,7 +62,8 @@ function MansionInFoxchapel(props) {
     featured: "Featured",
     forsale: "For Rent",
     salerent: "For Rent",
-    cardimgalt: "apartment"    
+    cardimgalt: "apartment",
+    aplink: "/AgentJohnProfile"  
 
 
     
@@ -80,7 +81,9 @@ function MansionInFoxchapel(props) {
     featured: "Featured",
     forsale: "For Sale",
     salerent: "For Sale",
-    cardimgalt: "house"
+    cardimgalt: "house",
+    aplink: "/AgentJohnProfile"  
+
   };
 
   
@@ -96,7 +99,9 @@ function MansionInFoxchapel(props) {
     featured: "Featured",
     forsale: "For Sale",
     salerent: "For Sale",
-    cardimgalt: "house"
+    cardimgalt: "house",
+    aplink: "/AgentJohnProfile"  
+
   };
   
   return (

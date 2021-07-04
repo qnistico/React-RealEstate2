@@ -100,7 +100,9 @@ function HouseInOreland(props) {
         featured: "Featured",
         forsale: "For Sale",
         salerent: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        aplink: "/AgentMaryProfile"
+
       };
     
       const card2template = {
@@ -116,7 +118,8 @@ function HouseInOreland(props) {
         forsale: "For Sale",
         plink: "/HouseInEdgeworth",
         salerent: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        aplink: "/AgentMaryProfile"
 
       };
     
@@ -133,6 +136,8 @@ function HouseInOreland(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
+    aplink: "/AgentMaryProfile"
+
 
       };
       
