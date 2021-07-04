@@ -48,7 +48,6 @@ import AllAgentsSidebar from "./AllAgentsSidebar";
 import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
-import AllPropertiesPage2 from "./AllPropertiesPage2";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import birdseye from "./img/birdseye.jpg";
@@ -329,20 +328,7 @@ function AllProperties(props) {
             />
             
 
-            <div className="ap_pagination">
-              <a href="/AllProperties" className="ap_arrow_back">
-                <ArrowBackIosIcon />
-              </a>
-              <a href="/AllProperties" className="ap_1">
-                1
-              </a>
-              <a href="/AllPropertiesPage2" className="ap_2">
-                2
-              </a>
-              <a href="/AllPropertiesPage2" className="ap_arrow_forward">
-                <ArrowForwardIosIcon />
-              </a>
-            </div>
+            
           </div>
           <div className="ap_sidebar">
             <div className="ap_sidebar_item">

@@ -811,6 +811,8 @@ input:active {
   color: #0073e5;
 }
 
+
+
 .pspl_features {
   display: flex;
   flex-flow: row wrap;
@@ -892,6 +894,7 @@ iframe {
 .single_cards_top p {
   color: #566177;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .sc_top_center_flex {

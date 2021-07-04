@@ -20,7 +20,6 @@ import BlogListPage2 from "./BloglistPage2";
 import BlogPostTemplate from "./BlogPostTemplate";
 import BuyingAHome from "./BuyingAHome";
 import AllProperties from "./AllProperties";
-import AllPropertiesPage2 from "./AllPropertiesPage2";
 import AgentKevinProfile from "./AgentKevinProfile";
 import AgentMaryProfile from "./AgentMaryProfile";
 import MansionInNorwin from "./MansionInNorwin";
@@ -29,6 +28,7 @@ import HouseInEdgeworth from "./HouseInEdgeworth";
 import MansionInSewickleyHeights from "./MansionInSewickleyHeights";
 import HouseInOreland from "./HouseInOreland";
 import LoginAuth from "./LoginAuth";
+import AptInPhiladelphia from "./AptInPhiladelphia";
 function App() {
   
   return (
@@ -57,6 +57,9 @@ function App() {
             </Route>
             <Route exact path="/HouseInOreland">
               <HouseInOreland />
+            </Route>
+            <Route exact path="/AptInPhiladelphia">
+              <AptInPhiladelphia />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />
@@ -88,9 +91,7 @@ function App() {
             <Route exact path="/AllProperties">
               <AllProperties />
             </Route>
-            <Route exact path="/AllPropertiesPage2">
-        <AllPropertiesPage2 />
-      </Route>
+            
       <Route exact path="/LoginAuth">
         
         <LoginAuth />

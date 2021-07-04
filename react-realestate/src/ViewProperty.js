@@ -62,6 +62,9 @@ import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import PagesHero from "./PagesHero";
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
+import AcUnitIcon from '@material-ui/icons/AcUnit';
+
 
 
 function ViewProperty(props) {
@@ -151,10 +154,7 @@ function ViewProperty(props) {
                   <FitnessCenter />
                   Gym
                 </p>
-                <p>
-                  <BathtubOutlined />
-                  Jacuzzi
-                </p>
+                
                 <p>
                   <i className="fas fa-couch"></i>Lounge Room
                 </p>
@@ -180,10 +180,7 @@ function ViewProperty(props) {
                 <p>
                   <i className="fas fa-warehouse"></i>Garage
                 </p>
-                <p>
-                  <SportsTennis />
-                  Tennis Court
-                </p>
+                
                 <p>
                   <DeckOutlined />
                   Porch
@@ -200,14 +197,14 @@ function ViewProperty(props) {
                   Water
                 </p>
                 <p>
-                  <i className="fas fa-temperature-low"></i>Air Conditioning
+                  <WhatshotIcon />
+                  Heating
                 </p>
                 <p>
-                  <i className="fas fa-fire-alt"></i>Heating
+                  <AcUnitIcon />
+                  Air Conditioning
                 </p>
-                <p>
-                  <i className="fas fa-wind"></i>Central Air
-                </p>
+                
                 <p>
                   <LocalGasStationOutlined />
                   Natural Gas
@@ -231,9 +228,7 @@ function ViewProperty(props) {
                   <AccessibleForwardOutlinedIcon />
                   Wheelchair Accessible
                 </p>
-                <p>
-                  <i className="fas fa-fire-extinguisher"></i>Fire Extinguisher
-                </p>
+                
                 <p>
                   <NetworkWifiOutlined />
                   Wifi

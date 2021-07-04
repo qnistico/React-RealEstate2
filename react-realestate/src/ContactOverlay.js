@@ -55,7 +55,6 @@ function ContactOverlay() {
     return (
         <div className="contact_overlay">
           <div className="contact_overlay_img parallaxifyBg" data-speed-multiplier="1.618"></div>
-          <Fade duration="1200">
 
                 <div className="co_content_flex">
                     <div className="co_content_text">
@@ -87,7 +86,6 @@ function ContactOverlay() {
                 </div>
                 
             </div>
-            </Fade>
         </div>
     )
 }

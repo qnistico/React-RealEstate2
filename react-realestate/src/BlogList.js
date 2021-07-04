@@ -134,10 +134,7 @@ function BlogList(props) {
             <h3>Featured Listings</h3>
             <FeaturedListings />
             </div>
-            <div className="blog_sidebar_item">
-            <h3>Mortgage Calculator</h3>
-            <MortgageCalculator />
-            </div>
+            
             <div className="blog_sidebar_item">
             <div className="related_posts">
   <div className="related_posts_item">

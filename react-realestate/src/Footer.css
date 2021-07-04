@@ -61,6 +61,10 @@ footer {
   padding: 0;
 }
 
+.footer_properties {
+  max-width: unset;
+}
+
 .footer_item .MuiSvgIcon-root {
   margin-right: 8px;
 }
@@ -80,7 +84,11 @@ footer {
 .footer_newsletter {
   width: 500px;
   margin: auto;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
+}
+
+.footer_newsletter label {
+  margin-bottom: 8px;
 }
 
 .footer_newsletter h3,

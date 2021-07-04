@@ -63,7 +63,8 @@ function MansionInFoxchapel(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: "/AgentJohnProfile"  
+    aplink: "/AgentJohnProfile",
+    plink: "/AptInPhiladelphia" 
 
 
     

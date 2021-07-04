@@ -73,7 +73,7 @@ function AgentJohnProfile(props) {
   const card4template = {
     cardImg: apt1,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Apartment on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$1400 / mo",
     bedrooms: "2",
@@ -82,7 +82,7 @@ function AgentJohnProfile(props) {
     featured: "Featured",
     forsale: "For Rent",
     salerent: "For Rent",
-    cardimgalt: "apartment" 
+    cardimgalt: "apartment",
   }
   
   
@@ -96,7 +96,7 @@ function AgentJohnProfile(props) {
     plink: "/MansionInFoxchapel",
   };
   const p4link = {
-    plink: "/MansionInFoxchapel",
+    plink: "/AptInPhiladelphia",
   };
   const p5link = {
     plink: "/MansionInFoxchapel",
