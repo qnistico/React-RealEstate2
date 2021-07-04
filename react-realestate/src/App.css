@@ -6,7 +6,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -320,6 +320,8 @@ input:active {
   align-items: flex-end;
   position: relative;
 }
+
+
 
 .featured_badge {
   font-size: 13px;

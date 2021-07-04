@@ -238,7 +238,7 @@ function LandingPageCards() {
                   555 Lorem Avenue, Edgeworth, PA 12345, USA
                 </a>
                 <p>
-                  A fabulous villa in PA with a gorgeous front yard and...
+                  A fabulous villa in PA with a gorgeous front yard, back yard and...
                   <a href="/HouseInEdgeworth" className="more_button">
                     [more]
                   </a>
@@ -399,6 +399,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
+          <a href="/AllProperties" className="hero_button">View All Listings</a>
         </div>
       </div>
     </div>
