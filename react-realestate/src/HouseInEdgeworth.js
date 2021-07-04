@@ -68,111 +68,85 @@ import "./Calculator.css";
 import house9lr from "./img/house9lr.jpg";
 import house9mbr from "./img/house9mbr.jpg";
 import house9br from "./img/house9br.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 function HouseInEdgeworth(props) {
-    const templateImg = {
-        houseImg: house9,
-        houseLR: house9lr,
-        houseMBR: house9mbr,
-        houseBR: house9br,
-        althouse: "Mansion",
-            altlr: "living room",
-            altmbr: "bedroom",
-            altbr: "bathroom"
-      };
-      const psprAgent = {
-        agentImg: agent4,
-        agentName: "Mary Williams",
-        aplink: "/AgentMaryProfile"
-      };
-      const card1template = {
-        cardImg: house8,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$2,300,000",
-        bedrooms: "2",
-        bathrooms: "4",
-        sqft: "4,900 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-                cardimgalt: "house"
+  const templateImg = {
+    houseImg: house9,
+    houseLR: house9lr,
+    houseMBR: house9mbr,
+    houseBR: house9br,
+    althouse: "Mansion",
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom",
+  };
+  const psprAgent = {
+    agentImg: agent4,
+    agentName: "Mary Williams",
+    aplink: "/AgentMaryProfile",
+  };
+  const card1template = {
+    cardImg: house8,
+    agentImg: agent4,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$2,300,000",
+    bedrooms: "2",
+    bathrooms: "4",
+    sqft: "4,900 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+  };
 
-      };
-    
-      const card2template = {
-        cardImg: house6,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$425,000",
-        bedrooms: "2",
-        bathrooms: "2",
-        sqft: "2,300 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-                cardimgalt: "house"
+  const card2template = {
+    cardImg: apt2,
+    agentImg: agent4,
+    cardTitle: "Apartment on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$1450/mo",
+    bedrooms: "2",
+    bathrooms: "2",
+    sqft: "1650 Sq Ft",
+    featured: "Featured",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment"
+  };
 
-      };
-    
-      const card3template = {
-        cardImg: house12,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$499,999",
-        bedrooms: "2",
-        bathrooms: "3",
-        sqft: "2,850 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-                cardimgalt: "house"
+  const card3template = {
+    cardImg: house14,
+    agentImg: agent4,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$4,100,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "5,000 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+  };
 
-      };
-      const card4template = {
-        cardImg: house14,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$4,100,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "5,000 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-                cardimgalt: "house"
-
-      };
-      const card5template = {
-        cardImg: house9,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$680,000",
-        bedrooms: "2",
-        bathrooms: "4",
-        sqft: "3,200 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-                cardimgalt: "house"
-
-      };
-    return (
-        <div className="house_in_edgeworth">
-          <div className="property_hero" >
+  return (
+    <div className="house_in_edgeworth">
+      <div className="property_hero">
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={house9} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
+          <ParallaxImg imgsrc={house9} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>House In Edgeworth</h2>
           </div>
         </div>
       </div>
-      
+
       <SortByContent />
-            <ViewProperty
+      <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, EdgeWorth, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$680,000"
@@ -188,12 +162,10 @@ function HouseInEdgeworth(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
         aplink="/AgentMaryProfile"
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default HouseInEdgeworth
+export default HouseInEdgeworth;

@@ -36,7 +36,7 @@ function ContactUs() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Phone</label>
+              <label htmlFor="phone">Phone</label>
               <input
                 type="phone"
                 className="form-control form_input"
@@ -45,7 +45,7 @@ function ContactUs() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 className="form-control form_input"

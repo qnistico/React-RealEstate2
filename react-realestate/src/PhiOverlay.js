@@ -21,13 +21,11 @@ function PhiOverlay() {
       <div className="phi_overlay_flex">
         <img src={PhiImage} alt="male real estate agent with skyscraper" />
         <div className="phi_overlay_content">
-          <Fade duration="1050" cascade>
           <h3>Expert Real Estate Agents</h3>
           <p>
             Our team of highly qualified real estate agents will help find the
             property right for you
           </p>
-          </Fade>
           <MDBBtn href="#!" className="hero_button phi_button">
             Read More
           </MDBBtn>

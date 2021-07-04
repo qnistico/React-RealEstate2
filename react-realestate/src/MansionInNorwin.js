@@ -71,6 +71,9 @@ import house15BR from "./img/house15BR.jpg";
 import lphouse15 from "./img/lphouse15.jpg";
 import lphouse1 from "./img/lphouse1.jpg";
 import lphouse2 from "./img/lphouse2.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 function MansionInNorwin(props) {
   const templateImg = {
     houseImg: house15,
@@ -98,7 +101,10 @@ function MansionInNorwin(props) {
     sqft: "7,200 SqFt",
     featured: "Featured",
         forsale: "For Sale",
-        plink: "/MansionInSewickleyHeights"
+        plink: "/MansionInSewickleyHeights",
+        salerent: "For Sale",
+        cardimgalt: "house"
+        
   };
 
   const card2template = {
@@ -112,50 +118,32 @@ function MansionInNorwin(props) {
     sqft: "13,500 SqFt",
     featured: "Featured",
         forsale: "For Sale",
-        plink: "/MansionInGladwyne"
+        plink: "/MansionInGladwyne",
+        salerent: "For Sale",
+        cardimgalt: "house"
+
   };
 
+  
   const card3template = {
-    cardImg: house16,
+    cardImg: apt3,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$4,300,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "5,200 SqFt",
+    cardPrice: "$1200 / mo",
+    bedrooms: "1",
+    bathrooms: "1",
+    sqft: "1,200 Sq Ft",
     featured: "Featured",
-        forsale: "For Sale"
-  };
-  const card4template = {
-    cardImg: house11,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$630,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "3,900 SqFt",
-    featured: "Featured",
-        forsale: "For Sale"
-  };
-  const card5template = {
-    cardImg: house15,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$5,700,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "7,200 SqFt",
-    featured: "Featured",
-        forsale: "For Sale"
+        forsale: "For Rent",
+        salerent: "For Rent",
+        cardimgalt: "apartment"
+
   };
   
+  
 
-  function priceFilter() {
-    
-  }
+  
   return (
     <div className="norwin_mansion">
       
@@ -173,7 +161,7 @@ function MansionInNorwin(props) {
       </div>
       
       <SortByContent />
-      <ViewProperty
+    <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
         homeAddress="555 Lorem Ave"
         garages="2"
@@ -190,8 +178,6 @@ function MansionInNorwin(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
         aplink="/AgentKevinProfile"
       />
     </div>

@@ -95,19 +95,8 @@ function showAll() {
 </MDBDropdown>
       </div>
       
-      <div className="property_price">
-      <MDBDropdown>
-<MDBDropdownToggle className="property_dropdown">Price</MDBDropdownToggle>
-<MDBDropdownMenu className="property_dropdown_2">
-  <MDBDropdownItem>
-    <MDBDropdownLink href="#">Lowest to Highest</MDBDropdownLink>
-  </MDBDropdownItem>
-  <MDBDropdownItem>
-    <MDBDropdownLink href="#">Highest to Lowest</MDBDropdownLink>
-  </MDBDropdownItem>
-</MDBDropdownMenu>
-</MDBDropdown>
-</div>
+      
+      
       <div className="agent_list">
       <MDBDropdown>
 <MDBDropdownToggle className="property_dropdown">Agents</MDBDropdownToggle>
@@ -127,8 +116,24 @@ function showAll() {
 </MDBDropdownMenu>
 </MDBDropdown>
 </div>
+<div className="buy_rent">
+      <MDBDropdown>
+<MDBDropdownToggle className="property_dropdown">Buy / Rent</MDBDropdownToggle>
+<MDBDropdownMenu className="property_dropdown_2">
+  <MDBDropdownItem>
+    <MDBDropdownLink className="filter_btn" onClick={showAll} >All</MDBDropdownLink>
+  </MDBDropdownItem>
+  <MDBDropdownItem>
+    <MDBDropdownLink className="filter_btn" onClick={hideApartments} >Buy</MDBDropdownLink>
+  </MDBDropdownItem>
+  <MDBDropdownItem>
+    <MDBDropdownLink className="filter_btn" onClick={hideHouses}>Rent</MDBDropdownLink>
+  </MDBDropdownItem>
+</MDBDropdownMenu>
+</MDBDropdown>
       </div>
-      <MDBBtn className="hero_button" href="/AllProperties">Search</MDBBtn>
+      </div>
+      <a className="hero_button" href="/AllProperties">Search</a>
       
   </div>
     )

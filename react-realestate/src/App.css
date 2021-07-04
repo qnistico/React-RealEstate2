@@ -368,6 +368,7 @@ input:active {
 .lp_cards_content p {
   font-size: 14px;
   color: #566177;
+  font-weight: 600;
 }
 
 .lp_cards_top {
@@ -1005,7 +1006,7 @@ iframe {
 
 .card_price {
   font-size: 18px !important;
-  font-weight: 900;
+  font-weight: 900 !important;
   color: #0073e5 !important;
 }
 

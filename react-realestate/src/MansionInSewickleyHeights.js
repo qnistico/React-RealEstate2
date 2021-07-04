@@ -68,24 +68,27 @@ import "./Calculator.css";
 import house10lr from "./img/house10lr.jpg";
 import house10mbr from "./img/house10mbr.jpg";
 import house10br from "./img/house10br.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 function MansionInSewickleyHeights(props) {
-    const templateImg = {
-        houseImg: house10,
-        houseLR: house10lr,
-        houseMBR: house10mbr,
-        houseBR: house10br,
-        althouse: "Mansion",
-            altlr: "living room",
-            altmbr: "bedroom",
-            altbr: "bathroom"
-      };
-      const psprAgent = {
-        agentImg: agent3,
-        agentName: "Kevin Richmond",
-        aplink: "/AgentKevinProfile"
-      };
-      const card1template = {
-        cardImg: house15,
+  const templateImg = {
+    houseImg: house10,
+    houseLR: house10lr,
+    houseMBR: house10mbr,
+    houseBR: house10br,
+    althouse: "Mansion",
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom",
+  };
+  const psprAgent = {
+    agentImg: agent3,
+    agentName: "Kevin Richmond",
+    aplink: "/AgentKevinProfile",
+  };
+  const card1template = {
+    cardImg: house15,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
@@ -94,24 +97,29 @@ function MansionInSewickleyHeights(props) {
     bathrooms: "5",
     sqft: "7,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
-      };
-    
-      const card2template = {
-        cardImg: house10,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$5,400,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "7,200 SqFt",
-    featured: "Featured",
-        forsale: "For Sale"
-      };
-    
-      const card3template = {
-        cardImg: house7,
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house"
+  };
+
+  const card2template = {
+    cardImg: apt3,
+        agentImg: agent3,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+        cardPrice: "$1,200 / mo",
+        bedrooms: "1",
+        bathrooms: "1",
+        sqft: "1,200 SqFt",
+        featured: "Featured",
+            forsale: "For Rent",
+            salerent: "For Rent",
+            cardimgalt: "apartment",
+            
+  };
+
+  const card3template = {
+    cardImg: house7,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
@@ -120,49 +128,28 @@ function MansionInSewickleyHeights(props) {
     bathrooms: "7",
     sqft: "13,500 SqFt",
     featured: "Featured",
-        forsale: "For Sale"
-      };
-      const card4template = {
-        cardImg: house16,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$4,300,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "5,200 SqFt",
-    featured: "Featured",
-        forsale: "For Sale"
-      };
-      const card5template = {
-        cardImg: house11,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$630,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "3,900 SqFt",
-    featured: "Featured",
-        forsale: "For Sale"
-      };
-    return (
-        <div className="house_in_sewickley_heights">
-          <div className="property_hero" >
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house"
+
+  };
+  
+  
+  return (
+    <div className="house_in_sewickley_heights">
+      <div className="property_hero">
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={house10} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
+          <ParallaxImg imgsrc={house10} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>Villa In Sewickley Heights</h2>
           </div>
         </div>
       </div>
-      
+
       <SortByContent />
-            <ViewProperty
+      <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Sewickley Heights, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$5,400,000"
@@ -178,12 +165,10 @@ function MansionInSewickleyHeights(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
         aplink="/AgentKevinProfile"
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default MansionInSewickleyHeights
+export default MansionInSewickleyHeights;

@@ -296,7 +296,7 @@ function LandingPageCards() {
                   href="/MansionInSewickleyHeights"
                   className="lp_cards_location"
                 >
-                  555 Lorem Avenue, Sewickley Heights, PA 12345, USA
+                  555 Lorem Ave, Sewickley Heights, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in PA located conveniently near a train

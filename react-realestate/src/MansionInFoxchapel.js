@@ -34,6 +34,9 @@ import house1MBR from "./img/house1MBR.jpg";
 import house1BR from "./img/house1BR.jpg";
 import agent1 from "./img/agent1.jpg";
 import lphouse1 from "./img/lphouse1.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 
 function MansionInFoxchapel(props) {
   const templateImg = {
@@ -48,16 +51,21 @@ function MansionInFoxchapel(props) {
     aplink: "/AgentJohnProfile",
   };
   const card1template = {
-    cardImg: house1,
+    cardImg: apt1,
     agentImg: agent1,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$5,200,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "6,500 SqFt",
+    cardPrice: "$1400 / mo",
+    bedrooms: "2",
+    bathrooms: "1",
+    sqft: "1,400 Sq Ft",
     featured: "Featured",
-    forsale: "For Sale",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment"    
+
+
+    
   };
 
   const card2template = {
@@ -71,21 +79,12 @@ function MansionInFoxchapel(props) {
     sqft: "4,500 SqFt",
     featured: "Featured",
     forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house"
   };
 
+  
   const card3template = {
-    cardImg: house3,
-    agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$2,300,000",
-    bedrooms: "4",
-    bathrooms: "5",
-    sqft: "5,000 SqFt",
-    featured: "Recent",
-    forsale: "For Sale",
-  };
-  const card4template = {
     cardImg: house4,
     agentImg: agent1,
     cardTitle: "Mansion on Lorem Ave",
@@ -96,35 +95,23 @@ function MansionInFoxchapel(props) {
     sqft: "2,750 SqFt",
     featured: "Featured",
     forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house"
   };
-  const card5template = {
-    cardImg: house5,
-    agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$650,000",
-    bedrooms: "2",
-    bathrooms: "3",
-    sqft: "2,300 SqFt",
-    featured: "Recent",
-    forsale: "For Sale",
-  };
+  
   return (
     <div className="mansion_in_foxchapel">
-      
-      <div className="property_hero" >
+      <div className="property_hero">
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={house1} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
+          <ParallaxImg imgsrc={house1} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>Mansion In FoxChapel</h2>
           </div>
         </div>
       </div>
-      
+
       <SortByContent />
       <ViewProperty
         homeTitle="Mansion on Lorem Ave"
@@ -142,8 +129,6 @@ function MansionInFoxchapel(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
       />
     </div>
   );

@@ -69,6 +69,9 @@ import house7lr from "./img/house7lr.jpg";
 import house7mbr from "./img/house7mbr.jpg";
 import house7br from "./img/house7br.jpg";
 import lphouse7 from "./img/lphouse7.jpg";
+import apt1 from "./img/apartment1.jpg";
+import apt2 from "./img/apartment2.jpg";
+import apt3 from "./img/apartment3.jpg";
 function MansionInGladwyne(props) {
     const templateImg = {
         houseImg: house7,
@@ -96,46 +99,11 @@ function MansionInGladwyne(props) {
         sqft: "7,200 SqFt",
         featured: "Featured",
             forsale: "For Sale",
+            salerent: "For Sale",
+            cardimgalt: "house"
       };
     
       const card2template = {
-        cardImg: house7,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$14,000,000",
-        bedrooms: "6",
-        bathrooms: "7",
-        sqft: "13,500 SqFt",
-        featured: "Featured",
-            forsale: "For Sale"
-      };
-    
-      const card3template = {
-        cardImg: house16,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$4,300,000",
-        bedrooms: "3",
-        bathrooms: "4",
-        sqft: "5,200 SqFt",
-        featured: "Featured",
-            forsale: "For Sale"
-      };
-      const card4template = {
-        cardImg: house11,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$630,000",
-        bedrooms: "3",
-        bathrooms: "4",
-        sqft: "3,900 SqFt",
-        featured: "Featured",
-            forsale: "For Sale"
-      };
-      const card5template = {
         cardImg: house15,
         agentImg: agent3,
         cardTitle: "Mansion on Lorem Ave",
@@ -145,7 +113,30 @@ function MansionInGladwyne(props) {
         bathrooms: "5",
         sqft: "7,200 SqFt",
         featured: "Featured",
-            forsale: "For Sale"
+            forsale: "For Sale",
+            salerent: "For Sale",
+            cardimgalt: "house"
+
+      };
+    
+      
+      const card3template = {
+        cardImg: apt3,
+        agentImg: agent3,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+        cardPrice: "$1,200 / mo",
+        bedrooms: "1",
+        bathrooms: "1",
+        sqft: "1,200 SqFt",
+        featured: "Featured",
+            forsale: "For Rent",
+            salerent: "For Rent",
+            cardimgalt: "apartment"
+
+      };
+      const card5template = {
+        
       };
     return (
       <div className="mansion_in_gladwyne">
@@ -179,8 +170,6 @@ function MansionInGladwyne(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        card4template={card4template}
-        card5template={card5template}
         aplink="/AgentKevinProfile"
         plink="/MansionInGladwyne"
       />

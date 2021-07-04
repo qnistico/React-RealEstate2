@@ -61,7 +61,7 @@ function CardSingle(props) {
             </div>
             <div className="single_cards_bottom">
                 <div>
-                  <p>For Sale</p>
+                  <p>{props.salerent}</p>
                   <p className="card_price" id={props.propertyprice}>{props.cardPrice}</p>
                 </div>
                 <a href={props.plink} className="single_cards_button hero_button">

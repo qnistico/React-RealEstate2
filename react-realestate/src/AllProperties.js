@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
-import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink } from 'mdb-react-ui-kit';
-import { MDBBtn } from 'mdb-react-ui-kit';
+import {
+  MDBDropdown,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBDropdownItem,
+  MDBDropdownLink,
+} from "mdb-react-ui-kit";
+import { MDBBtn } from "mdb-react-ui-kit";
 
 import HomeInteriorSlider from "./HomeInteriorSlider";
 import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
@@ -54,40 +60,39 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 
 function AllProperties(props) {
-/*
   function priceFilterLH() {
     priceArray = [
-     {'id': p1},
-     {'id': p2},
-     {'id': p3},
-     {'id': p4},
-     {'id': p5},
-     {'id': p6},
-     {'id': p7},
-     {'id': p8},
-     {'id': p9},
-     {'id': p10},
-     {'id': p11},
-     {'id': p12},
-     {'id': p13},
-     {'id': p14},
+      { id: p1 },
+      { id: p2 },
+      { id: p3 },
+      { id: p4 },
+      { id: p5 },
+      { id: p6 },
+      { id: p7 },
+      { id: p8 },
+      { id: p9 },
+      { id: p10 },
+      { id: p11 },
+      { id: p12 },
+      { id: p13 },
+      { id: p14 },
     ];
     function priceFilterLH(a, b) {
       return a - b;
     }
   }
-  */
 
   return (
     <div>
-          <div className="dark_gradient"></div>
+      <div className="dark_gradient"></div>
 
-      <PagesHero headerTitle="All Listings" parallaximg1={propertybg}/>
+      <PagesHero headerTitle="All Listings" parallaximg1={propertybg} />
       <SortByContent />
       <div className="all_properties">
         <div className="all_properties_flex">
           <div className="ap_left">
-            <CardSingle className="filterItem"
+            <CardSingle
+              className="filterItem"
               cardImg={house1}
               agentImg={agent1}
               cardTitle="Mansion on Lorem Ave"
@@ -102,6 +107,7 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent1"
               propertyprice="p14"
+              salerent="For Sale"
             />
             <CardSingle
               cardImg={apt2}
@@ -117,9 +123,10 @@ function AllProperties(props) {
               forsale="For Rent"
               filteritem="apartment agent4"
               propertyprice="p13"
+              salerent="For Rent"
 
             />
-            
+
             <CardSingle
               cardImg={house8}
               agentImg={agent4}
@@ -135,7 +142,7 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent4"
               propertyprice="p12"
-
+              salerent="For Sale"
 
             />
             <CardSingle
@@ -153,7 +160,7 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p11"
-
+              salerent="For Sale"
 
             />
             <CardSingle
@@ -171,7 +178,7 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p10"
-
+              salerent="For Sale"
 
             />
             <CardSingle
@@ -189,10 +196,10 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p9"
-
+              salerent="For Sale"
 
             />
-<CardSingle
+            <CardSingle
               cardImg={apt3}
               agentImg={agent3}
               cardTitle=""
@@ -206,11 +213,11 @@ function AllProperties(props) {
               forsale="For Rent"
               filteritem="apartment agent3"
               propertyprice="p8"
-
+              salerent="For Rent"
 
             />
-            
-<CardSingle
+
+            <CardSingle
               cardImg={apt1}
               agentImg={agent1}
               cardTitle="Apartment on Lorem Ave"
@@ -224,26 +231,10 @@ function AllProperties(props) {
               forsale="For Rent"
               filteritem="apartment agent1"
               propertyprice="p7"
-
-
-            />
-            <CardSingle
-              cardImg={house3}
-              agentImg={agent1}
-              cardTitle="Mansion on Lorem Ave"
-              address="555 Lorem Avenue, Lorem, PA 12345, USA"
-              cardPrice="$2,300,000"
-              bedrooms="4"
-              bathrooms="5"
-              sqft="5000 SqFt"
-              cardimgalt="mansion"
-              filteritem="house agent1"
-              featured="Featured"
-              forsale="For Sale"
-              propertyprice="p6"
-
+              salerent="For Rent"
 
             />
+            
             <CardSingle
               cardImg={house4}
               agentImg={agent1}
@@ -258,6 +249,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               propertyprice="p5"
+              salerent="For Sale"
 
             />
             <CardSingle
@@ -274,27 +266,11 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent1"
               propertyprice="p4"
+              salerent="For Sale"
 
             />
+
             
-            <CardSingle
-              cardImg={house16}
-              agentImg={agent3}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, PA 12345, USA"
-              cardPrice="$4,300,000"
-              bedrooms="3"
-              bathrooms="4"
-              sqft="5,200 SqFt"
-              cardimgalt="mansion"
-              filteritem="house agent3"
-              featured="Featured"
-              forsale="For Sale"
-              propertyprice="p3"
-
-
-
-            />
             <CardSingle
               cardImg={house9}
               agentImg={agent4}
@@ -310,27 +286,11 @@ function AllProperties(props) {
               forsale="For Sale"
               filteritem="house agent4"
               propertyprice="p2"
-
-
-            />
-            <CardSingle
-              cardImg={house12}
-              agentImg={agent4}
-              cardTitle="Villa on Lorem Street"
-              address="555 Lorem Avenue, Lorem, PA 12345, USA"
-              cardPrice="$499,999"
-              bedrooms="2"
-              bathrooms="3"
-              sqft="2,850 SqFt"
-              cardimgalt="house"
-              filteritem="house agent4"
-              featured="Featured"
-              forsale="For Sale"
-              propertyprice="p1"
-
-
+              salerent="For Sale"
 
             />
+            
+
             <div className="ap_pagination">
               <a href="/AllProperties" className="ap_arrow_back">
                 <ArrowBackIosIcon />

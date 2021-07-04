@@ -23,6 +23,7 @@ import CardSingle from './CardSingle';
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
+import apt2 from "./img/apartment2.jpg";
 
 function AgentMaryProfile(props) {
     const card1template = {
@@ -36,7 +37,9 @@ function AgentMaryProfile(props) {
         sqft: "4,900 SqFt",
         featured: "Featured",
         forsale: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        salerent: "For Sale"
+
 
       };
     
@@ -51,39 +54,12 @@ function AgentMaryProfile(props) {
         sqft: "3,200 SqFt",
         featured: "Featured",
         forsale: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        salerent: "For Sale"
 
       };
     
       const card3template = {
-        cardImg: house6,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$425,000",
-        bedrooms: "2",
-        bathrooms: "2",
-        sqft: "2,300 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        cardimgalt: "house"
-
-      };
-      const card4template = {
-        cardImg: house12,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$499,999",
-        bedrooms: "2",
-        bathrooms: "3",
-        sqft: "2,850 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        cardimgalt: "house"
-
-      };
-      const card5template = {
         cardImg: house14,
         agentImg: agent4,
         cardTitle: "Mansion on Lorem Ave",
@@ -94,9 +70,28 @@ function AgentMaryProfile(props) {
         sqft: "5,000 SqFt",
         featured: "Featured",
         forsale: "For Sale",
-        cardimgalt: "house"
+        cardimgalt: "house",
+        salerent: "For Sale"
+
 
       };
+      const card4template = {
+        cardImg: apt2,
+    agentImg: agent4,
+    cardTitle: "Apartment on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$1450/mo",
+    bedrooms: "2",
+    bathrooms: "2",
+    sqft: "1650 Sq Ft",
+    featured: "Featured",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment",
+    
+
+      };
+      
       const p1link = {
         plink: "/HouseInOreland",
       };
@@ -123,7 +118,6 @@ function AgentMaryProfile(props) {
         card2template={card2template}
         card3template={card3template}
         card4template={card4template}
-        card5template={card5template}
         p1link={p1link}
         p2link={p2link}
         p3link={p3link}

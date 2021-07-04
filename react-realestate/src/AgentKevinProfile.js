@@ -21,6 +21,7 @@ import house16 from "./img/house16.jpg";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
+import apt3 from "./img/apartment3.jpg";
 
 function AgentKevinProfile(props) {
   const card1template = {
@@ -48,6 +49,7 @@ function AgentKevinProfile(props) {
     sqft: "7,200 SqFt",
     featured: "Featured",
     forsale: "For Sale",
+    salerent: "For Sale",
     cardimgalt: "house",
   };
 
@@ -62,34 +64,25 @@ function AgentKevinProfile(props) {
     sqft: "13,500 SqFt",
     featured: "Featured",
     forsale: "For Sale",
+    salerent: "For Sale",
+
     cardimgalt: "house",
   };
   const card4template = {
-    cardImg: house16,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$4,300,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "5,200 SqFt",
-    featured: "Featured",
-    forsale: "For Sale",
-    cardimgalt: "house",
+    cardImg: apt3,
+        agentImg: agent3,
+        cardTitle: "Mansion on Lorem Ave",
+        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+        cardPrice: "$1,200 / mo",
+        bedrooms: "1",
+        bathrooms: "1",
+        sqft: "1,200 SqFt",
+        featured: "Featured",
+            forsale: "For Rent",
+            salerent: "For Rent",
+            cardimgalt: "apartment"
   };
-  const card5template = {
-    cardImg: house11,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
-    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$630,000",
-    bedrooms: "3",
-    bathrooms: "4",
-    sqft: "3,900 SqFt",
-    featured: "Featured",
-    forsale: "For Sale",
-    cardimgalt: "house",
-  };
+  
   const p1link = {
     plink: "/MansionInNorwin",
   };
@@ -117,7 +110,6 @@ function AgentKevinProfile(props) {
           card2template={card2template}
           card3template={card3template}
           card4template={card4template}
-          card5template={card5template}
           p1link={p1link}
           p2link={p2link}
           p3link={p3link}

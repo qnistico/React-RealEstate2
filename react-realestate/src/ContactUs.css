@@ -44,20 +44,20 @@
 .contact_us_icon_info_flex p {
   margin-bottom: 0;
   color: #1a1a1a;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .pb {
   color: #566177 !important;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 .contact_us_icon_info_flex a {
   color: #566177;
+  font-weight: 600;
 }
 
-.contact_us_icon_info_flex p:last-of-type {
-}
+
 
 .contact_us_icon_info_flex .MuiSvgIcon-root {
   color: #0073e5;

@@ -69,7 +69,7 @@ function MainNav() {
             </MDBNavbarItem>
 <MDBNavbarItem>
     <a href="/AllProperties" className="nav-link">
-  All Listings
+  All Properties
   </a>
 </MDBNavbarItem>
             

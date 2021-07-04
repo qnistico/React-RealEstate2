@@ -258,8 +258,6 @@ function ViewProperty(props) {
                 <CardSingle {...props.card1template} />
                 <CardSingle {...props.card2template} />
                 <CardSingle {...props.card3template} />
-                <CardSingle {...props.card4template} />
-                <CardSingle {...props.card5template} />
               </div>
             </div>
           </div>
