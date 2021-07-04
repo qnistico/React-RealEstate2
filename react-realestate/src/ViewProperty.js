@@ -277,12 +277,7 @@ function ViewProperty(props) {
               <h3>Mortgage Calculator</h3>
               <MortgageCalculator />
             </div>
-            <div className="pspr_cards pspr_item">
-              <div className="pspr_card">
-                <LandingPageSingleCard cardImage={house1} />
-              </div>
-              <LandingPageSingleCard cardImage={house5} />
-            </div>
+            
           </div>
         </div>
       </div>

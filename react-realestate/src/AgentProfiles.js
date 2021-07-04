@@ -126,7 +126,7 @@ function AgentJohnRyan(props) {
               <CardSingle {...props.card2template} {...props.p2link} />
               <CardSingle {...props.card3template} {...props.p3link} />
               <CardSingle {...props.card4template} {...props.p4link} />
-            </div>
+          </div>
           </div>
           <div className="ap_primary_right">
             <div className="appr_item">
