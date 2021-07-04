@@ -109,7 +109,7 @@ function LandingPageApts(props) {
                 <img src={apt3} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
-              <p className="for_sale_badge">For Sale</p>
+              <p className="for_sale_badge">For Rent</p>
 
               <div className="card_img_agent">
                 <a href="/AgentKevinProfile">
@@ -169,7 +169,7 @@ function LandingPageApts(props) {
                 <img src={apt2} alt="apartment" />
               </a>
               <p className="featured_badge">Featured</p>
-              <p className="for_sale_badge">For Sale</p>
+              <p className="for_sale_badge">For Rent</p>
 
               <div className="card_img_agent">
                 <a href="/AgentMaryProfile">

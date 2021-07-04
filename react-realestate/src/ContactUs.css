@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .contact_page {
   padding: 0 30px 60px 30px;
 }
@@ -8,7 +15,8 @@
   max-width: 1280px;
   margin: auto;
   position: relative;
-  box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
+  -webkit-box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
+          box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
 
 }
 
@@ -16,14 +24,23 @@
 
 .contact_us_flex {
   max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact_us_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin-left: 3rem;
 }
 
@@ -32,13 +49,20 @@
 }
 
 .contact_us_icon_info_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
 
 .contact_us_icon_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .contact_us_icon_info_flex p {
@@ -71,7 +95,10 @@
 
 @media screen and (max-width: 680px) {
   .contact_us_flex {
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   .contact_form_primary {
     width: 100%;

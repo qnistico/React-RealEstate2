@@ -125,6 +125,7 @@ function AllProperties(props) {
               propertyprice="p13"
               salerent="For Rent"
               aplink="/AgentMaryProfile"
+              plink="/AptInWilliamsport"
 
 
             />
@@ -225,7 +226,7 @@ function AllProperties(props) {
               propertyprice="p8"
               salerent="For Rent"
               aplink="/AgentKevinProfile"
-              plink="/AptInAllentown"
+              plink="/AptInAllentown" 
 
 
             />
@@ -246,6 +247,7 @@ function AllProperties(props) {
               propertyprice="p7"
               salerent="For Rent"
               aplink="/AgentJohnProfile"
+              plink="/AptInPhiladelphia"
 
 
             />

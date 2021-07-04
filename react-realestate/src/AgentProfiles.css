@@ -1,7 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .agent_profile {
     padding: 2vw 3vw;
 }
 .agent_profile_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1280px;
     margin: auto;
@@ -10,7 +19,8 @@
 .ap_primary_left {
     width: 100%;
     padding: 30px;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
     background-color: #fff;
     margin: 0 15px auto 0;
 }
@@ -31,15 +41,21 @@
 }
 
 .appl_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     margin: auto;
 }
 
 .appr_item {
     padding: 30px;
     background-color: #fff;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
     margin-bottom: 30px;
 }
 
@@ -48,8 +64,13 @@
 }
 
 .agent_info_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     margin: 0 auto;
 }
 
@@ -69,8 +90,13 @@ h3 {
 }
 
 .agent_icons_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
 }
 
 .agent_icons_top {
@@ -89,14 +115,22 @@ h3 {
 
 .appl_top img {
     width: 55%;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
 
-    object-fit: cover;
+    -o-object-fit: cover;
+
+       object-fit: cover;
 }
 
 .appl_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     padding: 2rem 0 1rem 0;
 }
 
@@ -111,15 +145,24 @@ h3 {
     border-radius: 0;
     margin: 0 1rem 0 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
     border: 1px solid #0073e5 !important;
     min-width: 125px;
     text-transform: uppercase;
     font-size: 13px;
     text-align: center;
     -webkit-transform: perspective(1) translateZ(0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -133,17 +176,31 @@ h3 {
   right: 0;
   bottom: 0;
   color: #0073e5 !important;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background: -o-linear-gradient(left, white, white);
   background: linear-gradient(to right, white, white);
-  transform: scaleX(0);
-  transform-origin: 50% 50%;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .appl_button:hover:before,
 .appl_button:focus:before,
 .appl_button:active:before {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
   color: white !important;
 }
 
@@ -161,7 +218,10 @@ h3 {
 
 @media screen and (max-width: 1150px) {
     .agent_profile_flex {
-        flex-flow: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
     }
     .ap_primary_left {
         margin-bottom: 30px;

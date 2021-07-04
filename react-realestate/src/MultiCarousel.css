@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .multi_carousel {
   padding: 0;
 }
@@ -5,7 +12,8 @@
 .multi_car_flex {
   max-width: 1280px;
   margin: auto;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   overflow-x: hidden;
   padding: 60px 0;
 }

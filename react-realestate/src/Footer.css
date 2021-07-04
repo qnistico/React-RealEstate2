@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 footer {
   width: 100%;
   padding: 60px 0 0 0;
@@ -6,9 +13,16 @@ footer {
 
 .footer_flex {
   max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: auto;
   padding: 0 30px !important;
 }
@@ -16,15 +30,21 @@ footer {
 .footer_item {
   color: white;
   padding: 5px 15px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   max-width: 250px;
 }
 
 .footer_avatar {
   width: 45px;
   height: 45px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100px;
   margin: 0 12px 0 0;
 }
@@ -34,8 +54,12 @@ footer {
 }
 
 .footer_agents a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer_description {
@@ -103,6 +127,8 @@ footer {
   font-weight: 700;
   position: relative;
   top: 24px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   border: 1px solid #0073e5;
 }
@@ -120,9 +146,15 @@ footer {
 }
 
 .footer_copyright_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1280px;
   margin: auto;
   padding: 20px 0;
@@ -152,13 +184,18 @@ footer {
     padding: 15px;
   }
   .footer_flex {
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     padding: 0 !important;
   }
   .footer_item {
     max-width: unset;
     width: 100%;
-    align-items: flex-start !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
     text-align: left !important;
   }
   .footer_flex h3 {
@@ -168,12 +205,17 @@ footer {
 
 @media screen and (max-width: 991.98px) {
   .footer_flex {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer_item {
     width: 100%;
-    flex: 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
     max-width: unset;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }

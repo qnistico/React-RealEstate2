@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .lp_blog {
     width: 100%;
     background-color: #f1f2f5;
@@ -21,34 +28,58 @@
     background-color: #fff;
     margin: 15px;
     position: relative;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .lpb_item:hover {
-    box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
+    -webkit-box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
+            box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
 
 }
 
 .lpb_item img{
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 100%;
 }
 
 .lpb_item:hover img {
-    transform: scale(1.1);
-    filter: brightness(85%);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
     cursor: pointer;
   }
 
 .lp_blog_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 1280px;
     margin: auto;
 }
@@ -65,7 +96,8 @@
 
 .blog_img img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .lp_blog_button {
@@ -74,7 +106,8 @@
   color: white !important;
   font-weight: 700;
   border-radius: 0;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
+  -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
+          box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%) !important;
   border: 1px solid #0073e5 !important;
   min-width: 225px;
   text-transform: uppercase;
@@ -82,6 +115,8 @@
   text-align: center;
   margin: 10px;
   -webkit-transform: perspective(1px) translateZ(0);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
   margin-bottom: 10px;
@@ -96,17 +131,31 @@
   right: 0;
   bottom: 0;
   color: #0073e5 !important;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background: -o-linear-gradient(left, white, white);
   background: linear-gradient(to right, white, white);
-  transform: scaleX(0);
-  transform-origin: 50% 50%;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
-  transition: all 0.3s ease,
+  transition-property: transform, -webkit-transform;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 
 .lp_blog_button:hover:before,
 .lp_blog_button:focus:before,
 .lp_blog_button:active:before {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
   color: white !important;
 }
 
@@ -125,8 +174,12 @@
 
 
 .lpbb {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 min-width: 200px;
     margin: 20px auto 0 auto;
 }
@@ -136,10 +189,15 @@ min-width: 200px;
 
 @media screen and (max-width: 900px) {
     .lp_blog_flex {
-        flex-flow: row wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
     }
     .lpb_item {
-        flex: 1 200px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 200px;
+                flex: 1 200px;
     }
     
 }

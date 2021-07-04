@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .cc_cards_bg {
   width: 100%;
 }
@@ -8,38 +15,66 @@
 
 .cc_cards_flex {
   max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
 .carousel_single_card {
   width: auto;
-  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+  -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+          box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin: 0 15px 0 15px;
   position: relative;
   top: 0;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .carousel_single_card:hover {
-  box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
+  -webkit-box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
+          box-shadow: 0 0 12px 8.5px rgb(0 0 0 / 12%);
 }
 
 .card_img_container img {
   width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-  object-fit: cover;
-  transition-duration: 0.5s !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 0.5s !important;
+       -o-transition-duration: 0.5s !important;
+          transition-duration: 0.5s !important;
   transition: all 0.5s ease;
 }
 
@@ -53,13 +88,20 @@
 
 .card_img_container {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .carousel_single_card:hover img {
-  transform: scale(1.1);
-  filter: brightness(85%);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 
 .cc_cards_content {
@@ -72,8 +114,13 @@
 }
 
 .cc_cards_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .cc_cards_top p {
@@ -95,10 +142,14 @@
 }
 
 .cc_cards_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-
+.cc_cards_title {
+  font-family: 'Prata', sans-serif;
+}
 
 .cc_cards_center .MuiSvgIcon-root {
   font-size: 20px !important;
@@ -126,16 +177,32 @@
 }
 
 .cc_icon_info_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cc_icon_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cc_icon_flex p {
@@ -149,10 +216,19 @@
 }
 
 .cc_cards_bottom {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 8px;
 }
 

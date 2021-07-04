@@ -1,12 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .oc_card {
     width: 100%;
 }
 
 .oc_card_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     max-width: 1280px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
     padding: 0 20px 20px 20px;
     margin-bottom: 20px;
@@ -16,7 +30,8 @@
     width: 46%;
     min-width: 500px;
     background-color: #fff;
-    box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+    -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
     padding: 20px;
     z-index: 45 !important;
     margin-top: -91px;
@@ -31,12 +46,18 @@
 
 .oc_card_img {
     overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
 }
 
 .oc_cards_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -56,9 +77,15 @@
 }
 
 .oc_card_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .oc_card_bottom p:first-of-type {
@@ -77,19 +104,34 @@
 
 
 .oc_card_bottom_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .oc_card_bottom_2_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .oc_cards_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 10px;
   }
   
@@ -106,13 +148,24 @@
   }
 
   .oc_icon_info_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row !important;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row !important;
+            flex-flow: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .occ_flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
   }
 
@@ -131,22 +184,36 @@
           width: 75vw;
       }
       .oc_cards_center {
-          flex-flow: column;
-          align-items: flex-start;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: column;
+                  flex-flow: column;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
       }
       .oc_card_bottom_2 {
           margin-top: 20px;
       }
       .oc_card_bottom_2_info {
-          align-items: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
       }
   }
 
   @media screen and (max-width: 390px) {
       .oc_card_bottom {
-          flex-flow: column;
-          justify-content: start;
-          align-items: flex-start;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: column;
+                  flex-flow: column;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
       }
       .oc_card_bottom p {
           text-align: left !important;

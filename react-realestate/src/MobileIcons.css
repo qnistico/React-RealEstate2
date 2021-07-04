@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .mobile_icons {
   width: 100%;
   padding: 60px 30px;
@@ -12,17 +19,28 @@
 
 .mobile_icons_flex {
   max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
 .icon_list_left,
 .icon_list_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   padding: 20px 60px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .mobile_icons_flex .MuiSvgIcon-root {
@@ -32,9 +50,16 @@
 }
 
 .icon_list_left_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: right;
 }
 
@@ -46,7 +71,8 @@
   background-color: #0073e5; /* to see where it is */
   top: 0;
   left: 0;
-  clip-path: polygon(100% 0, 1% 0, 0 100%);
+  -webkit-clip-path: polygon(100% 0, 1% 0, 0 100%);
+          clip-path: polygon(100% 0, 1% 0, 0 100%);
 }
 
 
@@ -59,8 +85,11 @@
   background-color: #0073e5; /* to see where it is */
   top: 0;
   right: 0;
-  transform: rotate(90deg);
-  clip-path: polygon(100% 0, 1% 0, 0 100%);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-clip-path: polygon(100% 0, 1% 0, 0 100%);
+          clip-path: polygon(100% 0, 1% 0, 0 100%);
 }
 
 .fa-handshake {
@@ -79,7 +108,8 @@
   margin-bottom: 40px;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
+  -webkit-box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
+          box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
   min-height: 186px;
   position: relative;
 }
@@ -99,16 +129,23 @@
 }
 @media screen and (max-width: 576.98px) {
   .mobile_icons_flex {
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   .icon_list_left_item {
     text-align: left;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .icon_list_left_item::before {
     right: 0;
     left: auto;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 @media screen and (max-width: 991.98px) {
