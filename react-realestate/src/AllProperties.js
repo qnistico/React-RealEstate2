@@ -225,6 +225,7 @@ function AllProperties(props) {
               propertyprice="p8"
               salerent="For Rent"
               aplink="/AgentKevinProfile"
+              plink="/AptInAllentown"
 
 
             />

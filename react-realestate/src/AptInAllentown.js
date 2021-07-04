@@ -65,21 +65,24 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
-import house7lr from "./img/house7lr.jpg";
-import house7mbr from "./img/house7mbr.jpg";
-import house7br from "./img/house7br.jpg";
-import lphouse7 from "./img/lphouse7.jpg";
-import apt1 from "./img/apartment1.jpg";
-import apt2 from "./img/apartment2.jpg";
+import house15LR from "./img/house15LR.jpg";
+import house15MBR from "./img/house15MBR.jpg";
+import house15BR from "./img/house15BR.jpg";
+import lphouse15 from "./img/lphouse15.jpg";
+import lphouse1 from "./img/lphouse1.jpg";
+import lphouse2 from "./img/lphouse2.jpg";
 import apt3 from "./img/apartment3.jpg";
-function MansionInGladwyne(props) {
+import apt3exterior from "./img/apartment3exterior.jpg";
+import apt3mbr from "./img/apartment3mbr.jpg";
+import apt3br from "./img/apartment3br.jpg";
+function AptInAllentown(props) {
     const templateImg = {
-        houseImg: house7,
-        houseLR: house7lr,
-        houseMBR: house7mbr,
-        houseBR: house7br,
-        althouse: "Mansion",
-            altlr: "living room",
+        houseImg: apt3exterior,
+        houseLR: apt3,
+        houseMBR: apt3mbr,
+        houseBR: apt3br,
+        althouse: "apartment building",
+            altlr: "apartment",
             altmbr: "bedroom",
             altbr: "bathroom"
       };
@@ -101,7 +104,8 @@ function MansionInGladwyne(props) {
             forsale: "For Sale",
             salerent: "For Sale",
             cardimgalt: "house",
-                    aplink: "/AgentKevinProfile"
+                    aplink: "/AgentKevinProfile",
+                    plink:"/MansionInSewickleyHeights"
 
       };
     
@@ -115,6 +119,8 @@ function MansionInGladwyne(props) {
         bathrooms: "5",
         sqft: "7,200 SqFt",
         featured: "Featured",
+        plink: "/MansionInNorwin",
+
             forsale: "For Sale",
             salerent: "For Sale",
             cardimgalt: "house",
@@ -125,49 +131,51 @@ function MansionInGladwyne(props) {
     
       
       const card3template = {
-        cardImg: apt3,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$1,200 / mo",
-        bedrooms: "1",
-        bathrooms: "1",
-        sqft: "1,200 SqFt",
-        featured: "Featured",
-            forsale: "For Rent",
-            salerent: "For Rent",
-            cardimgalt: "apartment",
-                    aplink: "/AgentKevinProfile"
+        cardImg: house7,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$14,000,000",
+    bedrooms: "6",
+    bathrooms: "7",
+    sqft: "13,500 SqFt",
+    featured: "Featured",
+        forsale: "For Sale",
+        plink: "/MansionInGladwyne",
+        salerent: "For Sale",
+        cardimgalt: "house",
+        aplink: "/AgentKevinProfile"
+
 
 
       };
-      
     return (
-      <div className="mansion_in_gladwyne">
-      <div className="property_hero" >
-      <ParallaxProvider>
-      <ParallaxImg  imgsrc={lphouse7} height="75vh">
-      
-      </ParallaxImg>
-    </ParallaxProvider>
-      <div className="property_hero_flex">
-        <div className="property_hero_content">
-          <h2>Mansion In Gladwyne</h2>
+        <div className="apt_in_allentown">
+            <div className="property_hero">
+            <ParallaxProvider>
+        <ParallaxImg  imgsrc={apt3} height="75vh">
+        
+        </ParallaxImg>
+      </ParallaxProvider>   
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Apartment In Allentown</h2>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <SortByContent />
-            <ViewProperty
-        homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
+        </div>
+      
+      <SortByContent />
+    <ViewProperty
+        homeTitle="Apartment on 555 Lorem Ave, Allentown, PA"
         homeAddress="555 Lorem Ave"
-        homePrice="$14,000,000"
-        bedrooms="6"
-        bathrooms="7"
-        sqft="13,500 SqFt"
-        garages="3"
-        ptype="Mansion"
-        yearBuilt="2003"
+        garages="0"
+        ptype="Apartment"
+        homePrice="$1,200 / mo"
+        bedrooms="1"
+        bathrooms="1"
+        sqft="1,200 Sq Ft"
+        yearBuilt="2012"
+        pagesheroimg={apt3}
         templateImg={templateImg}
         psprAgent={psprAgent}
         morelistings="More Listings from Kevin Richmond"
@@ -175,10 +183,9 @@ function MansionInGladwyne(props) {
         card2template={card2template}
         card3template={card3template}
         aplink="/AgentKevinProfile"
-        plink="/MansionInGladwyne"
       />
         </div>
     )
 }
 
-export default MansionInGladwyne
+export default AptInAllentown

@@ -29,6 +29,7 @@ import MansionInSewickleyHeights from "./MansionInSewickleyHeights";
 import HouseInOreland from "./HouseInOreland";
 import LoginAuth from "./LoginAuth";
 import AptInPhiladelphia from "./AptInPhiladelphia";
+import AptInAllentown from "./AptInAllentown";
 function App() {
   
   return (
@@ -60,6 +61,9 @@ function App() {
             </Route>
             <Route exact path="/AptInPhiladelphia">
               <AptInPhiladelphia />
+            </Route>
+            <Route exact path="/AptInAllentown">
+              <AptInAllentown />
             </Route>
             <Route exact path="/AgentJohnProfile">
               <AgentJohnProfile />
