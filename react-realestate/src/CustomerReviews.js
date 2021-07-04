@@ -30,6 +30,8 @@ function CustomerReviews() {
           agents
         </p>
         </Fade>
+        <Fade duration="1618" delay="100">
+
         <div className="customer_reviews_flex">
           <div className="cr_item">
             <div className="cr_img_flex">
@@ -126,6 +128,7 @@ function CustomerReviews() {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
     </div>
   );

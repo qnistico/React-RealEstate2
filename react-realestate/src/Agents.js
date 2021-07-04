@@ -26,6 +26,8 @@ function agentReviews(props) {
       <Fade duration="1050" cascade>
       <h2>Our Top Agents</h2>
       </Fade>
+      <Fade duration="1618" delay="100">
+
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
         <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 1</p></div>
@@ -120,6 +122,7 @@ function agentReviews(props) {
           </a>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

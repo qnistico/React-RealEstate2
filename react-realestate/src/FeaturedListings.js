@@ -22,38 +22,38 @@ function FeaturedListings() {
       <div className="featured_listings_flex">
           <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house7} alt="house" /></a>
+          <a href="/MansionInGladwyne"><img src={house7} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="#!">Villa on Lorem Circle</a>
-          <p>$9,000,000</p>
+          <a href="/MansionInGladwyne">Mansion In Gladwyne</a>
+          <p>$14,000,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house5} alt="house" /></a>
+          <a href="/MansionInFoxchapel"><img src={house1} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="#!">Villa on Lorem Circle</a>
-          <p>$500,000</p>
+          <a href="/MansionInFoxchapel">Villa In Foxchapel</a>
+          <p>$5,200,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house2} alt="house" /></a>
+          <a href="/HouseInOreland"><img src={house8} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="#!">Villa on Lorem Circle</a>
-          <p>$500,000</p>
+          <a href="/HouseInOreland">Mansion In Oreland</a>
+          <p>$2,300,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href=""><img src={house9} alt="house" /></a>
+          <a href="/MansionInNorwin"><img src={house15} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="#!">Villa on Lorem Circle</a>
-          <p>$500,000</p>
+          <a href="/MansionInNorwin">Mansion In Norwin</a>
+          <p>$5,700,000</p>
         </div>
         </div>
       </div>

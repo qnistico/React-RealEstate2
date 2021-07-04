@@ -45,24 +45,14 @@ function LandingPage() {
       </Fade>
       <SortByContent />
       <LandingPageCards />
-      <Fade duration="1618" delay="300">
 
       <OverlayCarousel />
-      </Fade>
-      <Fade duration="1618" delay="300">
         <Agents />
-      </Fade>
-      <Fade duration="1618" delay="300">
         <PhiOverlay />
-      </Fade>
       <ContactOverlay />
-      <Fade duration="1618" delay="300">
         <MobileIcons />
-      </Fade>
       <LPBlog />
-      <Fade duration="1618" delay="300">
         <CustomerReviews />
-      </Fade>
       <MultiCarousel />
       <Widget
         handleNewUserMessage={handleNewUserMessage}

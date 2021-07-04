@@ -52,6 +52,8 @@ function OverlayCarousel(props) {
       <h2>Featured Listings</h2>
       <p>Browse our most luxury properties</p>
       </Fade>
+      <Fade duration="1618" delay="100">
+
         <div className="overlay_carousel_container">
           <Carousel
             swipeable={true}
@@ -115,6 +117,7 @@ function OverlayCarousel(props) {
             </div>
           </Carousel>
         </div>
+        </Fade>
       </div>
     </div>
   );

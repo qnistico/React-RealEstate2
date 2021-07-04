@@ -18,6 +18,8 @@ function PhiOverlay() {
           d="M0,96L1440,192L1440,0L0,0Z"
         ></path>
       </svg>
+      <Fade duration="1618" delay="100">
+
       <div className="phi_overlay_flex">
         <img src={PhiImage} alt="male real estate agent with skyscraper" />
         <div className="phi_overlay_content">
@@ -31,6 +33,7 @@ function PhiOverlay() {
           </MDBBtn>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

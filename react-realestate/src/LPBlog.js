@@ -27,6 +27,8 @@ function LPBlog() {
       <h2>PA Realty Blog</h2>
       <p className="lp_header_p">Looking for informational strategies on buying real estate? Read our blog to learn more</p>
       </Fade>
+      <Fade duration="1618" delay="0">
+
       <div className="lp_blog_flex">
         <div className="lpb_item">
           <div className="blog_img">
@@ -104,6 +106,7 @@ function LPBlog() {
       <div className="lpbb">
       <a href="/BlogList" className="lp_blog_button">All Blogs</a>
       </div>
+      </Fade>
     </div>
     </div>
   );

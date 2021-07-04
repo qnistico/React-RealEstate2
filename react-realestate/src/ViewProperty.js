@@ -129,19 +129,11 @@ function ViewProperty(props) {
             <div className="pspl_summary">
               <h3>Summary</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Accumsan lacus vel facilisis volutpat est velit egestas. Mi eget mauris pharetra et. Proin nibh nisl condimentum id venenatis a condimentum. Eu mi bibendum neque egestas congue quisque. Sapien faucibus et molestie ac feugiat sed. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Neque egestas congue quisque egestas diam in arcu cursus euismod. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Libero volutpat sed cras ornare arcu dui vivamus arcu. Lectus quam id leo in vitae turpis massa.
+              
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Sagittis vitae et leo duis. Sed felis eget velit aliquet sagittis id consectetur purus. Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Ipsum dolor sit amet consectetur adipiscing elit. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tellus elementum sagittis vitae et leo duis ut diam. Facilisi morbi tempus iaculis urna id volutpat. Integer enim neque volutpat ac. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. 
               </p>
             </div>
             <div className="pspl_features">

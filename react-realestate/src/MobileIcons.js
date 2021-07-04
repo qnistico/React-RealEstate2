@@ -19,6 +19,8 @@ function MobileIcons() {
         Want to view a property? Schedule a tour on the go
       </p>
       </Fade>
+      <Fade duration="1618" delay="100">
+
       <div className="mobile_icons_flex">
         <div className="icon_list_left">
           <div className="icon_list_left_item">
@@ -62,6 +64,7 @@ function MobileIcons() {
           </div>
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

@@ -230,7 +230,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 0 30px 0 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .lp_cards h2 {
@@ -243,6 +243,7 @@ input:active {
   width: 100%;
   z-index: 2;
   position: relative;
+  display: none;
   
 }
 
@@ -251,6 +252,7 @@ input:active {
   z-index: 2;
   position: relative;
   transform: scaleX(-1);
+  display: none;
 }
 
 .slope2 {
@@ -259,6 +261,7 @@ input:active {
   position: relative;
   margin-bottom: -5px;
   transform: scaleX(1) rotate(180deg);
+  display: none;
 }
 
 .lp_cards_title {
@@ -1154,7 +1157,7 @@ input.form-control.form_input {
 .phi_overlay {
   width: 100%;
   background-color: #fff;
-  padding: 0 0 60px 0;
+  padding: 60px 30px;
 }
 
 .phi_overlay_flex {
