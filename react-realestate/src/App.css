@@ -346,8 +346,9 @@ input:active {
 .lp_header_p {
   text-align: center;
   max-width: 500px;
-  margin: 0 auto 30px auto;
-  color: #222222;
+  margin: 0 auto 30px auto !important;
+  color: #566177 !important;
+  font-weight: 600;
 }
 
 .lp_cards_flex {
