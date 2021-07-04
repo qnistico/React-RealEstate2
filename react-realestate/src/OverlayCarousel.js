@@ -23,6 +23,8 @@ import Carousel from "react-multi-carousel";
 
 import OverlayCarouselCard from "./OverlayCarouselCard";
 import "./OverlayCarousel.css";
+import Fade from 'react-reveal/Fade';
+
 
 function OverlayCarousel(props) {
   const responsive = {
@@ -46,8 +48,10 @@ function OverlayCarousel(props) {
     <div>
       <div className="overlay_carousel">
       <svg className="slope1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f1f2f5" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <Fade duration="1050" cascade>
       <h2>Featured Listings</h2>
       <p>Browse our most luxury properties</p>
+      </Fade>
         <div className="overlay_carousel_container">
           <Carousel
             swipeable={true}

@@ -6,6 +6,7 @@ import StarIcon from "@material-ui/icons/Star";
 import "./CustomerReviews.css";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import Fade from "react-reveal/Fade";
 
 function CustomerReviews() {
   return (
@@ -22,11 +23,13 @@ function CustomerReviews() {
         ></path>
       </svg>
       <div className="customer_reviews_content">
+        <Fade duration="1050" cascade>
         <h2>Customer Reviews</h2>
         <p className="lp_header_p">
           Read what our customers are saying about PA Premium Realty and our
           agents
         </p>
+        </Fade>
         <div className="customer_reviews_flex">
           <div className="cr_item">
             <div className="cr_img_flex">

@@ -21,6 +21,7 @@ function ContactUs() {
           <div className="dark_gradient"></div>
       <PagesHero headerTitle="Contact Us" parallaximg1={contactbg} />
 <SortByContent />
+<div className="contact_page">
       <div className="contact_us">
         <div className="contact_us_flex">
           <form id="contact-form" className="contact_form_primary">
@@ -95,6 +96,7 @@ function ContactUs() {
         </div>
         <div className="contact_map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.289532358501!2d-80.21163895982946!3d25.765165481805656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sLorem%2C%20FL!5e0!3m2!1sen!2sus!4v1624050037325!5m2!1sen!2sus"></iframe>
+      </div>
       </div>
       </div>
       <Footer />

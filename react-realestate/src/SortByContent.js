@@ -71,11 +71,6 @@ function showAll() {
     console.log(apartments);
   }
 
-  function priceFilter() {
-    
-  }
-
-
     return (
       <div className="sort_table">
       <div className="search_property">

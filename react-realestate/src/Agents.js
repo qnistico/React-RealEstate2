@@ -1,82 +1,123 @@
 import React from "react";
 import StarIcon from "@material-ui/icons/Star";
 import StarHalfIcon from "@material-ui/icons/StarHalf";
-import agent1 from './img/agent1.jpg';
-import agent3 from './img/agent3.jpg';
-import agent4 from './img/agent4.jpg';
+import agent1 from "./img/agent1.jpg";
+import agent3 from "./img/agent3.jpg";
+import agent4 from "./img/agent4.jpg";
 import "./Agents.css";
-import PhoneIcon from '@material-ui/icons/Phone';
-import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
-
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
+import Fade from "react-reveal/Fade";
 
 function agentReviews(props) {
   return (
     <div className="agent_reviews">
-      <svg className="slope_reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#fafafa" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+      <svg
+        className="slope_reverse"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 200"
+      >
+        <path
+          fill="#fafafa"
+          fill-opacity="1"
+          d="M0,96L1440,192L1440,0L0,0Z"
+        ></path>
+      </svg>
+      <Fade duration="1050" cascade>
       <h2>Our Top Agents</h2>
+      </Fade>
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
-          <a href="/AgentJohnProfile"><img src={agent1} alt="real estate agent" /></a>
+        <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 1</p></div>
+          <a href="/AgentJohnProfile">
+            <img src={agent1} alt="real estate agent" />
+          </a>
           <h3>John Ryan</h3>
           <div>
-          <PhoneIcon /><a href="#!" tel="123-456-7891">
-            (123)-456-7891
-          </a>
+            <PhoneIcon />
+            <a href="#!" tel="123-456-7891">
+              (123)-456-7891
+            </a>
           </div>
           <div>
-          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+            <EmailOutlinedIcon />
+            <a href="#!" mailto="example@gmail.com">
+              example@gmail.com
+            </a>
           </div>
           <p>Rating</p>
           <div className="stars">
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarHalfIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarHalfIcon />
           </div>
-          <a href="/AgentJohnProfile" className="hero_button">View Listings</a>
-      </div>
+          <a href="/AgentJohnProfile" className="hero_button">
+            View Listings
+          </a>
+        </div>
         <div className="agent_reviews_content">
-          <a href="/AgentKevinProfile"><img src={agent3} alt="real estate agent" /></a>
+        <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 2</p></div>
+
+          <a href="/AgentKevinProfile">
+            <img src={agent3} alt="real estate agent" />
+          </a>
           <h3>Kevin Richmond</h3>
           <div>
-          <PhoneIcon /><a href="#!" tel="123-456-7891">
-            (123)-456-7892
-          </a>
+            <PhoneIcon />
+            <a href="#!" tel="123-456-7891">
+              (123)-456-7892
+            </a>
           </div>
           <div>
-          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+            <EmailOutlinedIcon />
+            <a href="#!" mailto="example@gmail.com">
+              example@gmail.com
+            </a>
           </div>
           <p>Rating</p>
           <div className="stars">
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarHalfIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarHalfIcon />
           </div>
-          <a href="/AgentKevinProfile" className="hero_button">View Listings</a>
-      </div>
+          <a href="/AgentKevinProfile" className="hero_button">
+            View Listings
+          </a>
+        </div>
         <div className="agent_reviews_content">
-          <a href="/AgentMaryProfile"><img src={agent4} alt="real estate agent" /></a>
+        <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 3</p></div>
+
+          <a href="/AgentMaryProfile">
+            <img src={agent4} alt="real estate agent" />
+          </a>
           <h3>Mary Williams</h3>
           <div>
-          <PhoneIcon /><a href="#!" tel="123-456-7891">
-            (123)-456-7893
-          </a>
+            <PhoneIcon />
+            <a href="#!" tel="123-456-7891">
+              (123)-456-7893
+            </a>
           </div>
           <div>
-          <EmailOutlinedIcon /><a href="#!" mailto="example@gmail.com">example@gmail.com</a>
+            <EmailOutlinedIcon />
+            <a href="#!" mailto="example@gmail.com">
+              example@gmail.com
+            </a>
           </div>
           <p>Rating</p>
           <div className="stars">
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarHalfIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarHalfIcon />
           </div>
-          <a href="/AgentMaryProfile" className="hero_button">View Listings</a>
+          <a href="/AgentMaryProfile" className="hero_button">
+            View Listings
+          </a>
         </div>
       </div>
     </div>

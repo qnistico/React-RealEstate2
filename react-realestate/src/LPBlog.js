@@ -5,6 +5,8 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import "./LPBlog.css";
 import blogimg1 from "./img/blogimg1.jpg";
 import blogimg3 from "./img/blogimg3.jpg";
+import Fade from 'react-reveal/Fade';
+
 
 function LPBlog() {
   return (
@@ -21,9 +23,10 @@ function LPBlog() {
         ></path>
       </svg>
     <div className="lp_blog">
-      
+      <Fade duration="1050" cascade>
       <h2>PA Realty Blog</h2>
       <p className="lp_header_p">Looking for informational strategies on buying real estate? Read our blog to learn more</p>
+      </Fade>
       <div className="lp_blog_flex">
         <div className="lpb_item">
           <div className="blog_img">

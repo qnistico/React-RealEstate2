@@ -26,13 +26,17 @@ import agent2 from "./img/agent2.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import { CheckBoxOutlineBlankOutlined, Hotel } from "@material-ui/icons";
+import Fade from 'react-reveal/Fade';
+
 
 function LandingPageCards() {
   return (
     <div>
       <div className="lp_cards">
+        <Fade duration="1050" cascade>
         <h2>Recent Properties</h2>
         <p className="lp_header_p">View some of our most recent listings</p>
+        </Fade>
         <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
@@ -116,7 +120,7 @@ function LandingPageCards() {
                   555 Lorem Avenue, Gladwyne, PA 12345, USA
                 </a>
                 <p>
-                  A fabulous villa in Gladwyne, PA located near various...
+                  A fabulous villa in Gladwyne, PA located near various transportation outlets like...
                   <a href="/MansionInGladwyne" className="more_button">
                     [more]
                   </a>

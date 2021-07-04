@@ -53,7 +53,7 @@ body p {
 }
 .hero_content {
   width: 500px;
-  color: #555555;
+  color: #566177;
   background-color: #fff;
   padding: 20px;
   margin-right: 100px;
@@ -365,7 +365,7 @@ input:active {
 
 .lp_cards_content p {
   font-size: 14px;
-  color: #5c687f;
+  color: #566177;
 }
 
 .lp_cards_top {
@@ -534,7 +534,8 @@ input:active {
   text-align: center;
   color: white;
   padding: 20px;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
+
   width: 100%;
 }
 
@@ -774,12 +775,12 @@ input:active {
 }
 
 .pspl_icon_flex p:last-of-type {
-  color: #5c687f;
+  color: #566177;
   font-weight: 600;
 }
 
 .pspl_summary p {
-  color: #5c687f;
+  color: #566177;
 }
 
 .pspl_features h3 {
@@ -789,7 +790,7 @@ input:active {
 }
 
 .pspl_features p {
-  color: #5c687f;
+  color: #566177;
   margin-bottom: 8px;
 }
 
@@ -882,7 +883,7 @@ iframe {
 }
 
 .single_cards_top p {
-  color: #5c687f;
+  color: #566177;
   font-size: 14px;
 }
 
@@ -1040,7 +1041,7 @@ iframe {
 }
 
 .pspr_top_agent a {
-  color: #5c687f;
+  color: #566177;
   font-weight: 400;
 }
 

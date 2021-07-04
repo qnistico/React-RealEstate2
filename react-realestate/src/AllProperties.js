@@ -54,8 +54,30 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 
 function AllProperties(props) {
+/*
+  function priceFilterLH() {
+    priceArray = [
+     {'id': p1},
+     {'id': p2},
+     {'id': p3},
+     {'id': p4},
+     {'id': p5},
+     {'id': p6},
+     {'id': p7},
+     {'id': p8},
+     {'id': p9},
+     {'id': p10},
+     {'id': p11},
+     {'id': p12},
+     {'id': p13},
+     {'id': p14},
+    ];
+    function priceFilterLH(a, b) {
+      return a - b;
+    }
+  }
+  */
 
-  
   return (
     <div>
           <div className="dark_gradient"></div>
@@ -79,7 +101,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent1"
-              propertyprice="p1"
+              propertyprice="p14"
             />
             <CardSingle
               cardImg={apt2}
@@ -94,7 +116,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Rent"
               filteritem="apartment agent4"
-              propertyprice="p2"
+              propertyprice="p13"
 
             />
             
@@ -112,7 +134,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent4"
-              propertyprice="p3"
+              propertyprice="p12"
 
 
             />
@@ -130,7 +152,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
-              propertyprice="p4"
+              propertyprice="p11"
 
 
             />
@@ -148,7 +170,7 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
-              propertyprice="p5"
+              propertyprice="p10"
 
 
             />
@@ -166,6 +188,8 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
+              propertyprice="p9"
+
 
             />
 <CardSingle
@@ -181,6 +205,8 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Rent"
               filteritem="apartment agent3"
+              propertyprice="p8"
+
 
             />
             
@@ -197,6 +223,8 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Rent"
               filteritem="apartment agent1"
+              propertyprice="p7"
+
 
             />
             <CardSingle
@@ -212,6 +240,8 @@ function AllProperties(props) {
               filteritem="house agent1"
               featured="Featured"
               forsale="For Sale"
+              propertyprice="p6"
+
 
             />
             <CardSingle
@@ -227,6 +257,7 @@ function AllProperties(props) {
               filteritem="house agent1"
               featured="Featured"
               forsale="For Sale"
+              propertyprice="p5"
 
             />
             <CardSingle
@@ -242,6 +273,8 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent1"
+              propertyprice="p4"
+
             />
             
             <CardSingle
@@ -257,6 +290,8 @@ function AllProperties(props) {
               filteritem="house agent3"
               featured="Featured"
               forsale="For Sale"
+              propertyprice="p3"
+
 
 
             />
@@ -274,6 +309,8 @@ function AllProperties(props) {
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent4"
+              propertyprice="p2"
+
 
             />
             <CardSingle
@@ -289,6 +326,8 @@ function AllProperties(props) {
               filteritem="house agent4"
               featured="Featured"
               forsale="For Sale"
+              propertyprice="p1"
+
 
 
             />

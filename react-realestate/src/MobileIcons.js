@@ -7,14 +7,18 @@ import HouseOutlinedIcon from "@material-ui/icons/HouseOutlined";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import Fade from 'react-reveal/Fade';
+
 
 function MobileIcons() {
   return (
     <div className="mobile_icons">
+      <Fade duration="1050" cascade>
       <h2>Mobile Ready Tours</h2>
       <p className="lp_header_p">
         Want to view a property? Schedule a tour on the go
       </p>
+      </Fade>
       <div className="mobile_icons_flex">
         <div className="icon_list_left">
           <div className="icon_list_left_item">

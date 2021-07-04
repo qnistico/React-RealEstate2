@@ -151,6 +151,11 @@ function MansionInNorwin(props) {
     featured: "Featured",
         forsale: "For Sale"
   };
+  
+
+  function priceFilter() {
+    
+  }
   return (
     <div className="norwin_mansion">
       

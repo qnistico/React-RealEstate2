@@ -1,3 +1,7 @@
+.contact_page {
+  padding: 0 30px 60px 30px;
+}
+
 .contact_us {
   background-color: #fff;
   padding: 30px;
@@ -44,12 +48,12 @@
 }
 
 .pb {
-  color: #5c687f !important;
+  color: #566177 !important;
   font-weight: 400 !important;
 }
 
 .contact_us_icon_info_flex a {
-  color: #5c687f;
+  color: #566177;
 }
 
 .contact_us_icon_info_flex p:last-of-type {
@@ -63,4 +67,26 @@
 .contact_map {
   max-width: 1280px;
   margin: 3rem auto 0 auto;
+}
+
+@media screen and (max-width: 680px) {
+  .contact_us_flex {
+    flex-flow: column;
+  }
+  .contact_form_primary {
+    width: 100%;
+  }
+  .contact_us_info {
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact_page {
+    padding: 0 0 60px 0;
+  }
+  .contact_us {
+    width: 95%;
+  }
 }

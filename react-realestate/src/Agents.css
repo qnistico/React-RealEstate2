@@ -36,6 +36,7 @@
   margin: 0 15px 0 15px;
   background-color: #fff;
   margin-bottom: 12px;
+  position: relative;
 }
 
 
@@ -79,60 +80,44 @@
 
 .agent_reviews_content a:first-of-type,
 .agent_reviews_content a:nth-of-type(2) {
-  color: #5c687f;
+  color: #566177;
 }
 
-.ribbon {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-  }
-  .ribbon::before,
-  .ribbon::after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    display: block;
-    border: 5px solid #0073e5;
-  }
-  .ribbon span {
-    position: absolute;
-    display: block;
-    width: 225px;
-    padding: 15px 0;
-    background-color: #0073e5;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    color: #fff;
-    font: 700 14px 'Lato', sans-serif;
-    text-shadow: 0 1px 1px rgba(0,0,0,.2);
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  /* top left*/
-  .ribbon-top-left {
-    top: -10px;
-    left: -10px;
-  }
-  .ribbon-top-left::before,
-  .ribbon-top-left::after {
-    border-top-color: transparent;
-    border-left-color: transparent;
-  }
-  .ribbon-top-left::before {
-    top: 0;
-    right: 0;
-  }
-  .ribbon-top-left::after {
-    bottom: 0;
-    left: 0;
-  }
-  .ribbon-top-left span {
-    right: -25px;
-    top: 30px;
-    transform: rotate(-45deg);
-  }
+.corner-ribbon{
+  width: 100px;
+  height: 100px;
+  background: #0073e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  clip-path: polygon(50% 0%, 100% 0, 0 100%, 0% 50%);
+
+}
+
+/* Custom styles */
+
+.ribbon_text {
+  transform: rotate(-45deg);
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 8px;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 0;
+  left: 0;
+}
 
   .stars {
     margin-bottom: 20px;
