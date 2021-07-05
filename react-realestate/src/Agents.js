@@ -31,7 +31,8 @@ function agentReviews(props) {
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
         <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 1</p></div>
-          <a href="/AgentJohnProfile">
+          <a onClick={() => history.push('/AgentJohnProfile')}
+>
             <img src={agent1} alt="real estate agent" />
           </a>
           <h3>John Ryan</h3>
@@ -55,14 +56,16 @@ function agentReviews(props) {
             <StarIcon />
             <StarHalfIcon />
           </div>
-          <a href="/AgentJohnProfile" className="hero_button">
+          <a onClick={() => history.push('/AgentJohnProfile')}
+ className="hero_button">
             View Listings
           </a>
         </div>
         <div className="agent_reviews_content">
         <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 2</p></div>
 
-          <a href="/AgentKevinProfile">
+          <a onClick={() => history.push('/AgentKevinProfile')}
+>
             <img src={agent3} alt="real estate agent" />
           </a>
           <h3>Kevin Richmond</h3>
@@ -86,14 +89,16 @@ function agentReviews(props) {
             <StarIcon />
             <StarHalfIcon />
           </div>
-          <a href="/AgentKevinProfile" className="hero_button">
+          <a onClick={() => history.push('/AgentKevinProfile')}
+ className="hero_button">
             View Listings
           </a>
         </div>
         <div className="agent_reviews_content">
         <div class="corner-ribbon top-left sticky orange"><p className="ribbon_text">Agent 3</p></div>
 
-          <a href="/AgentMaryProfile">
+          <a onClick={() => history.push('/AgentMaryProfile')}
+>
             <img src={agent4} alt="real estate agent" />
           </a>
           <h3>Mary Williams</h3>
@@ -117,7 +122,8 @@ function agentReviews(props) {
             <StarIcon />
             <StarHalfIcon />
           </div>
-          <a href="/AgentMaryProfile" className="hero_button">
+          <a onClick={() => history.push('/AgentMaryProfile')}
+ className="hero_button">
             View Listings
           </a>
         </div>

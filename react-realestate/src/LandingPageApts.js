@@ -52,7 +52,8 @@ function LandingPageApts(props) {
               <p className="for_sale_badge">For Rent</p>
 
               <div className="card_img_agent">
-                <a href="/AgentJohnProfile">
+                <a onClick={() => history.push('/AgentJohnProfile')}
+>
                   <Avatar src={agent1} alt="real estate agent" />
                 </a>
               </div>
@@ -112,7 +113,8 @@ function LandingPageApts(props) {
               <p className="for_sale_badge">For Rent</p>
 
               <div className="card_img_agent">
-                <a href="/AgentKevinProfile">
+                <a onClick={() => history.push('/AgentKevinProfile')}
+>
                   <Avatar src={agent3} alt="real estate agent" />
                 </a>
               </div>
@@ -172,7 +174,8 @@ function LandingPageApts(props) {
               <p className="for_sale_badge">For Rent</p>
 
               <div className="card_img_agent">
-                <a href="/AgentMaryProfile">
+                <a onClick={() => history.push('/AgentMaryProfile')}
+>
                   <Avatar src={agent4} alt="real estate agent" />
                 </a>
               </div>

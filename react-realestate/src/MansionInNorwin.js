@@ -74,22 +74,24 @@ import lphouse2 from "./img/lphouse2.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
-import kimg from "./img/4kimg.jpg";
+import { useHistory } from "react-router-dom";
+
 function MansionInNorwin(props) {
+  const history = useHistory();
   const templateImg = {
     houseImg: house15,
     houseLR: house15LR,
     houseMBR: house15MBR,
     houseBR: house15BR,
     althouse: "Mansion",
-            altlr: "living room",
-            altmbr: "bedroom",
-            altbr: "bathroom"
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom",
   };
   const psprAgent = {
     agentImg: agent3,
     agentName: "Kevin Richmond",
-    aplink: "/AgentKevinProfile"
+    aplink: "/AgentKevinProfile",
   };
   const card1template = {
     cardImg: house10,
@@ -101,12 +103,13 @@ function MansionInNorwin(props) {
     bathrooms: "5",
     sqft: "7,200 SqFt",
     featured: "Featured",
-        forsale: "For Sale",
-        plink: "/MansionInSewickleyHeights",
-        salerent: "For Sale",
-        cardimgalt: "house",
-        aplink: "/AgentKevinProfile"
-        
+    forsale: "For Sale",
+    plink: () => {
+      history.push("/HouseInEdgeworth");
+    },
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: "/AgentKevinProfile",
   };
 
   const card2template = {
@@ -119,16 +122,13 @@ function MansionInNorwin(props) {
     bathrooms: "7",
     sqft: "13,500 SqFt",
     featured: "Featured",
-        forsale: "For Sale",
-        plink: "/MansionInGladwyne",
-        salerent: "For Sale",
-        cardimgalt: "house",
-        aplink: "/AgentKevinProfile"
-
-
+    forsale: "For Sale",
+    plink: "/MansionInGladwyne",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: "/AgentKevinProfile",
   };
 
-  
   const card3template = {
     cardImg: apt3,
     agentImg: agent3,
@@ -139,36 +139,28 @@ function MansionInNorwin(props) {
     bathrooms: "1",
     sqft: "1,200 Sq Ft",
     featured: "Featured",
-        forsale: "For Rent",
-        salerent: "For Rent",
-        cardimgalt: "apartment",
-        aplink: "/AgentKevinProfile",
-        plink: "/AptInAllentown"
-
-
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment",
+    aplink: "/AgentKevinProfile",
+    plink: "/AptInAllentown",
   };
-  
-  
 
-  
   return (
     <div className="norwin_mansion">
-      
-      <div className="property_hero" >
+      <div className="property_hero">
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={house15} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
+          <ParallaxImg imgsrc={house15} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>Mansion In Norwin</h2>
           </div>
         </div>
       </div>
-      
+
       <SortByContent />
-    <ViewProperty
+      <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
         homeAddress="555 Lorem Ave"
         garages="2"

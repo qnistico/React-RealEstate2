@@ -19,6 +19,10 @@ body {
   scroll-behavior: auto !important;
 }
 
+a {
+  cursor: pointer;
+}
+
 .hide {
   display: none;
 }
@@ -1717,6 +1721,7 @@ input.form-control.form_input {
   background-image: url(img/loginbg.jpg);
   background-size: cover;
   background-position: center center;
+  overflow-x: hidden;
 }
 
 .login_auth_flex {
@@ -1769,11 +1774,17 @@ input.form-control.form_input {
 .facebook_login {
   background-color: #3b5998;
   height: 62px;
+  margin-bottom: 0 !important;
 }
 
 .google_login,
 .facebook_login {
   margin: 8px 0;
+  font-weight: 600;
+}
+
+.sb_2 {
+  margin-bottom: 0 !important;
 }
 
 .login_icon_flex {

@@ -105,7 +105,6 @@ export default function LoginAuth(props) {
               </span>
             </button>
           </div>
-          <hr />
         </div>
         <div className="login_body signup_body">
           <h1>Sign Up</h1>
@@ -138,7 +137,7 @@ export default function LoginAuth(props) {
                 placeholder="Confirm Password"
               />
             </div>
-            <button className="send_button" type="submit" onClick={register}>
+            <button className="send_button sb_2" type="submit" onClick={register}>
               Sign Up
             </button>
           </form>

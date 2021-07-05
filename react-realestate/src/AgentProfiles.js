@@ -36,19 +36,17 @@ function AgentJohnRyan(props) {
     <div>
       <div className="dark_gradient"></div>
 
-      <div className="property_hero" >
+      <div className="property_hero">
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={props.parallaximg1} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
+          <ParallaxImg imgsrc={props.parallaximg1} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
             <h2>{props.headerTitle}</h2>
           </div>
         </div>
       </div>
-      
+
       <SortByContent />
       <div className="agent_profile">
         <div className="agent_profile_flex">
@@ -122,11 +120,11 @@ function AgentJohnRyan(props) {
             </div>
             <div className="agent_listings">
               <h3>My Listings</h3>
-              <CardSingle {...props.card1template} {...props.p1link} />
-              <CardSingle {...props.card2template} {...props.p2link} />
-              <CardSingle {...props.card3template} {...props.p3link} />
-              <CardSingle {...props.card4template} {...props.p4link} />
-          </div>
+              <CardSingle {...props.card1template} />
+              <CardSingle {...props.card2template} />
+              <CardSingle {...props.card3template} />
+              <CardSingle {...props.card4template} />
+            </div>
           </div>
           <div className="ap_primary_right">
             <div className="appr_item">

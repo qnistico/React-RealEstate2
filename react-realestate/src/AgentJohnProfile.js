@@ -35,7 +35,8 @@ function AgentJohnProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     cardimgalt: "house",
-    salerent: "For Sale"
+    salerent: "For Sale",
+    plink: "/MansionInFoxchapel"
   };
 
   const card2template = {
@@ -83,24 +84,11 @@ function AgentJohnProfile(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
+    plink: "/AptInPhiladelphia"
   }
   
   
-  const p1link = {
-    plink: "/MansionInFoxchapel",
-  };
-  const p2link = {
-    plink: "/MansionInFoxchapel",
-  };
-  const p3link = {
-    plink: "/MansionInFoxchapel",
-  };
-  const p4link = {
-    plink: "/AptInPhiladelphia",
-  };
-  const p5link = {
-    plink: "/MansionInFoxchapel",
-  };
+  
   return (
     <div className="agent_john_profile">
       <AgentProfiles
@@ -113,11 +101,7 @@ function AgentJohnProfile(props) {
         card3template={card3template}
         card4template={card4template}
         
-        p1link={p1link}
-        p2link={p2link}
-        p3link={p3link}
-        p4link={p4link}
-        p5link={p5link}
+  
       />
     </div>
   );

@@ -71,7 +71,10 @@ import house9br from "./img/house9br.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
+
 function HouseInEdgeworth(props) {
+  const history = useHistory();
   const templateImg = {
     houseImg: house9,
     houseLR: house9lr,

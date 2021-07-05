@@ -36,6 +36,7 @@ function AgentKevinProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     cardimgalt: "house",
+    plink: "/MansionInNorwin",
   };
 
   const card2template = {
@@ -51,6 +52,7 @@ function AgentKevinProfile(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
+    plink: "/MansionInSewickleyHeights",
   };
 
   const card3template = {
@@ -65,57 +67,37 @@ function AgentKevinProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     salerent: "For Sale",
-
     cardimgalt: "house",
+    plink: "/MansionInGladwyne"
   };
   const card4template = {
     cardImg: apt3,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$1,200 / mo",
-        bedrooms: "1",
-        bathrooms: "1",
-        sqft: "1,200 SqFt",
-        featured: "Featured",
-            forsale: "For Rent",
-            salerent: "For Rent",
-            cardimgalt: "apartment",
-            plink: "/AptInAllentown"
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$1,200 / mo",
+    bedrooms: "1",
+    bathrooms: "1",
+    sqft: "1,200 SqFt",
+    featured: "Featured",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment",
+    plink: "/AptInAllentown",
   };
-  
-  const p1link = {
-    plink: "/MansionInNorwin",
-  };
-  const p2link = {
-    plink: "/MansionInSewickleyHeights",
-  };
-  const p3link = {
-    plink: "/MansionInGladwyne",
-  };
-  const p4link = {
-    plink: "/MansionInFoxchapel",
-  };
-  const p5link = {
-    plink: "/MansionInFoxchapel",
-  };
+
   return (
     <div>
       <div className="agent_kevin_profile">
         <AgentProfiles
-        headerTitle="Kevin Richmond"
-        parallaximg1={agentbg}
+          headerTitle="Kevin Richmond"
+          parallaximg1={agentbg}
           agentImg={agent3}
           agentName="Kevin Richmond"
           card1template={card1template}
           card2template={card2template}
           card3template={card3template}
           card4template={card4template}
-          p1link={p1link}
-          p2link={p2link}
-          p3link={p3link}
-          p4link={p4link}
-          p5link={p5link}
         />
       </div>
     </div>

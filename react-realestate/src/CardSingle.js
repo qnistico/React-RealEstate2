@@ -11,32 +11,35 @@ import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
 import { Avatar } from '@material-ui/core';
 import { CheckBoxOutlineBlankOutlined, Hotel } from '@material-ui/icons';
+import { useHistory } from "react-router-dom";
+
 
 function CardSingle(props) {
+  const history = useHistory();
     return (
         <div>
           <div className="single_cards">
             <div className={props.filteritem}>
             <div className="single_cards_body vp_single_cards">
             <div className="sc_img_container">
-              <a href={props.plink}><img src={props.cardImg} alt={props.cardimgalt} /></a>
+              <a onClick={props.plink}><img src={props.cardImg} alt={props.cardimgalt} /></a>
               <p className="featured_badge">{props.featured}</p>
               <p className="for_sale_badge">{props.forsale}</p>
 
-              <a href={props.aplink} className="card_img_agent">
+              <a onClick={props.aplink} className="card_img_agent">
                 <Avatar src={props.agentImg} alt="real estate agent" />
               </a>
             </div>
           <div className="single_cards_content">
             <div className="sc_top_center_flex">
             <div className="single_cards_top">
-              <a href={props.plink} className="single_cards_title">
+              <a onClick={props.plink} className="single_cards_title">
                 {props.cardTitle}
               </a>
-              <a href={props.plink} className="single_cards_location">
+              <a onClick={props.plink} className="single_cards_location">
                 {props.address}
               </a>
-              <p>A fabulous villa in Pennsylvania located conveniently near a train station, beach and...{props.description}<a href={props.plink} className="more_button">[more]</a></p>
+              <p>A fabulous villa in Pennsylvania located conveniently near a train station, beach and...{props.description}<a onClick={props.plink} className="more_button">[more]</a></p>
             </div>
             <div className="single_cards_center">
                 <div className="icon_info_flex">
@@ -64,7 +67,7 @@ function CardSingle(props) {
                   <p>{props.salerent}</p>
                   <p className="card_price" id={props.propertyprice}>{props.cardPrice}</p>
                 </div>
-                <a href={props.plink} className="single_cards_button hero_button">
+                <a onClick={props.plink} className="single_cards_button hero_button">
                   View
                 </a>
               </div>

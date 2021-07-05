@@ -51,7 +51,8 @@ function LandingPageCards() {
               <p className="for_sale_badge">For Sale</p>
 
               <div className="card_img_agent">
-                <a href="/AgentKevinProfile">
+                <a onClick={() => history.push('/AgentKevinProfile')}
+>
                   <Avatar src={agent3} alt="real estate agent" />
                 </a>
               </div>
@@ -105,19 +106,20 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/MansionInGladwyne">
+              <a onClick={() => history.push('/MansionInGladwyne')}>
                 <img src={house7} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
-              <a href="/AgentKevinProfile" className="card_img_agent">
+              <a onClick={() => history.push('/AgentKevinProfile')}
+ className="card_img_agent">
                 <Avatar src={agent3} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/MansionInGladwyne" className="lp_cards_title">
+                <a onClick={() => history.push('/MansionInGladwyne')} className="lp_cards_title">
                   Mansion in Gladywne
                 </a>
                 <a href="#!" className="lp_cards_location">
@@ -125,7 +127,7 @@ function LandingPageCards() {
                 </a>
                 <p>
                   A fabulous villa in Gladwyne, PA located near various transportation outlets like...
-                  <a href="/MansionInGladwyne" className="more_button">
+                  <a onClick={() => history.push('/MansionInGladwyne')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -155,7 +157,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$14,000,000</p>
                 </div>
-                <a href="/MansionInGladwyne" className="lp_cards_button">
+                <a onClick={() => history.push('/MansionInGladwyne')} className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -164,13 +166,14 @@ function LandingPageCards() {
 
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/MansionInFoxchapel">
+              <a onClick={() => history.push('/MansionInFoxchapel')}>
                 <img src={house1} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
-              <a href="/AgentJohnProfile" className="card_img_agent">
+              <a onClick={() => history.push('/AgentJohnProfile')}
+ className="card_img_agent">
                 <Avatar src={agent1} alt="real estate agent" />
               </a>
             </div>
@@ -185,7 +188,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in Foxchapel complete with a spectacular view
                   of the...
-                  <a href="/MansionInFoxchapel" className="more_button">
+                  <a onClick={() => history.push('/MansionInFoxchapel')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -215,7 +218,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$5,200,000</p>
                 </div>
-                <a href="/MansionInFoxchapel" className="lp_cards_button">
+                <a onClick={() => history.push('/MansionInFoxchapel')} className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -223,27 +226,28 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/HouseInEdgeworth">
+              <a onClick={() => history.push('/HouseInEdgeworth')}>
                 <img src={house9} alt="house" />
               </a>
               <p className="featured_badge">Recent</p>
               <p className="for_sale_badge">For Sale</p>
 
-              <a href="/AgentMaryProfile" className="card_img_agent">
+              <a onClick={() => history.push('/AgentMaryProfile')}
+ className="card_img_agent">
                 <Avatar src={agent4} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/HouseInEdgeworth" className="lp_cards_title">
+                <a onClick={() => history.push('/HouseInEdgeworth')} className="lp_cards_title">
                   House In Edgeworth
                 </a>
-                <a href="/HouseInEdgeworth" className="lp_cards_location">
+                <a onClick={() => history.push('/HouseInEdgeworth')} className="lp_cards_location">
                   555 Lorem Avenue, Edgeworth, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in PA with a gorgeous front yard, back yard and...
-                  <a href="/HouseInEdgeworth" className="more_button">
+                  <a onClick={() => history.push('/HouseInEdgeworth')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -273,7 +277,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$680,000</p>
                 </div>
-                <a href="/HouseInEdgeworth" className="lp_cards_button">
+                <a onClick={() => history.push('/HouseInEdgeworth')} className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -281,23 +285,24 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/MansionInSewickleyHeights">
+              <a onClick={() => history.push('/MansionInSewickleyHeights')}>
                 <img src={house10} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
-              <a href="/AgentKevinProfile" className="card_img_agent">
+              <a onClick={() => history.push('/AgentKevinProfile')}
+ className="card_img_agent">
                 <Avatar src={agent3} alt="real estate agent" />
               </a>
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/MansionInSewickleyHeights" className="lp_cards_title">
+                <a onClick={() => history.push('/MansionInSewickleyHeights')} className="lp_cards_title">
                   Villa in Sewickley Heights
                 </a>
                 <a
-                  href="/MansionInSewickleyHeights"
+                  onClick={() => history.push('/MansionInSewickleyHeights')}
                   className="lp_cards_location"
                 >
                   555 Lorem Ave, Sewickley Heights, PA 12345, USA
@@ -305,7 +310,7 @@ function LandingPageCards() {
                 <p>
                   A fabulous villa in PA located conveniently near a train
                   station, beach and...
-                  <a href="/MansionInSewickleyHeights" className="more_button">
+                  <a onClick={() => history.push('/MansionInSewickleyHeights')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -336,7 +341,7 @@ function LandingPageCards() {
                   <p className="card_price">$5,400,000</p>
                 </div>
                 <a
-                  href="/MansionInSewickleyHeights"
+                  onClick={() => history.push('/MansionInSewickleyHeights')}
                   className="lp_cards_button"
                 >
                   View
@@ -346,13 +351,14 @@ function LandingPageCards() {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/HouseInOreland">
+              <a onClick={() => history.push('/HouseInOreland')}>
                 <img src={house8} alt="mansion" />
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
 
-              <a href="/AgentMaryProfile" className="card_img_agent">
+              <a onClick={() => history.push('/AgentMaryProfile')}
+ className="card_img_agent">
                 <Avatar src={agent4} alt="real estate agent" />
               </a>
             </div>
@@ -367,7 +373,7 @@ function LandingPageCards() {
                 <p>
                   Large home in Oreland, PA complete with 45 acres of land
                   with...
-                  <a href="/HouseInOreland" className="more_button">
+                  <a onClick={() => history.push('/HouseInOreland')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -397,7 +403,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$2,300,000</p>
                 </div>
-                <a href="/HouseInOreland" className="lp_cards_button">
+                <a onClick={() => history.push('/HouseInOreland')} className="lp_cards_button">
                   View
                 </a>
               </div>

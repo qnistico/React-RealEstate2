@@ -24,8 +24,10 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
 import apt2 from "./img/apartment2.jpg";
+import { useHistory } from "react-router-dom";
 
 function AgentMaryProfile(props) {
+  const history = useHistory();
     const card1template = {
         cardImg: house8,
         agentImg: agent4,
@@ -38,8 +40,10 @@ function AgentMaryProfile(props) {
         featured: "Featured",
         forsale: "For Sale",
         cardimgalt: "house",
-        salerent: "For Sale"
-
+        salerent: "For Sale",
+        plink: () => {
+          history.push("/HouseInEdgeworth");
+        },
 
       };
     
@@ -55,7 +59,8 @@ function AgentMaryProfile(props) {
         featured: "Featured",
         forsale: "For Sale",
         cardimgalt: "house",
-        salerent: "For Sale"
+        salerent: "For Sale",
+        plink: "/HouseInEdgeworth"
 
       };
     
@@ -88,22 +93,12 @@ function AgentMaryProfile(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
+    plink: "/AptInWilliamsport"
     
 
       };
       
-      const p1link = {
-        plink: "/HouseInOreland",
-      };
-      const p2link = {
-        plink: "/HouseInEdgeworth",
-      };
-      const p3link = {
-        plink: "/MansionInFoxchapel",
-      };
-      const p4link = {
-        plink: "/AptInWilliamsport"
-      };
+      
       
     return (
         <div className="agent_mary_profile">
@@ -116,10 +111,7 @@ function AgentMaryProfile(props) {
         card2template={card2template}
         card3template={card3template}
         card4template={card4template}
-        p1link={p1link}
-        p2link={p2link}
-        p3link={p3link}
-        p4link={p4link}
+       
       />
         </div>
     )
