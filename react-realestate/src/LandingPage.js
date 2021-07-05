@@ -48,9 +48,11 @@ function LandingPage() {
       <LandingPageCards />
       <OverlayCarousel />
       <LandingPageApts />
-      <PhiOverlay2 />
-      <Agents />
       <PhiOverlay />
+
+      <Agents />
+      <PhiOverlay2 />
+
       <ContactOverlay />
       <MobileIcons />
       <LPBlog />

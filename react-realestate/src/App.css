@@ -1725,6 +1725,10 @@ input.form-control.form_input {
   margin: 160px auto 100px auto;
 }
 
+.signup_body {
+  height: 100%;
+}
+
 .login_signup_auth h1 {
   text-align: center;
   margin-bottom: 20px;

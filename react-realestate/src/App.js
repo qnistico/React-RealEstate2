@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import MainNav from "./MainNav";
@@ -31,8 +31,22 @@ import LoginAuth from "./LoginAuth";
 import AptInPhiladelphia from "./AptInPhiladelphia";
 import AptInAllentown from "./AptInAllentown";
 import AptInWilliamsport from "./AptInWilliamsport";
+import { auth } from "./config/firebase-config";
 function App() {
-  
+  const user = null;
+
+  useEffect (() => {
+const unsubscribe = auth.onAuthStateChanged(userAuth => {
+  if (userAuth) {
+    // logged in
+    console.log(userAuth);
+  }
+  else {
+    //logged out
+  }
+})
+return unsubscribe;
+  }, [])
   return (
     <Router>
       <div>

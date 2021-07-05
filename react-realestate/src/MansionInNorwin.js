@@ -156,7 +156,7 @@ function MansionInNorwin(props) {
       
       <div className="property_hero" >
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={lphouse15} height="75vh">
+        <ParallaxImg  imgsrc={house15} height="75vh">
         
         </ParallaxImg>
       </ParallaxProvider>
