@@ -43,6 +43,8 @@ export default function LoginAuth(props) {
       .catch((error) => alert(error.message));
   }
 
+  
+
   return (
     <div className="login_signup_auth">
       <div className="dark_gradient"></div>

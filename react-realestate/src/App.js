@@ -32,104 +32,110 @@ import AptInPhiladelphia from "./AptInPhiladelphia";
 import AptInAllentown from "./AptInAllentown";
 import AptInWilliamsport from "./AptInWilliamsport";
 import { auth } from "./config/firebase-config";
-import { useDispatch } from "react-redux";
-import { login, logout } from "./features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "./features/userSlice";
+import ProfileScreen from "./screens/ProfileScreen";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
-  
-  const reduxWrapper = () => {
-    const store = createStore(rootReducer);
-  }
-  const user = null;
+  const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
-  useEffect (() => {
-const unsubscribe = auth.onAuthStateChanged(userAuth => {
-  if (userAuth) {
-    // logged in
-    console.log(userAuth);
-    dispatch(login);
-  }
-  else {
-    //logged out
-    dispatch(logout);
-  }
-})
-return unsubscribe;
-  }, [])
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        // logged in
+        console.log(userAuth);
+        dispatch(
+          login({
+            uid: userAuth.uid,
+            email: userAuth.email,
+          })
+        );
+      } else {
+        //logged out
+        dispatch(logout);
+      }
+    });
+    return unsubscribe;
+  }, []);
+
+
+
+
+  
   return (
     <Router>
-      <div>
-        <MainNav />
-        <div className="landing_page">
-          <Switch>
-            <Route exact path="/">
-              <LandingPage />
-            </Route>
-            <Route exact path="/MansionInFoxchapel">
-              <MansionInFoxchapel />
-            </Route>
-            <Route exact path="/MansionInNorwin">
-              <MansionInNorwin />
-            </Route>
-            <Route exact path="/MansionInGladwyne">
-              <MansionInGladwyne />
-            </Route>
-            <Route exact path="/HouseInEdgeworth">
-              <HouseInEdgeworth />
-            </Route>
-            <Route exact path="/MansionInSewickleyHeights">
-              <MansionInSewickleyHeights />
-            </Route>
-            <Route exact path="/HouseInOreland">
-              <HouseInOreland />
-            </Route>
-            <Route exact path="/AptInPhiladelphia">
-              <AptInPhiladelphia />
-            </Route>
-            <Route exact path="/AptInAllentown">
-              <AptInAllentown />
-            </Route>
-            <Route exact path="/AptInWilliamsport">
-              <AptInWilliamsport />
-            </Route>
-            <Route exact path="/AgentJohnProfile">
-              <AgentJohnProfile />
-            </Route>
-            <Route exact path="/AgentKevinProfile">
-              <AgentKevinProfile />
-            </Route>
-            <Route exact path="/AgentMaryProfile">
-              <AgentMaryProfile />
-            </Route>
-            <Route exact path="/TestPage3">
-              <TestPage3 />
-            </Route>
-            <Route exact path="/ContactUs">
-              <ContactUs />
-            </Route>
-            <Route exact path="/BlogList">
-              <BlogList />
-            </Route>
-            <Route exact path="/BloglistPage2">
-              <BlogListPage2 />
-            </Route>
-            <Route exact path="/BlogPostTemplate">
-              <BlogPostTemplate />
-            </Route>
-            <Route exact path="/BuyingAHome">
-<BuyingAHome />
-            </Route>
-            <Route exact path="/AllProperties">
-              <AllProperties />
-            </Route>
-            
-      <Route exact path="/LoginAuth">
-        
-        <LoginAuth />
-      </Route>
-          </Switch>
-        </div>
-      </div>
+      <MainNav />
+      <ScrollToTop />
+      <Switch>
+        <Route path="/ProfileScreen">
+          <ProfileScreen />
+        </Route>
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route exact path="/MansionInFoxchapel">
+          <MansionInFoxchapel />
+        </Route>
+        <Route exact path="/MansionInNorwin">
+          <MansionInNorwin />
+        </Route>
+        <Route exact path="/MansionInGladwyne">
+          <MansionInGladwyne />
+        </Route>
+        <Route exact path="/HouseInEdgeworth">
+          <HouseInEdgeworth />
+        </Route>
+        <Route exact path="/MansionInSewickleyHeights">
+          <MansionInSewickleyHeights />
+        </Route>
+        <Route exact path="/HouseInOreland">
+          <HouseInOreland />
+        </Route>
+        <Route exact path="/AptInPhiladelphia">
+          <AptInPhiladelphia />
+        </Route>
+        <Route exact path="/AptInAllentown">
+          <AptInAllentown />
+        </Route>
+        <Route exact path="/AptInWilliamsport">
+          <AptInWilliamsport />
+        </Route>
+        <Route exact path="/AgentJohnProfile">
+          <AgentJohnProfile />
+        </Route>
+        <Route exact path="/AgentKevinProfile">
+          <AgentKevinProfile />
+        </Route>
+        <Route exact path="/AgentMaryProfile">
+          <AgentMaryProfile />
+        </Route>
+        <Route exact path="/TestPage3">
+          <TestPage3 />
+        </Route>
+        <Route exact path="/ContactUs">
+          <ContactUs />
+        </Route>
+        <Route exact path="/BlogList">
+          <BlogList />
+        </Route>
+        <Route exact path="/BloglistPage2">
+          <BlogListPage2 />
+        </Route>
+        <Route exact path="/BlogPostTemplate">
+          <BlogPostTemplate />
+        </Route>
+        <Route exact path="/BuyingAHome">
+          <BuyingAHome />
+        </Route>
+        <Route exact path="/AllProperties">
+          <AllProperties />
+        </Route>
+
+        <Route exact path="/LoginAuth">
+          <LoginAuth />
+        </Route>
+      </Switch>
     </Router>
   );
 }

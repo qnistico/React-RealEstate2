@@ -20,6 +20,7 @@ import {
 import logo1 from "./img/logo1.png";
 import logoprata from "./img/logoprata.png";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { useHistory } from "react-router-dom";
 
 
 function MainNav() {
@@ -41,15 +42,15 @@ function MainNav() {
     }
    
    window.addEventListener('scroll', fixHeaderOnScoll);
-   
-   
+   const [show, handleShow] = useState(false);
+  const history = useHistory()
    
    
    
   return (
     <MDBNavbar expand="lg" light bgColor="light" id="navbar" className="navbar">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="/"><img src={logoprata} alt="logo" id="logo" /></MDBNavbarBrand>
+        <MDBNavbarBrand onClick={() => history.push('/')}><img src={logoprata} alt="logo" id="logo" /></MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"
@@ -63,7 +64,7 @@ function MainNav() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="/" className="home">
+              <MDBNavbarLink active aria-current="page" onClick={() => history.push('/')} className="home">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -101,8 +102,9 @@ function MainNav() {
             </MDBNavbarItem>
           </MDBNavbarNav>
           <div className="signup_flex">
-  <a href="/LoginAuth" className=" signup_button"><AccountCircleIcon />Login / Sign Up</a>
+  <a onClick={() => history.push('/LoginAuth')} className=" signup_button"><AccountCircleIcon />Login / Sign Up</a>
   </div>
+  <a onClick={() => history.push('/ProfileScreen')}><AccountCircleIcon /></a>
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

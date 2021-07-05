@@ -27,9 +27,13 @@ import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import { CheckBoxOutlineBlankOutlined, Hotel } from "@material-ui/icons";
 import Fade from 'react-reveal/Fade';
+import { useHistory } from "react-router-dom";
+
 
 
 function LandingPageCards() {
+  const history = useHistory()
+
   return (
     <div>
       <div className="lp_cards">
@@ -40,7 +44,7 @@ function LandingPageCards() {
         <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/MansionInNorwin">
+              <a onClick={() => history.push('/MansionInNorwin')}>
                 <img src={house15} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -54,16 +58,16 @@ function LandingPageCards() {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/MansionInNorwin" className="lp_cards_title">
+                <a onClick={() => history.push('/MansionInNorwin')} className="lp_cards_title">
                   Mansion in Norwin
                 </a>
-                <a href="/MansionInNorwin" className="lp_cards_location">
+                <a onClick={() => history.push('/MansionInNorwin')} className="lp_cards_location">
                   555 Lorem Avenue, Norwin, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in Norwin, Pennsylvania located conveniently
                   near a train station and...
-                  <a href="/MansionInNorwin" className="more_button">
+                  <a onClick={() => history.push('/MansionInNorwin')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -93,7 +97,7 @@ function LandingPageCards() {
                   <p>For Sale</p>
                   <p className="card_price">$5,700,000</p>
                 </div>
-                <a href="/MansionInNorwin" className="lp_cards_button">
+                <a onClick={() => history.push('/MansionInNorwin')} className="lp_cards_button">
                   View
                 </a>
               </div>

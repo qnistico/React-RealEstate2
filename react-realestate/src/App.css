@@ -16,7 +16,7 @@ html,
 body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
 }
 
 .hide {
@@ -1650,6 +1650,7 @@ input.form-control.form_input {
 -webkit-box-align: center;
     -ms-flex-align: center;
         align-items: center;
+        cursor: pointer;
 }
 
 .navbar-nav {
@@ -1677,6 +1678,7 @@ input.form-control.form_input {
 .navbar-brand img {
   width: 200px;
   position: absolute;
+  cursor: pointer;
 }
 
 .navbar-toggler {

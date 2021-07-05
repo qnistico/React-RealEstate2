@@ -4,7 +4,6 @@ import "./index.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import App from "./App";
 import { Provider } from "react-redux";
-import configureStore from "./app/store";
 import store from "./app/store";
 
 
