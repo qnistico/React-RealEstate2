@@ -791,6 +791,7 @@ input:active {
 .property_hero {
   width: 100%;
   min-height: 75vh;
+  background-size: 5% 5%;
 
   display: -webkit-box;
 

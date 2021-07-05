@@ -74,6 +74,7 @@ import lphouse2 from "./img/lphouse2.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import kimg from "./img/4kimg.jpg";
 function MansionInNorwin(props) {
   const templateImg = {
     houseImg: house15,
@@ -155,7 +156,7 @@ function MansionInNorwin(props) {
       
       <div className="property_hero" >
         <ParallaxProvider>
-        <ParallaxImg  imgsrc={house15} height="75vh">
+        <ParallaxImg  imgsrc={lphouse15} height="75vh">
         
         </ParallaxImg>
       </ParallaxProvider>
