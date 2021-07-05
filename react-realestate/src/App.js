@@ -32,17 +32,26 @@ import AptInPhiladelphia from "./AptInPhiladelphia";
 import AptInAllentown from "./AptInAllentown";
 import AptInWilliamsport from "./AptInWilliamsport";
 import { auth } from "./config/firebase-config";
+import { useDispatch } from "react-redux";
+import { login, logout } from "./features/userSlice";
 function App() {
+  
+  const reduxWrapper = () => {
+    const store = createStore(rootReducer);
+  }
   const user = null;
+  const dispatch = useDispatch();
 
   useEffect (() => {
 const unsubscribe = auth.onAuthStateChanged(userAuth => {
   if (userAuth) {
     // logged in
     console.log(userAuth);
+    dispatch(login);
   }
   else {
     //logged out
+    dispatch(logout);
   }
 })
 return unsubscribe;
