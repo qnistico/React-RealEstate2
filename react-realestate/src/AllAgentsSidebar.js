@@ -2,8 +2,10 @@ import React from "react";
 import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
+import { useHistory } from "react-router-dom";
 
 function AllAgentsSidebar() {
+  const history = useHistory();
   return (
     <div className="all_agents_sidebar_flex">
       <div className="all_agents_sidebar">

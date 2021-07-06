@@ -38,8 +38,11 @@ import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 function MansionInFoxchapel(props) {
+  const history = useHistory();
   const templateImg = {
     houseImg: house1,
     houseLR: house1LR,
@@ -118,6 +121,8 @@ function MansionInFoxchapel(props) {
   
   return (
     <div className="mansion_in_foxchapel">
+                        <Fade duration="1210">
+
       <div className="property_hero">
         <ParallaxProvider>
           <ParallaxImg imgsrc={house1} height="75vh"></ParallaxImg>
@@ -128,6 +133,7 @@ function MansionInFoxchapel(props) {
           </div>
         </div>
       </div>
+      </Fade>
 
       <SortByContent />
       <ViewProperty

@@ -76,74 +76,72 @@ import apt3exterior from "./img/apartment3exterior.jpg";
 import apt3mbr from "./img/apartment3mbr.jpg";
 import apt3br from "./img/apartment3br.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 function AptInAllentown(props) {
   const history = useHistory();
-    const templateImg = {
-        houseImg: apt3exterior,
-        houseLR: apt3,
-        houseMBR: apt3mbr,
-        houseBR: apt3br,
-        althouse: "apartment building",
-            altlr: "apartment",
-            altmbr: "bedroom",
-            altbr: "bathroom"
-      };
-      const psprAgent = {
-        agentImg: agent3,
-        agentName: "Kevin Richmond",
-        aplink: () => {
-      history.push("/AgentKevinProfile");
-    }
-      };
-      const card1template = {
-        cardImg: house10,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$5,400,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
-        featured: "Featured",
-            forsale: "For Sale",
-            salerent: "For Sale",
-            cardimgalt: "house",
-                    aplink: () => {
+  const templateImg = {
+    houseImg: apt3exterior,
+    houseLR: apt3,
+    houseMBR: apt3mbr,
+    houseBR: apt3br,
+    althouse: "apartment building",
+    altlr: "apartment",
+    altmbr: "bedroom",
+    altbr: "bathroom",
+  };
+  const psprAgent = {
+    agentImg: agent3,
+    agentName: "Kevin Richmond",
+    aplink: () => {
       history.push("/AgentKevinProfile");
     },
-                    plink:() => {
-                      history.push("/MansionInSewickleyHeights");
-                    }
-
-      };
-    
-      const card2template = {
-        cardImg: house15,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$5,700,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
-        featured: "Featured",
-        plink: () => {
-          history.push("/MansionInNorwin");
-        },
-
-            forsale: "For Sale",
-            salerent: "For Sale",
-            cardimgalt: "house",
-                    aplink: () => {
+  };
+  const card1template = {
+    cardImg: house10,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$5,400,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
       history.push("/AgentKevinProfile");
-    }
+    },
+    plink: () => {
+      history.push("/MansionInSewickleyHeights");
+    },
+  };
 
+  const card2template = {
+    cardImg: house15,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$5,700,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
+    featured: "Featured",
+    plink: () => {
+      history.push("/MansionInNorwin");
+    },
 
-      };
-    
-      
-      const card3template = {
-        cardImg: house7,
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+  };
+
+  const card3template = {
+    cardImg: house7,
     agentImg: agent3,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
@@ -152,36 +150,33 @@ function AptInAllentown(props) {
     bathrooms: "7",
     sqft: "13,500 SqFt",
     featured: "Featured",
-        forsale: "For Sale",
-        plink: () => {
-          history.push("/MansionInGladwyne");
-        },
-        salerent: "For Sale",
-        cardimgalt: "house",
-        aplink: () => {
+    forsale: "For Sale",
+    plink: () => {
+      history.push("/MansionInGladwyne");
+    },
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
       history.push("/AgentKevinProfile");
-    }
-
-
-
-      };
-    return (
-        <div className="apt_in_allentown">
-            <div className="property_hero">
-            <ParallaxProvider>
-        <ParallaxImg  imgsrc={apt3} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>   
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h2>Apartment In Allentown</h2>
+    },
+  };
+  return (
+    <div className="apt_in_allentown">
+      <Fade duration="1210">
+        <div className="property_hero">
+          <ParallaxProvider>
+            <ParallaxImg imgsrc={apt3} height="75vh"></ParallaxImg>
+          </ParallaxProvider>
+          <div className="property_hero_flex">
+            <div className="property_hero_content">
+              <h2>Apartment In Allentown</h2>
+            </div>
           </div>
         </div>
-        </div>
-      
+      </Fade>
+
       <SortByContent />
-    <ViewProperty
+      <ViewProperty
         homeTitle="Apartment on 555 Lorem Ave, Allentown, PA"
         homeAddress="555 Lorem Ave"
         garages="0"
@@ -199,8 +194,8 @@ function AptInAllentown(props) {
         card2template={card2template}
         card3template={card3template}
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default AptInAllentown
+export default AptInAllentown;

@@ -78,6 +78,8 @@ import apt1br from "./img/apartment1br.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 function AptInPhiladelphia(props) {
   const history = useHistory();
     const templateImg = {
@@ -158,6 +160,8 @@ function AptInPhiladelphia(props) {
       };
     return (
         <div className="apt_in_philadelphia">
+                            <Fade duration="1210">
+
             <div className="property_hero">
             <ParallaxProvider>
         <ParallaxImg  imgsrc={apt1} height="75vh">
@@ -170,6 +174,7 @@ function AptInPhiladelphia(props) {
           </div>
         </div>
         </div>
+        </Fade>
       
       <SortByContent />
     <ViewProperty

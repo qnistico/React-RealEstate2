@@ -70,6 +70,8 @@ import apt2exterior from "./img/apartment2exterior.jpg";
 import apt2mbr from "./img/apartment2mbr.jpg";
 import apt2br from "./img/apartment2br.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 function AptInWilliamsport(props) {
   const history = useHistory();
     const templateImg = {
@@ -153,6 +155,8 @@ function AptInWilliamsport(props) {
       };
     return (
         <div className="apt_in_williamsport">
+                            <Fade duration="1210">
+
             <div className="property_hero" >
         <ParallaxProvider>
         <ParallaxImg  imgsrc={apt2} height="75vh">
@@ -165,6 +169,7 @@ function AptInWilliamsport(props) {
           </div>
         </div>
       </div>
+      </Fade>
       
       <SortByContent />
             <ViewProperty

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import agent1 from "./img/agent1.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
@@ -19,7 +19,7 @@ import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
 import house16 from "./img/house16.jpg";
 import AgentProfiles from "./AgentProfiles";
-import CardSingle from './CardSingle';
+import CardSingle from "./CardSingle";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
@@ -28,60 +28,68 @@ import { useHistory } from "react-router-dom";
 
 function AgentMaryProfile(props) {
   const history = useHistory();
-    const card1template = {
-        cardImg: house8,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$2,300,000",
-        bedrooms: "2",
-        bathrooms: "4",
-        sqft: "4,900 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        cardimgalt: "house",
-        salerent: "For Sale",
-        plink: () => {
-          history.push("/HouseInEdgeworth");
-        },
+  const card1template = {
+    cardImg: house8,
+    agentImg: agent4,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$2,300,000",
+    bedrooms: "2",
+    bathrooms: "4",
+    sqft: "4,900 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    cardimgalt: "house",
+    salerent: "For Sale",
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/HouseInOreland");
+    },
+  };
 
-      };
+  const card2template = {
+    cardImg: house9,
+    agentImg: agent4,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$680,000",
+    bedrooms: "2",
+    bathrooms: "4",
+    sqft: "3,200 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    cardimgalt: "house",
+    salerent: "For Sale",
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/HouseInEdgeworth");
+    },
+  };
+
+  const card3template = {
+    cardImg: house14,
+    agentImg: agent4,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$4,100,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "5,000 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    cardimgalt: "house",
+    salerent: "For Sale",
     
-      const card2template = {
-        cardImg: house9,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$680,000",
-        bedrooms: "2",
-        bathrooms: "4",
-        sqft: "3,200 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        cardimgalt: "house",
-        salerent: "For Sale",
-        plink: "/HouseInEdgeworth"
-
-      };
-    
-      const card3template = {
-        cardImg: house14,
-        agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$4,100,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "5,000 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        cardimgalt: "house",
-        salerent: "For Sale"
-
-
-      };
-      const card4template = {
-        cardImg: apt2,
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+  };
+  const card4template = {
+    cardImg: apt2,
     agentImg: agent4,
     cardTitle: "Apartment on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, PA 12345, USA",
@@ -93,28 +101,28 @@ function AgentMaryProfile(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    plink: "/AptInWilliamsport"
-    
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/AptInWilliamsport");}
 
-      };
-      
-      
-      
-    return (
-        <div className="agent_mary_profile">
+  };
+
+  return (
+    <div className="agent_mary_profile">
       <AgentProfiles
-      headerTitle="Mary Williams"
-      parallaximg1={agentbg}
+        headerTitle="Mary Williams"
+        parallaximg1={agentbg}
         agentImg={agent4}
         agentName="Mary Williams"
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
         card4template={card4template}
-       
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default AgentMaryProfile
+export default AgentMaryProfile;

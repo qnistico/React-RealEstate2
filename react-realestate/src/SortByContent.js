@@ -72,6 +72,7 @@ function showAll() {
   }
 
     return (
+      <div className="sort_by_content">
       <div className="sort_table">
       <div className="search_property">
           <div className="icon_flex">
@@ -135,6 +136,7 @@ function showAll() {
       </div>
       <a className="hero_button" href="/AllProperties">Search</a>
       
+  </div>
   </div>
     )
 }

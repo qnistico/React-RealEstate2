@@ -38,6 +38,9 @@ function AgentJohnProfile(props) {
     forsale: "For Sale",
     cardimgalt: "house",
     salerent: "For Sale",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
     plink: () => {
       history.push("/MansionInFoxchapel");
     },
@@ -55,7 +58,10 @@ function AgentJohnProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     cardimgalt: "house",
-    salerent: "For Sale"
+    salerent: "For Sale",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    }
 
   };
 
@@ -71,7 +77,10 @@ function AgentJohnProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     cardimgalt: "house",
-    salerent: "For Sale"
+    salerent: "For Sale",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    }
 
   };
 
@@ -88,9 +97,13 @@ function AgentJohnProfile(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    plink: "/AptInPhiladelphia"
+    plink: () => {
+      history.push("/MansionInGladwyne");
+    }  ,
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    }
   }
-  
   
   
   return (

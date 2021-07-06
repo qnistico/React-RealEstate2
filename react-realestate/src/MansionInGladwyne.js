@@ -73,6 +73,8 @@ import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 function MansionInGladwyne(props) {
   const history = useHistory();
   const templateImg = {
@@ -89,9 +91,7 @@ function MansionInGladwyne(props) {
     agentImg: agent3,
     agentName: "Kevin Richmond",
     aplink: () => {
-      history.push(() => {
         history.push("/AgentKevinProfile");
-      });
     },
   };
   const card1template = {
@@ -160,6 +160,8 @@ function MansionInGladwyne(props) {
 
   return (
     <div className="mansion_in_gladwyne">
+                  <Fade duration="1210">
+
       <div className="property_hero">
         <ParallaxProvider>
           <ParallaxImg imgsrc={lphouse7} height="75vh"></ParallaxImg>
@@ -170,6 +172,7 @@ function MansionInGladwyne(props) {
           </div>
         </div>
       </div>
+      </Fade>
 
       <SortByContent />
       <ViewProperty

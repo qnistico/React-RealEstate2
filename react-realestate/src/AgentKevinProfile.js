@@ -22,8 +22,10 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 
 function AgentKevinProfile(props) {
+  const history = useHistory();
   const card1template = {
     cardImg: house15,
     agentImg: agent3,
@@ -36,7 +38,11 @@ function AgentKevinProfile(props) {
     featured: "Featured",
     forsale: "For Sale",
     cardimgalt: "house",
-    plink: "/MansionInNorwin",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInNorwin");}
   };
 
   const card2template = {
@@ -52,7 +58,11 @@ function AgentKevinProfile(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    plink: "/MansionInSewickleyHeights",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInSewickleyHeights");}
   };
 
   const card3template = {
@@ -68,7 +78,11 @@ function AgentKevinProfile(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    plink: "/MansionInGladwyne"
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInGladwyne");}
   };
   const card4template = {
     cardImg: apt3,
@@ -83,7 +97,11 @@ function AgentKevinProfile(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    plink: "/AptInAllentown",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/AptInAllentown");}
     
   };
 
