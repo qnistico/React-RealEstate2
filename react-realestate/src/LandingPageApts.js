@@ -31,8 +31,10 @@ import Fade from 'react-reveal/Fade';
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 
 function LandingPageApts(props) {
+  const history = useHistory();
     return (
         <div className="lp_apts">
                     <Fade duration="1050" cascade>
@@ -45,7 +47,7 @@ function LandingPageApts(props) {
             <div className="lp_apts_flex">
             <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/AptInPhiladelphia">
+              <a onClick={() => history.push('/AptInPhiladelphia')}>
                 <img src={apt1} alt="apartment" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -60,15 +62,15 @@ function LandingPageApts(props) {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/AptInPhiladelphia" className="lp_cards_title">
+                <a onClick={() => history.push('/AptInPhiladelphia')} className="lp_cards_title">
                   Apartment in Philadelphia
                 </a>
-                <a href="/AptInPhiladelphia" className="lp_cards_location">
+                <a onClick={() => history.push('/AptInPhiladelphia')} className="lp_cards_location">
                   555 Lorem Ave, Philadelphia, PA 12345, USA
                 </a>
                 <p>
                   Spacious and affordable apartment in Philadelphia, PA.  Complete with...
-                  <a href="/AptInPhiladelphia" className="more_button">
+                  <a onClick={() => history.push('/AptInPhiladelphia')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -98,7 +100,7 @@ function LandingPageApts(props) {
                   <p>For Rent</p>
                   <p className="card_price">$1,400 / mo</p>
                 </div>
-                <a href="/AptInPhiladelphia" className="lp_cards_button">
+                <a onClick={() => history.push('/AptInPhiladelphia')} className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -106,7 +108,7 @@ function LandingPageApts(props) {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/AptInAllentown">
+              <a onClick={() => history.push('/AptInAllentown')}>
                 <img src={apt3} alt="house" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -121,15 +123,15 @@ function LandingPageApts(props) {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/AptInAllentown" className="lp_cards_title">
+                <a onClick={() => history.push('/AptInAllentown')} className="lp_cards_title">
                   Apartment in Allentown
                 </a>
-                <a href="/AptInAllentown" className="lp_cards_location">
+                <a onClick={() => history.push('/AptInAllentown')} className="lp_cards_location">
                   555 Lorem Avenue, Allentown, PA 12345, USA
                 </a>
                 <p>
                 Spacious and affordable apartment in Philadelphia, PA.  Complete with...
-                  <a href="/AptInAllentown" className="more_button">
+                  <a onClick={() => history.push('/AptInAllentown')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -159,7 +161,7 @@ function LandingPageApts(props) {
                   <p>For Rent</p>
                   <p className="card_price">$1,200 / mo</p>
                 </div>
-                <a href="/AptInAllentown" className="lp_cards_button">
+                <a onClick={() => history.push('/AptInAllentown')} className="lp_cards_button">
                   View
                 </a>
               </div>
@@ -167,7 +169,7 @@ function LandingPageApts(props) {
           </div>
           <div className="lp_cards_body">
             <div className="card_img_container">
-              <a href="/AptInWilliamsport">
+              <a onClick={() => history.push('/AptInWilliamsport')}>
                 <img src={apt2} alt="apartment" />
               </a>
               <p className="featured_badge">Featured</p>
@@ -182,15 +184,15 @@ function LandingPageApts(props) {
             </div>
             <div className="lp_cards_content">
               <div className="lp_cards_top">
-                <a href="/AptInWilliamsport" className="lp_cards_title">
+                <a onClick={() => history.push('/AptInWilliamsport')} className="lp_cards_title">
                   Apartment in Williamsport
                 </a>
-                <a href="/AptInWilliamsport" className="lp_cards_location">
+                <a onClick={() => history.push('/AptInWilliamsport')} className="lp_cards_location">
                   555 Lorem Ave, Williamsport, PA 12345, USA
                 </a>
                 <p>
                 Spacious and affordable apartment in Philadelphia, PA.  Complete with...
-                  <a href="/AptInWilliamsport" className="more_button">
+                  <a onClick={() => history.push('/AptInWilliamsport')} className="more_button">
                     [more]
                   </a>
                 </p>
@@ -220,7 +222,7 @@ function LandingPageApts(props) {
                   <p>For Rent</p>
                   <p className="card_price">$1,450 / mo</p>
                 </div>
-                <a href="/AptInWilliamsport" className="lp_cards_button">
+                <a onClick={() => history.push('/AptInWilliamsport')} className="lp_cards_button">
                   View
                 </a>
               </div>

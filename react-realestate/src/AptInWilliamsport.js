@@ -86,7 +86,7 @@ function AptInWilliamsport(props) {
         agentImg: agent4,
         agentName: "Mary Williams",
         aplink: () => {
-      history.push("/AgentMaryWilliams");
+      history.push("/AgentMaryProfile");
     }
       };
       const card1template = {
@@ -103,7 +103,7 @@ function AptInWilliamsport(props) {
         salerent: "For Sale",
         cardimgalt: "house",
         aplink: () => {
-      history.push("/AgentMaryWilliams");
+      history.push("/AgentMaryProfile");
     }
 
       };

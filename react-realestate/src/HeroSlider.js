@@ -30,10 +30,12 @@ import lphouse1 from "./img/lphouse1.jpg";
 import lphouse2 from "./img/lphouse2.jpg";
 import lphouse7 from "./img/lphouse7.jpg";
 import kimg from "./img/4kimg.jpg";
+import { useHistory } from "react-router-dom";
 
 
 
 function HeroSlider() {
+  const history = useHistory();
   window.addEventListener("load", parallax)
 window.addEventListener("scroll", parallax)
 
@@ -87,7 +89,7 @@ function parallax() {
           <p>
             We sell premium real estate in Pennsylvania ranging from rural to bay area locations.  Mansions, homes and apartments... We've got it all.  Consult one of our agents to schedule a tour.
           </p>
-          <MDBBtn href="/AllProperties" className="hero_button">View All Listings</MDBBtn>
+          <MDBBtn onClick={() => history.push('/AllProperties')} className="hero_button">View All Listings</MDBBtn>
         </div>
       </div>
       <div className="hero_slider">

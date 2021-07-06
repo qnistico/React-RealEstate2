@@ -15,44 +15,46 @@ import house12 from "./img/house12.jpg";
 import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
+import { useHistory } from "react-router-dom";
 
 function FeaturedListings() {
+  const history = useHistory();
   return (
     <div className="featured_listings">
       <div className="featured_listings_flex">
           <div className="featured_item">
         <div className="featured_img">
-          <a href="/MansionInGladwyne"><img src={house7} alt="house" /></a>
+          <a onClick={() => history.push("/MansionInGladwyne")}><img src={house7} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="/MansionInGladwyne">Mansion In Gladwyne</a>
+          <a onClick={() => history.push("/MansionInGladwyne")}>Mansion In Gladwyne</a>
           <p>$14,000,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href="/MansionInFoxchapel"><img src={house1} alt="house" /></a>
+          <a onClick={() => history.push("/MansionInFoxchapel")}><img src={house1} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="/MansionInFoxchapel">Villa In Foxchapel</a>
+          <a onClick={() => history.push("/MansionInFoxchapel")}>Villa In Foxchapel</a>
           <p>$5,200,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href="/HouseInOreland"><img src={house8} alt="house" /></a>
+          <a onClick={() => history.push("/HouseInOreland")}><img src={house8} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="/HouseInOreland">Mansion In Oreland</a>
+          <a onClick={() => history.push("/HouseInOreland")}>Mansion In Oreland</a>
           <p>$2,300,000</p>
         </div>
         </div>
         <div className="featured_item">
         <div className="featured_img">
-          <a href="/MansionInNorwin"><img src={house15} alt="house" /></a>
+          <a onClick={() => history.push("/MansionInNorwin")}><img src={house15} alt="house" /></a>
         </div>
         <div className="featured_content">
-          <a href="/MansionInNorwin">Mansion In Norwin</a>
+          <a onClick={() => history.push("/MansionInNorwin")}>Mansion In Norwin</a>
           <p>$5,700,000</p>
         </div>
         </div>

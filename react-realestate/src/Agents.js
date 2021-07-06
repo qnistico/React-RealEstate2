@@ -8,8 +8,10 @@ import "./Agents.css";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
 import Fade from "react-reveal/Fade";
+import { useHistory } from "react-router-dom";
 
 function agentReviews(props) {
+  const history = useHistory();
   return (
     <div className="agent_reviews">
       <svg
