@@ -409,7 +409,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          <a href="/AllProperties" className="hero_button">View All Listings</a>
+          <a onClick={() => history.push("/AllProperties")} className="hero_button">View All Listings</a>
         </div>
       </div>
     </div>

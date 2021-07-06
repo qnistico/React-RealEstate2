@@ -52,34 +52,14 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import birdseye from "./img/birdseye.jpg";
 import propertybg from "./img/propertybg.jpg";
-import Categories from "./components/Categories";
 import SortByContent from "./SortByContent";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 
 function AllProperties(props) {
-  function priceFilterLH() {
-    priceArray = [
-      { id: p1 },
-      { id: p2 },
-      { id: p3 },
-      { id: p4 },
-      { id: p5 },
-      { id: p6 },
-      { id: p7 },
-      { id: p8 },
-      { id: p9 },
-      { id: p10 },
-      { id: p11 },
-      { id: p12 },
-      { id: p13 },
-      { id: p14 },
-    ];
-    function priceFilterLH(a, b) {
-      return a - b;
-    }
-  }
+  const history = useHistory();
 
   return (
     <div>
@@ -101,13 +81,13 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="6,500 SqFt"
               cardimgalt="mansion"
-              plink="/MansionInFoxchapel"
+              plink={() => history.push('/MansionInFoxchapel')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent1"
               propertyprice="p14"
               salerent="For Sale"
-              aplink="/AgentJohnProfile"
+              aplink={() => history.push('/AgentJohnProfile')}
             />
             <CardSingle
               cardImg={apt2}
@@ -124,8 +104,8 @@ function AllProperties(props) {
               filteritem="apartment agent4"
               propertyprice="p13"
               salerent="For Rent"
-              aplink="/AgentMaryProfile"
-              plink="/AptInWilliamsport"
+              aplink={() => history.push('/AgentMaryProfile')}
+              plink={() => history.push('/AptInWilliamsport')}
 
 
             />
@@ -140,13 +120,13 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="4,900 SqFt"
               cardimgalt="mansion"
-              plink="/HouseInOreland"
+              plink={() => history.push('/HouseInOreland')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent4"
               propertyprice="p12"
               salerent="For Sale"
-              aplink="/AgentMaryProfile"
+              aplink={() => history.push('/AgentMaryProfile')}
 
 
             />
@@ -160,13 +140,13 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-              plink="/MansionInNorwin"
+              plink={() => history.push('/MansionInNorwin')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p11"
               salerent="For Sale"
-              aplink="/AgentKevinProfile"
+              aplink={() => history.push('/AgentKevinProfile')}
 
 
             />
@@ -180,13 +160,13 @@ function AllProperties(props) {
               bathrooms="5"
               sqft="7,200 SqFt"
               cardimgalt="mansion"
-              plink="/MansionInSewickleyHeights"
+              plink={() => history.push('/MansionInSewickleyHeights')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p10"
               salerent="For Sale"
-              aplink="/AgentKevinProfile"
+              aplink={() => history.push('/AgentKevinProfile')}
 
 
             />
@@ -200,13 +180,13 @@ function AllProperties(props) {
               bathrooms="7"
               sqft="13,500 SqFt"
               cardimgalt="mansion"
-              plink="/MansionInGladwyne"
+              plink={() => history.push('/MansionInGladwyne')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent3"
               propertyprice="p9"
               salerent="For Sale"
-              aplink="/AgentKevinProfile"
+              aplink={() => history.push('/AgentKevinProfile')}
 
 
             />
@@ -225,8 +205,8 @@ function AllProperties(props) {
               filteritem="apartment agent3"
               propertyprice="p8"
               salerent="For Rent"
-              aplink="/AgentKevinProfile"
-              plink="/AptInAllentown" 
+              aplink={() => history.push('/AgentKevinProfile')}
+              plink={() => history.push('/AptInAllentown')}
 
 
             />
@@ -246,8 +226,8 @@ function AllProperties(props) {
               filteritem="apartment agent1"
               propertyprice="p7"
               salerent="For Rent"
-              aplink="/AgentJohnProfile"
-              plink="/AptInPhiladelphia"
+              aplink={() => history.push('/AgentJohnProfile')}
+              plink={() => history.push('/AptInPhiladelphia')}
 
 
             />
@@ -267,7 +247,7 @@ function AllProperties(props) {
               forsale="For Sale"
               propertyprice="p5"
               salerent="For Sale"
-              aplink="/AgentJohnProfile"
+              aplink={() => history.push('/AgentJohnProfile')}
 
 
             />
@@ -286,7 +266,7 @@ function AllProperties(props) {
               filteritem="house agent1"
               propertyprice="p4"
               salerent="For Sale"
-              aplink="/AgentJohnProfile"
+              aplink={() => history.push('/AgentJohnProfile')}
 
 
             />
@@ -304,7 +284,7 @@ function AllProperties(props) {
         cardimgalt= "house"
         salerent= "For Sale"
         filteritem="house agent4"
-        aplink="/AgentMaryProfile"
+        aplink={() => history.push('/AgentMaryProfile')}
 
         />
         
@@ -321,12 +301,13 @@ function AllProperties(props) {
               bathrooms="4"
               sqft="3,200 SqFt"
               cardimgalt="house"
-              plink="/HouseInEdgeworth"
+              plink={() => history.push('/HouseInEdgeworth')}
               featured="Featured"
               forsale="For Sale"
               filteritem="house agent4"
               propertyprice="p2"
               salerent="For Sale"
+              aplink={() => history.push('/AgentMaryProfile')}
 
             />
             

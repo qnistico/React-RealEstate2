@@ -196,8 +196,8 @@ min-width: 200px;
     }
     .lpb_item {
         -webkit-box-flex: 1;
-            -ms-flex: 1 200px;
-                flex: 1 200px;
+            -ms-flex: 1 275px;
+                flex: 1 275px;
     }
     
 }

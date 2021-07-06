@@ -75,7 +75,9 @@ import apt3 from "./img/apartment3.jpg";
 import apt3exterior from "./img/apartment3exterior.jpg";
 import apt3mbr from "./img/apartment3mbr.jpg";
 import apt3br from "./img/apartment3br.jpg";
+import { useHistory } from "react-router-dom";
 function AptInAllentown(props) {
+  const history = useHistory();
     const templateImg = {
         houseImg: apt3exterior,
         houseLR: apt3,
@@ -89,7 +91,9 @@ function AptInAllentown(props) {
       const psprAgent = {
         agentImg: agent3,
         agentName: "Kevin Richmond",
-        aplink: "/AgentKevinProfile"
+        aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
       };
       const card1template = {
         cardImg: house10,
@@ -104,8 +108,12 @@ function AptInAllentown(props) {
             forsale: "For Sale",
             salerent: "For Sale",
             cardimgalt: "house",
-                    aplink: "/AgentKevinProfile",
-                    plink:"/MansionInSewickleyHeights"
+                    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+                    plink:() => {
+                      history.push("/MansionInSewickleyHeights");
+                    }
 
       };
     
@@ -119,12 +127,16 @@ function AptInAllentown(props) {
         bathrooms: "5",
         sqft: "7,200 SqFt",
         featured: "Featured",
-        plink: "/MansionInNorwin",
+        plink: () => {
+          history.push("/MansionInNorwin");
+        },
 
             forsale: "For Sale",
             salerent: "For Sale",
             cardimgalt: "house",
-                    aplink: "/AgentKevinProfile"
+                    aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
 
 
       };
@@ -141,10 +153,14 @@ function AptInAllentown(props) {
     sqft: "13,500 SqFt",
     featured: "Featured",
         forsale: "For Sale",
-        plink: "/MansionInGladwyne",
+        plink: () => {
+          history.push("/MansionInGladwyne");
+        },
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentKevinProfile"
+        aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
 
 
 
@@ -174,7 +190,7 @@ function AptInAllentown(props) {
         bedrooms="1"
         bathrooms="1"
         sqft="1,200 Sq Ft"
-        yearBuilt="2012"
+        yearBuilt="2012 "
         pagesheroimg={apt3}
         templateImg={templateImg}
         psprAgent={psprAgent}
@@ -182,7 +198,6 @@ function AptInAllentown(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentKevinProfile"
       />
         </div>
     )

@@ -75,6 +75,8 @@ import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 function MansionInNorwin(props) {
   const history = useHistory();
@@ -91,7 +93,9 @@ function MansionInNorwin(props) {
   const psprAgent = {
     agentImg: agent3,
     agentName: "Kevin Richmond",
-    aplink: "/AgentKevinProfile",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
   };
   const card1template = {
     cardImg: house10,
@@ -105,11 +109,13 @@ function MansionInNorwin(props) {
     featured: "Featured",
     forsale: "For Sale",
     plink: () => {
-      history.push("/HouseInEdgeworth");
+      history.push("/MansionInSewickleyHeights");
     },
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
   };
 
   const card2template = {
@@ -123,10 +129,14 @@ function MansionInNorwin(props) {
     sqft: "13,500 SqFt",
     featured: "Featured",
     forsale: "For Sale",
-    plink: "/MansionInGladwyne",
+    plink: () => {
+      history.push("/MansionInGladwyne");
+    },
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    }
   };
 
   const card3template = {
@@ -142,12 +152,18 @@ function MansionInNorwin(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: "/AgentKevinProfile",
-    plink: "/AptInAllentown",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/AptInAllentown");
+    }
   };
 
   return (
     <div className="norwin_mansion">
+            <Fade duration="1210">
+
       <div className="property_hero">
         <ParallaxProvider>
           <ParallaxImg imgsrc={house15} height="75vh"></ParallaxImg>
@@ -158,6 +174,7 @@ function MansionInNorwin(props) {
           </div>
         </div>
       </div>
+      </Fade>
 
       <SortByContent />
       <ViewProperty
@@ -177,7 +194,6 @@ function MansionInNorwin(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentKevinProfile"
       />
     </div>
   );

@@ -77,7 +77,9 @@ import apt1mbr from "./img/apartment1mbr.jpg";
 import apt1br from "./img/apartment1br.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 function AptInPhiladelphia(props) {
+  const history = useHistory();
     const templateImg = {
         houseImg: apt1exterior,
         houseLR: apt1,
@@ -87,7 +89,9 @@ function AptInPhiladelphia(props) {
       const psprAgent = {
         agentImg: agent1,
         agentName: "John Ryan",
-        aplink: "/AgentJohnProfile",
+        aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
       };
       const card1template = {
               cardImg: house1,
@@ -99,12 +103,16 @@ function AptInPhiladelphia(props) {
               bathrooms: "5",
               sqft: "6,500 SqFt",
               cardimgalt: "mansion",
-              plink: "/MansionInFoxchapel",
+              plink: () => {
+                history.push("/MansionInFoxchapel");
+              },
               featured: "Featured",
               forsale: "For Sale",
               filteritem: "house agent1",
               salerent: "For Sale",
-              aplink: "/AgentJohnProfile"
+              aplink: () => {
+      history.push("/AgentJohnProfile");
+    }
     
     
         
@@ -123,7 +131,9 @@ function AptInPhiladelphia(props) {
         forsale: "For Sale",
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentJohnProfile"  
+        aplink: () => {
+      history.push("/AgentJohnProfile");
+    }  
     
       };
     
@@ -141,7 +151,9 @@ function AptInPhiladelphia(props) {
         forsale: "For Sale",
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentJohnProfile"  
+        aplink: () => {
+      history.push("/AgentJohnProfile");
+    }  
     
       };
     return (
@@ -177,7 +189,6 @@ function AptInPhiladelphia(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentJohnProfile"
       />
         </div>
     )

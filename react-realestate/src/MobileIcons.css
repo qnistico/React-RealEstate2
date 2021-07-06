@@ -134,11 +134,19 @@
         -ms-flex-flow: column;
             flex-flow: column;
   }
+  .icon_list_left,
+  .icon_list_right {
+    padding: 0 !important;
+  }
   .icon_list_left_item {
     text-align: left;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .icon_list_left_item,
+  .icon_list_right_item {
+    margin: 0 0 20px 0 !important;
   }
   .icon_list_left_item::before {
     right: 0;

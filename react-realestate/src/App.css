@@ -10,6 +10,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          text-rendering: optimizeLegibility !important;
 }
 
 html,
@@ -1688,9 +1689,7 @@ input.form-control.form_input {
 .navbar-toggler {
   font-size: 2rem;
 }
-.btn-primary {
-  background-color: #0073e5;
-}
+
 
 .react-multiple-carousel__arrow {
   border-radius: 100% !important;
@@ -1738,8 +1737,8 @@ input.form-control.form_input {
 
 .login_signup_auth h1 {
   text-align: center;
-  margin-bottom: 20px;
   background-color: #0073e5;
+  margin-bottom: 0;
   color: white;
   padding: 20px;
 }
@@ -1748,10 +1747,13 @@ input.form-control.form_input {
 .signup_body {
   width: 500px;
   background-color: #fff;
-  padding: 30px;
   -webkit-box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
           box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
   margin: 0 15px;
+}
+
+.login_signup_content {
+  padding: 30px;
 }
 
 .login_signup_auth .send_button {
@@ -1760,6 +1762,10 @@ input.form-control.form_input {
 
 .login_signup_auth label {
   margin: 10px 0;
+}
+
+.login_signup_auth label:first-of-type {
+  margin-top: 0;
 }
 
 .login_signup_auth hr {
@@ -1820,6 +1826,24 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 576.98px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .lp_cards, .overlay_carousel, .lp_apts, .phi_overlay, .agent_reviews, .mobile_icons, .lp_blog, .customer_reviews, .multi_carousel {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .cr_item {
+    margin: 0 0 20px 0 !important;
+  }
+
+  .lpb_item {
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+  }
+  
   .lp_cards_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1827,11 +1851,10 @@ input.form-control.form_input {
             flex-flow: column;
     margin-bottom: 0;
   }
-  .lp_cards {
-    padding: 0;
-  }
+  
   .lp_cards_body {
     margin-bottom: 20px;
+    width: 100%;
   }
   .img_overlay {
     background-attachment: unset;
@@ -1851,20 +1874,18 @@ input.form-control.form_input {
   .img_overlay_button {
     margin: 8px 0;
   }
-  .phi_overlay {
-    padding: 0;
-  }
+ 
   .phi_overlay_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    width: 90%;
+    width: 100%;
     padding-bottom: 40px;
   }
   .phi_overlay img {
     width: 100%;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0 !important;
   }
   .lp_blog_flex {
     -webkit-box-orient: vertical !important;
@@ -1881,15 +1902,17 @@ input.form-control.form_input {
   .multi_carousel {
     padding: 0 !important;
   }
-  .multi_car_flex {
-    padding: 60px 0 60px 0 !important;
-  }
+  
   .ps_primary_left {
     padding: 20px;
   }
   .pspr_item {
     padding: 20px;
   }
+  .lp_apts {
+    padding: 40px 0 !important;
+  }
+  
 }
 @media screen and (max-width: 768px) {
   .nav-link {
@@ -1905,8 +1928,11 @@ input.form-control.form_input {
     margin: 0;
   }
   .hero_content {
-    width: 90vw;
+    width: 90%;
     margin: -250px auto 0 auto;
+  }
+  .lp_apts_flex {
+    flex-flow: row wrap;
   }
 }
 
@@ -2057,12 +2083,12 @@ input.form-control.form_input {
             flex-flow: column;
   }
   .phi_overlay_flex img {
-    width: 90vw;
+    width: 100%;
     margin-top: 30px;
   }
 
   .phi_overlay_content {
-    width: 90vw;
+    width: 100%;
     margin-top: 30px;
   }
 }
@@ -2076,7 +2102,7 @@ input.form-control.form_input {
   }
   .lp_cards_body {
     -webkit-box-flex: 1;
-        -ms-flex: 1 45%;
-            flex: 1 45%;
+        -ms-flex: 1 275px;
+            flex: 1 275px;
   }
 }

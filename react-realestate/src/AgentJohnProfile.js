@@ -21,8 +21,10 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
 import apt1 from "./img/apartment1.jpg";
+import { useHistory } from "react-router-dom";
 
 function AgentJohnProfile(props) {
+  const history = useHistory();
   const card1template = {
     cardImg: house1,
     agentImg: agent1,
@@ -36,7 +38,9 @@ function AgentJohnProfile(props) {
     forsale: "For Sale",
     cardimgalt: "house",
     salerent: "For Sale",
-    plink: "/MansionInFoxchapel"
+    plink: () => {
+      history.push("/MansionInFoxchapel");
+    },
   };
 
   const card2template = {

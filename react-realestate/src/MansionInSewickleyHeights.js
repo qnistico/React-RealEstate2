@@ -71,7 +71,9 @@ import house10br from "./img/house10br.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 function MansionInSewickleyHeights(props) {
+  const history = useHistory();
   const templateImg = {
     houseImg: house10,
     houseLR: house10lr,
@@ -85,7 +87,9 @@ function MansionInSewickleyHeights(props) {
   const psprAgent = {
     agentImg: agent3,
     agentName: "Kevin Richmond",
-    aplink: "/AgentKevinProfile",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
   };
   const card1template = {
     cardImg: house15,
@@ -100,8 +104,12 @@ function MansionInSewickleyHeights(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile",
-    plink: "/MansionInNorwin"
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInNorwin");
+    }
 
   };
 
@@ -118,8 +126,12 @@ function MansionInSewickleyHeights(props) {
             forsale: "For Rent",
             salerent: "For Rent",
             cardimgalt: "apartment",
-            aplink: "/AgentKevinProfile",
-            plink: "/AptInAllentown"
+            aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+            plink: () => {
+              history.push("/AptInAllentown");
+            }
 
             
   };
@@ -137,8 +149,12 @@ function MansionInSewickleyHeights(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentKevinProfile",
-    plink: "/MansionInGladwyne"
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInGladwyne");
+    }
 
 
   };
@@ -174,7 +190,6 @@ function MansionInSewickleyHeights(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentKevinProfile"
       />
     </div>
   );

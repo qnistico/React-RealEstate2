@@ -50,8 +50,10 @@ export default function LoginAuth(props) {
       <div className="dark_gradient"></div>
       <div className="login_auth_flex">
         <div className="login_body">
+          <div className="login_signup_header">
           <h1>Log In</h1>
-
+          </div>
+<div className="login_signup_content">
           <form id="login" className="contact_form">
             <div className="form-group">
               <label>Email</label>
@@ -104,11 +106,14 @@ export default function LoginAuth(props) {
                 Login with Facebook <FacebookIcon />
               </span>
             </button>
+            </div>
           </div>
         </div>
         <div className="login_body signup_body">
+          <div className="login_signup_header">
           <h1>Sign Up</h1>
-
+          </div>
+          <div className="login_signup_content">
           <form id="sign_up" className="contact_form">
             <div className="form-group">
               <label>Email</label>
@@ -141,6 +146,7 @@ export default function LoginAuth(props) {
               Sign Up
             </button>
           </form>
+          </div>
         </div>
       </div>
     </div>

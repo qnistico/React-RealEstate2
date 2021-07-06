@@ -111,8 +111,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact_overlay_img {
-    min-height: 140vh;
+  .contact_overlay {
+    display: none;
   }
   .co_content_flex {
     -webkit-box-orient: vertical;

@@ -37,6 +37,7 @@ import lphouse1 from "./img/lphouse1.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 
 function MansionInFoxchapel(props) {
   const templateImg = {
@@ -48,7 +49,9 @@ function MansionInFoxchapel(props) {
   const psprAgent = {
     agentImg: agent1,
     agentName: "John Ryan",
-    aplink: "/AgentJohnProfile",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
   };
   const card1template = {
     cardImg: apt1,
@@ -63,8 +66,12 @@ function MansionInFoxchapel(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: "/AgentJohnProfile",
-    plink: "/AptInPhiladelphia" 
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/AptInPhiladelphia");
+    }
 
 
     
@@ -83,7 +90,9 @@ function MansionInFoxchapel(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentJohnProfile"  
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    }  
 
   };
 
@@ -101,7 +110,9 @@ function MansionInFoxchapel(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentJohnProfile"  
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    }  
 
   };
   

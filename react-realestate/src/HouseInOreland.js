@@ -71,8 +71,10 @@ import house8br from "./img/house8br.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 
 function HouseInOreland(props) {
+  const history = useHistory();
     const templateImg = {
         houseImg: house8,
         houseLR: house8lr,
@@ -86,7 +88,9 @@ function HouseInOreland(props) {
       const psprAgent = {
         agentImg: agent4,
         agentName: "Mary Williams",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+      history.push("/AgentMaryProfile");
+    }
       };
       const card1template = {
         cardImg: house14,
@@ -101,7 +105,9 @@ function HouseInOreland(props) {
         forsale: "For Sale",
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+      history.push("/AgentMaryProfile");
+    }
 
       };
     
@@ -116,10 +122,14 @@ function HouseInOreland(props) {
         sqft: "3,200 SqFt",
         featured: "Featured",
         forsale: "For Sale",
-        plink: "/HouseInEdgeworth",
+        plink: () => {
+          history.push("/HouseInEdgeworth");
+        },
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+      history.push("/AgentMaryProfile");
+    }
 
       };
     
@@ -136,7 +146,12 @@ function HouseInOreland(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: "/AgentMaryProfile"
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/AptInWilliamsport");
+    }
 
 
       };
@@ -174,7 +189,6 @@ function HouseInOreland(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentMaryProfile"
       />
         </div>
     )

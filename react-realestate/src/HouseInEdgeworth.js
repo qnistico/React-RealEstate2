@@ -88,7 +88,9 @@ function HouseInEdgeworth(props) {
   const psprAgent = {
     agentImg: agent4,
     agentName: "Mary Williams",
-    aplink: "/AgentMaryProfile",
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
   };
   const card1template = {
     cardImg: house8,
@@ -103,7 +105,12 @@ function HouseInEdgeworth(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentMaryProfile"
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/HouseInOreland");
+    }
 
   };
 
@@ -120,7 +127,12 @@ function HouseInEdgeworth(props) {
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: "/AgentMaryProfile"
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/AptInWilliamsport");
+    }
 
   };
 
@@ -137,7 +149,9 @@ function HouseInEdgeworth(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
-    aplink: "/AgentMaryProfile"
+    aplink: () => {
+      history.push("/AgentMaryProfile");
+    }
 
   };
 
@@ -171,7 +185,6 @@ function HouseInEdgeworth(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentMaryProfile"
       />
     </div>
   );

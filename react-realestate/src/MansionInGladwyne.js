@@ -72,94 +72,107 @@ import lphouse7 from "./img/lphouse7.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
+import { useHistory } from "react-router-dom";
 function MansionInGladwyne(props) {
-    const templateImg = {
-        houseImg: house7,
-        houseLR: house7lr,
-        houseMBR: house7mbr,
-        houseBR: house7br,
-        althouse: "Mansion",
-            altlr: "living room",
-            altmbr: "bedroom",
-            altbr: "bathroom"
-      };
-      const psprAgent = {
-        agentImg: agent3,
-        agentName: "Kevin Richmond",
-        aplink: "/AgentKevinProfile"
-      };
-      const card1template = {
-        cardImg: house10,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$5,400,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
-        featured: "Featured",
-            forsale: "For Sale",
-            salerent: "For Sale",
-            cardimgalt: "house",
-                    aplink: "/AgentKevinProfile"
+  const history = useHistory();
+  const templateImg = {
+    houseImg: house7,
+    houseLR: house7lr,
+    houseMBR: house7mbr,
+    houseBR: house7br,
+    althouse: "Mansion",
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom",
+  };
+  const psprAgent = {
+    agentImg: agent3,
+    agentName: "Kevin Richmond",
+    aplink: () => {
+      history.push(() => {
+        history.push("/AgentKevinProfile");
+      });
+    },
+  };
+  const card1template = {
+    cardImg: house10,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$5,400,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInSewickleyHeights");
+    }
+  };
 
-      };
-    
-      const card2template = {
-        cardImg: house15,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$5,700,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "7,200 SqFt",
-        featured: "Featured",
-            forsale: "For Sale",
-            salerent: "For Sale",
-            cardimgalt: "house",
-                    aplink: "/AgentKevinProfile",
-                    plink: "/MansionInNorwin"
+  const card2template = {
+    cardImg: house15,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$5,700,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "7,200 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/MansionInNorwin");
+    }
+  };
 
+  const card3template = {
+    cardImg: apt3,
+    agentImg: agent3,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$1,200 / mo",
+    bedrooms: "1",
+    bathrooms: "1",
+    sqft: "1,200 SqFt",
+    featured: "Featured",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment",
 
-      };
-    
-      
-      const card3template = {
-        cardImg: apt3,
-        agentImg: agent3,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$1,200 / mo",
-        bedrooms: "1",
-        bathrooms: "1",
-        sqft: "1,200 SqFt",
-        featured: "Featured",
-            forsale: "For Rent",
-            salerent: "For Rent",
-            cardimgalt: "apartment",
-                    aplink: "/AgentKevinProfile"
+    aplink: () => {
+      history.push("/AgentKevinProfile");
+    },
+    plink: () => {
+      history.push("/AptInAllentown");
+    }
+  };
 
-
-      };
-      
-    return (
-      <div className="mansion_in_gladwyne">
-      <div className="property_hero" >
-      <ParallaxProvider>
-      <ParallaxImg  imgsrc={lphouse7} height="75vh">
-      
-      </ParallaxImg>
-    </ParallaxProvider>
-      <div className="property_hero_flex">
-        <div className="property_hero_content">
-          <h2>Mansion In Gladwyne</h2>
+  return (
+    <div className="mansion_in_gladwyne">
+      <div className="property_hero">
+        <ParallaxProvider>
+          <ParallaxImg imgsrc={lphouse7} height="75vh"></ParallaxImg>
+        </ParallaxProvider>
+        <div className="property_hero_flex">
+          <div className="property_hero_content">
+            <h2>Mansion In Gladwyne</h2>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <SortByContent />
-            <ViewProperty
+
+      <SortByContent />
+      <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
         homeAddress="555 Lorem Ave"
         homePrice="$14,000,000"
@@ -175,11 +188,9 @@ function MansionInGladwyne(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentKevinProfile"
-        plink="/MansionInGladwyne"
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default MansionInGladwyne
+export default MansionInGladwyne;

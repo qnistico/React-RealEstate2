@@ -84,6 +84,7 @@ function AgentKevinProfile(props) {
     salerent: "For Rent",
     cardimgalt: "apartment",
     plink: "/AptInAllentown",
+    
   };
 
   return (

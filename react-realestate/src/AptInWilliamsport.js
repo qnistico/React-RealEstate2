@@ -69,7 +69,9 @@ import apt2 from "./img/apartment2.jpg";
 import apt2exterior from "./img/apartment2exterior.jpg";
 import apt2mbr from "./img/apartment2mbr.jpg";
 import apt2br from "./img/apartment2br.jpg";
+import { useHistory } from "react-router-dom";
 function AptInWilliamsport(props) {
+  const history = useHistory();
     const templateImg = {
         houseImg: apt2exterior,
         houseLR: apt2,
@@ -83,7 +85,9 @@ function AptInWilliamsport(props) {
       const psprAgent = {
         agentImg: agent4,
         agentName: "Mary Williams",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+      history.push("/AgentMaryWilliams");
+    }
       };
       const card1template = {
         cardImg: house14,
@@ -98,7 +102,9 @@ function AptInWilliamsport(props) {
         forsale: "For Sale",
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+      history.push("/AgentMaryWilliams");
+    }
 
       };
     
@@ -113,10 +119,14 @@ function AptInWilliamsport(props) {
         sqft: "3,200 SqFt",
         featured: "Featured",
         forsale: "For Sale",
-        plink: "/HouseInEdgeworth",
+        plink: () => {
+          history.push("/HouseInEdgeworth");
+        },
         salerent: "For Sale",
         cardimgalt: "house",
-        aplink: "/AgentMaryProfile"
+        aplink: () => {
+          history.push("/AgentMaryProfile");
+        }
 
       };
     
@@ -132,8 +142,13 @@ function AptInWilliamsport(props) {
         featured: "Featured",
         forsale: "For Sale",
         cardimgalt: "house",
-        salerent: "For Sale"
-
+        salerent: "For Sale",
+        aplink: () => {
+          history.push("/AgentMaryProfile");
+        },
+        plink: () => {
+          history.push("/HouseInOreland");
+        }
 
       };
     return (
@@ -168,7 +183,6 @@ function AptInWilliamsport(props) {
         card1template={card1template}
         card2template={card2template}
         card3template={card3template}
-        aplink="/AgentMaryProfile"
       />
         </div>
     )

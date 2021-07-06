@@ -120,12 +120,11 @@
   }
   
   @media screen and (max-width: 576.98px) {
-    .agent_reviews_flex {
-    }
+
     .agent_reviews_content {
       padding: 20px;
       width: 90%;
-      margin-bottom: 20px;
+      margin: 0 0 20px 0 !important;
     }
   }
   
@@ -134,6 +133,6 @@
       flex-wrap: wrap;
     }
     .agent_reviews_content {
-      flex: 1 50%;
+      flex: 1 275px !important;
     }
   }
