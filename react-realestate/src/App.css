@@ -2041,5 +2041,7 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 700px) {
-  
+  .lp_cards_flex {
+    flex-flow: column;
+  }
 }
