@@ -2,11 +2,13 @@ import React, { useRef } from "react";
 import "./MainNav2.css";
 import { useDetectOutsideClick } from "./useDetectOutsideClick";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { useHistory } from "react-router-dom";
 /*
  * Read the blog post here:
  * https://letsbuildui.dev/articles/building-a-dropdown-menu-component-with-react-hooks
  */
 export default function Dropdowns() {
+    const history = useHistory();
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
