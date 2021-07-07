@@ -451,6 +451,7 @@ input:active {
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
+  position: relative !important;
 }
 
 .card_img_container {
@@ -461,7 +462,7 @@ input:active {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  position: relative;
+  position: relative !important;
 }
 
 .featured_badge {
