@@ -67,7 +67,7 @@ function HeroSlider() {
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId={2}>
-                <MDBCarouselElement src={lphouse2} alt="mansion" />
+                <MDBCarouselElement src={house2} alt="mansion" />
               </MDBCarouselItem>
             </MDBCarouselInner>
           </MDBCarousel>

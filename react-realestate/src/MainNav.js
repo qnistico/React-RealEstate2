@@ -21,6 +21,7 @@ import logo1 from "./img/logo1.png";
 import logoprata from "./img/logoprata.png";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { useHistory } from "react-router-dom";
+import MenuIcon from '@material-ui/icons/Menu';
 
 function MainNav() {
   const [showBasic, setShowBasic] = useState(false);
@@ -54,7 +55,7 @@ function MainNav() {
           aria-label="Toggle navigation"
           onClick={() => setShowBasic(!showBasic)}
         >
-          <MDBIcon icon="bars" fas />
+          <MDBIcon><MenuIcon /></MDBIcon>
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showBasic}>

@@ -26,10 +26,8 @@ function LandingPageCards() {
   return (
     <div>
       <div className="lp_cards">
-        <Fade duration="1050" cascade>
         <h2>Recent Properties</h2>
         <p className="lp_header_p">View some of our most recent listings</p>
-        </Fade>
         <div className="lp_cards_flex lpcf_1">
           <div className="lp_cards_body">
             <div className="card_img_container">
