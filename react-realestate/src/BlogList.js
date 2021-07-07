@@ -11,6 +11,8 @@ import "./Calculator.css";
 import blogheroimg from "./img/blogheroimg.jpg";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
+import Fade from "react-reveal/Fade";
+
 
 function BlogList(props) {
 
@@ -18,7 +20,10 @@ function BlogList(props) {
   return (
     <div>
           <div className="dark_gradient"></div>
+          <Fade duration="1210">
+
       <BlogHero parallaximg1={blogheroimg} />
+      </Fade>
       <div className="all_blogs">
         <div className="blog_flex">
           <div className="blog_box">

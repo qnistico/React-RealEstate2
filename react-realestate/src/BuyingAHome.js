@@ -3,6 +3,8 @@ import BlogPostTemplate from "./BlogPostTemplate";
 import blogheroimg from "./img/blogheroimg.jpg";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
+import Fade from "react-reveal/Fade";
+
 
 function BuyingAHome() {
   return (

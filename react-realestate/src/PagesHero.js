@@ -18,11 +18,14 @@ import house13 from "./img/house13.jpg";
 import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
 import house16 from "./img/house16.jpg";
+import Fade from "react-reveal/Fade";
 
 function PagesHero(props) {
   
     return (
             <div className="view_property">
+                          <Fade duration="1210">
+
       <div className="property_hero" >
         <ParallaxProvider>
         <ParallaxImg  imgsrc={props.parallaximg1} height="75vh">
@@ -35,6 +38,7 @@ function PagesHero(props) {
           </div>
         </div>
       </div>
+      </Fade>
       
         </div>
     )

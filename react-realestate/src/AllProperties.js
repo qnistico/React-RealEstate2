@@ -57,6 +57,7 @@ import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 function AllProperties(props) {
   const history = useHistory();

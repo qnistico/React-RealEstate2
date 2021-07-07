@@ -14,6 +14,8 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import contactbg from "./img/contactbg.jpg";
 import SortByContent from "./SortByContent";
+import Fade from "react-reveal/Fade";
+
 
 function ContactUs() {
   return (
