@@ -450,7 +450,6 @@ input:active {
 }
 
 .card_img_container {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
