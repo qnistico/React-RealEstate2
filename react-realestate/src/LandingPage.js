@@ -41,9 +41,7 @@ function LandingPage() {
   };
   return (
     <div className="landing_page">
-      <Fade duration="1210">
         <HeroSlider />
-      </Fade>
       <SortByContent />
       <LandingPageCards />
       <OverlayCarousel />

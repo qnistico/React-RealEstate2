@@ -29,8 +29,9 @@ import lphouse15 from "./img/lphouse15.jpg";
 import lphouse1 from "./img/lphouse1.jpg";
 import lphouse2 from "./img/lphouse2.jpg";
 import lphouse7 from "./img/lphouse7.jpg";
-import kimg from "./img/4kimg.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 
 
@@ -82,6 +83,8 @@ function parallax() {
 }
   return (
     <div>
+            <Fade duration="1210">
+
       <div className="dark_gradient"></div>
       <div className="hero_container">
         <div className="hero_content" >
@@ -109,6 +112,7 @@ function parallax() {
           </MDBCarouselInner>
         </MDBCarousel>
       </div>
+      </Fade>
     </div>
   );
 }
