@@ -261,6 +261,10 @@ body p {
   align-items: center;
 }
 
+.sort_by_content {
+  display: none;
+}
+
 input:focus,
 input:active {
   border-color: #0073e5 !important;
@@ -337,7 +341,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 60px 30px 30px 30px;
 }
 
 .lp_cards h2 {
@@ -451,8 +455,9 @@ input:active {
   -o-transition: all 0.3s ease !important;
   transition: all 0.3s ease !important;
   cursor: pointer;
-  position: relative !important;
- 
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative; 
 }
 
 .card_img_container {
@@ -1332,7 +1337,8 @@ iframe {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-  
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .single_cards:hover img {
