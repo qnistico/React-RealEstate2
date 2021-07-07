@@ -1,28 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "@material-ui/core";
 import "@material-ui/icons";
 import BathtubOutlinedIcon from "@material-ui/icons/BathtubOutlined";
-import SquareFootOutlinedIcon from "@material-ui/icons/SquareFootOutlined";
 import house1 from "./img/house1.jpg";
-import house2 from "./img/house2.jpg";
-import house3 from "./img/house3.jpg";
-import house4 from "./img/house4.jpg";
-import house5 from "./img/house5.jpg";
-import house6 from "./img/house6.jpg";
+
 import house7 from "./img/house7.jpg";
 import house8 from "./img/house8.jpg";
 import house9 from "./img/house9.jpg";
 import house10 from "./img/house10.jpg";
-import house11 from "./img/house11.jpg";
-import house12 from "./img/house12.jpg";
-import house13 from "./img/house13.jpg";
-import house14 from "./img/house14.jpg";
+
 import house15 from "./img/house15.jpg";
-import house16 from "./img/house16.jpg";
 import { Avatar } from "@material-ui/core";
 import agent1 from "./img/agent1.jpg";
-import agent2 from "./img/agent2.jpg";
 import agent3 from "./img/agent3.jpg";
 import agent4 from "./img/agent4.jpg";
 import { CheckBoxOutlineBlankOutlined, Hotel } from "@material-ui/icons";
@@ -224,7 +213,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          <div className="lp_cards_body">
+          <div className="lp_cards_body mobile_hide">
             <div className="card_img_container">
               <a onClick={() => history.push('/HouseInEdgeworth')}>
                 <img src={house9} alt="house" />
@@ -283,7 +272,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          <div className="lp_cards_body">
+          <div className="lp_cards_body mobile_hide">
             <div className="card_img_container">
               <a onClick={() => history.push('/MansionInSewickleyHeights')}>
                 <img src={house10} alt="house" />
@@ -349,7 +338,7 @@ function LandingPageCards() {
               </div>
             </div>
           </div>
-          <div className="lp_cards_body">
+          <div className="lp_cards_body mobile_hide">
             <div className="card_img_container">
               <a onClick={() => history.push('/HouseInOreland')}>
                 <img src={house8} alt="mansion" />

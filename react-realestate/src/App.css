@@ -1851,7 +1851,9 @@ input.form-control.form_input {
   html, body {
   }
 
-  
+  .mobile_hide {
+    display: none;
+  }
 
   .lp_cards, .overlay_carousel, .lp_apts, .phi_overlay, .agent_reviews, .mobile_icons, .lp_blog, .customer_reviews, .multi_carousel {
     padding-left: 20px !important;
@@ -1944,7 +1946,7 @@ input.form-control.form_input {
     margin-left: 0;
     border-radius: 0;
     width: 50%;
-    margin-top: 8px;
+    padding-top: 8px;
   }
 .signup_button {
     margin-top: 0;
@@ -2032,7 +2034,7 @@ input.form-control.form_input {
     margin: 0 0 0 8px !important;
   }
   .home {
-    margin-top: 20px !important;
+    
   }
   .customer_reviews_flex {
     -webkit-box-orient: horizontal;
@@ -2144,5 +2146,11 @@ input.form-control.form_input {
     -webkit-box-flex: 1;
         -ms-flex: 1 275px;
             flex: 1 275px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .lp_cards_flex {
+    flex-flow: column;
   }
 }
