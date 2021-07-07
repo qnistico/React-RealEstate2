@@ -100,7 +100,7 @@ function AgentJohnProfile(props) {
     salerent: "For Rent",
     cardimgalt: "apartment",
     plink: () => {
-      history.push("/MansionInGladwyne");
+      history.push("/AptInPhiladelphia");
     }  ,
     aplink: () => {
       history.push("/AgentJohnProfile");

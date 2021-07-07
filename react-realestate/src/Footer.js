@@ -58,7 +58,7 @@ function Footer() {
                     className="footer_avatar"
                     alt="real estate agent"
                   />
-                  John Ryan's Listings
+                   Listings from John Ryan
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@ function Footer() {
                     className="footer_avatar"
                     alt="real estate agent"
                   />
-                  Kevin Richmond' Listings
+                   Listings from Kevin Richmond
                 </a>
               </li>
               <li>
@@ -78,7 +78,7 @@ function Footer() {
                     className="footer_avatar"
                     alt="real estate agent"
                   />
-                  Meridith Williams' Listings
+                   Listings from Mary Williams
                 </a>
               </li>
             </ul>

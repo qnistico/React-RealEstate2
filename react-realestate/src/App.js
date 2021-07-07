@@ -36,6 +36,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import ProfileScreen from "./screens/ProfileScreen";
 import ScrollToTop from "./components/ScrollToTop";
+import HouseInPennWynne from "./HouseInPennWynne";
+import HouseInBerwyn from "./HouseInBerwyn";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -91,6 +93,12 @@ function App() {
         </Route>
         <Route exact path="/HouseInOreland">
           <HouseInOreland />
+        </Route>
+        <Route exact path="/HouseInPennWynne">
+          <HouseInPennWynne />
+        </Route>
+        <Route exact path="/HouseInBerwyn">
+          <HouseInBerwyn />
         </Route>
         <Route exact path="/AptInPhiladelphia">
           <AptInPhiladelphia />

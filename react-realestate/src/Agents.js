@@ -26,7 +26,7 @@ function agentReviews(props) {
         ></path>
       </svg>
       <Fade duration="1050" cascade>
-      <h2>Our Top Agents</h2>
+      <h2>Our Team</h2>
       </Fade>
       <Fade duration="1618" delay="100">
 

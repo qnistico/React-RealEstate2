@@ -87,7 +87,7 @@ function parallax() {
         <div className="hero_content" >
           <h1>Pennsylvania Realty</h1>
           <p>
-            We sell premium real estate in Pennsylvania ranging from rural to bay area locations.  Mansions, homes and apartments... We've got it all.  Consult one of our agents to schedule a tour.
+            We sell premium real estate in Pennsylvania ranging from rural to urban locations.  Mansions, homes and apartments... We've got it all.  Consult one of our agents to schedule a tour.
           </p>
           <MDBBtn onClick={() => history.push('/AllProperties')} className="hero_button">View All Listings</MDBBtn>
         </div>

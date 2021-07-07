@@ -4,6 +4,8 @@ import socialMediaAuth from "./service/auth";
 import google from "./img/google.svg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { auth } from "./config/firebase-config";
+import Fade from "react-reveal/Fade";
+
 
 
 

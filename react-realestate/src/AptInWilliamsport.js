@@ -180,7 +180,7 @@ function AptInWilliamsport(props) {
         bathrooms="2"
         sqft="1,650 Sq Ft"
         garages="0"
-        ptype="apartment"
+        ptype="Apartment"
         yearBuilt="2011"
         templateImg={templateImg}
         psprAgent={psprAgent}

@@ -65,138 +65,131 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
-import house15LR from "./img/house15LR.jpg";
-import house15MBR from "./img/house15MBR.jpg";
-import house15BR from "./img/house15BR.jpg";
+import house4lr from "./img/house4lr.jpg";
+import house4mbr from "./img/house4mbr.jpg";
+import house4br from "./img/house4br.jpg";
 import lphouse15 from "./img/lphouse15.jpg";
-import lphouse1 from "./img/lphouse1.jpg";
+import lphouse4 from "./img/lphouse4.jpg";
 import lphouse2 from "./img/lphouse2.jpg";
 import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-
-
-function MansionInNorwin(props) {
-  const history = useHistory();
+function HouseInPennWynne(props) {
+    const history = useHistory();
   const templateImg = {
-    houseImg: house15,
-    houseLR: house15LR,
-    houseMBR: house15MBR,
-    houseBR: house15BR,
+    houseImg: house4,
+    houseLR: house4lr,
+    houseMBR: house4mbr,
+    houseBR: house4br,
     althouse: "Mansion",
     altlr: "living room",
     altmbr: "bedroom",
     altbr: "bathroom",
   };
   const psprAgent = {
-    agentImg: agent3,
-    agentName: "Kevin Richmond",
+    agentImg: agent1,
+    agentName: "John Ryan",
     aplink: () => {
-      history.push("/AgentKevinProfile");
+      history.push("/AgentJohnProfile");
     }
   };
   const card1template = {
-    cardImg: house10,
-    agentImg: agent3,
+    cardImg: house1,
+    agentImg: agent1,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$5,400,000",
+    cardPrice: "$5,200,000",
     bedrooms: "4",
     bathrooms: "5",
-    sqft: "7,200 SqFt",
+    sqft: "6,500 SqFt",
     featured: "Featured",
     forsale: "For Sale",
-    plink: () => {
-      history.push("/MansionInSewickleyHeights");
-    },
-    salerent: "For Sale",
     cardimgalt: "house",
+    salerent: "For Sale",
     aplink: () => {
-      history.push("/AgentKevinProfile");
-    }
+      history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/MansionInFoxchapel");
+    },
   };
 
   const card2template = {
-    cardImg: house7,
-    agentImg: agent3,
+    cardImg: house2,
+    agentImg: agent1,
     cardTitle: "Mansion on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$14,000,000",
-    bedrooms: "6",
-    bathrooms: "7",
-    sqft: "13,500 SqFt",
+    cardPrice: "$1,800,000",
+    bedrooms: "3",
+    bathrooms: "4",
+    sqft: "4,500 SqFt",
     featured: "Featured",
     forsale: "For Sale",
-    plink: () => {
-      history.push("/MansionInGladwyne");
-    },
-    salerent: "For Sale",
     cardimgalt: "house",
+    salerent: "For Sale",
     aplink: () => {
-      history.push("/AgentKevinProfile");
+      history.push("/AgentJohnProfile");
     }
   };
 
   const card3template = {
-    cardImg: apt3,
-    agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardImg: apt1,
+    agentImg: agent1,
+    cardTitle: "Apartment on Lorem Ave",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-    cardPrice: "$1200 / mo",
-    bedrooms: "1",
+    cardPrice: "$1400 / mo",
+    bedrooms: "2",
     bathrooms: "1",
-    sqft: "1,200 Sq Ft",
+    sqft: "1,400 Sq Ft",
     featured: "Featured",
     forsale: "For Rent",
     salerent: "For Rent",
     cardimgalt: "apartment",
-    aplink: () => {
-      history.push("/AgentKevinProfile");
-    },
     plink: () => {
-      history.push("/AptInAllentown");
+      history.push("/AptInPhiladelphia");
+    }  ,
+    aplink: () => {
+      history.push("/AgentJohnProfile");
     }
   };
+    return (
+        <div className="house_in_pennwynne">
+                  <Fade duration="1210">
 
-  return (
-    <div className="norwin_mansion">  
-            <Fade duration="1210">
-
-      <div className="property_hero">
-        <ParallaxProvider>
-          <ParallaxImg imgsrc={house15} height="75vh"></ParallaxImg>
-        </ParallaxProvider>
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h1>Mansion In Norwin</h1>
-          </div>
-        </div>
-      </div>
-      </Fade>
-
-      <SortByContent />
-      <ViewProperty
-        homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
-        homeAddress="555 Lorem Ave"
-        garages="2"
-        ptype="Mansion"
-        homePrice="$5,700,000"
-        bedrooms="4"
-        bathrooms="5"
-        sqft="7,200 SqFt"
-        yearBuilt="2015"
-        pagesheroimg={lphouse15}
-        templateImg={templateImg}
-        psprAgent={psprAgent}
-        morelistings="More Listings from Kevin Richmond"
-        card1template={card1template}
-        card2template={card2template}
-        card3template={card3template}
-      />
+<div className="property_hero">
+  <ParallaxProvider>
+    <ParallaxImg imgsrc={house4} height="75vh"></ParallaxImg>
+  </ParallaxProvider>
+  <div className="property_hero_flex">
+    <div className="property_hero_content">
+      <h1>House In PennWynne</h1>
     </div>
-  );
+  </div>
+</div>
+</Fade>
+
+<SortByContent />
+<ViewProperty
+  homeTitle="House on 555 Lorem Ave, PennWynne, PA"
+  homeAddress="555 Lorem Ave"
+  garages="2"
+  ptype="House"
+  homePrice="$5,700,000"
+  bedrooms="2"
+  bathrooms="3"
+  sqft="2,750 Sq Ft"
+  yearBuilt="2015"
+  templateImg={templateImg}
+  psprAgent={psprAgent}
+  morelistings="More Listings from John Ryan"
+  card1template={card1template}
+  card2template={card2template}
+  card3template={card3template}
+/>
+        </div>
+    )
 }
 
-export default MansionInNorwin;
+export default HouseInPennWynne

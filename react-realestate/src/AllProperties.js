@@ -80,7 +80,7 @@ function AllProperties(props) {
               cardPrice="$5,200,000"
               bedrooms="4"
               bathrooms="5"
-              sqft="6,500 SqFt"
+              sqft="6,500 Sq Ft"
               cardimgalt="mansion"
               plink={() => history.push('/MansionInFoxchapel')}
               featured="Featured"
@@ -98,7 +98,7 @@ function AllProperties(props) {
               cardPrice="$1450 / mo"
               bedrooms="2"
               bathrooms="2"
-              sqft="1650 Sq Ft"
+              sqft="1,650 Sq Ft"
               cardimgalt="apartment"
               featured="Featured"
               forsale="For Rent"
@@ -119,7 +119,7 @@ function AllProperties(props) {
               cardPrice="$2,300,000"
               bedrooms="2"
               bathrooms="4"
-              sqft="4,900 SqFt"
+              sqft="4,900 Sq Ft"
               cardimgalt="mansion"
               plink={() => history.push('/HouseInOreland')}
               featured="Featured"
@@ -139,7 +139,7 @@ function AllProperties(props) {
               cardPrice="$5,700,000"
               bedrooms="4"
               bathrooms="5"
-              sqft="7,200 SqFt"
+              sqft="7,200 Sq Ft"
               cardimgalt="mansion"
               plink={() => history.push('/MansionInNorwin')}
               featured="Featured"
@@ -159,7 +159,7 @@ function AllProperties(props) {
               cardPrice="$5,400,000"
               bedrooms="4"
               bathrooms="5"
-              sqft="7,200 SqFt"
+              sqft="7,200 Sq Ft"
               cardimgalt="mansion"
               plink={() => history.push('/MansionInSewickleyHeights')}
               featured="Featured"
@@ -179,7 +179,7 @@ function AllProperties(props) {
               cardPrice="$14,000,000"
               bedrooms="6"
               bathrooms="7"
-              sqft="13,500 SqFt"
+              sqft="13,500 Sq Ft"
               cardimgalt="mansion"
               plink={() => history.push('/MansionInGladwyne')}
               featured="Featured"
@@ -241,7 +241,7 @@ function AllProperties(props) {
               cardPrice="$900,000"
               bedrooms="2"
               bathrooms="3"
-              sqft="2750 SqFt"
+              sqft="2,750 Sq Ft"
               cardimgalt="house"
               filteritem="house agent1"
               featured="Featured"
@@ -249,6 +249,7 @@ function AllProperties(props) {
               propertyprice="p5"
               salerent="For Sale"
               aplink={() => history.push('/AgentJohnProfile')}
+              plink={() => history.push("/HouseInPennWynne")}
 
 
             />
@@ -260,7 +261,7 @@ function AllProperties(props) {
               cardPrice="$1,800,000"
               bedrooms="3"
               bathrooms="4"
-              sqft="4500 SqFt"
+              sqft="4,500 Sq Ft"
               cardimgalt="mansion"
               featured="Featured"
               forsale="For Sale"
@@ -268,6 +269,7 @@ function AllProperties(props) {
               propertyprice="p4"
               salerent="For Sale"
               aplink={() => history.push('/AgentJohnProfile')}
+              plink={() => history.push("/HouseInBerwyn")}
 
 
             />
@@ -275,11 +277,11 @@ function AllProperties(props) {
             <CardSingle cardImg= {house14}
         agentImg= {agent4}
         cardTitle= "Mansion on Lorem Ave"
-        address= "555 Lorem Avenue Lorem FL 12345 USA"
+        address= "555 Lorem Avenue Lorem PA 12345 USA"
         cardPrice= "$4,100,000"
         bedrooms= "4"
         bathrooms= "5"
-        sqft= "5000 SqFt"
+        sqft= "5,000 Sq Ft"
         featured= "Featured"
         forsale= "For Sale"
         cardimgalt= "house"
@@ -300,7 +302,7 @@ function AllProperties(props) {
               cardPrice="$680,000"
               bedrooms="2"
               bathrooms="4"
-              sqft="3,200 SqFt"
+              sqft="3,200 Sq Ft"
               cardimgalt="house"
               plink={() => history.push('/HouseInEdgeworth')}
               featured="Featured"
