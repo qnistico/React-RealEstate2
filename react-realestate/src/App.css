@@ -1939,6 +1939,10 @@ input.form-control.form_input {
   .lp_apts {
     padding: 40px 0 !important;
   }
+
+  .pspl_icon_flex {
+    flex: 1 50%;
+  }
   
 }
 @media screen and (max-width: 768px) {
