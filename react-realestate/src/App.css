@@ -1789,7 +1789,7 @@ input.form-control.form_input {
   -ms-flex-flow: column;
   flex-flow: column;
 }
-
+/*
 @media screen and (max-width: 576.98px) {
   html,
   body {
@@ -1832,9 +1832,7 @@ input.form-control.form_input {
     margin-bottom: 20px;
     width: 100%;
   }
-  .img_overlay {
-    background-attachment: unset;
-  }
+  
   .button_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2062,3 +2060,4 @@ input.form-control.form_input {
     flex-flow: column;
   }
 }
+*/

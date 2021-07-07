@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import { MDBBtn } from 'mdb-react-ui-kit';
 import "@material-ui/core";
 import "@material-ui/icons";
 import { MDBInput } from 'mdb-react-ui-kit';  
