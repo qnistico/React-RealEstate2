@@ -451,9 +451,8 @@ input:active {
   -o-transition: all 0.3s ease !important;
   transition: all 0.3s ease !important;
   cursor: pointer;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative; 
+  position: relative !important;
+ 
 }
 
 .card_img_container {
@@ -464,6 +463,7 @@ input:active {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  position: relative;
 }
 
 .featured_badge {
@@ -1332,8 +1332,7 @@ iframe {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-  -o-object-fit: cover;
-  object-fit: cover;
+  
 }
 
 .single_cards:hover img {
@@ -1351,6 +1350,7 @@ iframe {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  position: relative;
   overflow: hidden;
 }
 
@@ -1828,7 +1828,7 @@ input.form-control.form_input {
 
   .lp_cards_body {
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
   }
   .img_overlay {
     background-attachment: unset;
