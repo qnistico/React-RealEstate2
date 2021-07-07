@@ -42,7 +42,6 @@ function LandingPageApts(props) {
             <h2>For Rent</h2>
             <p className="lp_header_p">View our apartments for rent</p>
             </Fade>
-            <Fade duration="1618" delay="100">
 
             <div className="lp_apts_flex">
             <div className="lp_cards_body">
@@ -229,7 +228,6 @@ function LandingPageApts(props) {
             </div>
           </div>
             </div>
-            </Fade>
         </div>
     )
 }

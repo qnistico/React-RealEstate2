@@ -28,7 +28,7 @@ function agentReviews(props) {
       <Fade duration="1050" cascade>
       <h2>Our Team</h2>
       </Fade>
-      <Fade duration="1618" delay="100">
+      <Fade duration="1618">
 
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">
