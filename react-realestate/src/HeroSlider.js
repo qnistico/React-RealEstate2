@@ -32,86 +32,46 @@ import lphouse7 from "./img/lphouse7.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
-
-
-
 function HeroSlider() {
   const history = useHistory();
-  window.addEventListener("load", parallax)
-window.addEventListener("scroll", parallax)
 
-function parallax() {
-
-    function getPosition(item) {
-
-        let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(0)
-
-        return top
-    }
-
-    let itemsToParallax = document.getElementsByClassName("parallaxify")
-
-    for (let item of itemsToParallax) {
-
-        if (!item.dataset.speedMultiplier) {
-
-            item.dataset.speedMultiplier = "0.7"
-        }
-
-        item.style.transform = "translateY(" + getPosition(item) * item.dataset.speedMultiplier + "px)"
-    }
-
-    let imagesToParallax = document.getElementsByClassName("parallaxifyBg")
-
-    for (let item of imagesToParallax) {
-
-        function getPosition(item) {
-
-            let top = (item.getBoundingClientRect().top / window.innerHeight * 100).toFixed(0)
-
-            return top
-        }
-
-        if (!item.dataset.speedMultiplier) {
-
-            item.dataset.speedMultiplier = "3"
-        }
-
-        item.style.backgroundAttachment = "fixed"
-        item.style.backgroundPositionY = getPosition(item) * item.dataset.speedMultiplier + "px"
-    }
-}
   return (
     <div>
-            <Fade duration="1210">
-
-      <div className="dark_gradient"></div>
-      <div className="hero_container">
-        <div className="hero_content" >
-          <h1>Pennsylvania Realty</h1>
-          <p>
-            We sell premium real estate in Pennsylvania ranging from rural to urban locations.  Mansions, homes and apartments... We've got it all.  Consult one of our agents to schedule a tour.
-          </p>
-          <MDBBtn onClick={() => history.push('/AllProperties')} className="hero_button">View All Listings</MDBBtn>
+      <Fade duration="1210">
+        <div className="dark_gradient"></div>
+        <div className="hero_container">
+          <div className="hero_content">
+            <h1>Pennsylvania Realty</h1>
+            <p>
+              We sell premium real estate in Pennsylvania ranging from rural to
+              urban locations. Mansions, homes and apartments... We've got it
+              all. Consult one of our agents to schedule a tour.
+            </p>
+            <MDBBtn
+              onClick={() => history.push("/AllProperties")}
+              className="hero_button"
+            >
+              View All Listings
+            </MDBBtn>
+          </div>
         </div>
-      </div>
-      <div className="hero_slider">
-        <MDBCarousel showIndicators showControls fade interval={5000}>
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId={0}>
-              <MDBCarouselElement src={lphouse15} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
-            </MDBCarouselItem>
+        <div className="hero_slider">
+          <MDBCarousel showIndicators showControls fade interval={5000}>
+            <MDBCarouselInner>
+              <MDBCarouselItem itemId={0}>
+                <MDBCarouselElement src={lphouse15} alt="mansion" />
+              </MDBCarouselItem>
 
-            <MDBCarouselItem itemId={1}>
-              <MDBCarouselElement src={lphouse7} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
-            </MDBCarouselItem>
+              <MDBCarouselItem itemId={1}>
+                <MDBCarouselElement src={lphouse7} alt="mansion" />
+              </MDBCarouselItem>
 
-            <MDBCarouselItem itemId={2}>
-              <MDBCarouselElement src={lphouse2} alt="mansion" className="parallaxify" data-speed-multiplier="-1.5"/>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
-      </div>
+              <MDBCarouselItem itemId={2}>
+                <MDBCarouselElement src={lphouse2} alt="mansion" />
+              </MDBCarouselItem>
+            </MDBCarouselInner>
+          </MDBCarousel>
+        </div>
       </Fade>
     </div>
   );

@@ -451,6 +451,7 @@ input:active {
 }
 
 .card_img_container {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,6 +1358,7 @@ iframe {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  overflow: hidden;
 }
 
 .card_img_agent {
