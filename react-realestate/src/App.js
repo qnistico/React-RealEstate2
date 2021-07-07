@@ -38,6 +38,7 @@ import ProfileScreen from "./screens/ProfileScreen";
 import ScrollToTop from "./components/ScrollToTop";
 import HouseInPennWynne from "./HouseInPennWynne";
 import HouseInBerwyn from "./HouseInBerwyn";
+import MainNav2 from "./MainNav2";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -67,7 +68,7 @@ function App() {
   
   return (
     <Router>
-      <MainNav />
+      <MainNav2 />
       <ScrollToTop />
       <Switch>
         <Route path="/ProfileScreen">

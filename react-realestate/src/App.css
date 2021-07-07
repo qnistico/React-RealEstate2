@@ -451,7 +451,7 @@ input:active {
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
-  position: relative !important;
+  position: relative; 
 }
 
 .card_img_container {
@@ -462,7 +462,7 @@ input:active {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  position: relative !important;
+  position: relative;
 }
 
 .featured_badge {
@@ -1608,29 +1608,7 @@ input.form-control.form_input {
   margin-bottom: 20px;
 }
 
-/* ----- MainNav ----- */
-/*
-.smaller {
-  height: 55px !important;
-  transition: all 0.5s ease;
-}
-*/
 
-.navbar {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 99;
-  height: 100px;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  background-color: transparent !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  position: absolute;
-}
 
 .fix_nav {
   position: fixed;
@@ -1644,16 +1622,14 @@ input.form-control.form_input {
   top: 0;
 }
 
-.nav-link {
-  font-weight: 400 !important;
-}
+
+
+
 .fix_nav .nav-link {
   color: #1a1a1a !important;
   font-weight: 400 !important;
 }
-.container-fluid {
-  max-width: 1280px;
-}
+
 
 .signup_button .MuiSvgIcon-root {
   margin-right: 8px;
@@ -1673,37 +1649,11 @@ input.form-control.form_input {
   cursor: pointer;
 }
 
-.navbar-nav {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 15%;
-}
 
-.nav-link {
-  padding: 5px 20px !important;
-  color: white !important;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  margin-right: 16px;
-  cursor: pointer;
-}
 
-.nav-link:hover {
-  background-color: #0073e5 !important;
-  color: white !important;
-}
 
-.navbar-brand img {
-  width: 200px;
-  position: absolute;
-  cursor: pointer;
-}
 
-.navbar-toggler {
-  font-size: 2rem;
-}
+
 
 .react-multiple-carousel__arrow {
   border-radius: 100% !important;
@@ -1947,9 +1897,7 @@ input.form-control.form_input {
   .signup_button {
     margin-top: 0;
   }
-  .navbar-nav {
-    margin: 0;
-  }
+
   .hero_content {
     width: 90%;
     margin: -250px auto 0 auto;
@@ -1984,51 +1932,14 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 991.98px) {
-  .navbar {
-    background-color: white !important;
-    height: 75px;
-  }
-  .nav-link {
-    color: #1a1a1a !important;
-    margin-left: 0 !important;
-    border-radius: 0;
-    width: 50%;
-    margin-top: 8px !important;
-    padding-left: 8px !important;
-  }
-  .container-fluid {
-    background-color: #fff;
-    max-height: unset;
-  }
-
-  .navbar-collapse {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-flow: column !important;
-    flex-flow: column !important;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-  .navbar-nav {
-    margin: 0;
-  }
+  
   .signup_flex {
-    padding: 0 0 20px 0;
     background-color: #fff;
   }
   .signup_button {
     margin: 0 0 0 8px !important;
   }
-  .home {
-  }
+  
   .customer_reviews_flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
