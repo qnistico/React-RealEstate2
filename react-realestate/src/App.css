@@ -1849,13 +1849,16 @@ input.form-control.form_input {
 
 @media screen and (max-width: 576.98px) {
   html, body {
-    overflow-x: hidden !important;
   }
+
+  
 
   .lp_cards, .overlay_carousel, .lp_apts, .phi_overlay, .agent_reviews, .mobile_icons, .lp_blog, .customer_reviews, .multi_carousel {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
+  
 
   .cr_item {
     margin: 0 0 20px 0 !important;
@@ -1955,6 +1958,21 @@ input.form-control.form_input {
   }
   .lp_apts_flex {
     flex-flow: row wrap;
+  }
+  .property_sorting, .sort_table {
+    flex-flow: column;
+    justify-content: center !important;
+    align-items: center !important;
+    
+  }
+
+  .property_dropdown {
+    min-width: 200px;
+    margin: 4px 0;
+  }
+
+  .sort_table .hero_button {
+    margin-top: 8px;
   }
 }
 

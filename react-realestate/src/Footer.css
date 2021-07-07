@@ -222,4 +222,8 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .footer_newsletter {
+    width: 90%;
+    margin-top: 40px;
+  }
 }
