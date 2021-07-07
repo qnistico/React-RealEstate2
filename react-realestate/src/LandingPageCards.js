@@ -25,10 +25,10 @@ function LandingPageCards() {
 
   return (
     <div>
-      <div className="lp_apts">
+      <div className="lp_cards">
         <h2>Recent Properties</h2>
         <p className="lp_header_p">View some of our most recent listings</p>
-        <div className="lp_cards_flex lpcf_1">
+        <div className="lp_cards_flex">
           <div className="lp_cards_body">
             <div className="card_img_container">
               <a onClick={() => history.push('/MansionInNorwin')}>

@@ -13,6 +13,7 @@
   text-rendering: optimizeLegibility !important;
 }
 
+
 html,
 body {
   font-family: "Nunito", sans-serif;
@@ -219,11 +220,12 @@ body p {
   object-fit: cover;
 }
 
-.carousel-control-next-icon::after,
-.carousel-control-prev-icon::after {
+.hero_slider .carousel-control-next-icon::after,
+.hero_slider .carousel-control-prev-icon::after {
   position: relative !important;
   top: -4px !important;
   border-radius: 100% !important;
+  display: none;
 }
 
 .carousel-indicators li {
@@ -462,7 +464,6 @@ input:active {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  position: relative;
 }
 
 .featured_badge {
@@ -1350,7 +1351,6 @@ iframe {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  position: relative;
   overflow: hidden;
 }
 
@@ -1794,9 +1794,7 @@ input.form-control.form_input {
     overflow-y: scroll;
   }
 
-  .mobile_hide {
-    display: none;
-  }
+  
 
   .lp_cards,
   .overlay_carousel,
@@ -1830,7 +1828,7 @@ input.form-control.form_input {
 
   .lp_cards_body {
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
   }
   .img_overlay {
     background-attachment: unset;

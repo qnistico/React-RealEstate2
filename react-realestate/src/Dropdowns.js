@@ -27,13 +27,13 @@ export default function Dropdowns() {
         >
           <ul>
             <li>
-              <a onClick={() => history.push("/AgentJohnProfile")} className="dropdown_item">John Ryan</a>
+              <a href="/AgentJohnProfile" className="dropdown_item">John Ryan</a>
             </li>
             <li>
-              <a onClick={() => history.push("/AgentKevinProfile")} className="dropdown_item">Kevin Richmond</a>
+              <a href="/AgentKevinProfile" className="dropdown_item">Kevin Richmond</a>
             </li>
             <li>
-              <a onClick={() => history.push("/AgentMaryProfile")} className="dropdown_item">Mary Williams</a>
+              <a href="/AgentMaryProfile" className="dropdown_item">Mary Williams</a>
             </li>
           </ul>
         </nav>

@@ -29,6 +29,7 @@ box-shadow: none;
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
+    padding-left: 12px;
   }
 
   
@@ -96,7 +97,7 @@ box-shadow: none;
   color: white !important;
 }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1075px) {
       .fix_nav {
           height: 75px;
       }
