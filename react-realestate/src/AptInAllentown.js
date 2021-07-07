@@ -169,7 +169,7 @@ function AptInAllentown(props) {
           </ParallaxProvider>
           <div className="property_hero_flex">
             <div className="property_hero_content">
-              <h2>Apartment In Allentown</h2>
+              <h1>Apartment In Allentown</h1>
             </div>
           </div>
         </div>

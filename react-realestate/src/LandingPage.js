@@ -30,11 +30,11 @@ import LandingPageApts from "./LandingPageApts";
 
 function LandingPage() {
   useEffect(() => {
+    
     addResponseMessage("Welcome to PA Premium Realty. How can we help you?");
   }, []);
 
   const handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
     addResponseMessage(
       "Thank you for your interest in our services.  A representative will be with you shortly."
     );

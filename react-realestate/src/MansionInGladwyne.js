@@ -168,7 +168,7 @@ function MansionInGladwyne(props) {
         </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>Mansion In Gladwyne</h2>
+            <h1>Mansion In Gladwyne</h1>
           </div>
         </div>
       </div>

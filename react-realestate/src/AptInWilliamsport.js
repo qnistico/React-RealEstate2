@@ -165,7 +165,7 @@ function AptInWilliamsport(props) {
       </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>Apartment In Williamsport</h2>
+            <h1>Apartment In Williamsport</h1>
           </div>
         </div>
       </div>

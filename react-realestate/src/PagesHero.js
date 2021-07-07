@@ -31,7 +31,7 @@ function PagesHero(props) {
       </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>{props.headerTitle}</h2>
+            <h1>{props.headerTitle}</h1>
           </div>
         </div>
       </div>

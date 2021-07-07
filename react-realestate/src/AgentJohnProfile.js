@@ -22,6 +22,8 @@ import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
 import apt1 from "./img/apartment1.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 function AgentJohnProfile(props) {
   const history = useHistory();

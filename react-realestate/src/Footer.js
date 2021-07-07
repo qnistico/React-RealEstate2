@@ -17,9 +17,11 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import logoprata from "./img/logoprata.png";
+import { useHistory } from "react-router-dom";
 
 
 function Footer() {
+  const history = useHistory();
   return (
     <div>
       <svg
@@ -42,7 +44,7 @@ function Footer() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis.
             </p>
-            <a href="/">
+            <a onClick={() => history.push('/')}>
               <img src={logoprata} alt="logo" />
             </a>
           </div>
@@ -50,7 +52,7 @@ function Footer() {
             <h3>Agent Listings</h3>
             <ul>
               <li>
-                <a href="/AgentJohnProfile">
+                <a onClick={() => history.push('/AgentJohnProfile')}>
                   <img
                     src={agent1}
                     className="footer_avatar"
@@ -60,7 +62,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/AgentKevinProfile">
+                <a onClick={() => history.push('/AgentKevinProfile')}>
                   <img
                     src={agent3}
                     className="footer_avatar"
@@ -70,7 +72,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/AgentMaryProfile">
+                <a onClick={() => history.push('/AgentMaryProfile')}>
                   <img
                     src={agent4}
                     className="footer_avatar"

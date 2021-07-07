@@ -23,6 +23,8 @@ import ParallaxImg from "./ParallaxImg";
 import agentbg from "./img/agentbg.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+
 
 function AgentKevinProfile(props) {
   const history = useHistory();

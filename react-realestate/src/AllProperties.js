@@ -193,7 +193,7 @@ function AllProperties(props) {
             <CardSingle
               cardImg={apt3}
               agentImg={agent3}
-              cardTitle=""
+              cardTitle="Apartment in Allentown"
               address="555 Lorem Avenue, Lorem, PA 12345, USA"
               cardPrice="$1,200 / mo"
               bedrooms="1"

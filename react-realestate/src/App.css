@@ -840,7 +840,7 @@ input:active {
   z-index: 5 !important;  
 }
 
-.property_hero_content h2 {
+.property_hero_content h1 {
   color: #1a1a1a;
   font-size: 48px;
   font-weight: 700;
@@ -852,7 +852,7 @@ input:active {
 
 }
 
-.showcase_top_header h1 {
+.showcase_top_header h2 {
   font-size: 24px;
   color: #1a1a1a;
 }

@@ -172,7 +172,7 @@ function MansionInSewickleyHeights(props) {
         </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>Villa In Sewickley Heights</h2>
+            <h1>Villa In Sewickley Heights</h1>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function LoginAuth(props) {
   }
 
   const signIn = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
     auth.signInWithEmailAndPassword(
       emailRef.current.value,

@@ -30,11 +30,14 @@ import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import Footer from "./Footer";
 import SortByContent from "./SortByContent";
+import Fade from "react-reveal/Fade";
+
 
 function AgentJohnRyan(props) {
   return (
     <div>
       <div className="dark_gradient"></div>
+      <Fade duration="1210">
 
       <div className="property_hero">
         <ParallaxProvider>
@@ -42,10 +45,11 @@ function AgentJohnRyan(props) {
         </ParallaxProvider>
         <div className="property_hero_flex">
           <div className="property_hero_content">
-            <h2>{props.headerTitle}</h2>
+            <h1>{props.headerTitle}</h1>
           </div>
         </div>
       </div>
+      </Fade>
 
       <SortByContent />
       <div className="agent_profile">
@@ -54,7 +58,7 @@ function AgentJohnRyan(props) {
             <div className="appl_top">
               <img src={props.agentImg} alt="" />
               <div className="agent_info_top">
-                <h1>{props.agentName}</h1>
+                <h2>{props.agentName}</h2>
                 <p className="agent_position">Real Estate Agent</p>
                 <p>
                   <span className="color">5</span> Listed Properties

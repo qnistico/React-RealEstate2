@@ -51,6 +51,11 @@
     margin: auto;
 }
 
+.appl_top h2 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
 .appr_item {
     padding: 30px;
     background-color: #fff;

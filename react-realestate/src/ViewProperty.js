@@ -83,7 +83,7 @@ function ViewProperty(props) {
           <div className="ps_primary_left">
             <div className="pspl_top">
               <div>
-                <h1 className="pspl_title">{props.homeTitle}</h1>
+                <h2 className="pspl_title">{props.homeTitle}</h2>
                 <p className="property_address">{props.homeAddress}</p>
               </div>
               <div>
