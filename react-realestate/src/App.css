@@ -13,7 +13,6 @@
   text-rendering: optimizeLegibility !important;
 }
 
-
 html,
 body {
   font-family: "Nunito", sans-serif;
@@ -218,6 +217,7 @@ body p {
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
+  z-index: 2;
 }
 
 .hero_slider .carousel-control-next-icon::after,
@@ -225,11 +225,13 @@ body p {
   position: relative !important;
   top: -4px !important;
   border-radius: 100% !important;
-  display: none;
 }
 
 .carousel-indicators li {
   height: 8px;
+  z-index: 999 !important;
+  top: -40px;
+  position: relative;
 }
 
 /* ----- SortContent ----- */
@@ -405,8 +407,6 @@ input:active {
   margin: auto;
 }
 
-
-
 .lp_cards_body {
   -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
@@ -453,7 +453,7 @@ input:active {
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
-  position: relative; 
+  position: relative;
 }
 
 .card_img_container {
@@ -1594,6 +1594,7 @@ input.form-control.form_input {
   margin: 0 30px;
 }
 
+
 .phi_overlay_content h3 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -1610,8 +1611,6 @@ input.form-control.form_input {
   margin-bottom: 20px;
 }
 
-
-
 .fix_nav {
   position: fixed;
   background-color: white !important;
@@ -1624,14 +1623,10 @@ input.form-control.form_input {
   top: 0;
 }
 
-
-
-
 .fix_nav .nav-link {
   color: #1a1a1a !important;
   font-weight: 400 !important;
 }
-
 
 .signup_button .MuiSvgIcon-root {
   margin-right: 8px;
@@ -1650,12 +1645,6 @@ input.form-control.form_input {
   align-items: center;
   cursor: pointer;
 }
-
-
-
-
-
-
 
 .react-multiple-carousel__arrow {
   border-radius: 100% !important;
@@ -1791,10 +1780,6 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 576.98px) {
-  
-
-  
-
   .lp_cards,
   .overlay_carousel,
   .lp_apts,
@@ -1817,13 +1802,11 @@ input.form-control.form_input {
     margin: 0 0 20px 0 !important;
   }
 
-  
-
   .lp_cards_body {
     margin-bottom: 20px;
     width: 100%;
   }
-  
+
   .button_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1836,7 +1819,6 @@ input.form-control.form_input {
     -ms-flex-align: center;
     align-items: center;
   }
-  
 
   .phi_overlay_flex {
     -webkit-box-orient: vertical;
@@ -1924,14 +1906,13 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 991.98px) {
-  
   .signup_flex {
     background-color: #fff;
   }
   .signup_button {
     margin: 0 0 0 8px !important;
   }
-  
+
   .customer_reviews_flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2037,11 +2018,13 @@ input.form-control.form_input {
     -ms-flex-flow: column;
     flex-flow: column;
   }
-  
 }
 
 @media screen and (max-width: 700px) {
   .lp_cards_flex {
     flex-flow: column;
   }
+
+
+
 }
