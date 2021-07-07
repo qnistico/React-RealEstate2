@@ -40,6 +40,10 @@ footer {
   max-width: 250px;
 }
 
+.footer_item .featured_item p {
+  color: #0073e5;
+}
+
 .footer_avatar {
   width: 45px;
   height: 45px;

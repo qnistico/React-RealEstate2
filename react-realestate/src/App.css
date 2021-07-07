@@ -168,10 +168,30 @@ body p {
 .hero_button:hover,
 .hero_button:focus,
 .hero_button:active,
+.lp_cards_button:hover,
+.lp_cards_button:focus,
+.lp_cards_button:active,
+.pspr_top_button:hover,
+.pspr_top_button:focus,
+.pspr_top_button:active,
 .signup_button:hover,
 .signup_button:focus,
-.signup_button:active {
+.signup_button:active
+ {
   color: #0073e5 !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #0073e5;
+}
+
+.send_button:hover,
+.send_button:focus,
+.send_button:active {
+  box-shadow: none;
 }
 
 .d-block {

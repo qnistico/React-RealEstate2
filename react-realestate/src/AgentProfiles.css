@@ -214,6 +214,7 @@ h3 {
 .appl_button:focus,
 .appl_button:active {
     color: #0073e5 !important;
+    box-shadow: none !important;
 }
 
 .appl_button .MuiSvgIcon-root {

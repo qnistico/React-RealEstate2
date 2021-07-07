@@ -87,7 +87,7 @@ function Footer() {
             <h3>Contact</h3>
             <ul>
               <li>
-                <a href="!#">
+                <a href="#!">
                   <Business />
                   12345 Lorem, Sunshine Boulevard, PA 19053
                 </a>
@@ -105,7 +105,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="!#">
+                <a href="#!">
                   <Laptop />
                   Company Name
                 </a>

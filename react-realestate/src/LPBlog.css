@@ -163,6 +163,7 @@
 .lp_blog_button:focus,
 .lp_blog_button:active {
     color: #0073e5 !important;
+    box-shadow: none !important;
 
 }
 
