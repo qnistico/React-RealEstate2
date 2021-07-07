@@ -261,10 +261,6 @@ body p {
   align-items: center;
 }
 
-.sort_by_content {
-  display: none;
-}
-
 input:focus,
 input:active {
   border-color: #0073e5 !important;
@@ -341,7 +337,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 60px 30px 30px 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .lp_cards h2 {
@@ -1900,6 +1896,11 @@ input.form-control.form_input {
 @media screen and (max-width: 768px) {
   .signup_button {
     margin-top: 0;
+  }
+
+  .sort_table {
+    top: 0;
+    margin-bottom: 40px;
   }
 
   .hero_content {

@@ -43,9 +43,11 @@ function LandingPage() {
     <div className="landing_page">
         <HeroSlider />
       <SortByContent />
-      <LandingPageCards />
-      <OverlayCarousel />
       <LandingPageApts />
+
+      <OverlayCarousel />
+      <LandingPageCards />
+
       <PhiOverlay />
 
       <Agents />
