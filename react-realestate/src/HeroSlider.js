@@ -40,6 +40,11 @@ function HeroSlider() {
       <Fade duration="1210">
         <div className="dark_gradient"></div>
         <div className="hero_container">
+          
+        </div>
+        
+        <div className="hero_slider">
+          <div className="hero_content_flex">
           <div className="hero_content">
             <h1>Pennsylvania Realty</h1>
             <p>
@@ -54,8 +59,7 @@ function HeroSlider() {
               View All Listings
             </MDBBtn>
           </div>
-        </div>
-        <div className="hero_slider">
+          </div>
           <MDBCarousel showIndicators showControls fade interval={5000}>
             <MDBCarouselInner>
               <MDBCarouselItem itemId={0}>
