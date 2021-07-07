@@ -1849,7 +1849,10 @@ input.form-control.form_input {
 
 @media screen and (max-width: 576.98px) {
   html, body {
+    overflow-y: scroll;
   }
+
+ 
 
   .mobile_hide {
     display: none;
@@ -1946,12 +1949,7 @@ input.form-control.form_input {
   
 }
 @media screen and (max-width: 768px) {
-  .nav-link {
-    margin-left: 0;
-    border-radius: 0;
-    width: 50%;
-    padding-top: 8px;
-  }
+  
 .signup_button {
     margin-top: 0;
   }
@@ -2007,7 +2005,6 @@ input.form-control.form_input {
   }
   .container-fluid {
     background-color: #fff;
-    padding: 10px auto;
     max-height: unset;
   }
 
