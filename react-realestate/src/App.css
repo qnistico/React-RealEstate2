@@ -461,6 +461,7 @@ input:active {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  position: relative;
 }
 
 .featured_badge {
