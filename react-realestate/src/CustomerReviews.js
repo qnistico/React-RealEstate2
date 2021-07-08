@@ -30,7 +30,7 @@ function CustomerReviews() {
           agents
         </p>
         </Fade>
-        <Fade duration="1618">
+        <Fade duration="1200">
 
         <div className="customer_reviews_flex">
           <div className="cr_item">

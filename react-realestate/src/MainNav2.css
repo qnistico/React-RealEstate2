@@ -240,6 +240,7 @@ box-shadow: none;
 
   .dropdown_content {
     z-index: 9999 !important;
+    position: relative;
   }
   
   .menu-trigger:hover {

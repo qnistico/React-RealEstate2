@@ -11,11 +11,14 @@
 }
 
 .blog_header {
-  color: white;
-  font-size: 60px;
-  text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
-  position: relative;
+  color: #1a1a1a;
+  font-size: 48px;
+  font-weight: 700;
   letter-spacing: 3px;
+  background-color: white;
+  padding: 20px 12px 12px 12px;
+  box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+  position: relative;
   z-index: 2;
 }
 
@@ -213,6 +216,8 @@
 .bpl_content {
   color: #566177;
 }
+
+
 
 .bpl_content h2 {
   color: #1a1a1a;
