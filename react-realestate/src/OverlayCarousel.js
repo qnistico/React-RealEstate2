@@ -66,7 +66,7 @@ function OverlayCarousel(props) {
             autoPlaySpeed={4500}
             keyBoardControl={true}
             customTransition="all 0.5s"
-            transitionDuration={500}
+            transitionDuration={618}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"

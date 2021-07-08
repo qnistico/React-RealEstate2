@@ -177,7 +177,7 @@ box-shadow: none;
     }
 
     .signup_button {
-      z-index: 0 !important;
+      z-index: -1 !important;
     }
 
     
@@ -254,11 +254,12 @@ box-shadow: none;
   .menu-trigger img {
   }
   
+  
   .menu {
     background: #ffffff;
     border-radius: 0;
     position: absolute;
-    top: 75px;
+    top: 49px;
     
     width: 300px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);

@@ -42,6 +42,7 @@
     width: auto;
     margin: auto;
     max-height: 62vh;
+    object-fit: cover;
 }
 
 .oc_card_img {
@@ -53,6 +54,8 @@
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  max-width: 90vw;
+  object-fit: cover;
 }
 
 .oc_cards_center {
@@ -220,5 +223,8 @@
       }
       .card_price {
           margin-bottom: 12px !important;
+      }
+      .oc_card_img {
+          max-height: 250px;
       }
   }
