@@ -24,13 +24,11 @@ import { useHistory } from "react-router-dom";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 
 function LandingPageCards() {
-  // Add styles
+// Add styles 
 
-  // Add styles
+addStyles()
 
-  addStyles();
-
-  function addStyles() {
+function addStyles() {
     let styles = `
 
     @keyframes moveUp {
@@ -127,209 +125,244 @@ function LandingPageCards() {
         opacity: 0;
         pointer-events: none;
     }
-    `;
+    `
 
-    var styleSheet = document.createElement("style");
-    styleSheet.innerHTML = styles;
-    document.head.appendChild(styleSheet);
-  }
+    var styleSheet = document.createElement("style")
+    styleSheet.innerHTML = styles
+    document.head.appendChild(styleSheet)
+}
 
-  let lightElements = document.getElementsByClassName("ezLightbox");
+let lightElements = document.getElementsByClassName("ezLightbox")
 
-  window.onload = function () {
+window.onload = function() {
+
     for (let element of lightElements) {
-      element.style.cursor = "pointer";
-    }
-  };
 
-  window.onclick = function (click) {
-    let element = click.target;
+        element.style.cursor = "pointer"
+    }
+}
+
+window.ontouchstart = function(click) {
+
+    userInteract(click)
+}
+window.onclick = function(click) {
+
+    userInteract(click)
+}
+
+function userInteract(click) {
+
+    let element = click.target
 
     if (element.classList.contains("ezLightbox")) {
-      // Add defaults if none are provided
 
-      if (!element.dataset.src) {
-        element.dataset.src = element.src;
-      }
-      if (!element.dataset.src) {
-        return console.error("no src provided");
-      }
+        // Add defaults if none are provided
 
-      if (!element.dataset.backgroundOpacity) {
-        element.dataset.backgroundOpacity = 0.85;
-      }
+        if (!element.dataset.src) {
 
-      if (!element.dataset.sizeMultiplier) {
-        element.dataset.sizeMultiplier = 1.5;
-      }
+            element.dataset.src = element.src
+        }
+        if (!element.dataset.src) {
 
-      if (!element.dataset.aspectRatio) {
-        element.dataset.aspectRatio = 1 / 1;
-      }
+            return console.error("no src provided")
+        }
 
-      // Container
+        if (!element.dataset.backgroundOpacity) {
 
-      let lightboxContainer = document.createElement("div");
+            element.dataset.backgroundOpacity = 0.85
+        }
 
-      lightboxContainer.style.background =
-        "rgba(0, 0, 0, " + element.dataset.backgroundOpacity + ")";
+        if (!element.dataset.sizeMultiplier) {
 
-      lightboxContainer.classList.add("lightboxContainer");
+            element.dataset.sizeMultiplier = 1.5
+        }
 
-      document.body.appendChild(lightboxContainer);
+        if (!element.dataset.aspectRatio) {
 
-      // Image
+            element.dataset.aspectRatio = 1 / 1
+        }
 
-      let lightboxImage = document.createElement("img");
+        // Container
 
-      lightboxImage.src = element.dataset.src;
+        let lightboxContainer = document.createElement("div")
 
-      lightboxImage.style.width =
-        element.offsetWidth * element.dataset.sizeMultiplier + "px";
+        lightboxContainer.style.background = "rgba(0, 0, 0, " + element.dataset.backgroundOpacity + ")"
 
-      lightboxImage.style.aspectRatio = element.dataset.aspectRatio;
+        lightboxContainer.classList.add("lightboxContainer")
 
-      lightboxImage.classList.add("lightboxImage");
+        document.body.appendChild(lightboxContainer)
 
-      lightboxContainer.appendChild(lightboxImage);
+        // Image
 
-      // Close button
+        let lightboxImage = document.createElement("img")
 
-      let closeButton = document.createElement("img");
+        lightboxImage.src = element.dataset.src
 
-      closeButton.src =
-        "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2018/png/iconmonstr-x-mark-thin.png&r=255&g=255&b=255";
+        lightboxImage.style.width = element.offsetWidth * element.dataset.sizeMultiplier + "px"
 
-      closeButton.classList.add("closeButton");
+        lightboxImage.style.aspectRatio = element.dataset.aspectRatio
 
-      document.body.appendChild(closeButton);
+        lightboxImage.classList.add("lightboxImage")
+
+        lightboxContainer.appendChild(lightboxImage)
+
+        // Close button
+
+        let closeButton = document.createElement("img")
+
+        closeButton.src = "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2018/png/iconmonstr-x-mark-thin.png&r=255&g=255&b=255"
+
+        closeButton.classList.add("closeButton")
+
+        document.body.appendChild(closeButton)
+
     } else if (!element.classList.contains("lightboxImage")) {
-      closeLightbox();
-    }
-  };
 
-  window.onkeydown = function (interaction) {
+        closeLightbox()
+    }
+}
+
+window.onkeydown = function(interaction) {
+
     if (interaction.key == "Escape" || interaction.key == " ") {
-      closeLightbox();
+
+        closeLightbox()
     }
-  };
+}
 
-  // Hide lightbox when user scrolls
+// Hide lightbox when user scrolls
 
-  window.onwheel = function () {
-    closeLightbox();
-  };
+window.onscroll = function() {
 
-  function closeLightbox() {
-    let lightboxContainers =
-      document.getElementsByClassName("lightboxContainer");
+    closeLightbox()
+}
+window.onwheel = function() {
+
+    closeLightbox()
+}
+
+function closeLightbox() {
+
+    let lightboxContainers = document.getElementsByClassName("lightboxContainer")
 
     for (let element of lightboxContainers) {
-      element.classList.add("lightboxContainerHide");
+
+        element.classList.add("lightboxContainerHide")
     }
 
-    let closeButtons = document.getElementsByClassName("closeButton");
+    let closeButtons = document.getElementsByClassName("closeButton")
 
     for (let element of closeButtons) {
-      element.classList.add("closeButtonHide");
-    }
-  }
 
-  window.onmousedown = function () {
-    let className = "lightboxImage";
-    let ratio = 0.3;
-    let ignoreX = false;
-    let ignoreY = false;
+        element.classList.add("closeButtonHide")
+    }
+}
+
+window.onmousedown = function() {
+
+    let className = "lightboxImage"
+    let ratio = 0.3
+    let ignoreX = false
+    let ignoreY = false
 
     if (!className) {
-      return console.error(
-        "You must provide a valid selector or DOM object as first argument"
-      );
+
+        return console.error('You must provide a valid selector or DOM object as first argument')
     }
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      return console.log("Mobile user panning disabled");
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+        return console.log("Mobile user panning disabled")
     }
 
-    let elements = document.getElementsByClassName(className);
+    let elements = document.getElementsByClassName(className)
 
     if (elements.length == 0) {
-      return console.log("No elements to pan");
+
+        return console.log("No elements to pan")
     }
 
     for (let element of elements) {
-      console.log(element);
 
-      let trackX = !ignoreX ? true : false,
-        trackY = !ignoreY ? true : false,
-        curDown = false,
-        curYPos = 0,
-        curXPos = 0,
-        startScrollY = 0,
-        startScrollX = 0,
-        scrollDif = 0,
-        animation = null;
+        console.log(element)
 
-      element.addEventListener("mousedown", (e) => {
-        e.preventDefault();
-        curDown = true;
+        let trackX = (!ignoreX) ? true : false,
+            trackY = (!ignoreY) ? true : false,
 
-        startScrollY = parseInt(element.scrollTop, 10);
-        startScrollX = parseInt(element.scrollLeft, 10);
-        curYPos = e.clientY;
-        curXPos = e.clientX;
-      });
+            curDown = false,
+            curYPos = 0,
+            curXPos = 0,
 
-      element.addEventListener("mouseup", (e) => {
-        // Smooth action effect
-        let currScrollY = element.scrollTop,
-          scrollDiffY = (startScrollY - currScrollY) * -1,
-          newScrollY = currScrollY + scrollDiffY * ratio,
-          currScrollX = element.scrollLeft,
-          scrollDiffX = (startScrollX - currScrollX) * -1,
-          newScrollX = currScrollX + scrollDiffX * ratio;
+            startScrollY = 0,
+            startScrollX = 0,
+            scrollDif = 0,
+            animation = null;
 
-        let scroll_obj = {
-          behavior: "smooth",
-        };
-        if (trackY) {
-          scroll_obj.top = newScrollY;
-        }
-        if (trackX) {
-          scroll_obj.left = newScrollX;
-        }
 
-        animation = element.scroll(scroll_obj);
-      });
+        element.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            curDown = true;
 
-      document.body.addEventListener("mouseup", (e) => {
-        curDown = false;
-      });
+            startScrollY = parseInt(element.scrollTop, 10);
+            startScrollX = parseInt(element.scrollLeft, 10);
+            curYPos = e.clientY;
+            curXPos = e.clientX;
+        });
 
-      element.addEventListener("mousemove", (e) => {
-        if (curDown === true) {
-          if (animation) {
-            animation.pause();
-          }
 
-          let scroll_obj = {
-            behavior: "auto",
-          };
-          if (trackY) {
-            scroll_obj.top = startScrollY + (curYPos - e.clientY);
-          }
-          if (trackX) {
-            scroll_obj.left = startScrollX + (curXPos - e.clientX);
-          }
+        element.addEventListener('mouseup', (e) => {
 
-          element.scroll(scroll_obj);
-        }
-      });
+            // Smooth action effect 
+            let currScrollY = element.scrollTop,
+                scrollDiffY = (startScrollY - currScrollY) * -1,
+                newScrollY = currScrollY + (scrollDiffY * ratio),
+
+                currScrollX = element.scrollLeft,
+                scrollDiffX = (startScrollX - currScrollX) * -1,
+                newScrollX = currScrollX + (scrollDiffX * ratio);
+
+            let scroll_obj = {
+                behavior: 'smooth'
+            };
+            if (trackY) {
+                scroll_obj.top = newScrollY;
+            }
+            if (trackX) {
+                scroll_obj.left = newScrollX;
+            }
+
+            animation = element.scroll(scroll_obj);
+        });
+
+
+
+        document.body.addEventListener('mouseup', (e) => {
+            curDown = false;
+        });
+
+
+
+        element.addEventListener('mousemove', (e) => {
+            if (curDown === true) {
+                if (animation) {
+                    animation.pause();
+                }
+
+                let scroll_obj = {
+                    behavior: 'auto'
+                };
+                if (trackY) {
+                    scroll_obj.top = startScrollY + (curYPos - e.clientY);
+                }
+                if (trackX) {
+                    scroll_obj.left = startScrollX + (curXPos - e.clientX);
+                }
+
+                element.scroll(scroll_obj);
+            }
+        })
     }
-  };
+}
   const history = useHistory();
 
   return (
@@ -345,7 +378,7 @@ function LandingPageCards() {
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
-              
+              <button className="lightbox_button ezLightbox" data-src="./img/house15.jpg  " data-size-multiplier="20"><CameraAlt /></button>
               <div className="card_img_agent">
                 <a onClick={() => history.push("/AgentKevinProfile")}>
                   <Avatar src={agent3} alt="real estate agent" />
