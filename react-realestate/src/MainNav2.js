@@ -90,7 +90,7 @@ function MainNav2() {
                   Blog
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mobile_show">
                 <NavLink
                   exact
                   to="/LoginAuth"
@@ -109,6 +109,26 @@ function MainNav2() {
                 </NavLink>
               </li>
             </ul>
+            <ul className="nav-menu-2 mobile_hide">
+            <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/LoginAuth"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  <div className="signup_flex">
+            <a
+              className=" signup_button"
+            >
+              <AccountCircleIcon />
+              Login / Sign Up
+            </a>
+          </div>
+                </NavLink>
+              </li>
+              </ul>
             <div className="nav-icon" onClick={handleClick}>
               <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
             </div>

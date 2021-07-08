@@ -8,7 +8,11 @@
 .mobile_icons {
   width: 100%;
   padding: 60px 30px;
-  background-color: #fafafa;
+  background-image: linear-gradient(#f1f2f5e8, #f1f2f5e8), url(img/mobileiconsoverlay.jpg);
+  background-size: cover;
+  background-position: center center;
+  
+
 }
 
 .mobile_icons h2 {

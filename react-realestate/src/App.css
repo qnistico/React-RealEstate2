@@ -101,7 +101,14 @@ body p {
   -webkit-box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
   box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
   position: absolute;
-top: 35.1%;
+top: 40%;
+  z-index: 1;
+}
+
+.hero_slider_scroll {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
   z-index: 1;
 }
 
@@ -236,7 +243,7 @@ top: 35.1%;
   border-radius: 100% !important;
 }
 
-.carousel-indicators li {
+.hero_slider .carousel-indicators li {
   height: 8px;
   z-index: 999 !important;
   top: -40px;
@@ -900,7 +907,7 @@ input:active {
 }
 
 .property_showcase {
-  padding: 2vw 3vw;
+  padding: 60px 30px;
 }
 
 .showcase_top_header {
@@ -934,6 +941,7 @@ input:active {
   display: flex;
   margin: auto;
   max-width: 1280px !important;
+  gap: 30px;
 }
 
 .ps_primary_left {
@@ -948,15 +956,14 @@ input:active {
   -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
   padding: 30px;
-  margin: 0 15px auto 0;
   background-color: #fff;
+  margin-bottom: 0 !important;
 }
 
 .ps_primary_right {
   width: 38%;
   height: 100%;
   background-color: transparent;
-  margin: 0 0 0 15px;
 }
 
 .ps_primary_left p {
@@ -1870,6 +1877,22 @@ input.form-control.form_input {
   .pspl_icon_flex {
     flex: 1 50%;
   }
+  .property_showcase {
+    padding: 60px 20px;
+  }
+  .property_hero {
+  }
+  .property_hero_content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .property_hero_content h1 {
+    font-size: 24px;
+    line-height: 1.618;
+  }
+  
 }
 @media screen and (max-width: 768px) {
   .signup_button {
@@ -1903,6 +1926,17 @@ input.form-control.form_input {
   .sort_table .hero_button {
     margin-top: 8px;
   }
+   .ps_primary_left .d-block,
+   iframe {
+    max-height: 55vw !important;
+  }
+  .ps_primary_left .carousel-indicators li {
+    height: 8px;
+  }
+  .ps_primary_right {
+    flex-flow: column !important;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1955,6 +1989,15 @@ input.form-control.form_input {
   }
   .ps_primary_right {
     width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+  }
+  .pspr_item {
+    width: 100%;
+    flex: 1 40%;
+    margin: 0;
   }
   .single_cards_top {
     -webkit-box-orient: vertical;

@@ -37,11 +37,9 @@ function LandingPageApts(props) {
   const history = useHistory();
     return (
         <div className="lp_apts">
-                    <Fade duration="1050" cascade>
 
             <h2>For Rent</h2>
             <p className="lp_header_p">View our apartments for rent</p>
-            </Fade>
 
             <div className="lp_apts_flex">
             <div className="lp_cards_body">

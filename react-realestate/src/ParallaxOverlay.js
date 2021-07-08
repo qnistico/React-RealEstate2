@@ -7,8 +7,8 @@ import ImgOverlay from "./ImgOverlay";
 const ParallaxOverlay = (props) => {
   return (
     <ParallaxBanner
-      className="contact_overlay_img"
-      layers={[{ image: props.imgsrc, amount: -0.2}]}
+      className="hero_slider_scroll"
+      layers={[{ image: props.imgsrc, amount: 0.2}]}
     >
       <div>{props.children}</div>
     </ParallaxBanner>

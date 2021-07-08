@@ -25,7 +25,7 @@ export default function Dropdowns() {
           ref={dropdownRef}
           className={`menu ${isActive ? "active" : "inactive"}`}
         >
-          <ul>
+          <ul className="dropdown_content">
             <li>
               <a href="/AgentJohnProfile" className="dropdown_item">John Ryan</a>
             </li>
