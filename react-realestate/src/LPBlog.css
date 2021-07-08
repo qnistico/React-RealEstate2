@@ -26,7 +26,6 @@
 
 .lpb_item {
     background-color: #fff;
-    margin: 15px;
     position: relative;
     -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
             box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
@@ -82,6 +81,7 @@
             justify-content: center;
     max-width: 1280px;
     margin: auto;
+    gap: 30px;
 }
 
 .blog_img {

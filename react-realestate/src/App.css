@@ -421,6 +421,8 @@ input:active {
   -ms-flex-align: center;
   align-items: center;
   margin: auto;
+  gap: 30px;
+
 }
 
 .lp_cards_body {
@@ -437,7 +439,6 @@ input:active {
   -webkit-box-flex: 1;
   -ms-flex: 1 30%;
   flex: 1 30%;
-  margin: 0 15px 30px 15px;
   position: relative;
   -webkit-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
@@ -728,6 +729,7 @@ input:active {
   -ms-flex-align: center;
   align-items: center;
   margin: auto;
+  gap: 30px;
   max-width: 1280px;
 }
 
@@ -1174,6 +1176,7 @@ iframe {
   -webkit-box-direction: normal;
   -ms-flex-flow: row;
   flex-flow: row;
+  margin-bottom: 0;
 }
 
 .pspl_similar_properties:last-child {
@@ -2075,6 +2078,10 @@ input.form-control.form_input {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
+  }
+  
+  .pspl_similar_flex {
+    gap: 30px !important;
   }
 }
 

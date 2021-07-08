@@ -142,9 +142,10 @@ function BlogList(props) {
             
             <div className="blog_sidebar_item">
             <div className="related_posts">
+              <h3>Related Posts</h3>
   <div className="related_posts_item">
     <div className="rp_img">
-  <a href="/"><img src={blogheroimg} alt="" /></a>
+  <a href=""><img src={blogheroimg} alt="" /></a>
   </div>
   <div className="rpi_content">
   <h4>Author: John Johnson</h4>
@@ -195,3 +196,4 @@ function BlogList(props) {
 }
 
 export default BlogList;
+

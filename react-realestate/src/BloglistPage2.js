@@ -6,72 +6,38 @@ import Footer from "./Footer";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { ArrowForward } from "@material-ui/icons";
+import MortgageCalculator from "@herilsaha/mortgage-calculator";
+import "./Calculator.css";
 import blogheroimg from "./img/blogheroimg.jpg";
+import { ParallaxProvider } from "react-scroll-parallax";
+import ParallaxImg from "./ParallaxImg";
+import Fade from "react-reveal/Fade";
 
-function BlogListPage2() {
-  window.addEventListener("scroll", parallax);
 
-  function parallax() {
-    function getPosition(item) {
-      let top = (
-        (item.getBoundingClientRect().top / window.innerHeight) *
-        100
-      ).toFixed(0);
+function BlogListPage2(props) {
 
-      return top;
-    }
-
-    let itemsToParallax = document.getElementsByClassName("parallaxify");
-
-    for (let item of itemsToParallax) {
-      if (!item.dataset.speedMultiplier) {
-        item.dataset.speedMultiplier = "0.7";
-      }
-      item.style.position = "relative";
-
-      item.style.top = getPosition(item) * item.dataset.speedMultiplier + "px";
-    }
-
-    let imagesToParallax = document.getElementsByClassName("parallaxifyBg");
-
-    for (let item of imagesToParallax) {
-      function getPosition(item) {
-        let top = (
-          (item.getBoundingClientRect().top / window.innerHeight) *
-          100
-        ).toFixed(0);
-
-        return top;
-      }
-
-      if (!item.dataset.speedMultiplier) {
-        item.dataset.speedMultiplier = "3";
-      }
-
-      item.style.backgroundAttachment = "fixed";
-      item.style.backgroundPositionY =
-        getPosition(item) * item.dataset.speedMultiplier + "px";
-    }
-  }
 
   return (
     <div>
           <div className="dark_gradient"></div>
+          <Fade duration="1210">
+
       <BlogHero parallaximg1={blogheroimg} />
+      </Fade>
       <div className="all_blogs">
         <div className="blog_flex">
           <div className="blog_box">
             <div className="blog_list blog_list_1">
               <div className="blog_item">
                 <div className="blog_img">
-                  <img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
-                  />
+                  /></a>
                 </div>
                 <div className="blog_item_content">
                   <a href="/BuyingAHome" className="blog_title">
-                    Buying a Home
+                    Buying Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -86,14 +52,14 @@ function BlogListPage2() {
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
-                  />
+                  /></a>
                 </div>
                 <div className="blog_item_content">
                   <a href="/BuyingAHome" className="blog_title">
-                    Buying a Home
+                    Selling Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -110,10 +76,10 @@ function BlogListPage2() {
             <div className="blog_list">
               <div className="blog_item">
                 <div className="blog_img">
-                  <img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
-                  />
+                  /></a>
                 </div>
                 <div className="blog_item_content">
                   <a href="/BuyingAHome" className="blog_title">
@@ -132,10 +98,10 @@ function BlogListPage2() {
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <img
+                  <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
-                  />
+                  /></a>
                 </div>
                 <div className="blog_item_content">
                   <a href="/BuyingAHome" className="blog_title">
@@ -169,8 +135,58 @@ function BlogListPage2() {
             </div>
           </div>
           <div className="blog_sidebar">
+            <div className="blog_sidebar_item">
             <h3>Featured Listings</h3>
             <FeaturedListings />
+            </div>
+            
+            <div className="blog_sidebar_item">
+            <div className="related_posts">
+              <h3>Related Posts</h3>
+  <div className="related_posts_item">
+    <div className="rp_img">
+  <a href=""><img src={blogheroimg} alt="" /></a>
+  </div>
+  <div className="rpi_content">
+  <h4>Author: John Johnson</h4>
+  <p>01/01/2021</p>
+  </div>
+  </div>
+</div>
+<div className="related_posts">
+  <div className="related_posts_item">
+    <div className="rp_img">
+  <a href=""><img src={blogheroimg} alt="" /></a>
+  </div>
+  <div className="rpi_content">
+  <h4>Author: John Johnson</h4>
+  <p>01/01/2021</p>
+  </div>
+  </div>
+</div>
+<div className="related_posts">
+  <div className="related_posts_item">
+    <div className="rp_img">
+  <a href=""><img src={blogheroimg} alt="" /></a>
+  </div>
+  <div className="rpi_content">
+  <h4>Author: John Johnson</h4>
+  <p>01/01/2021</p>
+  </div>
+  </div>
+</div>
+<div className="related_posts">
+  <div className="related_posts_item rpi_last">
+    <div className="rp_img">
+  <a href=""><img src={blogheroimg} alt="" /></a>
+  </div>
+  <div className="rpi_content">
+  <h4>Author: John Johnson</h4>
+  <p>01/01/2021</p>
+  </div>
+  </div>
+</div>
+            </div>
           </div>
         </div>
       </div>
@@ -180,3 +196,4 @@ function BlogListPage2() {
 }
 
 export default BlogListPage2;
+

@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  gap: 30px;
 }
 
 .agent_reviews_content {
@@ -33,7 +34,6 @@
   align-items: center;
   padding: 30px;
   box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
-  margin: 0 15px 0 15px;
   background-color: #fff;
   margin-bottom: 12px;
   position: relative;
