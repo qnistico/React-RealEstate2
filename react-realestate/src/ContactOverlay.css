@@ -25,7 +25,9 @@
 .contact_overlay_img {
   
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
+  max-height: 940px;
+  
   position: relative;
   z-index: 1;
   -webkit-filter: brightness(55%);

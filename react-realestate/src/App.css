@@ -1986,9 +1986,7 @@ input.form-control.form_input {
   .signup_flex {
     background-color: #fff;
   }
-  .signup_button {
-    margin: 0 0 0 8px !important;
-  }
+  
 
   .customer_reviews_flex {
     -webkit-box-orient: horizontal;

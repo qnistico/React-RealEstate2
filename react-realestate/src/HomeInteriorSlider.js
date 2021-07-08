@@ -23,8 +23,8 @@ import house14 from "./img/house14.jpg";
 import house15 from "./img/house15.jpg";
 
 function HomeInteriorSlider(props) {
-  // Add styles 
-// Add styles 
+
+    // Add styles 
 
 addStyles()
 
@@ -113,6 +113,7 @@ function addStyles() {
         text-align: center;
         transition: all 0.3s;
         animation: moveDown 0.4s;
+        user-selct: none;
     }
     .closeButton:hover {
 
@@ -141,7 +142,16 @@ window.onload = function() {
     }
 }
 
+window.ontouchstart = function(click) {
+
+    userInteract(click)
+}
 window.onclick = function(click) {
+
+    userInteract(click)
+}
+
+function userInteract(click) {
 
     let element = click.target
 
@@ -155,8 +165,7 @@ window.onclick = function(click) {
         }
         if (!element.dataset.src) {
 
-            console.log("Err: no src prodivded")
-            return
+            return console.error("no src provided")
         }
 
         if (!element.dataset.backgroundOpacity) {
@@ -214,17 +223,20 @@ window.onclick = function(click) {
     }
 }
 
-window.onkeydown = function(e) {
+window.onkeydown = function(interaction) {
 
-    if (e.key == "Escape") {
+    if (interaction.key == "Escape" || interaction.key == " ") {
 
         closeLightbox()
     }
 }
 
-
 // Hide lightbox when user scrolls
 
+window.onscroll = function() {
+
+    closeLightbox()
+}
 window.onwheel = function() {
 
     closeLightbox()
@@ -247,138 +259,110 @@ function closeLightbox() {
     }
 }
 
-(function() {
-    "use strict";
+window.onmousedown = function() {
 
-    /* prevent multiple script inits */
-    if (typeof(window.lc_mouseDrag) == 'function') {
-        return true;
+    let className = "lightboxImage"
+    let ratio = 0.3
+    let ignoreX = false
+    let ignoreY = false
+
+    if (!className) {
+
+        return console.error('You must provide a valid selector or DOM object as first argument')
+    }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+        return console.log("Mobile user panning disabled")
     }
 
+    let elements = document.getElementsByClassName(className)
 
-    /* 
-     * Public class initializing the plugin for each targeted element 
-     * suggested ratio = 0.3
-     */
-    window.lc_mouseDrag = function(attachTo, ratio = 0.3, ignoreX = false, ignoreY = false) {
-        if (!attachTo) {
-            return console.error('You must provide a valid selector or DOM object as first argument');
-        }
+    if (elements.length == 0) {
+
+        return console.log("No elements to pan")
+    }
+
+    for (let element of elements) {
+
+        console.log(element)
+
+        let trackX = (!ignoreX) ? true : false,
+            trackY = (!ignoreY) ? true : false,
+
+            curDown = false,
+            curYPos = 0,
+            curXPos = 0,
+
+            startScrollY = 0,
+            startScrollX = 0,
+            scrollDif = 0,
+            animation = null;
 
 
-        /* get elements to attach event to */
-        const get_elems = function(selector) {
-            if (typeof(selector) != 'string') {
-                return (selector instanceof Element) ? [selector] : Object.values(selector);
+        element.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            curDown = true;
+
+            startScrollY = parseInt(element.scrollTop, 10);
+            startScrollX = parseInt(element.scrollLeft, 10);
+            curYPos = e.clientY;
+            curXPos = e.clientX;
+        });
+
+
+        element.addEventListener('mouseup', (e) => {
+
+            // Smooth action effect 
+            let currScrollY = element.scrollTop,
+                scrollDiffY = (startScrollY - currScrollY) * -1,
+                newScrollY = currScrollY + (scrollDiffY * ratio),
+
+                currScrollX = element.scrollLeft,
+                scrollDiffX = (startScrollX - currScrollX) * -1,
+                newScrollX = currScrollX + (scrollDiffX * ratio);
+
+            let scroll_obj = {
+                behavior: 'smooth'
+            };
+            if (trackY) {
+                scroll_obj.top = newScrollY;
+            }
+            if (trackX) {
+                scroll_obj.left = newScrollX;
             }
 
-            // clean problematic selectors
-            (selector.match(/(#[0-9][^\s:,]*)/g) || []).forEach(function(n) {
-                selector = selector.replace(n, '[id="' + n.replace("#", "") + '"]');
-            });
-
-            return document.querySelectorAll(selector);
-        };
+            animation = element.scroll(scroll_obj);
+        });
 
 
-        /* perform */
-        const mouseDrag = function($elem) {
-            let trackX = (!ignoreX) ? true : false,
-                trackY = (!ignoreY) ? true : false,
 
-                curDown = false,
-                curYPos = 0,
-                curXPos = 0,
-
-                startScrollY = 0,
-                startScrollX = 0,
-                scrollDif = 0,
-                animation = null;
+        document.body.addEventListener('mouseup', (e) => {
+            curDown = false;
+        });
 
 
-            $elem.addEventListener('mousedown', (e) => {
-                e.preventDefault();
-                curDown = true;
 
-                startScrollY = parseInt($elem.scrollTop, 10);
-                startScrollX = parseInt($elem.scrollLeft, 10);
-                curYPos = e.clientY;
-                curXPos = e.clientX;
-            });
-
-
-            $elem.addEventListener('mouseup', (e) => {
-                if (!ratio) {
-                    return true;
+        element.addEventListener('mousemove', (e) => {
+            if (curDown === true) {
+                if (animation) {
+                    animation.pause();
                 }
-
-                // smooth scroll
-                let currScrollY = $elem.scrollTop,
-                    scrollDiffY = (startScrollY - currScrollY) * -1,
-                    newScrollY = currScrollY + (scrollDiffY * ratio),
-
-                    currScrollX = $elem.scrollLeft,
-                    scrollDiffX = (startScrollX - currScrollX) * -1,
-                    newScrollX = currScrollX + (scrollDiffX * ratio);
 
                 let scroll_obj = {
-                    behavior: 'smooth'
+                    behavior: 'auto'
                 };
                 if (trackY) {
-                    scroll_obj.top = newScrollY;
+                    scroll_obj.top = startScrollY + (curYPos - e.clientY);
                 }
                 if (trackX) {
-                    scroll_obj.left = newScrollX;
+                    scroll_obj.left = startScrollX + (curXPos - e.clientX);
                 }
 
-                animation = $elem.scroll(scroll_obj);
-            });
-
-
-
-            document.body.addEventListener('mouseup', (e) => {
-                curDown = false;
-            });
-
-
-
-            $elem.addEventListener('mousemove', (e) => {
-                if (curDown === true) {
-                    if (animation) {
-                        animation.pause();
-                    }
-
-                    let scroll_obj = {
-                        behavior: 'auto'
-                    };
-                    if (trackY) {
-                        scroll_obj.top = startScrollY + (curYPos - e.clientY);
-                    }
-                    if (trackX) {
-                        scroll_obj.left = startScrollX + (curXPos - e.clientX);
-                    }
-
-                    $elem.scroll(scroll_obj);
-                }
-            });
-        };
-
-
-        // init
-        get_elems(attachTo).forEach(($el) => {
-
-            // not for touch mobile devices
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                document.body.classList.add('lc_mousedrag_is_mobile');
-                return true;
+                element.scroll(scroll_obj);
             }
-
-            mouseDrag($el);
-        });
-    };
-})();
-
-lc_mouseDrag('lightboxImage')
+        })
+    }
+}
     return (
         <div className="home_interior_slider">
             <MDBCarousel showIndicators showControls slide interval={5000} className="wtf">
