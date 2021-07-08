@@ -95,6 +95,9 @@ function MansionInFoxchapel(props) {
     cardimgalt: "house",
     aplink: () => {
       history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+    history.push("/HouseInBerwyn");
     }  
 
   };
@@ -115,6 +118,9 @@ function MansionInFoxchapel(props) {
     cardimgalt: "house",
     aplink: () => {
       history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/HouseInPennWynne");
     }  
 
   };

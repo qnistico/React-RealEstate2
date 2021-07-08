@@ -98,7 +98,7 @@ function OverlayCarousel(props) {
                 occbottomagent={agent1}
                 occbottomname="John Ryan"
                 plink="/MansionInFoxchapel"
-                aplink="AgentJohnProfile"
+                aplink="/AgentJohnProfile"
               />
             </div>
             <div>
@@ -111,7 +111,7 @@ function OverlayCarousel(props) {
                 occprice="$2,300,000"
                 occbottomagent={agent4}
                 occbottomname="Mary Williams"
-                plink="/MansionInOreland"
+                plink="/HouseInOreland"
                 aplink="/AgentMaryProfile"
               />
             </div>

@@ -82,102 +82,99 @@ import Fade from "react-reveal/Fade";
 
 function AptInPhiladelphia(props) {
   const history = useHistory();
-    const templateImg = {
-        houseImg: apt1exterior,
-        houseLR: apt1,
-        houseMBR: apt1mbr,
-        houseBR: apt1br
-      };
-      const psprAgent = {
-        agentImg: agent1,
-        agentName: "John Ryan",
-        aplink: () => {
+  const templateImg = {
+    houseImg: apt1exterior,
+    houseLR: apt1,
+    houseMBR: apt1mbr,
+    houseBR: apt1br,
+  };
+  const psprAgent = {
+    agentImg: agent1,
+    agentName: "John Ryan",
+    aplink: () => {
       history.push("/AgentJohnProfile");
     },
-      };
-      const card1template = {
-              cardImg: house1,
-              agentImg: agent1,
-              cardTitle: "Mansion on Lorem Ave",
-              address: "555 Lorem Avenue, Lorem, PA 12345, USA",
-              cardPrice: "$5,200,000",
-              bedrooms: "4",
-              bathrooms: "5",
-              sqft: "6,500 SqFt",
-              cardimgalt: "mansion",
-              plink: () => {
-                history.push("/MansionInFoxchapel");
-              },
-              featured: "Featured",
-              forsale: "For Sale",
-              filteritem: "house agent1",
-              salerent: "For Sale",
-              aplink: () => {
+  };
+  const card1template = {
+    cardImg: house1,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$5,200,000",
+    bedrooms: "4",
+    bathrooms: "5",
+    sqft: "6,500 SqFt",
+    cardimgalt: "mansion",
+    plink: () => {
+      history.push("/MansionInFoxchapel");
+    },
+    featured: "Featured",
+    forsale: "For Sale",
+    filteritem: "house agent1",
+    salerent: "For Sale",
+    aplink: () => {
       history.push("/AgentJohnProfile");
-    }
-    
-    
-        
-      };
-    
-      const card2template = {
-        cardImg: house2,
-        agentImg: agent1,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$1,800,000",
-        bedrooms: "3",
-        bathrooms: "4",
-        sqft: "4,500 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        salerent: "For Sale",
-        cardimgalt: "house",
-        aplink: () => {
-      history.push("/AgentJohnProfile");
-    }  
-    
-      };
-    
-      
-      const card3template = {
-        cardImg: house4,
-        agentImg: agent1,
-        cardTitle: "Mansion on Lorem Ave",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$900,000",
-        bedrooms: "2",
-        bathrooms: "3",
-        sqft: "2,750 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        salerent: "For Sale",
-        cardimgalt: "house",
-        aplink: () => {
-      history.push("/AgentJohnProfile");
-    }  
-    
-      };
-    return (
-        <div className="apt_in_philadelphia">
-                            <Fade duration="1210">
+    },
+  };
 
-            <div className="property_hero">
-            <ParallaxProvider>
-        <ParallaxImg  imgsrc={apt1} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>   
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h1>Apartment In Philadelphia</h1>
+  const card2template = {
+    cardImg: house2,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$1,800,000",
+    bedrooms: "3",
+    bathrooms: "4",
+    sqft: "4,500 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/HouseInBerwyn");
+    }
+  };
+
+  const card3template = {
+    cardImg: house4,
+    agentImg: agent1,
+    cardTitle: "Mansion on Lorem Ave",
+    address: "555 Lorem Avenue, Lorem, FL 12345, USA",
+    cardPrice: "$900,000",
+    bedrooms: "2",
+    bathrooms: "3",
+    sqft: "2,750 SqFt",
+    featured: "Featured",
+    forsale: "For Sale",
+    salerent: "For Sale",
+    cardimgalt: "house",
+    aplink: () => {
+      history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/HouseInPennWynne");
+    }
+  };
+  return (
+    <div className="apt_in_philadelphia">
+      <Fade duration="1210">
+        <div className="property_hero">
+          <ParallaxProvider>
+            <ParallaxImg imgsrc={apt1} height="75vh"></ParallaxImg>
+          </ParallaxProvider>
+          <div className="property_hero_flex">
+            <div className="property_hero_content">
+              <h1>Apartment In Philadelphia</h1>
+            </div>
           </div>
         </div>
-        </div>
-        </Fade>
-      
+      </Fade>
+
       <SortByContent />
-    <ViewProperty
+      <ViewProperty
         homeTitle="Apartment on 555 Lorem Ave, Philadelphia, PA"
         homeAddress="555 Lorem Ave"
         garages="0"
@@ -195,8 +192,8 @@ function AptInPhiladelphia(props) {
         card2template={card2template}
         card3template={card3template}
       />
-        </div>
-    )
+    </div>
+  );
 }
 
-export default AptInPhiladelphia
+export default AptInPhiladelphia;

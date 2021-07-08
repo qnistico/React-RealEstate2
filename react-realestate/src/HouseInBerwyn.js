@@ -152,7 +152,10 @@ function HouseInBerwyn(props) {
     cardimgalt: "house",
     aplink: () => {
       history.push("/AgentJohnProfile");
-    }  
+    },
+    plink: () => {
+      history.push("/HouseInPennWynne");
+    }
   };
     return (
         <div className="house_in_berwyn">

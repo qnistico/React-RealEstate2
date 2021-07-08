@@ -131,6 +131,9 @@ function HouseInPennWynne(props) {
     salerent: "For Sale",
     aplink: () => {
       history.push("/AgentJohnProfile");
+    },
+    plink: () => {
+      history.push("/HouseInBerwyn");
     }
   };
 

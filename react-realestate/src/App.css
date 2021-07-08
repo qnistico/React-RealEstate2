@@ -1918,6 +1918,11 @@ input.form-control.form_input {
   .signup_body {
     width: 100%;
   }
+  .pspl_features {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   
 }
 @media screen and (max-width: 768px) {
@@ -1971,6 +1976,9 @@ input.form-control.form_input {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+  }
+  .pspl_features_item {
+    flex: 1 40%;
   }
 }
 

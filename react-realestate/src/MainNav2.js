@@ -98,14 +98,12 @@ function MainNav2() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  <div className="signup_flex">
             <a
               className=" signup_button"
             >
               <AccountCircleIcon />
               Login / Sign Up
             </a>
-          </div>
                 </NavLink>
               </li>
             </ul>
