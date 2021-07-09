@@ -8,7 +8,7 @@
 .mobile_icons {
   width: 100%;
   padding: 60px 30px;
-  background-image: linear-gradient(#f1f2f5e8, #f1f2f5e8), url(img/mobileiconsoverlay.jpg);
+  background-image: linear-gradient(#f1f2f5e5, #f1f2f5e5), url(img/mobileiconsoverlay.jpg);
   background-size: cover;
   background-position: center center;
   

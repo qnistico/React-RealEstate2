@@ -97,7 +97,7 @@ function HouseInOreland(props) {
       const card1template = {
         cardImg: house14,
         agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
+        cardTitle: "House in Somewhere",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$4,100,000",
         bedrooms: "4",
@@ -116,7 +116,7 @@ function HouseInOreland(props) {
       const card2template = {
         cardImg: house9,
         agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
+        cardTitle: "House in Edgeworth",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$680,000",
         bedrooms: "2",
@@ -138,7 +138,7 @@ function HouseInOreland(props) {
       const card3template = {
         cardImg: apt2,
     agentImg: agent4,
-    cardTitle: "Apartment on Lorem Ave",
+    cardTitle: "Apartment in Williamsport",
     address: "555 Lorem Avenue, Lorem, PA 12345, USA",
     cardPrice: "$1,450/mo",
     bedrooms: "2",

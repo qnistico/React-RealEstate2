@@ -97,7 +97,7 @@ function MansionInGladwyne(props) {
   const card1template = {
     cardImg: house10,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Sewickley",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$5,400,000",
     bedrooms: "4",
@@ -118,7 +118,7 @@ function MansionInGladwyne(props) {
   const card2template = {
     cardImg: house15,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Norwin",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$5,700,000",
     bedrooms: "4",
@@ -139,7 +139,7 @@ function MansionInGladwyne(props) {
   const card3template = {
     cardImg: apt3,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Apartment in Allentown",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$1,200 / mo",
     bedrooms: "1",

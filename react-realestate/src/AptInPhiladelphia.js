@@ -98,7 +98,7 @@ function AptInPhiladelphia(props) {
   const card1template = {
     cardImg: house1,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Foxchapel",
     address: "555 Lorem Avenue, Lorem, PA 12345, USA",
     cardPrice: "$5,200,000",
     bedrooms: "4",
@@ -120,7 +120,7 @@ function AptInPhiladelphia(props) {
   const card2template = {
     cardImg: house2,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "House in Berwyn",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$1,800,000",
     bedrooms: "3",
@@ -141,7 +141,7 @@ function AptInPhiladelphia(props) {
   const card3template = {
     cardImg: house4,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "House in PennWynne",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$900,000",
     bedrooms: "2",

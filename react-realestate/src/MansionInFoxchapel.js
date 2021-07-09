@@ -59,7 +59,7 @@ function MansionInFoxchapel(props) {
   const card1template = {
     cardImg: apt1,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Apartment in Philadelphia",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$1400 / mo",
     bedrooms: "2",
@@ -83,7 +83,7 @@ function MansionInFoxchapel(props) {
   const card2template = {
     cardImg: house2,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "House in Berwyn",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$1,800,000",
     bedrooms: "3",
@@ -106,7 +106,7 @@ function MansionInFoxchapel(props) {
   const card3template = {
     cardImg: house4,
     agentImg: agent1,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "House in PennWynne",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$900,000",
     bedrooms: "2",

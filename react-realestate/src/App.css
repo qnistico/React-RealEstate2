@@ -514,7 +514,6 @@ input:active {
 .lightbox_button {
   position: absolute;
   right: 0;
-  background-color: transparent;
 }
 
 .lightbox_button .MuiSvgIcon-root {
@@ -655,8 +654,7 @@ input:active {
 }
 
 .lp_cards_bottom p:first-of-type {
-  color: #1a1a1a;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
 }
 
 .color {

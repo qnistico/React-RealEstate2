@@ -24,11 +24,10 @@ import { useHistory } from "react-router-dom";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 
 function LandingPageCards() {
-// Add styles 
+/*
+  addStyles();
 
-addStyles()
-
-function addStyles() {
+  function addStyles() {
     let styles = `
 
     @keyframes moveUp {
@@ -125,244 +124,228 @@ function addStyles() {
         opacity: 0;
         pointer-events: none;
     }
-    `
+    `;
 
-    var styleSheet = document.createElement("style")
-    styleSheet.innerHTML = styles
-    document.head.appendChild(styleSheet)
-}
+    var styleSheet = document.createElement("style");
+    styleSheet.innerHTML = styles;
+    document.head.appendChild(styleSheet);
+  }
 
-let lightElements = document.getElementsByClassName("ezLightbox")
+  let lightElements = document.getElementsByClassName("ezLightbox");
 
-window.onload = function() {
-
+  window.onload = function () {
     for (let element of lightElements) {
-
-        element.style.cursor = "pointer"
+      element.style.cursor = "pointer";
     }
-}
+  };
 
-window.ontouchstart = function(click) {
+  window.ontouchstart = function (click) {
+    userInteract(click);
+  };
+  window.onclick = function (click) {
+    userInteract(click);
+  };
 
-    userInteract(click)
-}
-window.onclick = function(click) {
-
-    userInteract(click)
-}
-
-function userInteract(click) {
-
-    let element = click.target
+  function userInteract(click) {
+    let element = click.target;
 
     if (element.classList.contains("ezLightbox")) {
+      // Add defaults if none are provided
 
-        // Add defaults if none are provided
+      if (!element.dataset.src) {
+        element.dataset.src = element.src;
+      }
+      if (!element.dataset.src) {
+        return console.error("no src provided");
+      }
 
-        if (!element.dataset.src) {
+      if (!element.dataset.backgroundOpacity) {
+        element.dataset.backgroundOpacity = 0.85;
+      }
 
-            element.dataset.src = element.src
-        }
-        if (!element.dataset.src) {
+      if (!element.dataset.sizeMultiplier) {
+        element.dataset.sizeMultiplier = 1.5;
+      }
 
-            return console.error("no src provided")
-        }
+      if (!element.dataset.aspectRatio) {
+        element.dataset.aspectRatio = 1 / 1;
+      }
 
-        if (!element.dataset.backgroundOpacity) {
+      // Container
 
-            element.dataset.backgroundOpacity = 0.85
-        }
+      let lightboxContainer = document.createElement("div");
 
-        if (!element.dataset.sizeMultiplier) {
+      lightboxContainer.style.background =
+        "rgba(0, 0, 0, " + element.dataset.backgroundOpacity + ")";
 
-            element.dataset.sizeMultiplier = 1.5
-        }
+      lightboxContainer.classList.add("lightboxContainer");
 
-        if (!element.dataset.aspectRatio) {
+      document.body.appendChild(lightboxContainer);
 
-            element.dataset.aspectRatio = 1 / 1
-        }
+      // Image
 
-        // Container
+      let lightboxImage = document.createElement("img");
 
-        let lightboxContainer = document.createElement("div")
+      (async function () {
+        let image = element.dataset.src;
 
-        lightboxContainer.style.background = "rgba(0, 0, 0, " + element.dataset.backgroundOpacity + ")"
+        var houseImage = import(`${image}`);
 
-        lightboxContainer.classList.add("lightboxContainer")
+        lightboxImage.src = await houseImage;
 
-        document.body.appendChild(lightboxContainer)
+        console.log(houseImage);
+      })();
 
-        // Image
+      lightboxImage.style.width =
+        element.offsetWidth * element.dataset.sizeMultiplier + "px";
 
-        let lightboxImage = document.createElement("img")
+      lightboxImage.style.aspectRatio = element.dataset.aspectRatio;
 
-        lightboxImage.src = element.dataset.src
+      lightboxImage.classList.add("lightboxImage");
 
-        lightboxImage.style.width = element.offsetWidth * element.dataset.sizeMultiplier + "px"
+      lightboxContainer.appendChild(lightboxImage);
 
-        lightboxImage.style.aspectRatio = element.dataset.aspectRatio
+      // Close button
 
-        lightboxImage.classList.add("lightboxImage")
+      let closeButton = document.createElement("img");
 
-        lightboxContainer.appendChild(lightboxImage)
+      closeButton.src =
+        "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2018/png/iconmonstr-x-mark-thin.png&r=255&g=255&b=255";
 
-        // Close button
+      closeButton.classList.add("closeButton");
 
-        let closeButton = document.createElement("img")
-
-        closeButton.src = "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2018/png/iconmonstr-x-mark-thin.png&r=255&g=255&b=255"
-
-        closeButton.classList.add("closeButton")
-
-        document.body.appendChild(closeButton)
-
+      document.body.appendChild(closeButton);
     } else if (!element.classList.contains("lightboxImage")) {
-
-        closeLightbox()
+      closeLightbox();
     }
-}
+  }
 
-window.onkeydown = function(interaction) {
-
+  window.onkeydown = function (interaction) {
     if (interaction.key == "Escape" || interaction.key == " ") {
-
-        closeLightbox()
+      closeLightbox();
     }
-}
+  };
 
-// Hide lightbox when user scrolls
+  // Hide lightbox when user scrolls
 
-window.onscroll = function() {
+  window.onscroll = function () {
+    closeLightbox();
+  };
+  window.onwheel = function () {
+    closeLightbox();
+  };
 
-    closeLightbox()
-}
-window.onwheel = function() {
-
-    closeLightbox()
-}
-
-function closeLightbox() {
-
-    let lightboxContainers = document.getElementsByClassName("lightboxContainer")
+  function closeLightbox() {
+    let lightboxContainers =
+      document.getElementsByClassName("lightboxContainer");
 
     for (let element of lightboxContainers) {
-
-        element.classList.add("lightboxContainerHide")
+      element.classList.add("lightboxContainerHide");
     }
 
-    let closeButtons = document.getElementsByClassName("closeButton")
+    let closeButtons = document.getElementsByClassName("closeButton");
 
     for (let element of closeButtons) {
-
-        element.classList.add("closeButtonHide")
+      element.classList.add("closeButtonHide");
     }
-}
+  }
 
-window.onmousedown = function() {
-
-    let className = "lightboxImage"
-    let ratio = 0.3
-    let ignoreX = false
-    let ignoreY = false
+  window.onmousedown = function () {
+    let className = "lightboxImage";
+    let ratio = 0.3;
+    let ignoreX = false;
+    let ignoreY = false;
 
     if (!className) {
-
-        return console.error('You must provide a valid selector or DOM object as first argument')
+      return console.error(
+        "You must provide a valid selector or DOM object as first argument"
+      );
     }
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-        return console.log("Mobile user panning disabled")
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      return console.log("Mobile user panning disabled");
     }
 
-    let elements = document.getElementsByClassName(className)
+    let elements = document.getElementsByClassName(className);
 
     if (elements.length == 0) {
-
-        return console.log("No elements to pan")
+      return console.log("No elements to pan");
     }
 
     for (let element of elements) {
+      console.log(element);
 
-        console.log(element)
+      let trackX = !ignoreX ? true : false,
+        trackY = !ignoreY ? true : false,
+        curDown = false,
+        curYPos = 0,
+        curXPos = 0,
+        startScrollY = 0,
+        startScrollX = 0,
+        scrollDif = 0,
+        animation = null;
 
-        let trackX = (!ignoreX) ? true : false,
-            trackY = (!ignoreY) ? true : false,
+      element.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        curDown = true;
 
-            curDown = false,
-            curYPos = 0,
-            curXPos = 0,
+        startScrollY = parseInt(element.scrollTop, 10);
+        startScrollX = parseInt(element.scrollLeft, 10);
+        curYPos = e.clientY;
+        curXPos = e.clientX;
+      });
 
-            startScrollY = 0,
-            startScrollX = 0,
-            scrollDif = 0,
-            animation = null;
+      element.addEventListener("mouseup", (e) => {
+        // Smooth action effect
+        let currScrollY = element.scrollTop,
+          scrollDiffY = (startScrollY - currScrollY) * -1,
+          newScrollY = currScrollY + scrollDiffY * ratio,
+          currScrollX = element.scrollLeft,
+          scrollDiffX = (startScrollX - currScrollX) * -1,
+          newScrollX = currScrollX + scrollDiffX * ratio;
 
+        let scroll_obj = {
+          behavior: "smooth",
+        };
+        if (trackY) {
+          scroll_obj.top = newScrollY;
+        }
+        if (trackX) {
+          scroll_obj.left = newScrollX;
+        }
 
-        element.addEventListener('mousedown', (e) => {
-            e.preventDefault();
-            curDown = true;
+        animation = element.scroll(scroll_obj);
+      });
 
-            startScrollY = parseInt(element.scrollTop, 10);
-            startScrollX = parseInt(element.scrollLeft, 10);
-            curYPos = e.clientY;
-            curXPos = e.clientX;
-        });
+      document.body.addEventListener("mouseup", (e) => {
+        curDown = false;
+      });
 
+      element.addEventListener("mousemove", (e) => {
+        if (curDown === true) {
+          if (animation) {
+            animation.pause();
+          }
 
-        element.addEventListener('mouseup', (e) => {
+          let scroll_obj = {
+            behavior: "auto",
+          };
+          if (trackY) {
+            scroll_obj.top = startScrollY + (curYPos - e.clientY);
+          }
+          if (trackX) {
+            scroll_obj.left = startScrollX + (curXPos - e.clientX);
+          }
 
-            // Smooth action effect 
-            let currScrollY = element.scrollTop,
-                scrollDiffY = (startScrollY - currScrollY) * -1,
-                newScrollY = currScrollY + (scrollDiffY * ratio),
-
-                currScrollX = element.scrollLeft,
-                scrollDiffX = (startScrollX - currScrollX) * -1,
-                newScrollX = currScrollX + (scrollDiffX * ratio);
-
-            let scroll_obj = {
-                behavior: 'smooth'
-            };
-            if (trackY) {
-                scroll_obj.top = newScrollY;
-            }
-            if (trackX) {
-                scroll_obj.left = newScrollX;
-            }
-
-            animation = element.scroll(scroll_obj);
-        });
-
-
-
-        document.body.addEventListener('mouseup', (e) => {
-            curDown = false;
-        });
-
-
-
-        element.addEventListener('mousemove', (e) => {
-            if (curDown === true) {
-                if (animation) {
-                    animation.pause();
-                }
-
-                let scroll_obj = {
-                    behavior: 'auto'
-                };
-                if (trackY) {
-                    scroll_obj.top = startScrollY + (curYPos - e.clientY);
-                }
-                if (trackX) {
-                    scroll_obj.left = startScrollX + (curXPos - e.clientX);
-                }
-
-                element.scroll(scroll_obj);
-            }
-        })
+          element.scroll(scroll_obj);
+        }
+      });
     }
-}
+  };
+  */
   const history = useHistory();
 
   return (
@@ -378,7 +361,15 @@ window.onmousedown = function() {
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
-              <button className="lightbox_button ezLightbox" data-src="./img/house15.jpg  " data-size-multiplier="20"><CameraAlt /></button>
+              {/*
+              <button
+                className="lightbox_button ezLightbox"
+                data-src="./img/house15.jpg"
+                data-size-multiplier="16"
+              >
+                <CameraAlt />
+              </button>
+              */}
               <div className="card_img_agent">
                 <a onClick={() => history.push("/AgentKevinProfile")}>
                   <Avatar src={agent3} alt="real estate agent" />

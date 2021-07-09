@@ -100,7 +100,7 @@ function AptInAllentown(props) {
   const card1template = {
     cardImg: house10,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Sewickley",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$5,400,000",
     bedrooms: "4",
@@ -121,7 +121,7 @@ function AptInAllentown(props) {
   const card2template = {
     cardImg: house15,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Norwin",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$5,700,000",
     bedrooms: "4",
@@ -143,7 +143,7 @@ function AptInAllentown(props) {
   const card3template = {
     cardImg: house7,
     agentImg: agent3,
-    cardTitle: "Mansion on Lorem Ave",
+    cardTitle: "Mansion in Gladwyne",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$14,000,000",
     bedrooms: "6",

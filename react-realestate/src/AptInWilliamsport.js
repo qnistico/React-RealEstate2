@@ -94,7 +94,7 @@ function AptInWilliamsport(props) {
       const card1template = {
         cardImg: house14,
         agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
+        cardTitle: "House in Somewhere",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$4,100,000",
         bedrooms: "4",
@@ -113,7 +113,7 @@ function AptInWilliamsport(props) {
       const card2template = {
         cardImg: house9,
         agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
+        cardTitle: "Houses in Edgeworth",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$680,000",
         bedrooms: "2",
@@ -135,7 +135,7 @@ function AptInWilliamsport(props) {
       const card3template = {
         cardImg: house8,
         agentImg: agent4,
-        cardTitle: "Mansion on Lorem Ave",
+        cardTitle: "House in Oreland",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$2,300,000",
         bedrooms: "2",
