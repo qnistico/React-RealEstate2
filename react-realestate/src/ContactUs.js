@@ -31,7 +31,7 @@ function ContactUs() {
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
-                  aria-label={labelText}
+                  aria-label="name"
                   name="name"
                   type="text"
                   className="form-control form_input"
@@ -41,7 +41,7 @@ function ContactUs() {
               <div className="form-group">
                 <label htmlFor="phone">Phone</label>
                 <input
-                  aria-label={labelText}
+                  aria-label="phone"
                   name="phone"
                   type="phone"
                   className="form-control form_input"
@@ -52,7 +52,7 @@ function ContactUs() {
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
-                  aria-label={labelText}
+                  aria-label="email"
                   name="email"
                   type="email"
                   className="form-control form_input"
@@ -63,7 +63,7 @@ function ContactUs() {
               <div className="form-group">
                 <label htmlFor="message">Message</label>
                 <textarea
-                  aria-label={labelText}
+                  aria-label="message"
                   name="message"
                   className="form-control form_input"
                   rows="3"
