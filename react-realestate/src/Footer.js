@@ -131,11 +131,11 @@ function Footer() {
           <div className="footer_copyright_flex">
           <p>&copy; 2021 | PA Premium Realty | All Rights Reserved</p>
           <div>
-<a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FacebookIcon /></a>
-<a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><InstagramIcon /></a>
-<a href="https://twitter.com/" target="_blank" rel="noreferrer"><TwitterIcon /></a>
-<a href="https://www.pinterest.com/" target="_blank" rel="noreferrer"><PinterestIcon /></a>
-<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+<a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+<a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer"><InstagramIcon /></a>
+<a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noreferrer"><TwitterIcon /></a>
+<a href="https://www.pinterest.com/" aria-label="Pinterest" target="_blank" rel="noreferrer"><PinterestIcon /></a>
+<a href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
           </div>
           </div>
         </div>

@@ -11,19 +11,19 @@ function VPForm(props) {
             <form id="contact-form" className="contact_form">
     <div className="form-group">
         <label htmlFor="name">Name</label>
-        <input type="text" className="form-control form_input" placeholder="Name" />
+        <input type="text"  name="name" className="form-control form_input" aria-labelledby="name" placeholder="Name" />
     </div>
     <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Phone</label>
-        <input type="phone" className="form-control form_input" aria-describedby="phoneHelp" placeholder="Phone" />
+        <label htmlFor="phone">Phone</label>
+        <input type="phone"  name="phone" className="form-control form_input" aria-labelledby="phone" placeholder="Phone" />
     </div>
     <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email</label>
-        <input type="email" className="form-control form_input" aria-describedby="emailHelp" placeholder="Email" />
+        <label htmlFor="email">Email</label>
+        <input type="email"  name="email" className="form-control form_input" aria-labelledby="email" placeholder="Email" />
     </div>
     <div className="form-group">
         <label htmlFor="message">Message</label>
-        <textarea className="form-control form_input" rows="3" placeholder="Message"></textarea>
+    <textarea  name="message" className="form-control form_input" rows="3" aria-labelledby="message" placeholder="Message"></textarea>
     </div>
     <MDBBtn className="send_button hero_button">Submit</MDBBtn>
 </form>
