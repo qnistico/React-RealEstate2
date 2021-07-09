@@ -6,8 +6,10 @@ import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import "./Blogs.css";
 import Footer from "./Footer";
+import { useHistory } from "react-router-dom";
 
 function BlogPostTemplate(props) {
+  const history = useHistory();
   return (
     <div>
       <BlogHero parallaximg1={blogheroimg} />
@@ -119,7 +121,7 @@ function BlogPostTemplate(props) {
               <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a href="">
+                    <a onClick={() => history.push("/BuyingAHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
@@ -132,7 +134,7 @@ function BlogPostTemplate(props) {
               <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a href="">
+                    <a onClick={() => history.push("/BuyingAHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
@@ -145,7 +147,7 @@ function BlogPostTemplate(props) {
               <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a href="">
+                    <a onClick={() => history.push("/BuyingAHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
@@ -158,7 +160,7 @@ function BlogPostTemplate(props) {
               <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a href="">
+                    <a onClick={() => history.push("/BuyingAHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
