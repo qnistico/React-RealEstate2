@@ -487,7 +487,7 @@ input:active {
 .featured_badge {
   font-size: 13px;
   background-color: #0073e5;
-  color: white;
+  color: white !important;
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
