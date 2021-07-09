@@ -249,18 +249,18 @@ function ViewProperty(props) {
             </div>
           </div>
           <div className="ps_primary_right">
-            <div className="pspr_item">
+            <div className="pspr_item pspr_1">
               <PropertyViewAgent {...props.psprAgent}  />
             </div>
-            <div className="pspr_featured pspr_item">
+            <div className="pspr_featured pspr_item pspr_2">
               <h3>Featured Listings</h3>
               <FeaturedListings />
             </div>
-            <div className="pspr_item">
+            <div className="pspr_item pspr_3">
               <h3>Contact</h3>
               <VPForm title="Request Viewing" />
             </div>
-            <div className="pspr_item">
+            <div className="pspr_item pspr_4">
               <h3>Mortgage Calculator</h3>
               <MortgageCalculator />
             </div>

@@ -323,7 +323,7 @@ function AllProperties(props) {
             
           </div>
           <div className="ap_sidebar">
-            <div className="ap_sidebar_item">
+            <div className="ap_sidebar_item apsbi_left">
               <h3>Our Agents</h3>
               <AllAgentsSidebar
                 agentSBImg={agent1}
@@ -331,7 +331,7 @@ function AllProperties(props) {
                 agentSBPhone="(123)-456-1235"
               />
             </div>
-            <div className="ap_sidebar_item">
+            <div className="ap_sidebar_item apsbi_right">
               <h3>Featured Listings</h3>
               <FeaturedListings />
             </div>

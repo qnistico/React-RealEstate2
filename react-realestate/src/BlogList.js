@@ -19,6 +19,7 @@ import blogimg2 from "./img/blogimg2.jpg";
 import blogimg3 from "./img/blogimg3.jpg";
 import blogimg4 from "./img/blogimg4.jpg";
 import AllAgentsSidebar from "./AllAgentsSidebar";
+import VPForm from "./VPForm";
 
 function BlogList(props) {
   const history = useHistory();
@@ -37,7 +38,7 @@ function BlogList(props) {
         <div className="blog_flex">
           <div className="blog_box">
             <div className="blog_list blog_list_1">
-              <div className="blog_item">
+              <div className="blog_item bi_1">
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
@@ -67,7 +68,7 @@ function BlogList(props) {
                   </a>
                 </div>
               </div>
-              <div className="blog_item">
+              <div className="blog_item bi_2">
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
@@ -99,7 +100,7 @@ function BlogList(props) {
               </div>
             </div>
             <div className="blog_list">
-              <div className="blog_item">
+              <div className="blog_item bi_3">
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
@@ -129,7 +130,7 @@ function BlogList(props) {
                   </a>
                 </div>
               </div>
-              <div className="blog_item">
+              <div className="blog_item bi_4">
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
@@ -176,17 +177,21 @@ function BlogList(props) {
             </div>
           </div>
           <div className="blog_sidebar">
-            <div className="blog_sidebar_item">
+            <div className="blog_sidebar_item bsi_1">
+              <div className="blog_sidebar_item_flex bsif_1">
               <h3>Our Agents</h3>
               <AllAgentsSidebar />
+              </div>
             </div>
-            <div className="blog_sidebar_item">
+            <div className="blog_sidebar_item bsi_2">
+              <div className="blog_sidebar_item_flex">
               <h3>Featured Listings</h3>
               <FeaturedListings />
+              </div>
             </div>
 
-            <div className="blog_sidebar_item">
-              <div className="related_posts">
+            <div className="blog_sidebar_item bsi_3">
+              <div className="blog_sidebar_item_flex">
                 <h3>Related Posts</h3>
                 <div className="related_posts_item">
                   <div className="rp_img">
@@ -199,8 +204,6 @@ function BlogList(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -212,8 +215,6 @@ function BlogList(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -225,8 +226,6 @@ function BlogList(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
                 <div className="related_posts_item rpi_last">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -239,6 +238,12 @@ function BlogList(props) {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="blog_sidebar_item bsi_4">
+              <div className="blog_sidebar_item_flex">
+              <h3>Contact Us</h3>
+              <VPForm />
+            </div>
             </div>
           </div>
         </div>

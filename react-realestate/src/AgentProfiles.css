@@ -14,16 +14,13 @@
     display: flex;
     max-width: 1280px;
     margin: auto;
-    gap: 30px;
 }
 
 .agent_listings .single_cards_body {
-    margin-bottom: 0 !important;
 }
 .agent_listings {
     display: flex;
     flex-flow: column;
-    gap: 30px;
 }
 .ap_primary_left {
     width: 100%;
@@ -31,6 +28,7 @@
     -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
             box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
     background-color: #fff;
+    margin-right: 15px;
 }
 
 .ap_primary_right {
@@ -38,7 +36,7 @@
     height: 100%;
     display: flex;
     flex-flow: column;
-    gap: 30px;
+    margin-left: 15px;
 
 }
 
@@ -71,6 +69,7 @@
     background-color: #fff;
     -webkit-box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
             box-shadow: 0 0 12px 2px rgb(0 0 0 / 7.5%);
+            margin-bottom: 30px;
 }
 
 .appr_item h3 {
@@ -146,7 +145,6 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-            gap: 20px;
             margin-top: 20px;
 }
 
@@ -180,6 +178,7 @@ h3 {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: relative;
+    margin-right: 15px;
 }
 
 .appl_button::before {
@@ -255,6 +254,12 @@ h3 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .appl_buttons {
+        row-gap: 15px;
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .agent_profile_flex {
         -webkit-box-orient: vertical;
@@ -263,7 +268,7 @@ h3 {
                 flex-flow: column;
     }
     .ap_primary_left {
-        gap: 30px;
+        margin-bottom: 30px;
     }
     .ap_primary_right {
         margin-left: 0;

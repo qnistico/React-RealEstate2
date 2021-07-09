@@ -271,9 +271,8 @@ top: 40%;
   z-index: 5;
   padding: 30px 50px;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -974,12 +973,14 @@ input:active {
   padding: 30px 30px 0 30px;
   background-color: #fff;
   margin-bottom: 0 !important;
+  margin-right: 15px;
 }
 
 .ps_primary_right {
   width: 38%;
   height: 100%;
   background-color: transparent;
+  margin-left: 15px;
 }
 
 .ps_primary_left p {
@@ -1968,6 +1969,14 @@ input.form-control.form_input {
   .ps_primary_right {
     flex-flow: column !important;
   }
+  .pspr_1,
+  .pspr_3 {
+    margin-right: 0 !important;
+  }
+  .pspr_2,
+  .pspr_4 {
+    margin-left: 0 !important;
+  }
 
 }
 
@@ -2015,7 +2024,7 @@ input.form-control.form_input {
     margin: 0;
   }
   .ps_primary_left {
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 0 !important;
   }
 
   .ps_primary_right {
@@ -2036,7 +2045,15 @@ input.form-control.form_input {
   .pspr_item {
     width: 100%;
     flex: 1 40%;
-    margin: 0;
+  }
+
+  .pspr_1,
+  .pspr_3 {
+    margin-right: 15px;
+  }
+  .pspr_2,
+  .pspr_4 {
+    margin-left: 15px;
   }
   .single_cards_top {
     -webkit-box-orient: vertical;

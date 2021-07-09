@@ -16,19 +16,20 @@
   display: flex;
   max-width: 1280px;
   margin: auto;
-  gap: 30px;
 }
 
 .ap_left {
   width: 100%;
   display: flex;
   flex-flow: column;
+  margin-right: 15px;
 }
 
 .ap_sidebar {
   width: 38%;
   display: flex;
   flex-flow: column;
+  margin-left: 15px;
 }
 
 .ap_sidebar h3 {
@@ -172,7 +173,14 @@
   .ap_sidebar {
     flex-flow: column !important;
   }
+  .apsbi_left,
+  .apsbi_right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
+
+
 
 
 @media screen and (max-width: 1150px) {
@@ -191,17 +199,15 @@
     width: 100%;
     margin-left: 0;
     flex-flow: row wrap;
-    gap: 30px;
   }
   .ap_sidebar_item {
     flex: 1 40%;
-    margin-bottom: 0;
   }
-  .ap_left {
-    gap: 30px;
+  .apsbi_left {
+    margin-right: 15px;
   }
-  .single_cards_body {
-    margin-bottom: 0 !important;
+  .apsbi_right {
+    margin-left: 15px;
   }
-  .all_agents_sidebar_flex {}
+  
 }

@@ -37,7 +37,7 @@ function BlogListPage2(props) {
         <div className="blog_flex">
           <div className="blog_box">
             <div className="blog_list blog_list_1">
-              <div className="blog_item">
+              <div className="blog_item bi_1">
                 <div className="blog_img">
                   <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -59,7 +59,7 @@ function BlogListPage2(props) {
                   </a>
                 </div>
               </div>
-              <div className="blog_item">
+              <div className="blog_item bi_2">
                 <div className="blog_img">
                   <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -83,7 +83,7 @@ function BlogListPage2(props) {
               </div>
             </div>
             <div className="blog_list">
-              <div className="blog_item">
+              <div className="blog_item bi_3">
                 <div className="blog_img">
                   <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -105,7 +105,7 @@ function BlogListPage2(props) {
                   </a>
                 </div>
               </div>
-              <div className="blog_item">
+              <div className="blog_item bi_4">
                 <div className="blog_img">
                   <a href="/BuyingAHome"><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -145,56 +145,66 @@ function BlogListPage2(props) {
           </div>
           <div className="blog_sidebar">
             <div className="blog_sidebar_item">
-            <h3>Featured Listings</h3>
-            <FeaturedListings />
+              <div className="blog_sidebar_item_flex">
+              <h3>Our Agents</h3>
+              <AllAgentsSidebar />
+              </div>
             </div>
-            
             <div className="blog_sidebar_item">
-            <div className="related_posts">
-              <h3>Related Posts</h3>
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a href=""><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a href=""><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a href=""><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item rpi_last">
-    <div className="rp_img">
-  <a href=""><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
+              <div className="blog_sidebar_item_flex">
+              <h3>Featured Listings</h3>
+              <FeaturedListings />
+              </div>
+            </div>
+
+            <div className="blog_sidebar_item">
+              <div className="blog_sidebar_item_flex">
+                <h3>Related Posts</h3>
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+                <div className="related_posts_item rpi_last">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
