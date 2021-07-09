@@ -39,6 +39,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import HouseInPennWynne from "./HouseInPennWynne";
 import HouseInBerwyn from "./HouseInBerwyn";
 import MainNav2 from "./MainNav2";
+import { Helmet } from "react-helmet";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -62,12 +63,10 @@ function App() {
     return unsubscribe;
   }, []);
 
-
-
-
-  
   return (
     <Router>
+      <Helmet>
+      </Helmet>
       <MainNav2 />
       <ScrollToTop />
       <Switch>

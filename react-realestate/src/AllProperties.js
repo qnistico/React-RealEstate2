@@ -58,12 +58,17 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
+
 
 function AllProperties(props) {
   const history = useHistory();
 
   return (
     <div>
+      <Helmet>
+        <title>All Properties - PA Premium Realty</title>
+      </Helmet>
       <div className="dark_gradient"></div>
 
       <PagesHero headerTitle="All Listings" parallaximg1={propertybg} />

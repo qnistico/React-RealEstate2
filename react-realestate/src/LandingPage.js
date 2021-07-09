@@ -27,10 +27,9 @@ import "./ChatWidget.css";
 import MobileIcons from "./MobileIcons";
 import Fade from "react-reveal/Fade";
 import LandingPageApts from "./LandingPageApts";
-
+import { Helmet } from "react-helmet";
 function LandingPage() {
   useEffect(() => {
-    
     addResponseMessage("Welcome to PA Premium Realty. How can we help you?");
   }, []);
 
@@ -41,7 +40,17 @@ function LandingPage() {
   };
   return (
     <div className="landing_page">
-        <HeroSlider />
+      <Helmet>
+        <title>Pennsylvania Premium Realty</title>
+        <meta
+          name="description"
+          content="Browse houses and apartments for sale and for rent in Pennsylvania"
+        />
+        <meta 
+        name="keywords" 
+        content="Houses, Apartments, Mansions, Villas, Find Properties, Real Estate" />
+      </Helmet>
+      <HeroSlider />
       <SortByContent />
       <LandingPageCards />
       <OverlayCarousel />
