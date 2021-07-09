@@ -77,6 +77,7 @@ import apt3mbr from "./img/apartment3mbr.jpg";
 import apt3br from "./img/apartment3br.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 function AptInAllentown(props) {
   const history = useHistory();
@@ -88,7 +89,7 @@ function AptInAllentown(props) {
     althouse: "apartment building",
     altlr: "apartment",
     altmbr: "bedroom",
-    altbr: "bathroom",
+    altbr: "bathroom"
   };
   const psprAgent = {
     agentImg: agent3,
@@ -161,6 +162,14 @@ function AptInAllentown(props) {
     },
   };
   return (
+    <div>
+      <Helmet>
+        <title>Apartment In Allentown, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Apartment in Allentown PA"
+        />
+      </Helmet>
     <div className="apt_in_allentown">
       <Fade duration="1210">
         <div className="property_hero">
@@ -194,6 +203,7 @@ function AptInAllentown(props) {
         card2template={card2template}
         card3template={card3template}
       />
+    </div>
     </div>
   );
 }

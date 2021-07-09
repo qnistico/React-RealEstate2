@@ -79,6 +79,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 function AptInPhiladelphia(props) {
   const history = useHistory();
@@ -86,7 +87,7 @@ function AptInPhiladelphia(props) {
     houseImg: apt1exterior,
     houseLR: apt1,
     houseMBR: apt1mbr,
-    houseBR: apt1br,
+    houseBR: apt1br
   };
   const psprAgent = {
     agentImg: agent1,
@@ -159,6 +160,14 @@ function AptInPhiladelphia(props) {
     }
   };
   return (
+    <div>
+      <Helmet>
+        <title>Apartment In Philadelphia, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Apartment in Philadelphia PA"
+        />
+      </Helmet>
     <div className="apt_in_philadelphia">
       <Fade duration="1210">
         <div className="property_hero">
@@ -192,6 +201,7 @@ function AptInPhiladelphia(props) {
         card2template={card2template}
         card3template={card3template}
       />
+    </div>
     </div>
   );
 }

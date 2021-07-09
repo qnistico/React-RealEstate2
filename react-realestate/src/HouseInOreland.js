@@ -73,6 +73,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 function HouseInOreland(props) {
@@ -160,6 +161,14 @@ function HouseInOreland(props) {
       
       
     return (
+      <div>
+        <Helmet>
+        <title>House in Oreland, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="House in Oreland PA"
+        />
+      </Helmet>
         <div className="house_in_oreland">
                             <Fade duration="1210">
 
@@ -195,6 +204,7 @@ function HouseInOreland(props) {
         card2template={card2template}
         card3template={card3template}
       />
+        </div>
         </div>
     )
 }

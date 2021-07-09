@@ -76,6 +76,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { History } from "react-helmet";
 function HouseInBerwyn(props) {
     const history = useHistory();
   const templateImg = {
@@ -86,7 +87,7 @@ function HouseInBerwyn(props) {
     althouse: "Mansion",
     altlr: "living room",
     altmbr: "bedroom",
-    altbr: "bathroom",
+    altbr: "bathroom"
   };
   const psprAgent = {
     agentImg: agent1,
@@ -158,6 +159,14 @@ function HouseInBerwyn(props) {
     }
   };
     return (
+      <div>
+        <Helmet>
+        <title>House in Berwyn, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="House in Berwyn PA"
+        />
+      </Helmet>
         <div className="house_in_berwyn">
                   <Fade duration="1210">
 
@@ -192,6 +201,7 @@ function HouseInBerwyn(props) {
   card2template={card2template}
   card3template={card3template}
 />
+        </div>
         </div>
     )
 }

@@ -39,6 +39,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 function MansionInFoxchapel(props) {
@@ -48,6 +49,10 @@ function MansionInFoxchapel(props) {
     houseLR: house1LR,
     houseMBR: house1MBR,
     houseBR: house1BR,
+    althouse: "Mansion",
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom"
   };
   const psprAgent = {
     agentImg: agent1,
@@ -126,6 +131,14 @@ function MansionInFoxchapel(props) {
   };
   
   return (
+    <div>
+      <Helmet>
+        <title>Mansion in Foxchapel, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Mansion in Foxchapel PA"
+        />
+      </Helmet>
     <div className="mansion_in_foxchapel">
                         <Fade duration="1210">
 
@@ -159,6 +172,7 @@ function MansionInFoxchapel(props) {
         card2template={card2template}
         card3template={card3template}
       />
+    </div>
     </div>
   );
 }

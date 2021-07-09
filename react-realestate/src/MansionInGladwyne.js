@@ -74,6 +74,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 function MansionInGladwyne(props) {
   const history = useHistory();
@@ -85,7 +86,7 @@ function MansionInGladwyne(props) {
     althouse: "Mansion",
     altlr: "living room",
     altmbr: "bedroom",
-    altbr: "bathroom",
+    altbr: "bathroom"
   };
   const psprAgent = {
     agentImg: agent3,
@@ -159,6 +160,14 @@ function MansionInGladwyne(props) {
   };
 
   return (
+    <div>
+      <Helmet>
+        <title>Mansion in Gladwyne, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Mansion in Gladwyne PA"
+        />
+      </Helmet>
     <div className="mansion_in_gladwyne">
                   <Fade duration="1210">
 
@@ -192,6 +201,7 @@ function MansionInGladwyne(props) {
         card2template={card2template}
         card3template={card3template}
       />
+    </div>
     </div>
   );
 }

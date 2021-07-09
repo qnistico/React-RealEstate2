@@ -41,7 +41,7 @@ footer {
 }
 
 .footer_item .featured_item p {
-  color: #0073e5;
+  color: white;
 }
 
 .footer_avatar {
@@ -91,6 +91,10 @@ footer {
 
 .footer_properties {
   max-width: unset;
+}
+
+.footer_properties .featured_item a {
+  color: rgb(203, 203, 203) !important;
 }
 
 .footer_item .MuiSvgIcon-root {

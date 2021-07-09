@@ -76,7 +76,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-
+import { Helmet } from "react-helmet";
 
 function MansionInNorwin(props) {
   const history = useHistory();
@@ -95,7 +95,7 @@ function MansionInNorwin(props) {
     agentName: "Kevin Richmond",
     aplink: () => {
       history.push("/AgentKevinProfile");
-    }
+    },
   };
   const card1template = {
     cardImg: house10,
@@ -115,7 +115,7 @@ function MansionInNorwin(props) {
     cardimgalt: "house",
     aplink: () => {
       history.push("/AgentKevinProfile");
-    }
+    },
   };
 
   const card2template = {
@@ -136,7 +136,7 @@ function MansionInNorwin(props) {
     cardimgalt: "house",
     aplink: () => {
       history.push("/AgentKevinProfile");
-    }
+    },
   };
 
   const card3template = {
@@ -157,44 +157,52 @@ function MansionInNorwin(props) {
     },
     plink: () => {
       history.push("/AptInAllentown");
-    }
+    },
   };
 
   return (
-    <div className="norwin_mansion">  
-            <Fade duration="1210">
-
-      <div className="property_hero">
-        <ParallaxProvider>
-          <ParallaxImg imgsrc={house15} height="75vh"></ParallaxImg>
-        </ParallaxProvider>
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h1>Mansion In Norwin</h1>
+    <div>
+      <Helmet>
+        <title>Mansion in Norwin, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Mansion in Norwin PA"
+        />
+      </Helmet>
+      <div className="norwin_mansion">
+        <Fade duration="1210">
+          <div className="property_hero">
+            <ParallaxProvider>
+              <ParallaxImg imgsrc={house15} height="75vh"></ParallaxImg>
+            </ParallaxProvider>
+            <div className="property_hero_flex">
+              <div className="property_hero_content">
+                <h1>Mansion In Norwin</h1>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      </Fade>
+        </Fade>
 
-      <SortByContent />
-      <ViewProperty
-        homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
-        homeAddress="555 Lorem Ave"
-        garages="2"
-        ptype="Mansion"
-        homePrice="$5,700,000"
-        bedrooms="4"
-        bathrooms="5"
-        sqft="7,200 SqFt"
-        yearBuilt="2015"
-        pagesheroimg={lphouse15}
-        templateImg={templateImg}
-        psprAgent={psprAgent}
-        morelistings="More Listings from Kevin Richmond"
-        card1template={card1template}
-        card2template={card2template}
-        card3template={card3template}
-      />
+        <SortByContent />
+        <ViewProperty
+          homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
+          homeAddress="555 Lorem Ave"
+          garages="2"
+          ptype="Mansion"
+          homePrice="$5,700,000"
+          bedrooms="4"
+          bathrooms="5"
+          sqft="7,200 SqFt"
+          yearBuilt="2015"
+          pagesheroimg={lphouse15}
+          templateImg={templateImg}
+          psprAgent={psprAgent}
+          morelistings="More Listings from Kevin Richmond"
+          card1template={card1template}
+          card2template={card2template}
+          card3template={card3template}
+        />
+      </div>
     </div>
   );
 }

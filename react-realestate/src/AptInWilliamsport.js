@@ -71,6 +71,7 @@ import apt2mbr from "./img/apartment2mbr.jpg";
 import apt2br from "./img/apartment2br.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 function AptInWilliamsport(props) {
   const history = useHistory();
@@ -154,6 +155,14 @@ function AptInWilliamsport(props) {
 
       };
     return (
+      <div>
+        <Helmet>
+        <title>Apartment In Williamsport, PA - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Apartment in Williamsport PA"
+        />
+      </Helmet>
         <div className="apt_in_williamsport">
                             <Fade duration="1210">
 
@@ -189,6 +198,7 @@ function AptInWilliamsport(props) {
         card2template={card2template}
         card3template={card3template}
       />
+        </div>
         </div>
     )
 }
