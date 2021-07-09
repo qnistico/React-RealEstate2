@@ -12,6 +12,7 @@ import blogheroimg from "./img/blogheroimg.jpg";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 function BlogListPage2(props) {
@@ -19,6 +20,14 @@ function BlogListPage2(props) {
 
   return (
     <div>
+      <Helmet>
+        <title>Blog - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Pennsylvania Premium Realty Blog"
+        />
+
+      </Helmet>
           <div className="dark_gradient"></div>
           <Fade duration="1210">
 

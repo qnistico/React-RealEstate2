@@ -15,10 +15,19 @@ import ParallaxImg from "./ParallaxImg";
 import contactbg from "./img/contactbg.jpg";
 import SortByContent from "./SortByContent";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 function ContactUs() {
   return (
     <div>
+      <Helmet>
+        <title>Contact Us - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Contact Pennsylvania Premium Realty"
+        />
+
+      </Helmet>
       <div className="dark_gradient"></div>
       <PagesHero headerTitle="Contact Us" parallaximg1={contactbg} />
       <SortByContent />
