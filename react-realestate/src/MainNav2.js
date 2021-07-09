@@ -6,7 +6,6 @@ import "./MainNav2.css";
 import { useHistory } from "react-router-dom";
 import Dropdowns from "./Dropdowns";
 
-
 function MainNav2() {
   const [click, setClick] = useState(false);
 
@@ -29,8 +28,6 @@ function MainNav2() {
   window.addEventListener("scroll", fixHeaderOnScoll);
   const [show, handleShow] = useState(false);
   const history = useHistory();
-
-  
 
   return (
     <div>
@@ -65,8 +62,7 @@ function MainNav2() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                
-                    <Dropdowns />
+                <Dropdowns />
               </li>
               <li className="nav-item">
                 <NavLink
@@ -91,42 +87,21 @@ function MainNav2() {
                 </NavLink>
               </li>
               <li className="nav-item mobile_show">
-                <NavLink
-                  exact
-                  to="/LoginAuth"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-            <a
-              className=" signup_button"
-            >
-              <AccountCircleIcon />
-              Login / Sign Up
-            </a>
-                </NavLink>
+                <a className=" signup_button" href="/LoginAuth">
+                  <AccountCircleIcon />
+                  Login / Sign Up
+                </a>
               </li>
             </ul>
             <ul className="nav-menu-2 mobile_hide">
-            <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/LoginAuth"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  <div className="signup_flex">
-            <a
-              className=" signup_button"
-            >
-              <AccountCircleIcon />
-              Login / Sign Up
-            </a>
-          </div>
-                </NavLink>
+              <li className="nav-item">
+                
+                    <a className=" signup_button" href="/LoginAuth">
+                      <AccountCircleIcon />
+                      Login / Sign Up
+                    </a>
               </li>
-              </ul>
+            </ul>
             <div className="nav-icon" onClick={handleClick}>
               <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
             </div>

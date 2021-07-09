@@ -55,11 +55,11 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
-                  <FacebookIcon className="fb" rel="noreferrer" />
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer">
+                  <FacebookIcon className="fb"  />
                 </a>
-                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
-                  <InstagramIcon className="ig" rel="noreferrer" />
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer">
+                  <InstagramIcon className="ig"  />
                 </a>
               </div>
             </div>
@@ -86,11 +86,11 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
-                  <FacebookIcon className="fb" rel="noreferrer" />
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer">
+                  <FacebookIcon className="fb"  />
                 </a>
-                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
-                  <InstagramIcon className="ig" rel="noreferrer" />
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noreferrer">
+                  <InstagramIcon className="ig"  />
                 </a>
               </div>
             </div>
@@ -118,11 +118,11 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
-                  <FacebookIcon className="fb" rel="noreferrer" />
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer">
+                  <FacebookIcon className="fb"  />
                 </a>
-                <a href="https://www.instagram.com/" aria-label="Instagram"target="_blank">
-                  <InstagramIcon className="ig" rel="noreferrer" />
+                <a href="https://www.instagram.com/" aria-label="Instagram"target="_blank" rel="noreferrer">
+                  <InstagramIcon className="ig"  />
                 </a>
               </div>
             </div>
