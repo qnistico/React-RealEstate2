@@ -24,8 +24,7 @@ import { useHistory } from "react-router-dom";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 
 function LandingPageCards() {
-  // Add styles
-
+/*
   addStyles();
 
   function addStyles() {
@@ -346,6 +345,7 @@ function LandingPageCards() {
       });
     }
   };
+  */
   const history = useHistory();
 
   return (
@@ -361,6 +361,7 @@ function LandingPageCards() {
               </a>
               <p className="featured_badge">Featured</p>
               <p className="for_sale_badge">For Sale</p>
+              {/*
               <button
                 className="lightbox_button ezLightbox"
                 data-src="./img/house15.jpg"
@@ -368,6 +369,7 @@ function LandingPageCards() {
               >
                 <CameraAlt />
               </button>
+              */}
               <div className="card_img_agent">
                 <a onClick={() => history.push("/AgentKevinProfile")}>
                   <Avatar src={agent3} alt="real estate agent" />
