@@ -14,26 +14,22 @@ import ParallaxImg from "./ParallaxImg";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
 import { useHistory } from "react-router-dom";
+import blogimg1 from "./img/blogimg1.jpg";
 
+import blogimg3 from "./img/blogimg3.jpg";
 
 function BlogList(props) {
   const history = useHistory();
-
 
   return (
     <div>
       <Helmet>
         <title>Blog - PA Premium Realty</title>
-        <meta
-          name="description"
-          content="Pennsylvania Premium Realty Blog"
-        />
-
+        <meta name="description" content="Pennsylvania Premium Realty Blog" />
       </Helmet>
-          <div className="dark_gradient"></div>
-          <Fade duration="1210">
-
-      <BlogHero parallaximg1={blogheroimg} />
+      <div className="dark_gradient"></div>
+      <Fade duration="1210">
+        <BlogHero parallaximg1={blogheroimg} />
       </Fade>
       <div className="all_blogs">
         <div className="blog_flex">
@@ -41,13 +37,18 @@ function BlogList(props) {
             <div className="blog_list blog_list_1">
               <div className="blog_item">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}><img
-                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt=""
-                  /></a>
+                  <a onClick={() => history.push("/BuyingAHome")}>
+                    <img
+                      src={blogimg1}
+                      alt=""
+                    />
+                  </a>
                 </div>
                 <div className="blog_item_content">
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_title"
+                  >
                     Buying Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -56,20 +57,28 @@ function BlogList(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_button "
+                  >
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}><img
-                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt=""
-                  /></a>
+                  <a onClick={() => history.push("/BuyingAHome")}>
+                    <img
+                      src={blogimg3}
+                      alt=""
+                    />
+                  </a>
                 </div>
                 <div className="blog_item_content">
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_title"
+                  >
                     Selling Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -78,7 +87,10 @@ function BlogList(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_button "
+                  >
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -87,13 +99,18 @@ function BlogList(props) {
             <div className="blog_list">
               <div className="blog_item">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}><img
-                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt=""
-                  /></a>
+                  <a onClick={() => history.push("/BuyingAHome")}>
+                    <img
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      alt=""
+                    />
+                  </a>
                 </div>
                 <div className="blog_item_content">
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_title"
+                  >
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -102,20 +119,28 @@ function BlogList(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_button "
+                  >
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}><img
-                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                    alt=""
-                  /></a>
+                  <a onClick={() => history.push("/BuyingAHome")}>
+                    <img
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      alt=""
+                    />
+                  </a>
                 </div>
                 <div className="blog_item_content">
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_title"
+                  >
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -124,7 +149,10 @@ function BlogList(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
+                  <a
+                    onClick={() => history.push("/BuyingAHome")}
+                    className="blog_button "
+                  >
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -147,56 +175,64 @@ function BlogList(props) {
           </div>
           <div className="blog_sidebar">
             <div className="blog_sidebar_item">
-            <h3>Featured Listings</h3>
-            <FeaturedListings />
+              <h3>Featured Listings</h3>
+              <FeaturedListings />
             </div>
-            
+
             <div className="blog_sidebar_item">
-            <div className="related_posts">
-              <h3>Related Posts</h3>
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a onClick={() => history.push("/BuyingAHome")}><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a onClick={() => history.push("/BuyingAHome")}><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item">
-    <div className="rp_img">
-  <a onClick={() => history.push("/BuyingAHome")}><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
-<div className="related_posts">
-  <div className="related_posts_item rpi_last">
-    <div className="rp_img">
-  <a onClick={() => history.push("/BuyingAHome")}><img src={blogheroimg} alt="" /></a>
-  </div>
-  <div className="rpi_content">
-  <h4>Author: John Johnson</h4>
-  <p>01/01/2021</p>
-  </div>
-  </div>
-</div>
+              <div className="related_posts">
+                <h3>Related Posts</h3>
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+              </div>
+              <div className="related_posts">
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+              </div>
+              <div className="related_posts">
+                <div className="related_posts_item">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+              </div>
+              <div className="related_posts">
+                <div className="related_posts_item rpi_last">
+                  <div className="rp_img">
+                    <a onClick={() => history.push("/BuyingAHome")}>
+                      <img src={blogheroimg} alt="" />
+                    </a>
+                  </div>
+                  <div className="rpi_content">
+                    <h4>Author: John Johnson</h4>
+                    <p>01/01/2021</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -207,4 +243,3 @@ function BlogList(props) {
 }
 
 export default BlogList;
-

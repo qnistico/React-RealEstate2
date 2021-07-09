@@ -4,6 +4,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import "./LPBlog.css";
 import blogimg1 from "./img/blogimg1.jpg";
+
 import blogimg3 from "./img/blogimg3.jpg";
 import Fade from 'react-reveal/Fade';
 import { useHistory } from "react-router-dom";
@@ -34,7 +35,7 @@ function LPBlog() {
           <div className="blog_img">
             <a onClick={() => history.push("/BuyingAHome")}>
               <img
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                src={blogheroimg}
                 alt="living room"
               />
             </a>
