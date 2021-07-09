@@ -237,7 +237,7 @@ function ViewProperty(props) {
             </div>
             <div className="google_maps">
               <h3>Property Location</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.289532358501!2d-80.21163895982946!3d25.765165481805656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sLorem%2C%20FL!5e0!3m2!1sen!2sus!4v1624050037325!5m2!1sen!2sus"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457879.8460371392!2d-78.66958803789858!3d40.877622931751745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882d80261e32e589%3A0xc24621475022b43d!2sPennsylvania!5e0!3m2!1sen!2sus!4v1625813104172!5m2!1sen!2sus" title="Map of Pennsylvania"></iframe>
             </div>
             <div className="pspl_similar_properties">
               <h3>{props.morelistings}</h3>
