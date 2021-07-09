@@ -388,7 +388,7 @@ function LandingPageCards() {
                   onClick={() => history.push("/MansionInNorwin")}
                   className="lp_cards_location"
                 >
-                  555 Lorem Avenue, Norwin, PA 12345, USA
+                  555 Lorem Ave, Norwin, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in Norwin, Pennsylvania located conveniently
@@ -459,7 +459,7 @@ function LandingPageCards() {
                   Mansion in Gladywne
                 </a>
                 <a href="#!" className="lp_cards_location">
-                  555 Lorem Avenue, Gladwyne, PA 12345, USA
+                  555 Lorem Ave, Gladwyne, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in Gladwyne, PA located near various
@@ -528,7 +528,7 @@ function LandingPageCards() {
                   Villa in Foxchapel
                 </a>
                 <a href="#!" className="lp_cards_location">
-                  555 Lorem Avenue, Foxchapel, PA 12345, USA
+                  555 Lorem Ave, Foxchapel, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in Foxchapel complete with a spectacular view
@@ -602,7 +602,7 @@ function LandingPageCards() {
                   onClick={() => history.push("/HouseInEdgeworth")}
                   className="lp_cards_location"
                 >
-                  555 Lorem Avenue, Edgeworth, PA 12345, USA
+                  555 Lorem Ave, Edgeworth, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in PA with a gorgeous front yard, back yard
@@ -670,13 +670,13 @@ function LandingPageCards() {
                   onClick={() => history.push("/MansionInSewickleyHeights")}
                   className="lp_cards_title"
                 >
-                  Villa in Sewickley Heights
+                  Villa in Sewickley
                 </a>
                 <a
                   onClick={() => history.push("/MansionInSewickleyHeights")}
                   className="lp_cards_location"
                 >
-                  555 Lorem Ave, Sewickley Heights, PA 12345, USA
+                  555 Lorem Ave, Sewickley, PA 12345, USA
                 </a>
                 <p>
                   A fabulous villa in PA located conveniently near a train
@@ -744,7 +744,7 @@ function LandingPageCards() {
                   Mansion in Oreland
                 </a>
                 <a href="#!" className="lp_cards_location">
-                  555 Lorem Avenue, Oreland, PA 12345, USA
+                  555 Lorem Ave, Oreland, PA 12345, USA
                 </a>
                 <p>
                   Large home in Oreland, PA complete with 45 acres of land

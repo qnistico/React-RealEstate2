@@ -171,10 +171,7 @@ function BlogPostTemplate(props) {
                 </div>
               </div>
             </div>
-            <div className="blog_sidebar_item">
-              <h3>Mortgage Calculator</h3>
-              <MortgageCalculator />
-            </div>
+            
           </div>
         </div>
       </div>

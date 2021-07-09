@@ -355,7 +355,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 0 20px;
 }
 
 .lp_cards h2 {
@@ -421,7 +421,6 @@ input:active {
   -ms-flex-align: center;
   align-items: center;
   margin: auto;
-  gap: 30px;
 
 }
 
@@ -455,6 +454,7 @@ input:active {
   -webkit-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
+  margin: 15px;
 }
 
 .lp_cards_body:hover {
@@ -737,7 +737,7 @@ input:active {
   -ms-flex-align: center;
   align-items: center;
   margin: auto;
-  gap: 30px;
+  
   max-width: 1280px;
 }
 
@@ -957,7 +957,7 @@ input:active {
   display: flex;
   margin: auto;
   max-width: 1280px !important;
-  gap: 30px;
+  
 }
 
 .ps_primary_left {
@@ -1716,7 +1716,6 @@ input.form-control.form_input {
   flex-flow: row wrap;
   max-width: 1280px;
   margin: 160px auto 100px auto;
-  gap: 30px;
 }
 
 .signup_body {
@@ -1737,6 +1736,7 @@ input.form-control.form_input {
   background-color: #fff;
   -webkit-box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
   box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
+  margin: 15px;
 }
 
 .login_signup_content {
@@ -1811,23 +1811,16 @@ input.form-control.form_input {
   flex-flow: column;
 }
 
+
+
 @media screen and (max-width: 576.98px) {
-  .lp_cards,
-  .overlay_carousel,
-  .lp_apts,
-  .phi_overlay,
-  .agent_reviews,
-  .mobile_icons,
-  .lp_blog,
-  .all_blogs,
-  .customer_reviews,
-  .multi_carousel {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+
+  .lp_apts_flex {
+    flex-flow: column !important;
   }
 
   .cr_item {
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 30px 0 !important;
   }
 
   .lpb_item {
@@ -1887,9 +1880,7 @@ input.form-control.form_input {
   .pspr_item {
     padding: 20px;
   }
-  .lp_apts {
-    padding: 40px 0 !important;
-  }
+  
 
   .pspl_icon_flex {
     flex: 1 50%;
@@ -1924,6 +1915,20 @@ input.form-control.form_input {
   
 }
 @media screen and (max-width: 768px) {
+
+  .lp_cards,
+  .overlay_carousel,
+  .lp_apts,
+  .phi_overlay,
+  .agent_reviews,
+  .mobile_icons,
+  .lp_blog,
+  .all_blogs,
+  .customer_reviews,
+  .multi_carousel {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
   .signup_button {
     margin-top: 0;
   }
@@ -1937,9 +1942,7 @@ input.form-control.form_input {
     width: 90%;
     margin: -250px auto 0 auto;
   }
-  .lp_apts_flex {
-    flex-flow: row wrap;
-  }
+  
   .property_sorting,
   .sort_table {
     flex-flow: column;
@@ -1981,10 +1984,14 @@ input.form-control.form_input {
 }
 
 @media screen and (max-width: 991px) {
+  
   .signup_flex {
     background-color: #fff;
   }
-  
+
+  .lp_apts_flex {
+    flex-flow: row wrap;
+  }
 
   .customer_reviews_flex {
     -webkit-box-orient: horizontal;
@@ -2025,7 +2032,6 @@ input.form-control.form_input {
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    gap: 30px;
   }
   .pspr_item {
     width: 100%;
@@ -2111,7 +2117,6 @@ input.form-control.form_input {
   }
   
   .pspl_similar_flex {
-    gap: 30px !important;
   }
 }
 

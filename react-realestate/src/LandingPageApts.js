@@ -124,7 +124,7 @@ function LandingPageApts(props) {
                   Apartment in Allentown
                 </a>
                 <a onClick={() => history.push('/AptInAllentown')} className="lp_cards_location">
-                  555 Lorem Avenue, Allentown, PA 12345, USA
+                  555 Lorem Ave, Allentown, PA 12345, USA
                 </a>
                 <p>
                 Spacious and affordable apartment in Philadelphia, PA.  Complete with...

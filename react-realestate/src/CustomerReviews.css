@@ -23,7 +23,6 @@
   display: flex;
   max-width: 1280px;
   margin: auto;
-  gap: 30px;
 }
 
 .cr_item {
@@ -38,6 +37,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+          margin: 15px;
 }
 
 

@@ -15,8 +15,10 @@ import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
 import { useHistory } from "react-router-dom";
 import blogimg1 from "./img/blogimg1.jpg";
-
+import blogimg2 from "./img/blogimg2.jpg";
 import blogimg3 from "./img/blogimg3.jpg";
+import blogimg4 from "./img/blogimg4.jpg";
+import AllAgentsSidebar from "./AllAgentsSidebar";
 
 function BlogList(props) {
   const history = useHistory();
@@ -39,7 +41,7 @@ function BlogList(props) {
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
-                      src={blogimg1}
+                      src={blogimg4}
                       alt=""
                     />
                   </a>
@@ -49,7 +51,7 @@ function BlogList(props) {
                     onClick={() => history.push("/BuyingAHome")}
                     className="blog_title"
                   >
-                    Buying Homes
+                    Buying A Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -79,7 +81,7 @@ function BlogList(props) {
                     onClick={() => history.push("/BuyingAHome")}
                     className="blog_title"
                   >
-                    Selling Homes
+                    Selling A Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -101,7 +103,7 @@ function BlogList(props) {
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
-                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      src={blogimg2}
                       alt=""
                     />
                   </a>
@@ -111,7 +113,7 @@ function BlogList(props) {
                     onClick={() => history.push("/BuyingAHome")}
                     className="blog_title"
                   >
-                    Buying a Home
+                    Valuing Your Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -131,7 +133,7 @@ function BlogList(props) {
                 <div className="blog_img">
                   <a onClick={() => history.push("/BuyingAHome")}>
                     <img
-                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      src={blogimg1}
                       alt=""
                     />
                   </a>
@@ -141,7 +143,7 @@ function BlogList(props) {
                     onClick={() => history.push("/BuyingAHome")}
                     className="blog_title"
                   >
-                    Buying a Home
+                    Finding the Right Location
                   </a>
                   <p className="blog_date">01/01/2021</p>
                   <p className="blog_description">
@@ -174,6 +176,10 @@ function BlogList(props) {
             </div>
           </div>
           <div className="blog_sidebar">
+            <div className="blog_sidebar_item">
+              <h3>Our Agents</h3>
+              <AllAgentsSidebar />
+            </div>
             <div className="blog_sidebar_item">
               <h3>Featured Listings</h3>
               <FeaturedListings />

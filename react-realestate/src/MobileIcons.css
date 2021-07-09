@@ -8,11 +8,10 @@
 .mobile_icons {
   width: 100%;
   padding: 60px 30px;
-  background-image: linear-gradient(#f1f2f5e5, #f1f2f5e5), url(img/mobileiconsoverlay.jpg);
+  background-image: linear-gradient(#f1f2f5e5, #f1f2f5e5),
+    url(img/mobileiconsoverlay.jpg);
   background-size: cover;
   background-position: center center;
-  
-
 }
 
 .mobile_icons h2 {
@@ -27,8 +26,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: auto;
 }
 
@@ -39,12 +38,12 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   padding: 20px 60px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .mobile_icons_flex .MuiSvgIcon-root {
@@ -59,11 +58,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -76,10 +75,8 @@
   top: 0;
   left: 0;
   -webkit-clip-path: polygon(100% 0, 1% 0, 0 100%);
-          clip-path: polygon(100% 0, 1% 0, 0 100%);
+  clip-path: polygon(100% 0, 1% 0, 0 100%);
 }
-
-
 
 .icon_list_right_item::before {
   content: "";
@@ -90,10 +87,10 @@
   top: 0;
   right: 0;
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   -webkit-clip-path: polygon(100% 0, 1% 0, 0 100%);
-          clip-path: polygon(100% 0, 1% 0, 0 100%);
+  clip-path: polygon(100% 0, 1% 0, 0 100%);
 }
 
 .fa-handshake {
@@ -113,7 +110,7 @@
   background-color: #fff;
   padding: 20px;
   -webkit-box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
-          box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
+  box-shadow: 0px 2px 24px rgba(100, 100, 100, 0.25);
   min-height: 186px;
   position: relative;
 }
@@ -131,22 +128,27 @@
   width: 320px;
   margin: auto;
 }
+
+
+
+
 @media screen and (max-width: 576.98px) {
   .mobile_icons_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
   }
   .icon_list_left,
   .icon_list_right {
-    padding: 0 !important;
+    margin: 0 !important;
   }
   .icon_list_left_item {
     text-align: left;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 15px !important;
   }
   .icon_list_left_item,
   .icon_list_right_item {
@@ -155,8 +157,8 @@
     right: 0;
     left: auto;
     -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -165,15 +167,18 @@
   }
   .icon_list_left,
   .icon_list_right {
-    padding: 0;
-    margin: 0;
-    gap: 30px;
+   padding: 0;
+  }
+  .icon_list_left {
+    margin-right: 15px;
+  }
+  .icon_list_right {
+    margin-left: 15px;
   }
   .icon_list_left_item,
   .icon_list_right_item {
-    margin: 0;
+    margin: 15px 0;
   }
   .mobile_icons_flex {
-    gap: 30px;
   }
 }

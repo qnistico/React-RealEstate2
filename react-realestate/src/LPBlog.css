@@ -44,6 +44,7 @@
   -webkit-transition-delay: 0s;
        -o-transition-delay: 0s;
           transition-delay: 0s;
+          margin: 15px;
 }
 
 .lpb_item:hover {
@@ -81,7 +82,6 @@
             justify-content: center;
     max-width: 1280px;
     margin: auto;
-    gap: 30px;
 }
 
 .blog_img {
@@ -186,6 +186,15 @@ min-width: 200px;
 }
 .blog_title {
     font-family: 'Prata', sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+    .lpb_item {
+        margin-bottom: 30px !important;
+    }
+    .lpbb {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
