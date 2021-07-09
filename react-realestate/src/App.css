@@ -486,8 +486,8 @@ input:active {
 
 .featured_badge {
   font-size: 13px;
-  background-color: #de5240;
-  color: white !important;
+  background-color: #0073e5;
+  color: white;
   font-weight: 500;
   padding: 1px 8px;
   position: absolute;
@@ -501,7 +501,7 @@ input:active {
 
 .for_sale_badge {
   font-size: 13px;
-  background-color: #0073e5;
+  background-color: #127739;
   color: white !important;
   font-weight: 500;
   padding: 1px 8px;

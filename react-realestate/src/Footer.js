@@ -122,8 +122,8 @@ function Footer() {
         <div className="footer_newsletter">
           <h3>Subscribe to our newsletter</h3>
           <form className="form-group">
-        <label htmlFor="exampleInputEmail1">Email</label>
-        <input type="email" className="form-control form_input" aria-describedby="emailHelp" placeholder="Email" />
+        <label htmlFor="email">Email</label>
+        <input type="email" className="form-control form_input" name="email" aria-label="email" placeholder="Email" />
     </form>
     <a href="#!" className="footer_newsletter_button">Subscribe</a>
         </div>
