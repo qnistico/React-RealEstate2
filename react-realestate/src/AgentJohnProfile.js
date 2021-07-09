@@ -23,6 +23,8 @@ import agentbg from "./img/agentbg.jpg";
 import apt1 from "./img/apartment1.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
+
 
 
 function AgentJohnProfile(props) {
@@ -109,6 +111,12 @@ function AgentJohnProfile(props) {
   
   
   return (
+    <div>
+      <Helmet>
+        <title>John Ryan - PA Premium Realty</title>
+        <meta name="description"
+        content="All property listings from John Ryan"/>
+      </Helmet>
     <div className="agent_john_profile">
       <AgentProfiles
         headerTitle="John Ryan"
@@ -122,6 +130,7 @@ function AgentJohnProfile(props) {
         
   
       />
+    </div>
     </div>
   );
 }

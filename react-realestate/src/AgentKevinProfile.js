@@ -24,6 +24,7 @@ import agentbg from "./img/agentbg.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 function AgentKevinProfile(props) {
@@ -109,6 +110,11 @@ function AgentKevinProfile(props) {
 
   return (
     <div>
+      <Helmet>
+        <title>Kevin Richmond - PA Premium Realty</title>
+        <meta name="description"
+        content="All property listings from Kevin Richmond"/>
+      </Helmet>
       <div className="agent_kevin_profile">
         <AgentProfiles
           headerTitle="Kevin Richmond"

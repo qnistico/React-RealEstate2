@@ -55,10 +55,10 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
                   <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
                   <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>
@@ -86,10 +86,10 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
                   <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
                   <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>
@@ -118,10 +118,10 @@ function CustomerReviews() {
                 <StarIcon />
               </div>
               <div className="cr_icons">
-                <a href="https://www.facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
                   <FacebookIcon className="fb" rel="noreferrer" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/" aria-label="Instagram"target="_blank">
                   <InstagramIcon className="ig" rel="noreferrer" />
                 </a>
               </div>

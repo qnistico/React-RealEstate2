@@ -26,6 +26,7 @@ import agentbg from "./img/agentbg.jpg";
 import apt2 from "./img/apartment2.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 function AgentMaryProfile(props) {
@@ -112,6 +113,12 @@ function AgentMaryProfile(props) {
   };
 
   return (
+    <div>
+      <Helmet>
+        <title>Mary Williams' Profile - PA Premium Realty</title>
+        <meta name="description"
+        content="All property listings from Mary Williams"/>
+      </Helmet>
     <div className="agent_mary_profile">
       <AgentProfiles
         headerTitle="Mary Williams"
@@ -123,6 +130,7 @@ function AgentMaryProfile(props) {
         card3template={card3template}
         card4template={card4template}
       />
+    </div>
     </div>
   );
 }
