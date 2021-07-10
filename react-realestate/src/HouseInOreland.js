@@ -98,7 +98,7 @@ function HouseInOreland(props) {
       const card1template = {
         cardImg: house14,
         agentImg: agent4,
-        cardTitle: "House in Somewhere",
+        cardTitle: "House in Malvern",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
         cardPrice: "$4,100,000",
         bedrooms: "4",
@@ -108,6 +108,10 @@ function HouseInOreland(props) {
         forsale: "For Sale",
         salerent: "For Sale",
         cardimgalt: "house",
+        plink: () => {
+          history.push("/MansionInMalvern");
+        },
+        
         aplink: () => {
       history.push("/AgentMaryProfile");
     }

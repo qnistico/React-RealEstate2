@@ -142,7 +142,7 @@ function HouseInEdgeworth(props) {
   const card3template = {
     cardImg: house14,
     agentImg: agent4,
-    cardTitle: "House in Somewhere",
+    cardTitle: "House in Malvern",
     address: "555 Lorem Avenue, Lorem, PA 12345, USA",
     cardPrice: "$4,100,000",
     bedrooms: "4",
@@ -152,6 +152,10 @@ function HouseInEdgeworth(props) {
     forsale: "For Sale",
     salerent: "For Sale",
     cardimgalt: "house",
+    plink: () => {
+      history.push("/MansionInMalvern");
+    },
+    
     aplink: () => {
       history.push("/AgentMaryProfile");
     }

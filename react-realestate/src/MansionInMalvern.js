@@ -65,59 +65,60 @@ import FeaturedListings from "./FeaturedListings";
 import Footer from "./Footer";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
+import house14lr from "./img/house14lr.jpg";
+import house14mbr from "./img/house14mbr.jpg";
+import house14br from "./img/house14br.jpg";
+import lphouse15 from "./img/lphouse15.jpg";
+import lphouse1 from "./img/lphouse1.jpg";
+import lphouse2 from "./img/lphouse2.jpg";
+import apt1 from "./img/apartment1.jpg";
 import apt2 from "./img/apartment2.jpg";
-import apt2exterior from "./img/apartment2exterior.jpg";
-import apt2mbr from "./img/apartment2mbr.jpg";
-import apt2br from "./img/apartment2br.jpg";
+import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
-
-function AptInWilliamsport(props) {
-  const history = useHistory();
-    const templateImg = {
-        houseImg: apt2exterior,
-        houseLR: apt2,
-        houseMBR: apt2mbr,
-        houseBR: apt2br,
-        althouse: "apartment building",
-                altlr: "apartment",
-                altmbr: "bedroom",
-                altbr: "bathroom"
-      };
-      const psprAgent = {
-        agentImg: agent4,
-        agentName: "Mary Williams",
-        aplink: () => {
+function MansionInMalvern(props) {
+    const history = useHistory();
+  const templateImg = {
+    houseImg: house14,
+    houseLR: house14lr,
+    houseMBR: house14mbr,
+    houseBR: house14br,
+    althouse: "Mansion",
+    altlr: "living room",
+    altmbr: "bedroom",
+    altbr: "bathroom",
+  };
+  const psprAgent = {
+    agentImg: agent4,
+    agentName: "Mary Williams",
+    aplink: () => {
       history.push("/AgentMaryProfile");
-    }
-      };
-
-      const card1template = {
-        cardImg: house14,
-        agentImg: agent4,
-        cardTitle: "House in Malvern",
-        address: "555 Lorem Avenue, Lorem, FL 12345, USA",
-        cardPrice: "$4,100,000",
-        bedrooms: "4",
-        bathrooms: "5",
-        sqft: "5,000 SqFt",
-        featured: "Featured",
-        forsale: "For Sale",
-        salerent: "For Sale",
-        cardimgalt: "house",
-        plink: () => {
-          history.push("/MansionInMalvern");
-        },
-        
-        aplink: () => {
+    },
+  };
+  const card1template = {
+    cardImg: apt2,
+    agentImg: agent4,
+    cardTitle: "Apartment in Williamsport",
+    address: "555 Lorem Avenue, Lorem, PA 12345, USA",
+    cardPrice: "$1450/mo",
+    bedrooms: "2",
+    bathrooms: "2",
+    sqft: "1650 Sq Ft",
+    featured: "Featured",
+    forsale: "For Rent",
+    salerent: "For Rent",
+    cardimgalt: "apartment",
+    aplink: () => {
       history.push("/AgentMaryProfile");
+    },
+    plink: () => {
+      history.push("/AptInWilliamsport");
     }
+  };
 
-      };
-    
-      const card2template = {
-        cardImg: house9,
+  const card2template = {
+    cardImg: house9,
         agentImg: agent4,
         cardTitle: "Houses in Edgeworth",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
@@ -135,11 +136,10 @@ function AptInWilliamsport(props) {
         aplink: () => {
           history.push("/AgentMaryProfile");
         }
+  };
 
-      };
-    
-      const card3template = {
-        cardImg: house8,
+  const card3template = {
+    cardImg: house8,
         agentImg: agent4,
         cardTitle: "House in Oreland",
         address: "555 Lorem Avenue, Lorem, FL 12345, USA",
@@ -157,55 +157,51 @@ function AptInWilliamsport(props) {
         plink: () => {
           history.push("/HouseInOreland");
         }
-
-      };
+  };
     return (
-      <div>
-        <Helmet>
-        <title>Apartment In Williamsport, PA - PA Premium Realty</title>
+        <div className="mansion_in_malvern">
+            <Helmet>
+        <title>Mansion in Malvern, PA - PA Premium Realty</title>
         <meta
           name="description"
-          content="Apartment in Williamsport PA"
+          content="Mansion in Malvern PA"
         />
       </Helmet>
-        <div className="apt_in_williamsport">
-                            <Fade duration="1210">
-
-            <div className="property_hero" >
-        <ParallaxProvider>
-        <ParallaxImg  imgsrc={apt2} height="75vh">
-        
-        </ParallaxImg>
-      </ParallaxProvider>
-        <div className="property_hero_flex">
-          <div className="property_hero_content">
-            <h1>Apartment In Williamsport</h1>
+      <div className="malvern_mansion">
+        <Fade duration="1210">
+          <div className="property_hero">
+            <ParallaxProvider>
+              <ParallaxImg imgsrc={house14} height="75vh"></ParallaxImg>
+            </ParallaxProvider>
+            <div className="property_hero_flex">
+              <div className="property_hero_content">
+                <h1>Mansion In Malvern</h1>
+              </div>
+            </div>
           </div>
-        </div>
+        </Fade>
+
+        <SortByContent />
+        <ViewProperty
+          homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
+          homeAddress="555 Lorem Ave"
+          garages="2"
+          ptype="Mansion"
+          homePrice="$4,100,000"
+          bedrooms="4"
+          bathrooms="5"
+          sqft="5,000 Sq Ft"
+          yearBuilt="2015"
+          templateImg={templateImg}
+          psprAgent={psprAgent}
+          morelistings="More Listings from Mary Williams"
+          card1template={card1template}
+          card2template={card2template}
+          card3template={card3template}
+        />
       </div>
-      </Fade>
-      
-      <SortByContent />
-            <ViewProperty
-        homeTitle="Apartment on 555 Lorem Ave, Williamsport, PA"
-        homeAddress="555 Lorem Ave"
-        homePrice="$1,450 / mo"
-        bedrooms="2"
-        bathrooms="2"
-        sqft="1,650 Sq Ft"
-        garages="0"
-        ptype="Apartment"
-        yearBuilt="2011"
-        templateImg={templateImg}
-        psprAgent={psprAgent}
-        morelistings="More Listings from Mary Williams"
-        card1template={card1template}
-        card2template={card2template}
-        card3template={card3template}
-      />
-        </div>
         </div>
     )
 }
 
-export default AptInWilliamsport
+export default MansionInMalvern

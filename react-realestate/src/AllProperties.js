@@ -292,6 +292,7 @@ function AllProperties(props) {
         cardimgalt= "house"
         salerent= "For Sale"
         filteritem="house agent4"
+        plink={() => history.push("/MansionInMalvern")}
         aplink={() => history.push('/AgentMaryProfile')}
 
         />

@@ -26,6 +26,7 @@ import MansionInNorwin from "./MansionInNorwin";
 import MansionInGladwyne from "./MansionInGladwyne";
 import HouseInEdgeworth from "./HouseInEdgeworth";
 import MansionInSewickleyHeights from "./MansionInSewickleyHeights";
+import MansionInMalvern from "./MansionInMalvern";
 import HouseInOreland from "./HouseInOreland";
 import LoginAuth from "./LoginAuth";
 import AptInPhiladelphia from "./AptInPhiladelphia";
@@ -90,6 +91,9 @@ function App() {
         </Route>
         <Route exact path="/MansionInSewickleyHeights">
           <MansionInSewickleyHeights />
+        </Route>
+        <Route exact path="/MansionInMalvern">
+          <MansionInMalvern />
         </Route>
         <Route exact path="/HouseInOreland">
           <HouseInOreland />

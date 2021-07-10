@@ -1904,10 +1904,7 @@ input.form-control.form_input {
   .login_signup_auth {
     padding: 0 20px;
   }
-  .login_body,
-  .signup_body {
-    width: 100%;
-  }
+  
   .pspl_features {
     flex-flow: column;
     justify-content: flex-start;
@@ -1976,6 +1973,16 @@ input.form-control.form_input {
   .pspr_2,
   .pspr_4 {
     margin-left: 0 !important;
+  }
+  .login_signup_auth {
+    padding: 0;
+  }
+  .login_body,
+  .signup_body {
+    width: 100%;
+  }
+  .login_signup_content {
+    padding: 20px;
   }
 
 }
@@ -2099,6 +2106,10 @@ input.form-control.form_input {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .login_body,
+  .signup_body {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -2106,7 +2117,7 @@ input.form-control.form_input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
-    flex-flow: column;
+    flex-flow: column;  
   }
   .phi_overlay_flex {
     -webkit-box-orient: vertical;

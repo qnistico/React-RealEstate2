@@ -28,7 +28,6 @@ import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
 
-
 function AgentMaryProfile(props) {
   const history = useHistory();
   const card1template = {
@@ -76,7 +75,7 @@ function AgentMaryProfile(props) {
   const card3template = {
     cardImg: house14,
     agentImg: agent4,
-    cardTitle: "House in Somewhere",
+    cardTitle: "House in Malvern",
     address: "555 Lorem Avenue, Lorem, FL 12345, USA",
     cardPrice: "$4,100,000",
     bedrooms: "4",
@@ -86,7 +85,10 @@ function AgentMaryProfile(props) {
     forsale: "For Sale",
     cardimgalt: "house",
     salerent: "For Sale",
-    
+    plink: () => {
+      history.push("/MansionInMalvern");
+    },
+
     aplink: () => {
       history.push("/AgentMaryProfile");
     },
@@ -108,29 +110,31 @@ function AgentMaryProfile(props) {
       history.push("/AgentMaryProfile");
     },
     plink: () => {
-      history.push("/AptInWilliamsport");}
-
+      history.push("/AptInWilliamsport");
+    },
   };
 
   return (
     <div>
       <Helmet>
         <title>Mary Williams' Profile - PA Premium Realty</title>
-        <meta name="description"
-        content="All property listings from Mary Williams"/>
+        <meta
+          name="description"
+          content="All property listings from Mary Williams"
+        />
       </Helmet>
-    <div className="agent_mary_profile">
-      <AgentProfiles
-        headerTitle="Mary Williams"
-        parallaximg1={agentbg}
-        agentImg={agent4}
-        agentName="Mary Williams"
-        card1template={card1template}
-        card2template={card2template}
-        card3template={card3template}
-        card4template={card4template}
-      />
-    </div>
+      <div className="agent_mary_profile">
+        <AgentProfiles
+          headerTitle="Mary Williams"
+          parallaximg1={agentbg}
+          agentImg={agent4}
+          agentName="Mary Williams"
+          card1template={card1template}
+          card2template={card2template}
+          card3template={card3template}
+          card4template={card4template}
+        />
+      </div>
     </div>
   );
 }
