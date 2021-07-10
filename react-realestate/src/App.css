@@ -1503,6 +1503,7 @@ input.form-control.form_input {
 
 .contact_form label {
   color: #1a1a1a;
+  font-weight: 400;
 }
 
 .form_title {
