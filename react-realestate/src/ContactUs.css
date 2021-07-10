@@ -16,11 +16,16 @@
   margin: auto;
   position: relative;
   -webkit-box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
-          box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
-
+  box-shadow: 0px 12px 40px rgba(100, 100, 100, 0.158);
 }
 
-
+.contact_us h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
 .contact_us_flex {
   max-width: 1280px;
@@ -29,8 +34,8 @@
   display: flex;
   margin: auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact_us_info {
@@ -39,8 +44,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   margin-left: 3rem;
 }
 
@@ -61,8 +66,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
 }
 
 .contact_us_icon_info_flex p {
@@ -81,8 +86,6 @@
   font-weight: 600;
 }
 
-
-
 .contact_us_icon_info_flex .MuiSvgIcon-root {
   color: #0073e5;
   margin-right: 12px;
@@ -97,8 +100,8 @@
   .contact_us_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
   }
   .contact_form_primary {
     width: 100%;

@@ -9,13 +9,20 @@ import { ArrowForward } from "@material-ui/icons";
 import MortgageCalculator from "@herilsaha/mortgage-calculator";
 import "./Calculator.css";
 import blogheroimg from "./img/blogheroimg.jpg";
+import blogimg1 from "./img/blogimg1.jpg";
+import blogimg2 from "./img/blogimg2.jpg";
+import blogimg3 from "./img/blogimg3.jpg";
+import blogimg4 from "./img/blogimg4.jpg";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
+import AllAgentsSidebar from "./AllAgentsSidebar";
+import { useHistory } from "react-router-dom";
 
 
 function BlogListPage2(props) {
+  const history = useHistory();
 
 
   return (
@@ -34,18 +41,19 @@ function BlogListPage2(props) {
       <BlogHero parallaximg1={blogheroimg} />
       </Fade>
       <div className="all_blogs">
+        <h2>All Blogs</h2>
         <div className="blog_flex">
           <div className="blog_box">
             <div className="blog_list blog_list_1">
               <div className="blog_item bi_1">
                 <div className="blog_img">
-                  <a href="/BuyingAHome"><img
+                  <a onClick={() => history.push("/BuyingAHome")}><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="/BuyingAHome" className="blog_title">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
                     Buying Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -54,20 +62,20 @@ function BlogListPage2(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="/BuyingAHome" className="blog_button ">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item bi_2">
                 <div className="blog_img">
-                  <a href="/BuyingAHome"><img
+                  <a onClick={() => history.push("/BuyingAHome")}><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="/BuyingAHome" className="blog_title">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
                     Selling Homes
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -76,7 +84,7 @@ function BlogListPage2(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="/BuyingAHome" className="blog_button ">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
@@ -85,13 +93,13 @@ function BlogListPage2(props) {
             <div className="blog_list">
               <div className="blog_item bi_3">
                 <div className="blog_img">
-                  <a href="/BuyingAHome"><img
+                  <a onClick={() => history.push("/BuyingAHome")}><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="/BuyingAHome" className="blog_title">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -100,20 +108,20 @@ function BlogListPage2(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="/BuyingAHome" className="blog_button ">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
               <div className="blog_item bi_4">
                 <div className="blog_img">
-                  <a href="/BuyingAHome"><img
+                  <a onClick={() => history.push("/BuyingAHome")}><img
                     src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   /></a>
                 </div>
                 <div className="blog_item_content">
-                  <a href="/BuyingAHome" className="blog_title">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_title">
                     Buying a Home
                   </a>
                   <p className="blog_date">01/01/2021</p>
@@ -122,23 +130,23 @@ function BlogListPage2(props) {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Duis aute irure dolor...
                   </p>
-                  <a href="/BuyingAHome" className="blog_button ">
+                  <a onClick={() => history.push("/BuyingAHome")} className="blog_button ">
                     Read More <ArrowForwardIosIcon />
                   </a>
                 </div>
               </div>
             </div>
             <div className="blog_pagination">
-              <a href="/BlogList" className="bp_arrow_back">
+              <a onClick={() => history.push("/BlogList")} className="bp_arrow_back">
                 <ArrowBackIosIcon />
               </a>
-              <a href="/BlogList" className="bp_1 bp_1_p1">
+              <a onClick={() => history.push("/BlogList")} className="bp_1 bp_1_p1">
                 1
               </a>
-              <a href="/BlogListMansionInFoxchapel" className="bp_2 bp_2_p2">
+              <a onClick={() => history.push("/BlogListPage2")} className="bp_2 bp_2_p2">
                 2
               </a>
-              <a href="/BlogListMansionInFoxchapel" className="bp_arrow_forward">
+              <a onClick={() => history.push("/BlogListPage2")} className="bp_arrow_forward">
                 <ArrowForwardIosIcon />
               </a>
             </div>

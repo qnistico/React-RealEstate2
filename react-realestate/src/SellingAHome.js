@@ -5,14 +5,11 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxImg from "./ParallaxImg";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
-import { useHistory } from "react-router-dom";
-import blogimg4 from "./img/blogimg4.jpg";
+import blogimg3 from "./img/blogimg3.jpg";
 
-
-function BuyingAHome(props) {
-  const history = useHistory();
-  return (
-    <div>
+function SellingAHome(props) {
+    return (
+            <div>
       <Helmet>
         <title>Blog Post - PA Premium Realty</title>
         <meta
@@ -22,9 +19,9 @@ function BuyingAHome(props) {
 
       </Helmet>
       <div className="dark_gradient"></div>
-      <BlogPostTemplate blogpostImg={blogimg4} blogpostTitle="Buying A Home" blogpostDate="Posted by Lorem on January 1, 2021" />
+      <BlogPostTemplate blogpostImg={blogimg3} blogpostTitle="Selling A Home" blogpostDate="Posted by Lorem on January 1, 2021" />
     </div>
-  );
+    )
 }
 
-export default BuyingAHome;
+export default SellingAHome

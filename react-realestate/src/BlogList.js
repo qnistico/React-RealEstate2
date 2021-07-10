@@ -35,6 +35,7 @@ function BlogList(props) {
         <BlogHero parallaximg1={blogheroimg} />
       </Fade>
       <div className="all_blogs">
+        <h2>All Blogs</h2>
         <div className="blog_flex">
           <div className="blog_box">
             <div className="blog_list blog_list_1">
@@ -70,7 +71,7 @@ function BlogList(props) {
               </div>
               <div className="blog_item bi_2">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}>
+                  <a onClick={() => history.push("/SellingAHome")}>
                     <img
                       src={blogimg3}
                       alt=""
@@ -79,7 +80,7 @@ function BlogList(props) {
                 </div>
                 <div className="blog_item_content">
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/SellingAHome")}
                     className="blog_title"
                   >
                     Selling A Home
@@ -91,7 +92,7 @@ function BlogList(props) {
                     aliqua. Duis aute irure dolor...
                   </p>
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/SellingAHome")}
                     className="blog_button "
                   >
                     Read More <ArrowForwardIosIcon />
@@ -102,7 +103,7 @@ function BlogList(props) {
             <div className="blog_list">
               <div className="blog_item bi_3">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}>
+                  <a onClick={() => history.push("/ValuingYourHome")}>
                     <img
                       src={blogimg2}
                       alt=""
@@ -111,7 +112,7 @@ function BlogList(props) {
                 </div>
                 <div className="blog_item_content">
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/ValuingYourHome")}
                     className="blog_title"
                   >
                     Valuing Your Home
@@ -123,7 +124,7 @@ function BlogList(props) {
                     aliqua. Duis aute irure dolor...
                   </p>
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/ValuingYourHome")}
                     className="blog_button "
                   >
                     Read More <ArrowForwardIosIcon />
@@ -132,7 +133,7 @@ function BlogList(props) {
               </div>
               <div className="blog_item bi_4">
                 <div className="blog_img">
-                  <a onClick={() => history.push("/BuyingAHome")}>
+                  <a onClick={() => history.push("/FindingTheRightLocation")}>
                     <img
                       src={blogimg1}
                       alt=""
@@ -141,7 +142,7 @@ function BlogList(props) {
                 </div>
                 <div className="blog_item_content">
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/FindingTheRightLocation")}
                     className="blog_title"
                   >
                     Finding the Right Location
@@ -153,7 +154,7 @@ function BlogList(props) {
                     aliqua. Duis aute irure dolor...
                   </p>
                   <a
-                    onClick={() => history.push("/BuyingAHome")}
+                    onClick={() => history.push("/FindingTheRightLocation")}
                     className="blog_button "
                   >
                     Read More <ArrowForwardIosIcon />
@@ -162,16 +163,16 @@ function BlogList(props) {
               </div>
             </div>
             <div className="blog_pagination">
-              <a href="/BlogList" className="bp_arrow_back">
+              <a onClick={() => history.push("/BlogList")} className="bp_arrow_back">
                 <ArrowBackIosIcon />
               </a>
-              <a href="/BlogList" className="bp_1">
+              <a onClick={() => history.push("/BlogList")} className="bp_1">
                 1
               </a>
-              <a href="/BlogListPage2" className="bp_2">
+              <a onClick={() => history.push("/BlogListPage2")} className="bp_2">
                 2
               </a>
-              <a href="/BlogListPage2" className="bp_arrow_forward">
+              <a onClick={() => history.push("/BlogListPage2")} className="bp_arrow_forward">
                 <ArrowForwardIosIcon />
               </a>
             </div>

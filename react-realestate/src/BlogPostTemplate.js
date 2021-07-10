@@ -7,6 +7,8 @@ import "./Calculator.css";
 import "./Blogs.css";
 import Footer from "./Footer";
 import { useHistory } from "react-router-dom";
+import AllAgentsSidebar from "./AllAgentsSidebar";
+import VPForm from "./VPForm";
 
 function BlogPostTemplate(props) {
   const history = useHistory();
@@ -20,7 +22,7 @@ function BlogPostTemplate(props) {
               <img src={props.blogpostImg} alt="" />
             </div>
             <div className="bpl_header">
-              <h1>{props.blogpostTitle}</h1>
+              <h2>{props.blogpostTitle}</h2>
               <p>{props.blogpostDate}</p>
             </div>
             <div className="bpl_content">
@@ -111,14 +113,23 @@ function BlogPostTemplate(props) {
               </div>
             </div>
           </div>
-          <div className="blog_sidebar blog_post_sidebar">
-            <div className="blog_sidebar_item">
+          <div className="blog_sidebar">
+            <div className="blog_sidebar_item bsi_1">
+              <div className="blog_sidebar_item_flex bsif_1">
+              <h3>Our Agents</h3>
+              <AllAgentsSidebar />
+              </div>
+            </div>
+            <div className="blog_sidebar_item bsi_2">
+              <div className="blog_sidebar_item_flex">
               <h3>Featured Listings</h3>
               <FeaturedListings />
+              </div>
             </div>
-            <div className="blog_sidebar_item">
-              <h3>Related Posts</h3>
-              <div className="related_posts">
+
+            <div className="blog_sidebar_item bsi_3">
+              <div className="blog_sidebar_item_flex">
+                <h3>Related Posts</h3>
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -130,8 +141,6 @@ function BlogPostTemplate(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -143,8 +152,6 @@ function BlogPostTemplate(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
@@ -156,9 +163,7 @@ function BlogPostTemplate(props) {
                     <p>01/01/2021</p>
                   </div>
                 </div>
-              </div>
-              <div className="related_posts">
-                <div className="related_posts_item">
+                <div className="related_posts_item rpi_last">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
                       <img src={blogheroimg} alt="" />
@@ -170,6 +175,12 @@ function BlogPostTemplate(props) {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="blog_sidebar_item bsi_4">
+              <div className="blog_sidebar_item_flex">
+              <h3>Contact Us</h3>
+              <VPForm />
+            </div>
             </div>
             
           </div>

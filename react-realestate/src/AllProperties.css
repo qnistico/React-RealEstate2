@@ -10,6 +10,16 @@
   padding: 30px;
 }
 
+.all_properties h2 {
+  width: 100%;
+  max-width: 1280px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 .all_properties_flex {
   display: -webkit-box;
   display: -ms-flexbox;

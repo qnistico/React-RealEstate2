@@ -74,6 +74,7 @@ function AllProperties(props) {
       <PagesHero headerTitle="All Listings" parallaximg1={propertybg} />
       <SortByContent />
       <div className="all_properties">
+        <h2>All Listings</h2>
         <div className="all_properties_flex">
           <div className="ap_left">
             <CardSingle

@@ -19,6 +19,9 @@ import BlogList from "./BlogList";
 import BlogListPage2 from "./BloglistPage2";
 import BlogPostTemplate from "./BlogPostTemplate";
 import BuyingAHome from "./BuyingAHome";
+import SellingAHome from "./SellingAHome";
+import ValuingYourHome from "./ValuingYourHome";
+import FindingTheRightLocation from "./FindingTheRightLocation";
 import AllProperties from "./AllProperties";
 import AgentKevinProfile from "./AgentKevinProfile";
 import AgentMaryProfile from "./AgentMaryProfile";
@@ -139,6 +142,15 @@ function App() {
         </Route>
         <Route exact path="/BuyingAHome">
           <BuyingAHome />
+        </Route>
+        <Route exact path="/SellingAHome">
+          <SellingAHome />
+        </Route>
+        <Route exact path="/ValuingYourHome">
+          <ValuingYourHome />
+        </Route>
+        <Route exact path="/FindingTheRightLocation">
+          <FindingTheRightLocation />
         </Route>
         <Route exact path="/AllProperties">
           <AllProperties />
