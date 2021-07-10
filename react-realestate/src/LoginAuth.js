@@ -5,6 +5,7 @@ import google from "./img/google.svg";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { auth } from "./config/firebase-config";
 import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 
 
@@ -49,6 +50,14 @@ export default function LoginAuth(props) {
 
   return (
     <div>
+      <Helmet>
+        <title>Log In or Sign Up - PA Premium Realty</title>
+        <meta
+          name="description"
+          content="Browse houses and apartments for sale and for rent in Pennsylvania"
+        />
+        
+      </Helmet>
       <Fade duration="1210">
     <div className="login_signup_auth">
       <div className="dark_gradient"></div>
@@ -60,31 +69,34 @@ export default function LoginAuth(props) {
 <div className="login_signup_content">
           <form id="login" className="contact_form">
             <div className="form-group">
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
+                name="email"
                 className="form-control form_input"
-                aria-describedby="emailHelp"
+                aria-label="email"
                 placeholder="Email"
                 ref={emailRef}
               />
             </div>
             <div className="form-group">
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
+                name="password"
+                aria-label="password"
                 className="form-control form_input"
-                aria-describedby="passwordHelp"
                 placeholder="Password"
                 ref={passwordRef}
               />
             </div>
             <div className="form-group" id="password-confirm">
-              <label>Confirm Password</label>
+              <label htmlFor="confirmpassword">Confirm Password</label>
               <input
                 type="password"
+                name="confirmpassword"
                 className="form-control form_input"
-                aria-describedby="passwordConfirmHelp"
+                aria-label="confirmpassword"
                 placeholder="Confirm Password"
               />
             </div>
@@ -120,30 +132,33 @@ export default function LoginAuth(props) {
           <div className="login_signup_content">
           <form id="sign_up" className="contact_form">
             <div className="form-group">
-              <label>Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
+                name="email"
+                aria-label="email"
                 className="form-control form_input"
-                aria-describedby="emailHelp"
                 placeholder="Email"
               />
             </div>
             <div className="form-group">
-              <label>Password</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
+                name="password"
+                aria-label="password"
                 className="form-control form_input"
-                aria-describedby="passwordHelp"
                 placeholder="Password"
               />
             </div>
             <div className="form-group" id="password-confirm">
-              <label>Confirm Password</label>
+              <label htmlFor="confirmpassword">Confirm Password</label>
               <input
                 type="password"
+                name="confirmpassword"
                 className="form-control form_input"
-                aria-describedby="passwordConfirmHelp"
                 placeholder="Confirm Password"
+                aria-label="confirmpassword"
               />
             </div>
             <button className="send_button sb_2" type="submit" onClick={register}>
