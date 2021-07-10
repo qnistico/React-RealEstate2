@@ -337,7 +337,11 @@ function AllProperties(props) {
               <h3>Featured Listings</h3>
               <FeaturedListings />
             </div>
-            <div className="ap_sidebar_item">
+            <div className="ap_sidebar_item apsbi_left">
+              <h3>Contact Us</h3>
+              <VPForm />
+            </div>
+            <div className="ap_sidebar_item apsbi_right">
               <h3>Mortgage Calculator</h3>
               <MortgageCalculator />
             </div>

@@ -53,6 +53,10 @@
   width: 62%;
 }
 
+.contact_form_primary label {
+  color: #1a1a1a;
+}
+
 .contact_us_icon_info_flex {
   display: -webkit-box;
   display: -ms-flexbox;
