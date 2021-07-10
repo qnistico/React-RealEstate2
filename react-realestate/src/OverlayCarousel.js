@@ -52,7 +52,7 @@ function OverlayCarousel(props) {
       <h2>Featured Listings</h2>
       <p>Browse our most luxury properties</p>
       </Fade>
-      <Fade duration="1200">
+      <Fade duration="1210">
 
         <div className="overlay_carousel_container">
           <Carousel

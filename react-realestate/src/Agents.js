@@ -25,10 +25,8 @@ function agentReviews(props) {
           d="M0,96L1440,192L1440,0L0,0Z"
         ></path>
       </svg>
-      <Fade duration="1050" cascade>
       <h2>Our Team</h2>
-      </Fade>
-      <Fade duration="1200">
+      <Fade duration="1210">
 
       <div className="agent_reviews_flex">
         <div className="agent_reviews_content">

@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 function PhiOverlay2() {
     return (
         <div className="phi_overlay">
-                <Fade duration="1200">
+                <Fade duration="1210">
 
             <div className="phi_overlay_flex phi_overlay_flex_reverse">
         <img src={PhiImage2} alt="female real estate agent with skyscraper" />

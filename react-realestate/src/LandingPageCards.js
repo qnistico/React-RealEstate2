@@ -24,7 +24,7 @@ import { useHistory } from "react-router-dom";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 
 function LandingPageCards() {
-/*
+  /*
   addStyles();
 
   function addStyles() {
@@ -188,11 +188,11 @@ function LandingPageCards() {
 
       (async function () {
         let image = element.dataset.src;
-
+    
         var houseImage = import(`${image}`);
-
-        lightboxImage.src = await houseImage;
-
+    
+        lightboxImage.src = {houseImage};
+    
         console.log(houseImage);
       })();
 

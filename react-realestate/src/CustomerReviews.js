@@ -23,14 +23,12 @@ function CustomerReviews() {
         ></path>
       </svg>
       <div className="customer_reviews_content">
-        <Fade duration="1050" cascade>
         <h2>Customer Reviews</h2>
         <p className="lp_header_p">
           Read what our customers are saying about PA Premium Realty and our
           agents
         </p>
-        </Fade>
-        <Fade duration="1200">
+        <Fade duration="1210">
 
         <div className="customer_reviews_flex">
           <div className="cr_item">

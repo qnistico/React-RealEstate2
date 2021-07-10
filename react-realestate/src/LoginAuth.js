@@ -49,7 +49,7 @@ export default function LoginAuth(props) {
 
   return (
     <div>
-      <Fade duration="1200">
+      <Fade duration="1210">
     <div className="login_signup_auth">
       <div className="dark_gradient"></div>
       <div className="login_auth_flex">
