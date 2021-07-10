@@ -6,6 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import { auth } from "./config/firebase-config";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
+import firebase from "firebase";
 
 
 
@@ -47,6 +48,14 @@ export default function LoginAuth(props) {
   }
 
   
+  const signOutUser = () => firebase.auth.signOut();
+
+
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+  }).catch(function(error) {
+    // An error happened.
+  });
 
   return (
     <div>
@@ -98,11 +107,14 @@ export default function LoginAuth(props) {
                 className="form-control form_input"
                 aria-label="confirmpassword"
                 placeholder="Confirm Password"
+                ref={passwordRef}
+
               />
             </div>
             <button className="send_button" type="submit" onClick={signIn}>
               Log In
             </button>
+            <button onClick={signOutUser}>Log Out</button>
             <p className="or">or</p>
           </form>
           <div className="login_button_flex">
@@ -139,6 +151,7 @@ export default function LoginAuth(props) {
                 aria-label="email"
                 className="form-control form_input"
                 placeholder="Email"
+                ref={emailRef}
               />
             </div>
             <div className="form-group">
@@ -149,6 +162,7 @@ export default function LoginAuth(props) {
                 aria-label="password"
                 className="form-control form_input"
                 placeholder="Password"
+                ref={passwordRef}
               />
             </div>
             <div className="form-group" id="password-confirm">
@@ -159,6 +173,7 @@ export default function LoginAuth(props) {
                 className="form-control form_input"
                 placeholder="Confirm Password"
                 aria-label="confirmpassword"
+                ref={passwordRef}
               />
             </div>
             <button className="send_button sb_2" type="submit" onClick={register}>
