@@ -68,7 +68,7 @@ export default function LoginAuth(props) {
       <div className="login_auth_flex">
         <div className="login_body">
           <div className="login_signup_header">
-          <h1>Log In</h1>
+          <h1> Demo Log In</h1>
           </div>
 <div className="login_signup_content">
           <form id="login" className="contact_form">
@@ -122,7 +122,7 @@ export default function LoginAuth(props) {
         </div>
         <div className="login_body signup_body">
           <div className="login_signup_header">
-          <h1>Sign Up</h1>
+          <h2>Demo Sign Up</h2>
           </div>
           <div className="login_signup_content">
           <form id="sign_up" className="contact_form">

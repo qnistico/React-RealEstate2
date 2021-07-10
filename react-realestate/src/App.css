@@ -1724,12 +1724,14 @@ input.form-control.form_input {
   height: 100%;
 }
 
-.login_signup_auth h1 {
+.login_signup_auth h1,
+.login_signup_auth h2 {
   text-align: center;
   background-color: #0073e5;
   margin-bottom: 0;
   color: white;
   padding: 20px;
+  font-weight: 700;
 }
 
 .login_body,
