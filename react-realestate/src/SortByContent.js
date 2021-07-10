@@ -69,6 +69,9 @@ function showAll() {
     apartments.forEach((el) => el.classList.remove('hide'));
     console.log(apartments);
   }
+  window.addEventListener("DOMContentLoaded", function() {
+
+});
 
     return (
       <div className="sort_by_content">

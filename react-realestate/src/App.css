@@ -354,7 +354,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 60px 20px;
 }
 
 .lp_cards h2 {
