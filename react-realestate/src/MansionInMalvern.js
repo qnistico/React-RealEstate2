@@ -181,7 +181,6 @@ function MansionInMalvern(props) {
           </div>
         </Fade>
 
-        <SortByContent />
         <ViewProperty
           homeTitle="Mansion on 555 Lorem Ave, Norwin, PA"
           homeAddress="555 Lorem Ave"

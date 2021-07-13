@@ -87,7 +87,7 @@ function MainNav2() {
                 </NavLink>
               </li>
               <li className="nav-item mobile_show">
-                <a className=" signup_button" href="/LoginAuth">
+                <a className="nav-links signup_button_mobile" href="/LoginAuth">
                   <AccountCircleIcon />
                   Login / Sign Up
                 </a>

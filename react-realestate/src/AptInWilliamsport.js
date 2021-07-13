@@ -185,7 +185,6 @@ function AptInWilliamsport(props) {
       </div>
       </Fade>
       
-      <SortByContent />
             <ViewProperty
         homeTitle="Apartment on 555 Lorem Ave, Williamsport, PA"
         homeAddress="555 Lorem Ave"

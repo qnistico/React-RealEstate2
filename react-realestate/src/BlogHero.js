@@ -20,7 +20,6 @@ function BlogHero(props) {
           </div>
         </div>
       </div>
-      <SortByContent />
         </div>
         </div>
     )

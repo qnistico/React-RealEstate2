@@ -154,7 +154,6 @@ function MansionInFoxchapel(props) {
       </div>
       </Fade>
 
-      <SortByContent />
       <ViewProperty
         homeTitle="Mansion on Lorem Ave"
         homeAddress="123 Lorem Ave"

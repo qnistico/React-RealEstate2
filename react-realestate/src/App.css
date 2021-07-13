@@ -354,7 +354,7 @@ input:active {
 }
 .lp_cards {
   width: 100%;
-  padding: 0 20px 60px 20px;
+  padding: 60px 20px 60px 20px;
 }
 
 .lp_cards h2 {
@@ -416,9 +416,9 @@ input:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   margin: auto;
 
 }
@@ -1660,6 +1660,7 @@ input.form-control.form_input {
   font-weight: 400 !important;
 }
 
+
 .signup_button .MuiSvgIcon-root {
   margin-right: 8px;
 }
@@ -1720,9 +1721,7 @@ input.form-control.form_input {
   margin: 160px auto 100px auto;
 }
 
-.signup_body {
-  height: 100%;
-}
+
 
 .login_signup_auth h1,
 .login_signup_auth h2 {
@@ -1821,6 +1820,12 @@ input.form-control.form_input {
 
   .lp_apts_flex {
     flex-flow: column !important;
+  }
+
+  .lp_cards_flex {
+    -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   }
 
   .cr_item {
@@ -1930,6 +1935,7 @@ input.form-control.form_input {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .signup_button {
     margin-top: 0;
   }
@@ -2112,6 +2118,9 @@ input.form-control.form_input {
   .login_body,
   .signup_body {
     width: 100%;
+  }
+  .dropdown_item {
+    z-index: 9999 !important;
   }
 }
 

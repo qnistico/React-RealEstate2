@@ -51,7 +51,6 @@ function LandingPage() {
         content="Houses, Apartments, Mansions, Villas, Find Properties, Real Estate" />
       </Helmet>
       <HeroSlider />
-      <SortByContent />
       <LandingPageCards />
       <OverlayCarousel />
       <LandingPageApts />

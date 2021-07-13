@@ -9,6 +9,10 @@ import Footer from "./Footer";
 import { useHistory } from "react-router-dom";
 import AllAgentsSidebar from "./AllAgentsSidebar";
 import VPForm from "./VPForm";
+import blogimg1 from "./img/blogimg1.jpg";
+import blogimg2 from "./img/blogimg2.jpg";
+import blogimg3 from "./img/blogimg3.jpg";
+import blogimg4 from "./img/blogimg4.jpg";
 
 function BlogPostTemplate(props) {
   const history = useHistory();
@@ -133,7 +137,7 @@ function BlogPostTemplate(props) {
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                      <img src={blogimg4} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -143,8 +147,8 @@ function BlogPostTemplate(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/SellingAHome")}>
+                      <img src={blogimg3} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -154,8 +158,8 @@ function BlogPostTemplate(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/ValuingYourHome")}>
+                      <img src={blogimg2} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -165,8 +169,8 @@ function BlogPostTemplate(props) {
                 </div>
                 <div className="related_posts_item rpi_last">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/FindingTheRightLocation")}>
+                      <img src={blogimg1} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">

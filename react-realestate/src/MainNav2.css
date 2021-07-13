@@ -176,8 +176,10 @@ box-shadow: none;
       display: table;
     }
 
-    .signup_button {
-      z-index: 0 !important;
+    .signup_button_mobile .MuiSvgIcon-root {
+      margin-right: 8px;
+      vertical-align: top;
+      color: #0073e5;
     }
 
     

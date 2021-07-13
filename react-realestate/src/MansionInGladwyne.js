@@ -183,7 +183,6 @@ function MansionInGladwyne(props) {
       </div>
       </Fade>
 
-      <SortByContent />
       <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Gladwyne, PA"
         homeAddress="555 Lorem Ave"

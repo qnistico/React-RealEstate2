@@ -51,7 +51,6 @@ function AgentJohnRyan(props) {
       </div>
       </Fade>
 
-      <SortByContent />
       <div className="agent_profile">
         <div className="agent_profile_flex">
           <div className="ap_primary_left">

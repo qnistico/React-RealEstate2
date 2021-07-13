@@ -76,7 +76,7 @@ import apt2 from "./img/apartment2.jpg";
 import apt3 from "./img/apartment3.jpg";
 import { useHistory } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { History } from "react-helmet";
+import { Helmet } from "react-helmet";
 function HouseInBerwyn(props) {
     const history = useHistory();
   const templateImg = {
@@ -182,7 +182,6 @@ function HouseInBerwyn(props) {
 </div>
 </Fade>
 
-<SortByContent />
 <ViewProperty
   homeTitle="Mansion on 555 Lorem Ave, Berwyn, PA"
   homeAddress="555 Lorem Ave"

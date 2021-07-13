@@ -187,7 +187,6 @@ function MansionInSewickleyHeights(props) {
       </div>
       </Fade>
 
-      <SortByContent />
       <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, Sewickley Heights, PA"
         homeAddress="555 Lorem Ave"

@@ -184,7 +184,6 @@ function AptInAllentown(props) {
         </div>
       </Fade>
 
-      <SortByContent />
       <ViewProperty
         homeTitle="Apartment on 555 Lorem Ave, Allentown, PA"
         homeAddress="555 Lorem Ave"

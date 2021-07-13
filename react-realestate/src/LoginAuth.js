@@ -7,14 +7,21 @@ import { auth } from "./config/firebase-config";
 import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
 import firebase from "firebase";
+import { login, logout, selectUser } from "./features/userSlice";
+import { useSelector } from "react-redux";
 
 
 
 
 export default function LoginAuth(props) {
+  {/*
   const handleOnClick = async (provider) => {
     const res = await socialMediaAuth(provider);
   };
+*/}
+
+  const user = useSelector(selectUser);
+
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -98,8 +105,8 @@ export default function LoginAuth(props) {
             <button className="send_button" type="submit" onClick={signIn}>
               Log In
             </button>
-            <p className="or">or</p>
           </form>
+          {/*
           <div className="login_button_flex">
             <button
               className="google_login"
@@ -118,6 +125,7 @@ export default function LoginAuth(props) {
               </span>
             </button>
             </div>
+          */}
           </div>
         </div>
         <div className="login_body signup_body">
@@ -152,6 +160,9 @@ export default function LoginAuth(props) {
             <button className="send_button sb_2" type="submit" onClick={register}>
               Sign Up
             </button>
+            {/*
+            <button onClick={() => auth.signOut()}></button>
+            */}
           </form>
           </div>
         </div>

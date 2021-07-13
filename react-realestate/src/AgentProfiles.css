@@ -6,7 +6,7 @@
 */
 
 .agent_profile {
-    padding: 2vw 3vw;
+    padding: 60px 30px;
 }
 .agent_profile_flex {
     display: -webkit-box;
@@ -230,6 +230,9 @@ h3 {
 }
 
 @media screen and (max-width: 576.98px) {
+    .agent_profile {
+        padding: 60px 20px 40px 20px;
+    }
     .appl_top {
         flex-flow: column;
     }

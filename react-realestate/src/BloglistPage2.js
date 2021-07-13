@@ -181,7 +181,7 @@ function BlogListPage2(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
+                    <a onClick={() => history.push("/SellingAHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
@@ -192,7 +192,7 @@ function BlogListPage2(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
+                    <a onClick={() => history.push("/ValuingYourHome")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>
@@ -203,7 +203,7 @@ function BlogListPage2(props) {
                 </div>
                 <div className="related_posts_item rpi_last">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
+                    <a onClick={() => history.push("/FindingTheRightLocation")}>
                       <img src={blogheroimg} alt="" />
                     </a>
                   </div>

@@ -197,7 +197,7 @@ function BlogList(props) {
                 <div className="related_posts_item">
                   <div className="rp_img">
                     <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                      <img src={blogimg4} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -207,8 +207,8 @@ function BlogList(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/SellingAHome")}>
+                      <img src={blogimg3} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -218,8 +218,8 @@ function BlogList(props) {
                 </div>
                 <div className="related_posts_item">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/ValuingYourHome")}>
+                      <img src={blogimg2} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">
@@ -229,8 +229,8 @@ function BlogList(props) {
                 </div>
                 <div className="related_posts_item rpi_last">
                   <div className="rp_img">
-                    <a onClick={() => history.push("/BuyingAHome")}>
-                      <img src={blogheroimg} alt="" />
+                    <a onClick={() => history.push("/FindingTheRightLocation")}>
+                      <img src={blogimg1} alt="" />
                     </a>
                   </div>
                   <div className="rpi_content">

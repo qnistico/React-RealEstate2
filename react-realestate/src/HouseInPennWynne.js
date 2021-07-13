@@ -182,7 +182,6 @@ function HouseInPennWynne(props) {
 </div>
 </Fade>
 
-<SortByContent />
 <ViewProperty
   homeTitle="House on 555 Lorem Ave, PennWynne, PA"
   homeAddress="555 Lorem Ave"

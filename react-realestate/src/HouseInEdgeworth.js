@@ -186,7 +186,6 @@ function HouseInEdgeworth(props) {
       </div>
       </Fade>
 
-      <SortByContent />
       <ViewProperty
         homeTitle="Mansion on 555 Lorem Ave, EdgeWorth, PA"
         homeAddress="555 Lorem Ave"
