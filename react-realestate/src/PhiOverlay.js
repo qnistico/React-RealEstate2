@@ -28,9 +28,9 @@ function PhiOverlay() {
             Our team of highly qualified real estate agents will help find the
             property right for you
           </p>
-          <MDBBtn href="#!" className="hero_button phi_button">
+          <button href="#!" className="hero_button phi_button">
             Read More
-          </MDBBtn>
+          </button>
         </div>
       </div>
       </Fade>

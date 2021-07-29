@@ -14,7 +14,7 @@ function PhiOverlay2() {
         <div className="phi_overlay_content">
           <h3>Expert Real Estate Agents</h3>
           <p>Our team of highly qualified real estate agents will help find the property right for you.</p>
-          <MDBBtn href="#!" className="hero_button">Read More</MDBBtn>
+          <button href="#!" className="hero_button phi_button">Read More</button>
         </div>
       </div>
       </Fade>
