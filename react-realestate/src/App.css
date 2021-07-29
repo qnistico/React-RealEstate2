@@ -47,23 +47,23 @@ body p {
   line-height: 1.618 !important;
 }
 
-.dark_gradient {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0.618)),
-    to(rgba(0, 0, 0, 0.001))
-  );
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.001));
-  background: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.001));
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 13;
-}
+  .dark_gradient {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.618)),
+      to(rgba(0, 0, 0, 0.001))
+    );
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.001));
+    background: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.001));
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 13;
+  }
 
 .hero_container {
   width: 100%;
